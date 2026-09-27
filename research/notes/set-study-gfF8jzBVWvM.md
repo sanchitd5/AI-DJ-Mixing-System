@@ -366,3 +366,113 @@ correlation, both run on mixed, often 3+-track audio. They are directional hints
 useful for spotting patterns (adjacent-hour Camelot moves, tempo trending up or down),
 not ground truth for any single track's actual BPM or key. Band-energy and RMS
 readings are direct measurements and are much more reliable.*
+
+---
+
+## Stem-level studies (2026-09-27, 4-stem Demucs `htdemucs_ft` on the set audio)
+
+Method: separate the set excerpt into drums / bass / vocals / other, read RMS dB per
+stem per window, and identify each layer by onset-envelope cross-correlation
+against the candidate songs' own stems at 1.0x and at the tempo ratios that would
+lock them (pitch-invariant, so it works with or without key-lock). Pitch shift is
+read from a 1/3-semitone pitch-class profile of the matched layer. Scripts:
+`study_seg.py`, `match_aero.py`, `keylock.py`, `aero_map.py`, `verify_offset.py`
+(session scratchpad; the algorithm now lives in `app/music_brain/techniques.py`).
+Qwen3-Omni was also asked to describe the audio: when the prompt named the songs it
+echoed the prompt back ("steady 123 BPM" while the drums read 140), and on isolated
+stems it returned nothing. Its descriptions were not used as evidence.
+
+### 1:14:22 leavemealone (Nia Archives Remix), 174 BPM: "strip & rebuild"
+
+| time | vocals | drums | bass | other | move |
+|---|---|---|---|---|---|
+| 74:22-74:26 | -22 | -24 -> -42 | -8 | -26 | drums out |
+| 74:30-74:38 | -17 | -47 | -82 | -28 | bass out: voice nearly alone |
+| 74:42-74:54 | -19 | -35..-40 | -10 | -24 | bass back, still no kick |
+| 74:58-75:14 | -17..-22 | -34 -> -23 | -31..-79 | -30 -> -17 | bass out, synths rise, drums creep: build |
+| 75:18-75:22 | -19 | -23 -> -18 | -11 | -29 | bass, then drums slam back: drop |
+
+The vocal never stops; ~43 bars. This is how a famous song plays for 7 minutes.
+Implemented as `strip_rebuild` (stem-moves.js BREAKDOWN, 40 / 24 bars).
+
+### 1:06:30 Aerodynamic x Victory Lap Five: "riff over rap"
+
+- Everything runs at **140 BPM, Victory Lap Five's own tempo**. Aerodynamic
+  (122.9 BPM) is **key-locked stretched +13.9 %**: its riff matches the original
+  at 0.00 semitones (0.981), not the +2.26 st a vinyl-rate change would give.
+- Keys **10A (B minor) vs 5B (D# major)**: a clash on the Camelot rules. It works
+  because the layer on top is rap.
+- Aerodynamic's **16-bar full groove (0:31.6-1:02.9) is looped** under everything
+  until 67:24 (drum matches keep returning to 0:48-0:52).
+- 66:48: VLF's bass takes over under the Aerodynamic groove (one bass owner).
+- 67:24: the loop is **released into Aerodynamic's own drumless breakdown**
+  (1:02.9, the guitar solo) = the 8-bar break. Nobody cut the drums: the song did.
+- 67:36: VLF drops in (drums, bass, the rap from its 4:35) under the solo, whose
+  first 8 bars (1:02.9-1:18.6) are **looped on top**; riff onsets sit 92.9 ms (mod
+  one beat) before VLF's drum hits.
+- 68:24: the riff fades; VLF runs to its end (~68:48), then Starboy x leavemealone.
+- Unresolved: a half-voiced vocal (pyin voiced 0.40-0.49) over the groove at
+  66:00-67:24, matching neither song. Likely a third layer; left out.
+
+Recreated from the two library tracks with the measured timeline:
+`data/output/recreate_USB002_1-06-30_aerodynamic_x_victory_lap_five.wav`
+(Rubber Band R3 key-lock stretch; VLF offset solved to the set's riff->drums phase,
+within 1 ms). Stem-energy timeline matches the set's at every event (break -70/-80 dB
+vs set -51/-77; drop at 67:36).
+
+### What changed in the algorithm (app/music_brain/techniques.py)
+
+1. **Techniques are conditional.** Each one lists what it needs and `rank()` returns
+   every technique with the reasons it fits or not (`GET /api/techniques?a=&b=`).
+   Same-tempo, same-key pairs still get the EQ blend; riff over rap only when a
+   pair has a 3-15 % tempo gap, a loopable groove and its own breakdown in A, and a
+   rap section in B.
+2. **Key compatibility applies between tonal layers only.** A rap vocal over a riff
+   ignores the Camelot rule.
+3. **Rap vs sung** is read from pitch stability (held-pitch run < 0.10 s and > 20 c
+   off the nearest note), not voiced fraction (rap is voiced speech: VLF 0.79).
+   Preliminary: calibrated on 5 vocals.
+4. **Key-lock stretch up to ~14 % on an instrumental layer** is a real move; the live
+   console cannot do it yet (Web Audio playbackRate moves pitch), so `riff_over_rap`
+   is marked `live: false` until key-locked stems are rendered server-side.
+
+### Riff over rap, live (2026-09-27): balance
+
+First live run (`riff-over-rap.js`) had B's rap on top and a +5.9 dB jump at the drop:
+Aerodynamic's master is ~6 dB quieter than Victory Lap Five's, so B arrived loud.
+User: "rap volume should have been lower than Aerodynamic". Now `keylock.balance()`
+lifts A to B's loudness (max +8 dB), and while A's riff plays B stays in stem mode with
+its rap 3 dB under the riff and its bass 9 dB under (the set's bass-under-riff balance);
+both come back up as the riff fades. Measured on the next live recording: rap 5.6 dB
+under the riff, drop jump +0.6 dB, groove -13.9 dB (set -13.3). Note: the set itself
+has the rap 2.4 dB above the riff; the user's preference wins.
+
+**One tonal owner (user, 2026-09-27).** "Aerodynamic's background music is good, but Victory
+Lap Five's background music plays on top of it, doesn't sound good." Right, and the set
+agrees: at 67:36-68:24 the set's `other` stem matches Aerodynamic's riff (0.47-0.60), not
+VLF's. While A's riff plays, B contributes drums, bass and rap only; its own synths/samples
+enter as the riff fades. Same principle as one bass owner, applied to the tonal layer, and
+the reason a 10A/5B key clash never sounds: only one pitched layer plays at a time.
+
+**B enters at its rap (user, 2026-09-27).** "Before 1:20-25 there's no point playing Victory Lap
+Five's background music." The set's bass-intro handover (VLF bass from 0:04 under the
+Aerodynamic groove at 66:48) is dropped: B starts ON the drop, at the phrase line of its rap
+(1:24), with drums, bass and rap only; A owns the bass through the groove and the break.
+
+**Victory Lap, not Victory Lap Five (user, 2026-09-27).** The live move now pairs Aerodynamic
+with the original Victory Lap (Fred again.., Skepta, PlaqueBoyMax; 140 BPM, 2:46), whose rap
+starts at the top, so B enters from 0:01 on the drop. The downloader had matched "Victory Lap
+Five" for "Victory Lap": sequel titles (Two / Five / Pt. 2) are now rejected unless asked for
+(`download_service._sequel`). Also from the user: the rap sits ~9 dB under Aerodynamic's riff
+("in concert the vocals are low, the music carries it"), the rap enters on top of A's
+breakdown with B's drums crossfading in over 8 bars (no hard cut), and B's synths stay out
+while A's riff plays.
+
+**Live vs set, final pass (2026-09-27).** Structure now follows the set: A's groove, the first
+half of A's drop clean (the break: set drums -51 / bass -77 dB, live -70 / -84), that half
+looped under B's rap (one groove, no second loop), rap entering after B's repeated opening
+hook (detected by vocal-rhythm repetition, Victory Lap 0:28.7), rap x1.5 for the mashup's
+second half, 8-bar crossfade with the bass swap on a line. Remaining gap: in the set B's
+drums and bass play under the rap during the mashup (drums -19..-22, bass -14..-17 dB) and
+the mashup is ~8 dB louder than ours, where B is rap only (user asked for none of B's
+backing under A). Open question for the user: are B's drums + bass "background music" too?
