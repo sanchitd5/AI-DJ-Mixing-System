@@ -181,6 +181,21 @@ def validate(macro: dict, known: Callable[[str], bool], has_stems: Callable[[str
     return out
 
 
+def resolve_ids(macro: dict, resolve: Callable[[str], str]) -> dict:
+    """The macro with every track id mapped to its LIBRARY id (resolve: the dedup alias
+    map, e.g. dedup_songs.resolve_alias), so the console loads and plays the library copy
+    of each song, never a set clip or a removed duplicate. A copy; the input is unchanged."""
+    m = json.loads(json.dumps(macro))
+    for s in m["steps"]:
+        for side in ("a", "b"):
+            tid = resolve(s[side])
+            if tid != s[side]:
+                s.setdefault("resolved", {})[side] = s[side]
+                s[side] = tid
+    m["tracks"] = [resolve(t) for t in m.get("tracks") or []]
+    return m
+
+
 # ---------------------------------------------------------------- sources
 
 def _read_jsonl(p: Path) -> List[dict]:
