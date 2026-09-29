@@ -210,6 +210,9 @@ def write_seed(macro: dict, cache_dir: Optional[Path] = None, owner: str = "atla
             old = {}
         if not str(old.get("source", "")).startswith(owner):
             raise ValueError(f"macro {m['name']} is the user's")
+        if "created" in old and {k: v for k, v in old.items() if k != "created"} == \
+                {k: v for k, v in m.items() if k != "created"}:
+            return dict(m, created=old["created"])      # unchanged: keep its created, write nothing
     tmp = p.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
     tmp.replace(p)
