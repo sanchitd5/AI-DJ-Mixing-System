@@ -89,10 +89,84 @@ def normalize(macro: dict) -> dict:
         if x["b"] != y["a"]:
             raise ValueError(f"step {y['n']} starts from {y['a']}, step {x['n']} ended on {x['b']}")
     tracks = [steps[0]["a"]] + [s["b"] for s in steps]
-    return {"schema": SCHEMA, "name": slug(macro.get("name") or "macro"), "version": int(macro.get("version") or 1),
-            "parent": macro.get("parent"), "created": macro.get("created") or time.time(),
-            "source": str(macro.get("source") or "console")[:80], "tracks": tracks, "steps": steps,
-            "note": str(macro.get("note") or "")[:500]}
+    out = {"schema": SCHEMA, "name": slug(macro.get("name") or "macro"), "version": int(macro.get("version") or 1),
+           "parent": macro.get("parent"), "created": macro.get("created") or time.time(),
+           "source": str(macro.get("source") or "console")[:80], "tracks": tracks, "steps": steps,
+           "note": str(macro.get("note") or "")[:500]}
+    out["title"] = " ".join(str(macro.get("title") or "").split())[:TITLE_MAX] or title_of(out)
+    return out
+
+
+# ------------------------------------------------------------------------------------------ titles
+# Owner: "macros should have proper names". The slug stays the stable id / filename; `title` is
+# what the MACRO dropdown shows, grouped by kind.
+
+TITLE_MAX = 120
+KINDS = ("studied", "chain", "combo", "yours")  # dropdown group order
+_COMBO_WORDS = {"merge": "Merge-Hold", "riff": "Riff x Rap", "mashup": "Mashup", "double_drop": "Double Drop",
+                "drop_swap": "Drop Swap"}
+_SET_NOTE = re.compile(r"^studied (?:set|combo from) (.+?)(?: in set order:| \(position (\d+)\))")
+
+
+def kind_of(m: dict) -> str:
+    """studied | chain | combo | yours, from the source (else the slug)."""
+    src, name = str(m.get("source") or ""), str(m.get("name") or "")
+    if src.startswith("atlas:studied") or name.startswith("studied-"):
+        return "studied"
+    if src == "atlas:chain" or name.startswith("chain-"):
+        return "chain"
+    if src.startswith("atlas") or name.startswith("combo-"):
+        return "combo"
+    return "yours"
+
+
+def song_label(name: str) -> str:
+    """'Artist - Title' without upload noise ('(Official Audio)', '[Odd One Out]', lyric tags)."""
+    from app.ui.track_identity import clean_identity
+    raw = str(name or "").strip()
+    if not raw:
+        return "?"
+    artist, title = clean_identity(raw)
+    return title if artist == "Unknown" else f"{artist} - {title}"
+
+
+def _artist(name: str) -> str:
+    from app.ui.track_identity import clean_identity
+    artist, title = clean_identity(str(name or "").strip() or "?")
+    return title if artist == "Unknown" else artist
+
+
+def set_label(set_title: str, dj: str = "") -> str:
+    """'Anyma | Live from Atomium' -> 'Anyma @ Live from Atomium' (the title if it has no DJ prefix)."""
+    t = " ".join(str(set_title or "").split())
+    parts = re.split(r"\s+[|\-–—]\s+", t, maxsplit=1)
+    if len(parts) == 2 and parts[0] and parts[1] and (not dj or parts[0].lower() == str(dj).lower()):
+        return f"{parts[0]} @ {parts[1]}"
+    return t
+
+
+def title_of(m: dict) -> str:
+    """A human title for a normalised macro that has none (see the dropdown groups)."""
+    steps = m.get("steps") or []
+    names = [steps[0].get("a_name") or steps[0]["a"]] + [s.get("b_name") or s["b"] for s in steps] if steps else []
+    n = len(names)
+    kind = kind_of(m)
+    pair = f"{song_label(names[0])} → {song_label(names[-1])}" if n else str(m.get("name") or "macro")
+    if kind == "studied":
+        hit = _SET_NOTE.match(str(m.get("note") or ""))
+        where = set_label(hit.group(1)) if hit else "studied set"
+        if str(m.get("name") or "").startswith("studied-set-") or n > 2:
+            return f"{where} (studied set, {n} songs)"[:TITLE_MAX]
+        return f"{where} #{hit.group(2) if hit and hit.group(2) else '?'}: {pair}"[:TITLE_MAX]
+    if kind == "chain":
+        return f"{_artist(names[0])} → {_artist(names[-1])} · {n} songs"[:TITLE_MAX]
+    if kind == "combo":
+        if str(m.get("source")) == "atlas:seed" or str(m.get("name") or "").startswith("combo-seed-"):
+            return f"Seed combo: {pair}"[:TITLE_MAX]
+        combo = next((s.get("combo") for s in steps if s.get("combo")), None)
+        tag = _COMBO_WORDS.get(str(combo), str(combo or "").replace("_", " ").title())
+        return (f"{pair} ({tag})" if tag else pair)[:TITLE_MAX]
+    return (pair if n == 2 else f"{pair} · {n} songs")[:TITLE_MAX]
 
 
 def save(macro: dict, cache_dir: Optional[Path] = None, new_version: bool = True) -> dict:
@@ -156,11 +230,37 @@ def list_macros(cache_dir: Optional[Path] = None) -> List[dict]:
         except (OSError, ValueError):
             continue
         if isinstance(m, dict) and m.get("schema") == SCHEMA:
-            out.append({"name": m.get("name"), "version": m.get("version"), "parent": m.get("parent"),
+            title = m.get("title")
+            if not title:
+                try:
+                    title = normalize(m)["title"]
+                except ValueError:
+                    title = m.get("name")
+            out.append({"name": m.get("name"), "title": title, "kind": kind_of(m), "version": m.get("version"),
+                        "parent": m.get("parent"),
                         "source": m.get("source"), "created": m.get("created"), "songs": len(m.get("tracks") or []),
                         "steps": len(m.get("steps") or []), "tracks": m.get("tracks") or []})
     out.sort(key=lambda x: -(x["created"] or 0))
     return out
+
+
+def backfill_titles(cache_dir: Optional[Path] = None) -> List[str]:
+    """Give every stored macro without a title its derived one (writes only data/cache/macros/).
+    The slug, steps and source are left as they are. -> names written."""
+    done = []
+    for p in sorted(macros_dir(cache_dir).glob("*.json")):
+        try:
+            raw = json.loads(p.read_text(encoding="utf-8"))
+            if not isinstance(raw, dict) or raw.get("schema") != SCHEMA or raw.get("title"):
+                continue
+            raw["title"] = normalize(raw)["title"]
+        except (OSError, ValueError):
+            continue
+        tmp = p.with_suffix(".tmp")
+        tmp.write_text(json.dumps(raw, indent=1), encoding="utf-8")
+        tmp.replace(p)
+        done.append(p.stem)
+    return done
 
 
 def validate(macro: dict, known: Callable[[str], bool], has_stems: Callable[[str], bool] = lambda t: True) -> List[dict]:
@@ -275,7 +375,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     from app.music_brain import pair_atlas
 
     ap = argparse.ArgumentParser(prog="macros")
-    ap.add_argument("cmd", choices=("list", "show", "from-session", "picks"))
+    ap.add_argument("cmd", choices=("list", "show", "from-session", "picks", "titles"))
     ap.add_argument("arg", nargs="*")
     ap.add_argument("--cache-dir", default=str(CACHE_DIR))
     ap.add_argument("--name", default=None)
@@ -288,6 +388,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
             out = {"macros": list_macros(cd)}
         elif a.cmd == "show":
             out = load(a.arg[0], cd)
+        elif a.cmd == "titles":
+            out = {"titled": backfill_titles(cd)}
         elif a.cmd == "from-session":
             out = from_session(a.arg[0], cd, a.name)
             if not a.dry_run:

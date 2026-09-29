@@ -439,11 +439,15 @@ def write_macros(atlas: dict, transitions: List[dict], cache_dir: Path) -> List[
             s = _step(atlas, t, "studied combo")
             if s is not None:
                 write({"name": f"studied-{sid}-{t['position']}", "steps": [s],
+                       "title": f"{mc.set_label(t['set_title'], t['dj'])} #{t['position']}: "
+                                f"{mc.song_label(s['a_name'])} \u2192 {mc.song_label(s['b_name'])}",
                        "note": f"studied combo from {t['set_title']} (position {t['position']}), techniques "
                                f"{', '.join(k for k, _ in t['techniques']) or 'none heard'}"})
         chain, gaps = set_chain(atlas, ts)
         if len(chain) >= 2:
             write({"name": f"studied-set-{sid}", "steps": chain[:mc.MAX_STEPS],
+                   "title": f"{mc.set_label(ts[0]['set_title'], ts[0]['dj'])} (studied set, "
+                            f"{len(chain[:mc.MAX_STEPS]) + 1} songs)",
                    "note": f"studied set {ts[0]['set_title']} in set order: {len(chain) + 1} of {len(ts) + 1} songs"
                            + (f"; skipped {len(gaps)}: " + "; ".join(gaps) if gaps else "")})
     fresh = {m["name"] for m in out}
