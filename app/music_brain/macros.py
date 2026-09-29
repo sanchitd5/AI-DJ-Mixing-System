@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -186,18 +187,19 @@ def save(macro: dict, cache_dir: Optional[Path] = None, new_version: bool = True
         m["parent"], m["name"], m["version"] = base, f"{root}-v{k}", k
     m["created"] = time.time()
     p = d / f"{m['name']}.json"
-    tmp = p.with_suffix(".tmp")
+    tmp = p.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
     tmp.replace(p)
     return m
 
 
-def write_seed(macro: dict, cache_dir: Optional[Path] = None) -> dict:
-    """A ready-made macro from the atlas (source atlas:*): overwrites only a macro the atlas
-    wrote before, never one the user saved (ValueError then)."""
+def write_seed(macro: dict, cache_dir: Optional[Path] = None, owner: str = "atlas") -> dict:
+    """A ready-made macro from the atlas (source atlas:*, or another `owner` prefix such as
+    "tracklist"): overwrites only a macro that owner wrote before, never one the user saved
+    (ValueError then)."""
     m = normalize(macro)
-    if not m["source"].startswith("atlas"):
-        raise ValueError("seed macros come from the atlas")
+    if not m["source"].startswith(owner):
+        raise ValueError(f"seed macros come from {owner}")
     d = macros_dir(cache_dir)
     d.mkdir(parents=True, exist_ok=True)
     p = d / f"{m['name']}.json"
@@ -206,9 +208,9 @@ def write_seed(macro: dict, cache_dir: Optional[Path] = None) -> dict:
             old = json.loads(p.read_text(encoding="utf-8"))
         except (OSError, ValueError):
             old = {}
-        if not str(old.get("source", "")).startswith("atlas"):
+        if not str(old.get("source", "")).startswith(owner):
             raise ValueError(f"macro {m['name']} is the user's")
-    tmp = p.with_suffix(".tmp")
+    tmp = p.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
     tmp.replace(p)
     return m
@@ -256,7 +258,7 @@ def backfill_titles(cache_dir: Optional[Path] = None) -> List[str]:
             raw["title"] = normalize(raw)["title"]
         except (OSError, ValueError):
             continue
-        tmp = p.with_suffix(".tmp")
+        tmp = p.with_suffix(f".{os.getpid()}.tmp")
         tmp.write_text(json.dumps(raw, indent=1), encoding="utf-8")
         tmp.replace(p)
         done.append(p.stem)
@@ -361,7 +363,9 @@ def from_picks(ids: Sequence[str], atlas: dict, locked: bool = False, name: Opti
     for st in plan["steps"]:
         p = atlas["pairs"].get(f"{st['a']}>{st['b']}")
         pl = pa.plan_of(p) if p else {"recipe": "Echo Out", "a_time": None, "b_time": None, "merge": None, "lock": None}
-        steps.append({"a": st["a"], "b": st["b"], "a_name": st.get("a_name"), "b_name": st.get("b_name"),
+        tn = lambda t: (atlas["tracks"].get(t) or {}).get("name")  # noqa: E731 -- unknown pairs carry no names
+        steps.append({"a": st["a"], "b": st["b"], "a_name": st.get("a_name") or tn(st["a"]),
+                      "b_name": st.get("b_name") or tn(st["b"]),
                       "recipe": pl["recipe"], "a_time": pl["a_time"], "b_time": pl["b_time"], "merge": pl["merge"],
                       "tempo": {"lock": pl["lock"]}, "combo": pl.get("combo"), "works": st.get("works"),
                       "why": f"atlas: {st.get('best')} (works {st.get('works')})"})

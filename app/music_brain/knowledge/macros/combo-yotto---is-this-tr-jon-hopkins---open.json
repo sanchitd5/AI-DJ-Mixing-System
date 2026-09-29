@@ -1,0 +1,32 @@
+{
+ "created": 1790674935.4012191,
+ "name": "combo-yotto---is-this-tr-jon-hopkins---open",
+ "note": "",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:combo",
+ "steps": [
+  {
+   "a": "e66c795db024c76c",
+   "a_name": "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]",
+   "a_time": 77.996,
+   "b": "d694195c66b9fa52",
+   "b_name": "Jon Hopkins - Open Eye Signal (under the fabric)",
+   "b_time": 46.463,
+   "combo": "mashup",
+   "n": 1,
+   "recipe": "Mashup → Transition",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "atlas combo MASHUP (works 98)",
+   "works": 98
+  }
+ ],
+ "title": "Yotto - Is This Trance？ [Odd One Out] → Jon Hopkins - Open Eye Signal (under the fabric) (Mashup)",
+ "tracks": [
+  "e66c795db024c76c",
+  "d694195c66b9fa52"
+ ],
+ "version": 1
+}

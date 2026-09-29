@@ -1,0 +1,31 @@
+{
+ "created": 1790674935.368873,
+ "name": "combo-seed-mk-dom-dolla---rhy-david-morales---ne",
+ "note": "seed combo: merge -> hold refused (room: 17 bars left, need 18), plays Long Blend",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:seed",
+ "steps": [
+  {
+   "a": "15d8aa83c9f75bd5",
+   "a_name": "MK, Dom Dolla - Rhyme Dust (Official Visualiser)",
+   "a_time": 149.885,
+   "b": "58f4baff56a506c7",
+   "b_name": "David Morales - Needin' U (Official Music Video)",
+   "b_time": 31.997,
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "seed combo: merge -> hold refused (room: 17 bars left, need 18), plays Long Blend",
+   "works": 79
+  }
+ ],
+ "title": "Seed combo: MK - Rhyme Dust → David Morales - Needin' U",
+ "tracks": [
+  "15d8aa83c9f75bd5",
+  "58f4baff56a506c7"
+ ],
+ "version": 1
+}

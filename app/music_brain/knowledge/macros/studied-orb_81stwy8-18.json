@@ -1,0 +1,32 @@
+{
+ "created": 1790674935.480774,
+ "name": "studied-orb_81stwy8-18",
+ "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 18), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "3ef9ad4b3fd01c79",
+   "a_name": "Adam Sellouk & Doriann - Nocturnal",
+   "a_time": 228.809,
+   "b": "13af303da7c0e5c7",
+   "b_name": "Anyma & Adam Sellouk - Girls M.I.A",
+   "b_time": 22.338,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied combo: Anyma #18, atlas plan Echo Out",
+   "works": 45
+  }
+ ],
+ "title": "Anyma @ Live from Atomium - Brussels, Belgium #18: Adam Sellouk - Nocturnal → Anyma - Girls M.I.A",
+ "tracks": [
+  "3ef9ad4b3fd01c79",
+  "13af303da7c0e5c7"
+ ],
+ "version": 1
+}

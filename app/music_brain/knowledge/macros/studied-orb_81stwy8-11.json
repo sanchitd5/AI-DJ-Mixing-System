@@ -1,0 +1,32 @@
+{
+ "created": 1790674935.480632,
+ "name": "studied-orb_81stwy8-11",
+ "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 11), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "b2df5f7d6179c964",
+   "a_name": "ID ID - Higher [set cut oRb_81stwy8 #10]",
+   "a_time": 200.69,
+   "b": "dd3f0c201c0c0f03",
+   "b_name": "Adapter - Catchaman",
+   "b_time": 15.047,
+   "combo": "drop_swap",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Anyma #11, atlas plan Long Blend",
+   "works": 78
+  }
+ ],
+ "title": "Anyma @ Live from Atomium - Brussels, Belgium #11: Id Id - Higher [set cut oRb_81stwy8 #10] → Adapter - Catchaman",
+ "tracks": [
+  "b2df5f7d6179c964",
+  "dd3f0c201c0c0f03"
+ ],
+ "version": 1
+}
