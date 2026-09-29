@@ -62,5 +62,6 @@ def test_backfill_writes_only_missing_titles(tmp_path):
     assert mc.backfill_titles(tmp_path) == ["old"]
     assert json.loads((d / "old.json").read_text())["title"] == "A - 1 → B - 2"
     assert json.loads((d / "old.json").read_text())["name"] == "old"
+    assert mc.main(["titles", "--cache-dir", str(tmp_path)]) == 0  # the CLI command
     rows = {r["name"]: r for r in mc.list_macros(tmp_path)}
     assert rows["kept"]["title"] == "Keep" and rows["old"]["kind"] == "yours"

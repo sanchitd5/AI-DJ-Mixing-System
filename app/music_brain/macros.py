@@ -375,7 +375,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     from app.music_brain import pair_atlas
 
     ap = argparse.ArgumentParser(prog="macros")
-    ap.add_argument("cmd", choices=("list", "show", "from-session", "picks"))
+    ap.add_argument("cmd", choices=("list", "show", "from-session", "picks", "titles"))
     ap.add_argument("arg", nargs="*")
     ap.add_argument("--cache-dir", default=str(CACHE_DIR))
     ap.add_argument("--name", default=None)
