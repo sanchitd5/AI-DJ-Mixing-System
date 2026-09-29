@@ -1,0 +1,32 @@
+{
+ "created": 1790724891.612222,
+ "name": "studied-alwcv6mgyho-14",
+ "note": "studied combo from DJ TIMELESS PRESENTS: NYC Live Sessions 1 (Bollywood, Punjabi, Hip Hop, Dance, Pop) (position 14), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "0d745c18cd9b1a42",
+   "a_name": "Daddy Yankee - Gasolina (Bhangra Remix)",
+   "a_time": 131.146,
+   "b": "64b3e80d2195bddb",
+   "b_name": "Sage the Gemini - Gas Pedal",
+   "b_time": 87.562,
+   "combo": "mashup",
+   "n": 1,
+   "recipe": "Mashup → Transition",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #14, atlas plan Mashup → Transition",
+   "works": 86
+  }
+ ],
+ "title": "DJ TIMELESS PRESENTS: NYC Live Sessions 1 (Bollywood, Punjabi, Hip Hop, Dance, Pop) #14: Daddy Yankee - Gasolina (Bhangr",
+ "tracks": [
+  "0d745c18cd9b1a42",
+  "64b3e80d2195bddb"
+ ],
+ "version": 1
+}

@@ -10,7 +10,7 @@
    "The DJ played the 'Last Night' vocal stem in isolation for 8 seconds, then introduced the beat and bass at 4797.0s, creating an acapella drop effect.",
    "The DJ played the 'Last Night' vocal stem in isolation for 24 seconds, then introduced the beat and bass at 4904.0s, creating an acapella drop effect."
   ],
-  "count": 14,
+  "count": 15,
   "key_score_min": null,
   "kind": "acapella_drop",
   "live": true,
@@ -374,6 +374,31 @@
     "tempo_gap": null,
     "track_a": "Argy, Omiki, Son Of Son - RITMO",
     "track_b": ""
+   },
+   {
+    "at": 116.0,
+    "detail": {
+     "drop_at": 124.0,
+     "held_s": 8.0,
+     "hook": true,
+     "levels_db": {
+      "bass": -87.4,
+      "drums": -52.8,
+      "other": -28.2,
+      "vocals": -26.2
+     },
+     "src_span": [
+      10.9,
+      18.9
+     ],
+     "words": "Yeah / Ride with the mob, Alhamdulillah / Check in with me and do your job"
+    },
+    "key_score": null,
+    "kind": "acapella_drop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "A$AP Ferg - Plain Jane",
+    "track_b": "Travis Scott - FE!N"
    }
   ],
   "stems": true,
@@ -387,7 +412,7 @@
    "The DJ played the vocals from 'Caribou - Can't Do Without You' over the instrumental of 'DJ Mehdi - Signatune' starting at 5796.0s.",
    "At 7808.0 seconds, the DJ played the 'drums' and 'bass' stems from 'Cassian & SCRIPT & Belladonna - Where I'm From' while overlaying the 'vocals' stem from 'Da Hool - Meet Her At The Love Parade (YOTTO & Cassian Rework)' as an acapella over."
   ],
-  "count": 5,
+  "count": 7,
   "key_score_min": 0.0,
   "kind": "acapella_over",
   "live": true,
@@ -485,6 +510,42 @@
     "tempo_gap": 0.0476,
     "track_a": "Kevin de Vries & Jast - Born like that",
     "track_b": "Argy, Meduza, Pollyanna - Melodia (feat. PollyAnna)"
+   },
+   {
+    "at": 1532.0,
+    "detail": {
+     "levels_db": {
+      "bass": -27.5,
+      "drums": -19.0,
+      "other": -27.0,
+      "vocals": -24.4
+     },
+     "vocal_from": "B"
+    },
+    "key_score": 0.0,
+    "kind": "acapella_over",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.1109,
+    "track_a": "Neha Kakkar - Yaad Piya Ki Aane Lagi",
+    "track_b": "Avvy Sra & Karan Aujla - White Brown Black"
+   },
+   {
+    "at": 3047.0,
+    "detail": {
+     "levels_db": {
+      "bass": -26.0,
+      "drums": -19.4,
+      "other": -35.6,
+      "vocals": -27.6
+     },
+     "vocal_from": "A"
+    },
+    "key_score": 0.0,
+    "kind": "acapella_over",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0001,
+    "track_a": "Soulja Boy - Kiss Me Thru the Phone",
+    "track_b": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)"
    }
   ],
   "stems": true,
@@ -530,7 +591,7 @@
    "From 3447s, the DJ looped the vocals of 'Te Estoy Correteando' over the beat of 'Quiereme' to extend the section.",
    "The DJ looped the section from 'Caribou - Can't Do Without You' and extended it over 'DJ Mehdi - Signatune' starting at 5668.0s."
   ],
-  "count": 4,
+  "count": 5,
   "key_score_min": 0.0,
   "kind": "loop_extend",
   "live": false,
@@ -609,6 +670,24 @@
     "tempo_gap": 0.0476,
     "track_a": "Kevin de Vries & Jast - Born like that",
     "track_b": "Argy, Meduza, Pollyanna - Melodia (feat. PollyAnna)"
+   },
+   {
+    "at": 2339.0,
+    "detail": {
+     "levels_db": {
+      "bass": -34.9,
+      "drums": -20.0,
+      "other": -30.4,
+      "vocals": -23.2
+     },
+     "src_t": 172.97
+    },
+    "key_score": 0.0,
+    "kind": "loop_extend",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0441,
+    "track_a": "Yo Yo Honey Singh - High Heels Te Nachche",
+    "track_b": "USHER - OMG"
    }
   ],
   "stems": false,
@@ -626,7 +705,7 @@
    "The DJ introduced the stems in the order vocals, other, drums, and bass for 'Daft Punk - Touch' over 'Serious Sounds (VIP)' starting at 2652.0s.",
    "The DJ introduced the stems in the order other, bass, vocals, and drums for 'Daft Punk - Giorgio by Moroder' over 'Daft Punk - Touch' starting at 2712.0s."
   ],
-  "count": 19,
+  "count": 32,
   "key_score_min": 0.0,
   "kind": "stem_intro",
   "live": true,
@@ -1087,6 +1166,302 @@
     "tempo_gap": 0.1181,
     "track_a": "Argy, Omiki, Son Of Son - RITMO",
     "track_b": "Omiki - Todo"
+   },
+   {
+    "at": 36.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -25.0,
+      "drums": -23.4,
+      "other": -35.7,
+      "vocals": -26.9
+     },
+     "order": [
+      "drums"
+     ]
+    },
+    "key_score": 1.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.1485,
+    "track_a": "Travis Scott - FE!N",
+    "track_b": "A$AP Ferg - Plain Jane"
+   },
+   {
+    "at": 432.0,
+    "detail": {
+     "lead_s": 28.0,
+     "levels_db": {
+      "bass": -27.3,
+      "drums": -22.3,
+      "other": -32.4,
+      "vocals": -27.7
+     },
+     "order": [
+      "drums",
+      "vocals",
+      "bass",
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.3127,
+    "track_a": "Hanumankind & Kalmi - Big Dawgs",
+    "track_b": "Big Boss Vette - Pretty Girls Walk"
+   },
+   {
+    "at": 560.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -16.3,
+      "drums": -39.6,
+      "other": -35.5,
+      "vocals": -25.7
+     },
+     "order": [
+      "other"
+     ]
+    },
+    "key_score": 1.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.1003,
+    "track_a": "Beyonce - Naughty Girl",
+    "track_b": "Shubh - Cheques"
+   },
+   {
+    "at": 712.0,
+    "detail": {
+     "lead_s": 8.0,
+     "levels_db": {
+      "bass": -22.7,
+      "drums": -24.6,
+      "other": -34.5,
+      "vocals": -31.7
+     },
+     "order": [
+      "drums",
+      "bass",
+      "other",
+      "vocals"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0257,
+    "track_a": "Sage the Gemini - Gas Pedal",
+    "track_b": "Asha Bhosle - Sharara"
+   },
+   {
+    "at": 804.0,
+    "detail": {
+     "lead_s": 76.0,
+     "levels_db": {
+      "bass": -19.3,
+      "drums": -25.7,
+      "other": -36.9,
+      "vocals": -22.4
+     },
+     "order": [
+      "other",
+      "bass",
+      "vocals",
+      "drums"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.3276,
+    "track_a": "50 Cent - Candy Shop",
+    "track_b": "Neha Kakkar - Dilbar"
+   },
+   {
+    "at": 932.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -28.5,
+      "drums": -21.7,
+      "other": -30.7,
+      "vocals": -30.5
+     },
+     "order": [
+      "vocals",
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0196,
+    "track_a": "Dr Zeus - Kangna",
+    "track_b": "Burna Boy - City Boys"
+   },
+   {
+    "at": 996.0,
+    "detail": {
+     "lead_s": 52.0,
+     "levels_db": {
+      "bass": -23.0,
+      "drums": -23.1,
+      "other": -30.0,
+      "vocals": -31.5
+     },
+     "order": [
+      "drums",
+      "vocals",
+      "bass",
+      "other"
+     ]
+    },
+    "key_score": 1.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0499,
+    "track_a": "Burna Boy - City Boys",
+    "track_b": "Panjabi MC - Jogi"
+   },
+   {
+    "at": 1296.0,
+    "detail": {
+     "lead_s": 36.0,
+     "levels_db": {
+      "bass": -24.2,
+      "drums": -19.9,
+      "other": -28.0,
+      "vocals": -34.5
+     },
+     "order": [
+      "drums",
+      "other",
+      "bass"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0472,
+    "track_a": "Badshah - Kala Chashma",
+    "track_b": "Bad Bunny - Titi Me Pregunto"
+   },
+   {
+    "at": 1432.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -33.1,
+      "drums": -26.2,
+      "other": -38.2,
+      "vocals": -27.9
+     },
+     "order": [
+      "drums",
+      "vocals"
+     ]
+    },
+    "key_score": 0.9,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.178,
+    "track_a": "Avvy Sra & Karan Aujla - White Brown Black",
+    "track_b": "Kevin Lyttle - Turn Me On"
+   },
+   {
+    "at": 1560.0,
+    "detail": {
+     "lead_s": 16.0,
+     "levels_db": {
+      "bass": -53.5,
+      "drums": -23.6,
+      "other": -36.5,
+      "vocals": -27.1
+     },
+     "order": [
+      "other",
+      "bass",
+      "vocals"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0577,
+    "track_a": "Sukhwinder Singh - Beedi",
+    "track_b": "Massano & Zafrir - Ana"
+   },
+   {
+    "at": 1652.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -25.8,
+      "drums": -22.3,
+      "other": -30.5,
+      "vocals": -25.6
+     },
+     "order": [
+      "drums",
+      "vocals",
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0484,
+    "track_a": "Massano & Zafrir - Ana",
+    "track_b": "Benny Benassi - Satisfaction"
+   },
+   {
+    "at": 2339.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -34.9,
+      "drums": -20.0,
+      "other": -30.4,
+      "vocals": -23.2
+     },
+     "order": [
+      "drums",
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.0441,
+    "track_a": "Yo Yo Honey Singh - High Heels Te Nachche",
+    "track_b": "USHER - OMG"
+   },
+   {
+    "at": 3115.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -18.1,
+      "drums": -22.2,
+      "other": -33.0,
+      "vocals": -26.7
+     },
+     "order": [
+      "drums",
+      "other",
+      "vocals"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": 0.3245,
+    "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
+    "track_b": "Drake - Headlines"
    }
   ],
   "stems": true,
@@ -1104,7 +1479,7 @@
    "From 2683 to 2685 seconds, the DJ chopped the phrases 'Y tú no puedes verlo así' and 'Todo el mundo está observando' from 'Piensas En Mi' and played them in a loop.",
    "From 2721 to 2723 seconds, the DJ chopped the phrase 'Todo el mundo está observando' from 'Piensas En Mi' and played it in a loop."
   ],
-  "count": 80,
+  "count": 95,
   "key_score_min": null,
   "kind": "vocal_chop",
   "live": false,
@@ -7122,6 +7497,1143 @@
     "tempo_gap": null,
     "track_a": "Argy, Omnya - Aria (Omiki Remix)",
     "track_b": ""
+   },
+   {
+    "at": 37.75,
+    "detail": {
+     "fragments": [
+      [
+       103.5,
+       104.79
+      ],
+      [
+       94.87,
+       96.42
+      ],
+      [
+       99.08,
+       101.18
+      ],
+      [
+       29.24,
+       31.08
+      ],
+      [
+       93.79,
+       95.05
+      ],
+      [
+       33.97,
+       35.53
+      ],
+      [
+       57.93,
+       59.19
+      ]
+     ],
+     "jumps": 5,
+     "levels_db": {
+      "bass": -25.0,
+      "drums": -23.4,
+      "other": -35.7,
+      "vocals": -26.9
+     },
+     "set_span": [
+      37.75,
+      53.25
+     ],
+     "words": [
+      "Mitran Te Case Chalda Case Chalda",
+      "Ni Mitran Te Case Chalda Case Chalda / Munda Full Pace Chalda Pace Chalda",
+      "Jeb Vicho Feem Labhi Aa Feem Labhi Aa",
+      "Jeb Vicho Feem Labhi Aa Feem Labhi Aa / Mitran Te Case Chalda Case Chalda",
+      "Ni Mitran Te Case Chalda Case Chalda",
+      "Jeb Vicho Feem Labhi Aa Feem Labhi Aa",
+      "Ni Mitran Te Case Chalda Case Chalda"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Diljit Dosanjh - Case",
+    "track_b": ""
+   },
+   {
+    "at": 203.0,
+    "detail": {
+     "fragments": [
+      [
+       102.1,
+       103.4
+      ],
+      [
+       107.97,
+       109.56
+      ],
+      [
+       107.48,
+       108.78
+      ],
+      [
+       53.34,
+       54.59
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -19.8,
+      "drums": -23.2,
+      "other": -33.7,
+      "vocals": -32.2
+     },
+     "set_span": [
+      203.0,
+      212.5
+     ],
+     "words": [
+      "What? / (Homixide, Homixide, Homixide, Homixide)",
+      "Woah, woah (yeah, yeah) / (Homixide, Homixide, Homixide, Homixide)",
+      "Woah, woah (yeah, yeah) / (Homixide, Homixide, Homixide, Homixide)",
+      "I been focused on the future, never on right now (ah)"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Travis Scott - FE!N",
+    "track_b": ""
+   },
+   {
+    "at": 83.0,
+    "detail": {
+     "fragments": [
+      [
+       60.98,
+       62.24
+      ],
+      [
+       73.22,
+       74.46
+      ],
+      [
+       62.27,
+       64.6
+      ],
+      [
+       192.61,
+       194.15
+      ],
+      [
+       111.95,
+       113.22
+      ],
+      [
+       182.73,
+       184.0
+      ],
+      [
+       113.78,
+       115.02
+      ],
+      [
+       67.98,
+       69.49
+      ],
+      [
+       116.1,
+       117.61
+      ],
+      [
+       70.84,
+       72.85
+      ],
+      [
+       189.46,
+       191.24
+      ],
+      [
+       73.44,
+       74.93
+      ],
+      [
+       191.27,
+       192.54
+      ],
+      [
+       74.95,
+       76.49
+      ],
+      [
+       193.07,
+       194.61
+      ],
+      [
+       76.78,
+       79.34
+      ],
+      [
+       196.44,
+       197.71
+      ],
+      [
+       80.15,
+       82.46
+      ]
+     ],
+     "jumps": 5,
+     "levels_db": {
+      "bass": -30.0,
+      "drums": -20.1,
+      "other": -35.9,
+      "vocals": -24.5
+     },
+     "set_span": [
+      83.0,
+      103.75
+     ],
+     "words": [
+      "Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehja, Ve Adiye",
+      "Ni Door Tainnu Lehja, Ve Adiye",
+      "Ni Door Tainnu Lehja, Ve Adiye / Ni Woofer Tu Meri, Meri",
+      "Ni Door Tainnu Lehjja Ve Adiye / Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri / Main Tera Amplifier, Fier",
+      "Main Tera Amplifier, Fier",
+      "Main Tera Amplifier, Fier / Ni Gaddi Saddi Behja Ni Jattiye",
+      "Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehja, Ve Adiye",
+      "Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehjja Ve Adiye",
+      "Ni Door Tainnu Lehja, Ve Adiye",
+      "Ni Door Tainnu Lehjja Ve Adiye",
+      "Ni Door Tainnu Lehja, Ve Adiye / Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri / Main Tera Amplifier, Fier",
+      "Main Tera Amplifier, Fier",
+      "Main Tera Amplifier, Fier"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Imran Khan - Amplifier",
+    "track_b": ""
+   },
+   {
+    "at": 472.75,
+    "detail": {
+     "fragments": [
+      [
+       115.14,
+       116.64
+      ],
+      [
+       51.87,
+       53.13
+      ],
+      [
+       59.21,
+       60.44
+      ],
+      [
+       11.7,
+       13.21
+      ],
+      [
+       55.12,
+       56.37
+      ],
+      [
+       12.96,
+       14.44
+      ],
+      [
+       14.95,
+       16.95
+      ],
+      [
+       11.35,
+       13.12
+      ],
+      [
+       105.05,
+       106.28
+      ],
+      [
+       63.11,
+       64.37
+      ],
+      [
+       8.17,
+       10.22
+      ],
+      [
+       11.47,
+       12.74
+      ],
+      [
+       123.34,
+       124.61
+      ],
+      [
+       15.16,
+       16.42
+      ],
+      [
+       11.38,
+       12.66
+      ],
+      [
+       113.77,
+       115.8
+      ],
+      [
+       8.4,
+       9.9
+      ],
+      [
+       118.56,
+       119.82
+      ]
+     ],
+     "jumps": 6,
+     "levels_db": {
+      "bass": -17.9,
+      "drums": -24.5,
+      "other": -45.8,
+      "vocals": -31.4
+     },
+     "set_span": [
+      472.75,
+      501.0
+     ],
+     "words": [
+      "All the pretty girls walk like this, this, this, this, this",
+      "'Cause all the pretty girls walk like this, this, this, this, this",
+      "Pretty girls walk like this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "'Cause all the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "Pretty girls walk like this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "'Cause all the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "Pretty girls walk like this, this, this, this",
+      "Pretty girls walk like this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "Pretty girls walk like this, this, this, this / All the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Big Boss Vette - Pretty Girls Walk",
+    "track_b": ""
+   },
+   {
+    "at": 517.5,
+    "detail": {
+     "fragments": [
+      [
+       63.32,
+       65.5
+      ],
+      [
+       125.14,
+       126.85
+      ],
+      [
+       165.63,
+       167.32
+      ],
+      [
+       72.96,
+       74.67
+      ],
+      [
+       169.87,
+       171.11
+      ],
+      [
+       134.78,
+       136.0
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -15.7,
+      "drums": -22.5,
+      "other": -30.0,
+      "vocals": -28.5
+     },
+     "set_span": [
+      517.5,
+      533.5
+     ],
+     "words": [
+      "The rhythm's got me feelin' so crazy, babe",
+      "Tonight, I'll be your naughty girl",
+      "I'm calling all my girls",
+      "We gon' turn this party out / I know you want my body",
+      "We gon' turn this party out / I know you want my body",
+      "Tonight, I'll be your naughty girl"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Beyonce - Naughty Girl",
+    "track_b": ""
+   },
+   {
+    "at": 1034.25,
+    "detail": {
+     "fragments": [
+      [
+       20.78,
+       22.57
+      ],
+      [
+       47.54,
+       48.78
+      ],
+      [
+       42.31,
+       43.79
+      ],
+      [
+       43.58,
+       45.07
+      ],
+      [
+       111.55,
+       113.8
+      ],
+      [
+       113.29,
+       115.34
+      ],
+      [
+       47.37,
+       49.41
+      ],
+      [
+       49.44,
+       51.2
+      ],
+      [
+       50.71,
+       52.48
+      ],
+      [
+       119.44,
+       120.95
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -20.1,
+      "drums": -23.7,
+      "other": -32.6,
+      "vocals": -26.7
+     },
+     "set_span": [
+      1034.25,
+      1047.75
+     ],
+     "words": [
+      "F- up the vibe (yeah) / My dick start fallin' like London Bridge",
+      "Mi'o fa Colorado oh, BRKFST mo n fa o / Mi'o dẹ ni mu Jekonmo",
+      "F- that (I-I), sh- (yeah) / Mi'o fa Colorado oh, BRKFST mo n fa o",
+      "Mi'o fa Colorado oh, BRKFST mo n fa o",
+      "Mi'o fa Colorado oh, BRKFST mo n fa o",
+      "Mi'o dẹ ni mu Jekonmo",
+      "Mi'o fa Colorado oh, BRKFST mo n fa o / Mi'o dẹ ni mu Jekonmo",
+      "Mi'o dẹ ni mu Jekonmo / Azul and Champagne in bamboo, oh",
+      "Azul and Champagne in bamboo, oh",
+      "Azul and Champagne in bamboo, oh / I get girls from the ghеtto"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Burna Boy - City Boys",
+    "track_b": ""
+   },
+   {
+    "at": 1445.75,
+    "detail": {
+     "fragments": [
+      [
+       117.79,
+       119.56
+      ],
+      [
+       33.47,
+       34.94
+      ],
+      [
+       175.2,
+       176.4
+      ],
+      [
+       36.33,
+       38.05
+      ],
+      [
+       125.98,
+       127.7
+      ],
+      [
+       128.62,
+       129.86
+      ],
+      [
+       31.97,
+       33.46
+      ],
+      [
+       41.58,
+       43.55
+      ],
+      [
+       165.47,
+       166.7
+      ],
+      [
+       215.06,
+       216.56
+      ]
+     ],
+     "jumps": 7,
+     "levels_db": {
+      "bass": -24.9,
+      "drums": -24.8,
+      "other": -36.6,
+      "vocals": -26.5
+     },
+     "set_span": [
+      1445.75,
+      1463.0
+     ],
+     "words": [
+      "Me las vo' a llevar a toa' pa' un VIP, un VIP",
+      "Ey, saluden a Tití / Vamo' a tirarnos un selfie, say \"Cheese\", ey",
+      "Quieren tener mi primogénito / Ey, y llevarse el crédito",
+      "Vamo' a tirarnos un selfie, say \"Cheese\", ey / Que sonrían las que ya le' metí",
+      "Que sonrían las que ya le' metí / En un VIP, un VIP",
+      "En un VIP, un VIP / Ey, saluden a Tití",
+      "Ey, saluden a Tití",
+      "Ey, saluden a Tití / Vamo' a tirarnos un selfie, say \"Cheese\"",
+      "Sorry, yo no confío, yo no confío / Nah, ni en mí mismo confío",
+      "No te enamores de mí / Sorry, yo soy así, yeah"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Bad Bunny - Titi Me Pregunto",
+    "track_b": ""
+   },
+   {
+    "at": 1755.25,
+    "detail": {
+     "fragments": [
+      [
+       179.89,
+       181.37
+      ],
+      [
+       144.18,
+       145.64
+      ],
+      [
+       30.67,
+       31.91
+      ],
+      [
+       9.47,
+       10.71
+      ],
+      [
+       30.77,
+       32.01
+      ],
+      [
+       144.29,
+       145.53
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -34.2,
+      "drums": -41.7,
+      "other": -29.5,
+      "vocals": -29.5
+     },
+     "set_span": [
+      1755.25,
+      1761.75
+     ],
+     "words": [
+      "'Til I can get my satisfaction / Push me",
+      "Satisfaction",
+      "",
+      "Satisfaction",
+      "",
+      "Satisfaction"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Benny Benassi - Satisfaction",
+    "track_b": ""
+   },
+   {
+    "at": 1800.5,
+    "detail": {
+     "fragments": [
+      [
+       168.62,
+       170.1
+      ],
+      [
+       79.74,
+       81.48
+      ],
+      [
+       173.13,
+       174.64
+      ],
+      [
+       143.2,
+       144.95
+      ],
+      [
+       82.76,
+       84.24
+      ],
+      [
+       145.49,
+       146.71
+      ],
+      [
+       54.8,
+       56.31
+      ],
+      [
+       86.26,
+       87.52
+      ],
+      [
+       27.35,
+       28.61
+      ],
+      [
+       151.0,
+       152.25
+      ],
+      [
+       151.77,
+       153.0
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -22.2,
+      "drums": -21.5,
+      "other": -36.0,
+      "vocals": -28.9
+     },
+     "set_span": [
+      1800.5,
+      1815.5
+     ],
+     "words": [
+      "But down in Jamaica, we give it to you hot like a sauna / Well, woman the way the time cold, I wanna be keepin' you warm",
+      "Well, woman the way the time cold, I wanna be keepin' you warm / I got the right temperature fi shelter you from the storm",
+      "I got the right temperature fi shelter you from the storm",
+      "I got the right temperature fi shelter you from the storm",
+      "I got the right temperature fi shelter you from the storm",
+      "I got the right temperature fi shelter you from the storm / Oh Lord, gyal, I got the right tactics to turn you on",
+      "Oh Lord, gyal, I got the right tactics to turn you on",
+      "Oh Lord, gyal, I got the right tactics to turn you on",
+      "And, girl, I wanna be the papa, you can be the mom, oh-oh",
+      "And, girl, I wanna be the papa, you can be the mom, oh-oh",
+      "And, girl, I wanna be the papa, you can be the mom, oh-oh"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sean Paul - Temperature",
+    "track_b": ""
+   },
+   {
+    "at": 1920.75,
+    "detail": {
+     "fragments": [
+      [
+       118.48,
+       119.73
+      ],
+      [
+       189.38,
+       190.64
+      ],
+      [
+       167.95,
+       169.21
+      ],
+      [
+       146.49,
+       147.75
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -69.9,
+      "drums": -22.4,
+      "other": -35.2,
+      "vocals": -26.5
+     },
+     "set_span": [
+      1920.75,
+      1929.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Lehmber Hussainpuri - Sadi Gali",
+    "track_b": ""
+   },
+   {
+    "at": 2107.75,
+    "detail": {
+     "fragments": [
+      [
+       1.47,
+       2.7
+      ],
+      [
+       99.24,
+       100.49
+      ],
+      [
+       292.34,
+       293.59
+      ],
+      [
+       17.82,
+       19.3
+      ],
+      [
+       123.72,
+       124.97
+      ],
+      [
+       292.8,
+       294.05
+      ],
+      [
+       292.41,
+       293.66
+      ],
+      [
+       220.71,
+       222.23
+      ],
+      [
+       244.39,
+       245.62
+      ],
+      [
+       123.62,
+       124.85
+      ]
+     ],
+     "jumps": 5,
+     "levels_db": {
+      "bass": -21.0,
+      "drums": -19.0,
+      "other": -33.7,
+      "vocals": -26.2
+     },
+     "set_span": [
+      2107.75,
+      2122.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "DJ LaiKa - Sounds From Heaven",
+    "track_b": ""
+   },
+   {
+    "at": 2183.0,
+    "detail": {
+     "fragments": [
+      [
+       198.34,
+       199.6
+      ],
+      [
+       221.17,
+       222.4
+      ],
+      [
+       23.36,
+       24.59
+      ],
+      [
+       76.63,
+       77.88
+      ],
+      [
+       50.34,
+       51.57
+      ],
+      [
+       50.2,
+       51.71
+      ],
+      [
+       22.22,
+       23.71
+      ],
+      [
+       50.13,
+       51.62
+      ],
+      [
+       24.71,
+       26.22
+      ],
+      [
+       221.56,
+       222.82
+      ],
+      [
+       50.27,
+       51.53
+      ]
+     ],
+     "jumps": 6,
+     "levels_db": {
+      "bass": -31.6,
+      "drums": -23.0,
+      "other": -31.5,
+      "vocals": -26.8
+     },
+     "set_span": [
+      2183.0,
+      2199.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "DJ LaiKa - Sounds From Heaven",
+    "track_b": ""
+   },
+   {
+    "at": 2841.25,
+    "detail": {
+     "fragments": [
+      [
+       59.74,
+       61.0
+      ],
+      [
+       127.47,
+       129.29
+      ],
+      [
+       221.21,
+       222.45
+      ],
+      [
+       129.03,
+       131.05
+      ],
+      [
+       65.16,
+       66.91
+      ],
+      [
+       132.42,
+       133.68
+      ],
+      [
+       66.97,
+       68.2
+      ],
+      [
+       133.68,
+       135.99
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -39.0,
+      "drums": -23.1,
+      "other": -43.7,
+      "vocals": -30.3
+     },
+     "set_span": [
+      2841.25,
+      2851.0
+     ],
+     "words": [
+      "(Ishq Tera Tadpaave) / Oh-ho-ho-ho, Ho",
+      "Oh-ho-ho-ho, Ho-ho / Ye Ishq Tera Tadpaave",
+      "Oh-ho-ho-ho, Ho / Ye Ishq Tera Tadpaave",
+      "Ye Ishq Tera Tadpaave",
+      "Ye Ishq Tera Tadpaave / (Oh-ho-ho-ho, Ho-ho)",
+      "(Oh-ho-ho-ho, Ho-ho)",
+      "(Oh-ho-ho-ho, Ho-ho) / (Ishq Tera Tadpaave)",
+      "(Oh-ho-ho-ho, Ho-ho) / (Ishq Tera Tadpaave)"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sukhbir & Ikka - Oh Ho Ho Ho (Remix)",
+    "track_b": ""
+   },
+   {
+    "at": 2924.0,
+    "detail": {
+     "fragments": [
+      [
+       63.79,
+       65.28
+      ],
+      [
+       65.32,
+       66.57
+      ],
+      [
+       147.52,
+       149.03
+      ],
+      [
+       68.43,
+       69.94
+      ],
+      [
+       69.45,
+       71.24
+      ],
+      [
+       70.75,
+       72.26
+      ],
+      [
+       151.9,
+       153.16
+      ],
+      [
+       72.56,
+       73.79
+      ],
+      [
+       156.04,
+       157.55
+      ],
+      [
+       156.08,
+       157.6
+      ],
+      [
+       160.43,
+       161.68
+      ],
+      [
+       208.79,
+       210.05
+      ],
+      [
+       82.38,
+       83.9
+      ],
+      [
+       189.52,
+       190.78
+      ],
+      [
+       83.68,
+       84.92
+      ],
+      [
+       86.03,
+       87.77
+      ],
+      [
+       87.56,
+       89.07
+      ],
+      [
+       162.38,
+       164.12
+      ],
+      [
+       170.5,
+       171.78
+      ],
+      [
+       219.15,
+       220.38
+      ]
+     ],
+     "jumps": 7,
+     "levels_db": {
+      "bass": -35.2,
+      "drums": -26.2,
+      "other": -37.3,
+      "vocals": -27.6
+     },
+     "set_span": [
+      2924.0,
+      2952.0
+     ],
+     "words": [
+      "ਮੇਰੇ ਨਾਲ ਕਰ ਲੈ ਜ਼ਰਾ",
+      "",
+      "",
+      "ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ",
+      "ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ / ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ",
+      "ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ",
+      "ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ",
+      "ਦਿਲ ਦੇਣਾ, ਦਿਲ ਲੈਣਾ / है सौदा-, है सौदा-",
+      "है सौदा-, है सौदा-",
+      "है सौदा-, है सौदा-",
+      "है सौदा-, है सौदा-",
+      "",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      "है सौदा खरा-खरा, है सौदा खरा-खरा",
+      ""
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Diljit Dosanjh - Sauda Khara Khara",
+    "track_b": ""
+   },
+   {
+    "at": 3166.5,
+    "detail": {
+     "fragments": [
+      [
+       52.87,
+       54.38
+      ],
+      [
+       188.03,
+       189.78
+      ],
+      [
+       61.03,
+       62.53
+      ],
+      [
+       183.38,
+       184.63
+      ],
+      [
+       63.53,
+       66.04
+      ],
+      [
+       66.29,
+       67.77
+      ],
+      [
+       195.02,
+       196.54
+      ],
+      [
+       196.03,
+       198.02
+      ],
+      [
+       69.29,
+       70.78
+      ],
+      [
+       185.23,
+       186.96
+      ],
+      [
+       199.02,
+       200.54
+      ],
+      [
+       193.4,
+       194.89
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -20.8,
+      "drums": -23.5,
+      "other": -33.6,
+      "vocals": -28.2
+     },
+     "set_span": [
+      3166.5,
+      3180.5
+     ],
+     "words": [
+      "Drop the top and blow the brains, woo (I said I like it like that)",
+      "",
+      "Oh, I need the dollars (I said I like it like that), cha-ching / Beat it up like piñatas (I said I like it like), uh",
+      "",
+      "Beat it up like piñatas (I said I like it like), uh / Tell the driver, \"Close the curtains\" (I said I like it like that)",
+      "Tell the driver, \"Close the curtains\" (I said I like it like that)",
+      "",
+      "",
+      "Bad bitch make you nervous (I said I like it) / Cardi B",
+      "",
+      "",
+      ""
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
+    "track_b": ""
    }
   ],
   "stems": true,
@@ -8066,7 +9578,7 @@
    "At 1656s, the DJ played the chorus 'Todo lo que dice sé que va a doler, va a volver' from 'casino143 (Rue De La Fortuna Remix)' at 125.5s, then the line 'Resultó de nuevo que faltó creer / Suele ser mentira si dicen volver' from 112.1s, and looped the original chorus again from 43.8s.",
    "At 2198s, the DJ played the repeated line 'Podrías mirarme como tú quieras' from 'Film Scene Soundtrack' at 37.5s, then played the same line again from 52.8s."
   ],
-  "count": 84,
+  "count": 106,
   "key_score_min": null,
   "kind": "vocal_resequence",
   "live": false,
@@ -11464,6 +12976,917 @@
     "set_id": "Y5rIWdB8rQk",
     "tempo_gap": null,
     "track_a": "Lost Frequencies, Argy & rhys from the sticks - Summer Skies",
+    "track_b": ""
+   },
+   {
+    "at": 37.0,
+    "detail": {
+     "levels_db": {
+      "bass": -25.0,
+      "drums": -23.4,
+      "other": -35.7,
+      "vocals": -26.9
+     },
+     "set_span": [
+      37.0,
+      52.0
+     ],
+     "source_lines": [
+      [
+       93.2,
+       106.3
+      ],
+      [
+       31.7,
+       37.0
+      ]
+     ],
+     "words": [
+      "Ni Mitran Te Case Chalda Case Chalda / Munda Full Pace Chalda Pace Chalda / Jeb Vicho Feem Labhi Aa Feem Labhi Aa / Mitran Te Case Chalda Case Chalda / Jeb Vicho Feem Labhi Aa Feem Labhi Aa",
+      "Mitran Te Case Chalda Case Chalda / Jeb Vicho Feem Labhi Aa Feem Labhi Aa / Mitran Te Case Chalda Case Chalda"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Diljit Dosanjh - Case",
+    "track_b": ""
+   },
+   {
+    "at": 58.0,
+    "detail": {
+     "levels_db": {
+      "bass": -49.0,
+      "drums": -21.0,
+      "other": -28.9,
+      "vocals": -25.4
+     },
+     "set_span": [
+      58.0,
+      105.0
+     ],
+     "source_lines": [
+      [
+       35.0,
+       62.9
+      ],
+      [
+       63.0,
+       70.2
+      ],
+      [
+       185.3,
+       191.4
+      ],
+      [
+       72.4,
+       77.4
+      ],
+      [
+       77.5,
+       83.6
+      ]
+     ],
+     "words": [
+      "Kaaliyan Baariyan Ve Gaddiyaan Nu Main Lawaan / Speed Main 220 Di Chalaan / Police De Saamne Main Nai Rukda / I'm A Night Rider / Breakaan Maar Maar Tire Di Main Cheekh Kad Da / Sare Loki Takde Ve Ki Hogeya / Lagda Ve Ajj Mera Dil Ruk Gya, Onu Main Puchda / Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehja, Ve Adiye",
+      "Ni Door Tainnu Lehja, Ve Adiye / Ni Woofer Tu Meri, Meri / Main Tera Amplifier, Fier / Ni Gaddi Saddi Behja Ni Jattiye",
+      "Main Tera Amplifier, Fier / Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehjja Ve Adiye",
+      "Ni Gaddi Saddi Behja Ni Jattiye / Ni Door Tainnu Lehja, Ve Adiye / Ni Woofer Tu Meri, Meri",
+      "Ni Woofer Tu Meri, Meri / Main Tera Amplifier, Fier / Gaddi Meri Tainnu Hi Awaaz Mardi"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Imran Khan - Amplifier",
+    "track_b": ""
+   },
+   {
+    "at": 148.0,
+    "detail": {
+     "levels_db": {
+      "bass": -87.1,
+      "drums": -26.9,
+      "other": -31.3,
+      "vocals": -23.8
+     },
+     "set_span": [
+      148.0,
+      163.0
+     ],
+     "source_lines": [
+      [
+       10.1,
+       16.1
+      ],
+      [
+       81.9,
+       92.8
+      ]
+     ],
+     "words": [
+      "Yeah / Ride with the mob, Alhamdulillah",
+      "Ride with the mob, Alhamdulillah / Check in with me and do your job / Ferg is the name / Ben Baller did the chain / Tourneau for the watch / Presi Plain Jane"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "A$AP Ferg - Plain Jane",
+    "track_b": ""
+   },
+   {
+    "at": 473.0,
+    "detail": {
+     "levels_db": {
+      "bass": -17.9,
+      "drums": -24.5,
+      "other": -45.8,
+      "vocals": -31.4
+     },
+     "set_span": [
+      473.0,
+      502.0
+     ],
+     "source_lines": [
+      [
+       104.7,
+       110.7
+      ],
+      [
+       12.7,
+       21.7
+      ],
+      [
+       113.0,
+       118.1
+      ]
+     ],
+     "words": [
+      "'Cause all the pretty girls walk like this, this, this, this, this / Pretty girls walk like this, this, this, this",
+      "All the pretty girls walk like this, this, this, this, this / Pretty girls walk like this, this, this, this / All the pretty girls walk like- / Big Boss Vette (yeah)",
+      "Pretty girls walk like this, this, this, this / All the pretty girls walk like this, this, this, this, this"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Big Boss Vette - Pretty Girls Walk",
+    "track_b": ""
+   },
+   {
+    "at": 503.0,
+    "detail": {
+     "levels_db": {
+      "bass": -16.5,
+      "drums": -23.1,
+      "other": -31.0,
+      "vocals": -29.8
+     },
+     "set_span": [
+      503.0,
+      537.0
+     ],
+     "source_lines": [
+      [
+       107.3,
+       112.2
+      ],
+      [
+       52.6,
+       57.4
+      ],
+      [
+       57.2,
+       63.0
+      ],
+      [
+       61.9,
+       66.8
+      ],
+      [
+       123.2,
+       128.1
+      ],
+      [
+       167.2,
+       172.1
+      ],
+      [
+       77.0,
+       81.8
+      ]
+     ],
+     "words": [
+      "Baby, the minute I feel your energy / The vibe is just takin' over me / I start feelin' so crazy, babe",
+      "The vibe is just takin' over me / I start feelin' so crazy, babe / Lately, I feel the funk coming over me",
+      "Lately, I feel the funk coming over me / I don't know what's gotten into me / The rhythm's got me feelin' so crazy, babe",
+      "I don't know what's gotten into me / The rhythm's got me feelin' so crazy, babe / Tonight, I'll be your naughty girl",
+      "The rhythm's got me feelin' so crazy, babe / Tonight, I'll be your naughty girl / I'm calling all my girls",
+      "I'm calling all my girls / We gon' turn this party out / I know you want my body / Tonight, I'll be your naughty girl",
+      "Tonight, I'll be your naughty girl / I'm calling all my girls / I see you look me up and down"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Beyonce - Naughty Girl",
+    "track_b": ""
+   },
+   {
+    "at": 550.0,
+    "detail": {
+     "levels_db": {
+      "bass": -16.5,
+      "drums": -34.5,
+      "other": -33.2,
+      "vocals": -30.5
+     },
+     "set_span": [
+      550.0,
+      569.0
+     ],
+     "source_lines": [
+      [
+       5.0,
+       15.4
+      ],
+      [
+       57.1,
+       65.7
+      ]
+     ],
+     "words": [
+      "Deebo, any rap nigga, he a free throw / Man down, call an amberlamps, tell him, \"Breathe, bro\" / Nail a nigga to the cross, he walk around like Teezo / What's up with these jabroni-ass niggas tryna see Compton? / The industry can hate me, fuck 'em all and they mama",
+      "Wop, wop, wop, wop, wop, I'ma do my stuff / Why you trollin' like a bitch? Ain't you tired? / Tryna strike a chord and it's probably A-Minor / ♪"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Kendrick Lamar - Not Like Us",
+    "track_b": ""
+   },
+   {
+    "at": 760.0,
+    "detail": {
+     "levels_db": {
+      "bass": -32.4,
+      "drums": -37.3,
+      "other": -29.2,
+      "vocals": -28.0
+     },
+     "set_span": [
+      760.0,
+      779.0
+     ],
+     "source_lines": [
+      [
+       128.5,
+       133.4
+      ],
+      [
+       72.4,
+       79.3
+      ],
+      [
+       136.4,
+       142.3
+      ],
+      [
+       22.2,
+       29.1
+      ]
+     ],
+     "words": [
+      "Slow down, grab the wall / Wiggle like you trying to make yo ass fall off / Hella thick I wanna smash 'em all",
+      "Wiggle like you trying to make yo ass fall off / Hella thick I wanna smash 'em all / Now speed up / Gas pedal / Gas pedal",
+      "Gas pedal / Gas pedal / Gas pedal / Gas pedal / Gas pedal",
+      "Gas pedal / Gas pedal (You already know me, S-A-G-E) / Now speed up / Gas pedal / Gas pedal (Look, ah) / Gas pedal"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sage the Gemini - Gas Pedal",
+    "track_b": ""
+   },
+   {
+    "at": 1034.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.1,
+      "drums": -23.7,
+      "other": -32.6,
+      "vocals": -26.7
+     },
+     "set_span": [
+      1034.0,
+      1055.0
+     ],
+     "source_lines": [
+      [
+       39.8,
+       46.8
+      ],
+      [
+       112.0,
+       121.2
+      ],
+      [
+       52.0,
+       61.1
+      ]
+     ],
+     "words": [
+      "Go shoppin' o / F- that (I-I), sh- (yeah) / Mi'o fa Colorado oh, BRKFST mo n fa o",
+      "Mi'o fa Colorado oh, BRKFST mo n fa o / Mi'o dẹ ni mu Jekonmo / Azul and Champagne in bamboo, oh / I get girls from the ghеtto",
+      "Azul and Champagne in bamboo, oh / I get girls from the ghеtto / Bare girls from uptown / That's the life of a city boy, uh-uh-ahh"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Burna Boy - City Boys",
+    "track_b": ""
+   },
+   {
+    "at": 1166.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.0,
+      "drums": -23.2,
+      "other": -32.2,
+      "vocals": -29.3
+     },
+     "set_span": [
+      1166.0,
+      1205.0
+     ],
+     "source_lines": [
+      [
+       35.9,
+       57.8
+      ],
+      [
+       95.3,
+       115.0
+      ]
+     ],
+     "words": [
+      "Huh? They ain't talkin' 'bout nothin', hmm / Peekaboo, I just put them boogers in my chain / Peekaboo, eighty-pointers like a Kobe game / Peekaboo, 7.62s'll so make 'em plank / Peekaboo, poppin' out, you better not smut my name / Peekaboo, put two foreigns on the 405 / Peekaboo, cacio e pepe if I'm doin' pasta / Peekaboo, why you actin' tough on IG Live? / Peekaboo, you know my lil' niggas off they rocker / Peekaboo, surprise, bitch, it's that nigga checkin' cheese",
+      "Hey, hey, hey, hey, ain't the one to play with / Hey, hey, hey, hey, hey, pull off in a Lam' / Double park' it all at Tam's, Mr. Get-Off-On-Your-Mans / If he hatin', disrespect, you better follow up with hands / Losses to the neck, but now I'm trophied up, I'm sayin', like / Beam-bap-boom-boom-boom-bap-bam / The type of shit I'm on, you wouldn't understand / The type of skits I'm on, you wouldn't understand / Big dawg business, I would not hold your hand"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Kendrick Lamar - peekaboo",
+    "track_b": ""
+   },
+   {
+    "at": 1444.0,
+    "detail": {
+     "levels_db": {
+      "bass": -24.9,
+      "drums": -24.8,
+      "other": -36.6,
+      "vocals": -26.5
+     },
+     "set_span": [
+      1444.0,
+      1462.0
+     ],
+     "source_lines": [
+      [
+       116.0,
+       122.1
+      ],
+      [
+       31.3,
+       40.0
+      ],
+      [
+       126.7,
+       133.5
+      ]
+     ],
+     "words": [
+      "Pero ven acá, muchacho, y ¿para qué tú quiere' tanta novia? / Me las vo' a llevar a toa' pa' un VIP, un VIP / Ey, saluden a Tití",
+      "Me las vo' a llevar a toa' pa' un VIP, un VIP / Ey, saluden a Tití / Vamo' a tirarnos un selfie, say \"Cheese\", ey / Que sonrían las que ya le' metí / En un VIP, un VIP",
+      "Que sonrían las que ya le' metí / En un VIP, un VIP / Ey, saluden a Tití / Vamo' a tirarnos un selfie, say \"Cheese\""
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Bad Bunny - Titi Me Pregunto",
+    "track_b": ""
+   },
+   {
+    "at": 1503.0,
+    "detail": {
+     "levels_db": {
+      "bass": -24.6,
+      "drums": -24.0,
+      "other": -40.0,
+      "vocals": -26.2
+     },
+     "set_span": [
+      1503.0,
+      1526.0
+     ],
+     "source_lines": [
+      [
+       29.4,
+       34.4
+      ],
+      [
+       146.5,
+       152.6
+      ],
+      [
+       38.7,
+       53.0
+      ]
+     ],
+     "words": [
+      "Ho 3 Shaunk Ne Patt Honiye / Jatt De Munde De / Ho Ghode Chitte Kudiyan Brown",
+      "Ho 3 Shaunk Ne Patt Honiye / Jatt De Munde De / Ho Ghode Chitte Kudiyan Brown / Gaddiyan Kaaliyan Ni / Ho Ghode Chitte Kudiyan Brown",
+      "Ho Ghode Chitte Kudiyan Brown / Gaddiyan Kaaliyan Ni / Ho Shoe Versace Jatta De Kake / Kanni Waaliyan Ni / Ho Babbar Sher Ae Full Daler Ae / 7 Denaliyan Ni / Ho Ghode Chitte Kudiyan Brown / Gaddiyan Kaaliyan Ni / Manne Ghaghra Dewayi Do"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Avvy Sra & Karan Aujla - White Brown Black",
+    "track_b": ""
+   },
+   {
+    "at": 1641.0,
+    "detail": {
+     "levels_db": {
+      "bass": -22.5,
+      "drums": -32.1,
+      "other": -28.7,
+      "vocals": -24.7
+     },
+     "set_span": [
+      1641.0,
+      1656.0
+     ],
+     "source_lines": [
+      [
+       77.0,
+       83.1
+      ],
+      [
+       104.2,
+       110.3
+      ]
+     ],
+     "words": [
+      "बीड़ी जलई ले जिगर से, पिया / जिगर मा बड़ी आग है",
+      "जे दुनिया बड़ी ठाँक है / हाँ, बीड़ी जलई ले जिगर से, पिया / जिगर मा बड़ी आग है"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sukhwinder Singh - Beedi",
+    "track_b": ""
+   },
+   {
+    "at": 1768.0,
+    "detail": {
+     "levels_db": {
+      "bass": -26.6,
+      "drums": -22.2,
+      "other": -32.0,
+      "vocals": -26.7
+     },
+     "set_span": [
+      1768.0,
+      1816.0
+     ],
+     "source_lines": [
+      [
+       136.1,
+       148.1
+      ],
+      [
+       53.9,
+       59.9
+      ],
+      [
+       59.8,
+       80.9
+      ],
+      [
+       171.1,
+       178.1
+      ],
+      [
+       84.0,
+       92.0
+      ]
+     ],
+     "words": [
+      "Everyting 'bout you baby girl, can you hear when me utter? / Well, woman the way the time cold, I wanna be keepin' you warm / I got the right temperature fi shelter you from the storm / Oh Lord, gyal, I got the right tactics to turn you on",
+      "Oh Lord, gyal, I got the right tactics to turn you on / And, girl, I wanna be the papa, you can be the mom, oh-oh",
+      "And, girl, I wanna be the papa, you can be the mom, oh-oh / Bumper exposed and gyal you got your chest out / But you no wasters, cah gal you impress out (oh-oh) / And if you des out a me, you fi test out / Cah I got the remedy to make you de-stress out (oh-oh) / Mi haffi flaunt it becah mi God bless out / And girl, if you want it, you haffi confess out (oh-oh) / Ah no lie, weh we need set speed, haffi test the mattress out / Well, woman the way the time cold, I wanna be keepin' you warm / I got the right temperature fi shelter you from the storm",
+      "Well, woman the way the time cold, I wanna be keepin' you warm / I got the right temperature fi shelter you from the storm / Oh Lord, gyal, I got the right tactics to turn you on",
+      "I got the right temperature fi shelter you from the storm / Oh Lord, gyal, I got the right tactics to turn you on / And, girl, I wanna be the papa, you can be the mom, oh-oh"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sean Paul - Temperature",
+    "track_b": ""
+   },
+   {
+    "at": 1753.0,
+    "detail": {
+     "levels_db": {
+      "bass": -34.2,
+      "drums": -41.7,
+      "other": -29.5,
+      "vocals": -29.5
+     },
+     "set_span": [
+      1753.0,
+      1762.0
+     ],
+     "source_lines": [
+      [
+       9.8,
+       14.7
+      ],
+      [
+       172.3,
+       177.2
+      ]
+     ],
+     "words": [
+      "Satisfaction",
+      "Push me / And then just touch me / 'Til I can get my satisfaction"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Benny Benassi - Satisfaction",
+    "track_b": ""
+   },
+   {
+    "at": 1991.0,
+    "detail": {
+     "levels_db": {
+      "bass": -24.0,
+      "drums": -19.8,
+      "other": -27.7,
+      "vocals": -27.3
+     },
+     "set_span": [
+      1991.0,
+      2033.0
+     ],
+     "source_lines": [
+      [
+       21.4,
+       54.4
+      ],
+      [
+       251.8,
+       259.8
+      ],
+      [
+       195.0,
+       200.0
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Lehmber Hussainpuri - Sadi Gali",
+    "track_b": ""
+   },
+   {
+    "at": 2178.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.4,
+      "drums": -24.1,
+      "other": -31.3,
+      "vocals": -25.8
+     },
+     "set_span": [
+      2178.0,
+      2189.0
+     ],
+     "source_lines": [
+      [
+       217.7,
+       222.3
+      ],
+      [
+       14.0,
+       19.0
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "DJ LaiKa - Sounds From Heaven",
+    "track_b": ""
+   },
+   {
+    "at": 2259.0,
+    "detail": {
+     "levels_db": {
+      "bass": -25.4,
+      "drums": -31.9,
+      "other": -33.1,
+      "vocals": -26.6
+     },
+     "set_span": [
+      2259.0,
+      2303.0
+     ],
+     "source_lines": [
+      [
+       24.6,
+       29.6
+      ],
+      [
+       28.6,
+       51.6
+      ],
+      [
+       106.9,
+       114.9
+      ],
+      [
+       60.6,
+       68.5
+      ]
+     ],
+     "words": [
+      "(Hey) where you go, girl, I'm gonna follow / (Hey) what you want, girl, just let me know, oh / (Hey) you can be my chhammak-chhallo",
+      "(Hey) what you want, girl, just let me know, oh / (Hey) you can be my chhammak-chhallo / (Hey) shawty, I'm gonna get ya, you know I'm gonna get ya / (Hey) you know I'll even let you, let you be my chhammak-chhallo / (Hey) kaisa sharmaana? Aaja, nach ke dikha de / (Hey) aa, meri ho le, aaja, parda gira de / (Hey) aa, meri ankhiyon se ankhiyaan mila le / (Hey) haan, tu na nakhre dikha",
+      "(Hey) aa, meri ankhiyon se ankhiyaan mila le / (Hey) haan, tu na nakhre dikha / (Hey) wanna be my chhammak-chhallo? Oh, oh",
+      "(Hey) wanna be my chhammak-chhallo? Oh, oh / (Hey) wanna be my chhammak-chhallo? Oh, oh / (Hey) wanna be my chhammak-chhallo? Oh, oh / Hey, hey, hey, hey"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Akon - Chammak Challo",
+    "track_b": ""
+   },
+   {
+    "at": 2470.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.9,
+      "drums": -28.1,
+      "other": -37.2,
+      "vocals": -27.7
+     },
+     "set_span": [
+      2470.0,
+      2497.0
+     ],
+     "source_lines": [
+      [
+       96.5,
+       102.5
+      ],
+      [
+       18.1,
+       40.7
+      ]
+     ],
+     "words": [
+      "She shake it like jelly (she shake it like jelly, damn, damn) / Hunnit bands in Chanely (hunnit bands in Chanely) / But I'm still shakin' ass in the deli (grrah, grrah) / With my bitch gettin' dirty (with my bitch gettin' dirty)",
+      "But I'm still shakin' ass in the deli (but I'm still shakin' ass, grrah, grrah) / With my bitch gettin' dirty (with my bitch gettin' dirty) / He like him a wetty (he like him a wetty) / He want the WAP, but I just want the fetty (grrah, grrah) / And I'm baggin' his partner, I'm petty (grrah, grrah) / Call me that bee while he eatin' my honey (eatin' my honey, damn) / You know niggas like bitches with money (bitches with money) / I get a lot (I get a lot) / Takin' her spot (grrah, grrah, grrah) / If you ain't cookin' then get off the pot / My name Ice but I always stay hot / Passenger princess, he pass me his knock (grrah, grrah) / Baddest lil' bitch from my block / Me and baddies be gettin' along / So they always be singin' my song"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Ice Spice - Deli",
+    "track_b": ""
+   },
+   {
+    "at": 2810.0,
+    "detail": {
+     "levels_db": {
+      "bass": -34.0,
+      "drums": -34.0,
+      "other": -29.3,
+      "vocals": -38.5
+     },
+     "set_span": [
+      2810.0,
+      2852.0
+     ],
+     "source_lines": [
+      [
+       24.1,
+       30.0
+      ],
+      [
+       37.7,
+       43.8
+      ],
+      [
+       114.3,
+       119.4
+      ],
+      [
+       58.4,
+       63.5
+      ],
+      [
+       127.7,
+       136.9
+      ]
+     ],
+     "words": [
+      "",
+      "Rok Na Paava Akhiyaan Vichon Gam Diyan Barsaatan Nu / Taare Gin-gin Yaad 'ch Teri Main Taan Jaagaan Raatan Nu / Rok Na Paava Akhiyaan Vichon Gam Diyan Barsaatan Nu",
+      "Oh-ho-ho-ho, Oh-ho-ho-ho / Oh-ho-ho-ho, Ho / Ye Ishq Tera Tadpaave",
+      "(Ishq Tera Tadpaave) / Oh-ho-ho-ho, Ho / Ye Ishq Tera Tadpaave",
+      "Oh-ho-ho-ho, Ho-ho / Ye Ishq Tera Tadpaave / (Oh-ho-ho-ho, Ho-ho) / (Ishq Tera Tadpaave)"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Sukhbir & Ikka - Oh Ho Ho Ho (Remix)",
+    "track_b": ""
+   },
+   {
+    "at": 2887.0,
+    "detail": {
+     "levels_db": {
+      "bass": -32.4,
+      "drums": -26.8,
+      "other": -35.0,
+      "vocals": -24.8
+     },
+     "set_span": [
+      2887.0,
+      2928.0
+     ],
+     "source_lines": [
+      [
+       25.4,
+       30.6
+      ],
+      [
+       29.7,
+       35.8
+      ],
+      [
+       36.9,
+       47.1
+      ],
+      [
+       58.6,
+       63.7
+      ],
+      [
+       137.9,
+       143.9
+      ]
+     ],
+     "words": [
+      "(Slow it down) / ओ, एक तेरे संग यारा आँख लड़ने लगी / आँख लड़-लड़ के आगे बढ़ने लगी",
+      "ओ, एक तेरे संग यारा आँख लड़ने लगी / आँख लड़-लड़ के आगे बढ़ने लगी",
+      "एक तेरे संग यारा आँख लड़ने लगी / आँख लड़-लड़ के आगे बढ़ने लगी / ओ, तेरे दिल के इशारे ये तो पढ़ने लगी / आँख लड़-लड़ के आगे बढ़ने लगी",
+      "तेरे पीछे पड़ा / ਮੇਰੇ ਨਾਲ ਕਰ ਲੈ ਜ਼ਰਾ",
+      "ओ, जट्ट senti हुआ / ओ, दिल को तूने छुआ / जट्ट senti हुआ / ਮੇਰੇ ਨਾਲ ਕਰ ਲੈ ਜ਼ਰਾ"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Diljit Dosanjh - Sauda Khara Khara",
+    "track_b": ""
+   },
+   {
+    "at": 3054.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.9,
+      "drums": -20.2,
+      "other": -35.2,
+      "vocals": -28.0
+     },
+     "set_span": [
+      3054.0,
+      3090.0
+     ],
+     "source_lines": [
+      [
+       126.2,
+       132.2
+      ],
+      [
+       134.1,
+       139.1
+      ],
+      [
+       40.7,
+       51.7
+      ],
+      [
+       54.7,
+       59.7
+      ]
+     ],
+     "words": [
+      "But I can't right now so, baby, kiss me through the phone (kiss me through the phone) / I'll see you later on (later on)",
+      "Kiss me through the phone (kiss me through the phone) / See you when I get home (when I get home)",
+      "Baby, I know that you like me, you my future wifey / Soulja Boy Tell 'Em, yeah / You can be my Bonnie, I can be your Clyde / You can be my wife, text me, call me / I need you in my life, yeah, all day, everyday I need ya",
+      "And every time I see ya, my feelings get deeper / I miss ya, I miss ya, I really wanna kiss you, but I can't"
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Soulja Boy - Kiss Me Thru the Phone",
+    "track_b": ""
+   },
+   {
+    "at": 3158.0,
+    "detail": {
+     "levels_db": {
+      "bass": -22.9,
+      "drums": -25.0,
+      "other": -37.1,
+      "vocals": -26.6
+     },
+     "set_span": [
+      3158.0,
+      3183.0
+     ],
+     "source_lines": [
+      [
+       50.8,
+       59.8
+      ],
+      [
+       185.8,
+       191.8
+      ],
+      [
+       61.8,
+       70.8
+      ],
+      [
+       196.8,
+       203.8
+      ]
+     ],
+     "words": [
+      "Drop the top and blow the brains, woo (I said I like it like that) / Oh, he's so handsome, what's his name? Yeah (I said I like it), woo, bags / Oh, I need the dollars (I said I like it like that), cha-ching",
+      "Diamond district in the chain (I said I like it like that) / Certified, you know I'm gang, gang (I said I like it like) / Drop the top and blow the brains, woo (I said I like it like that)",
+      "Beat it up like piñatas (I said I like it like), uh / Tell the driver, \"Close the curtains\" (I said I like it like that) / Bad bitch make you nervous (I said I like it) / Cardi B",
+      ""
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "aLWCv6MGyho",
+    "tempo_gap": null,
+    "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
     "track_b": ""
    }
   ],
