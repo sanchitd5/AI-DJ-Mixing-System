@@ -1,12 +1,5 @@
 {
  "downloads": {
-  "ytmsearch:A Boogie Wit Da Hoodie - Drowning (feat. Kodak Black) [Official Audio]": [
-   {
-    "hash": "3e7f5cb54933510b904dab170673b742fbd965eee1056cc924ba756e5ee3f94a",
-    "name": "A Boogie Wit Da Hoodie - Drowning (feat. Kodak Black) [Official Audio]",
-    "suffix": ".wav"
-   }
-  ],
   "ytmsearch:BICEP - BICEP | GLUE (Official Video)": [
    {
     "hash": "3d69d5afd4040fa37a5d1973a6652f4d3bc06a78ea67e94e03af4ca2f2bc8672",
@@ -18,6 +11,13 @@
    {
     "hash": "dd3d1dabab4c2cee7b90ddfbe31742d9102a898d0f3aaaf4350474952a1d4e50",
     "name": "Ben Böhmer - Beyond Beliefs (Official Visualiser)",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:CHVRCHES - Clearest Blue (lyric video)": [
+   {
+    "hash": "84d11de8989bd4cfa463cc0ae2716b71f350854ff20f510a9ad495d467ab555a",
+    "name": "CHVRCHES - Clearest Blue (lyric video)",
     "suffix": ".wav"
    }
   ],
@@ -49,10 +49,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Fred again.. x Skepta x PlaqueBoyMax - Victory Lap (NYC, 17th June 2025)": [
+  "ytmsearch:Fred again.. x I. Jordan - Admit (U Don't Want 2) (10 February 2022)": [
    {
-    "hash": "2864a2100b6fb57d74aabcdc3a954ae1e8a23fd8a3d641db340346d3d7cfe0fb",
-    "name": "Fred again.. x Skepta x PlaqueBoyMax - Victory Lap (NYC, 17th June 2025)",
+    "hash": "5c33b5c58a77e6d25fde0cb48f18a3eee1f1b1039ab25dcdfedecf7c96e89346",
+    "name": "Fred again.. x I. Jordan - Admit (U Don't Want 2) (10 February 2022)",
     "suffix": ".wav"
    }
   ],
@@ -63,24 +63,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Lane 8 - Fingerprint": [
+  "ytmsearch:Overmono - So U Kno (Audio)": [
    {
-    "hash": "ae9e8a18d5695254d983110d44b9e7f2ade1d18e99a8c3ab7a64b792c985cbfc",
-    "name": "Lane 8 - Fingerprint",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:Lane 8 - Little Voices": [
-   {
-    "hash": "8effb826199f696681e2002b2f6143a506601e44aa26738c6635cede5947942e",
-    "name": "Lane 8 - Little Voices",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:Skrillex - Scary monsters and nice sprites  (reprise)": [
-   {
-    "hash": "db9ba06444fe23df7399252c8983266bc5fb968ec27fa59f385ecbe4298d82e6",
-    "name": "Skrillex - Scary monsters and nice sprites  (reprise)",
+    "hash": "395f442a91d05ee4b3e28c76b10425eef646904d1870b42c73a90eeaaebb544c",
+    "name": "Overmono - So U Kno (Audio)",
     "suffix": ".wav"
    }
   ],
@@ -95,6 +81,13 @@
    {
     "hash": "e66c795db024c76c0bce7ef9ed2a04d9ce5e21fe975a4c7391632ffaeef28e6a",
     "name": "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:Yotto & SØNIN - 'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]": [
+   {
+    "hash": "9f014158c0eeb25a76a2d4d48aa61d68849aea5d63165020355d8798fd472586",
+    "name": "Yotto & SØNIN - 'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]",
     "suffix": ".wav"
    }
   ]
@@ -204,128 +197,272 @@
   {
    "cur": "Bicep | Glue",
    "kind": "suggest",
+   "latency_s": null,
    "ord": 0,
+   "quality": "ok",
    "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Tems\", \"title\": \"Free Mind\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Jungle\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Dorian Electra\", \"title\": \"My Agenda (feat. Village People & Pussy Riot) [Official Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 137, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Stephan Bodzin\", \"title\": \"Singularity (Original) - Life and Death\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 121, \"expected_key\": \"3A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Elderbrook\", \"title\": \"Inner Light with Bob Moses (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 121, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "cbd13f6dc56c8602"
+   "sig": "cbd13f6dc56c8602",
+   "stable": "suggest|Bicep | Glue"
   },
   {
    "cur": "",
    "kind": "plan",
+   "latency_s": null,
    "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "725c2ea19a20c48d"
+   "sig": "725c2ea19a20c48d",
+   "stable": "plan|130.0|1A|134.0|1A"
   },
   {
    "cur": "Jungle",
    "kind": "lookahead",
+   "latency_s": null,
    "ord": 0,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Elderbrook\", \"title\": \"Inner Light with Bob Moses (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 121, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Four Tet\", \"title\": \"Parallel 4\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"BICEP\", \"title\": \"BICEP | GLUE (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "651f3fe077aa04eb"
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Overmono\", \"title\": \"So U Kno (Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Moloko\", \"title\": \"Sing It Back (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"BICEP\", \"title\": \"BICEP | GLUE (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "651f3fe077aa04eb",
+   "stable": "lookahead|Jungle"
+  },
+  {
+   "cur": "Admit (U Don't Want 2) (10 February 2022)",
+   "kind": "lookahead",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"BICEP\", \"title\": \"BICEP | GLUE (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Four Tet\", \"title\": \"Parallel 4\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Moloko\", \"title\": \"Sing It Back (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"ARTBAT\", \"title\": \"Horizon (Official Audio Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "21038631be5394cb",
+   "stable": "lookahead|Admit (U Don't Want 2) (10 February 2022)"
   },
   {
    "cur": "Parallel 4",
    "kind": "lookahead",
-   "ord": 1,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"YOTTO\", \"title\": \"Is This Trance\\uff1f (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Charli xcx\", \"title\": \"Guess (official lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. & Obongjayar\", \"title\": \"adore u\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anuel AA, Daddy Yankee, Karol G\", \"title\": \"China (Audio) ft. J Balvin, Ozuna\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "a69818e454237376"
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Moloko\", \"title\": \"Sing It Back (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Marea (We\\u2019ve Lost Dancing)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "11a5fb94b80138bb",
+   "stable": "lookahead|Parallel 4"
   },
   {
    "cur": "Parallel 4",
    "kind": "suggest",
-   "ord": 1,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"ARTBAT\", \"title\": \"Horizon (Official Audio Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Marea (We\\u2019ve Lost Dancing)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Jon Hopkins\", \"title\": \"Open Eye Signal (under the fabric)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Yotto & S\\u00d8NIN\", \"title\": \"'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred Again\", \"title\": \"Admit It (U Don't Want 2)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"11A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "dc190d75da55b7a2"
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"Starboy (Audio) ft. Daft Punk\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8\", \"title\": \"Childish (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "727a4e6f06787efa",
+   "stable": "suggest|Parallel 4"
   },
   {
-   "cur": "",
-   "kind": "plan",
-   "ord": 1,
-   "reply": "{}",
-   "sig": "a548dd2cc34ba62e"
-  },
-  {
-   "cur": "Beyond Beliefs",
-   "kind": "lookahead",
-   "ord": 2,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"After Earth\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x Skepta x PlaqueBoyMax\", \"title\": \"Victory Lap (NYC, 17th June 2025)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Overmono\", \"title\": \"So U Kno (Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Moloko\", \"title\": \"Sing It Back (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Sian & Burko\", \"title\": \"'Holding On' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "bc33fa638c7fc961"
-  },
-  {
-   "cur": "Beyond Beliefs",
-   "kind": "lookahead",
-   "ord": 3,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"The Weeknd\", \"title\": \"Starboy (Audio) ft. Daft Punk\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. feat. The Blessed Madonna\", \"title\": \"Marea (We\\u2019ve Lost Dancing) (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8\", \"title\": \"Childish (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Jamie xx\", \"title\": \"Gosh\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 139, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Midnight Memories\", \"title\": \"MPxMC (Synth House)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"1B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "3c535e52e1813dec"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 2,
-   "reply": "{}",
-   "sig": "e80e45246a0b8e4a"
-  },
-  {
-   "cur": "Is This Trance？ [Odd One Out]",
-   "kind": "lookahead",
-   "ord": 4,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Lane 8\", \"title\": \"Little Voices\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"4B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"AL006\", \"title\": \"Tale Of Us & Vaal - Monument\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Skrillex\", \"title\": \"Scary monsters and nice sprites  (reprise)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Delilah (pull me out of this)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"6B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tame Impala\", \"title\": \"Dracula (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 115, \"expected_key\": \"3A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}]}",
-   "sig": "11dbcbe4237237cf"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 3,
-   "reply": "{}",
-   "sig": "52716a1cc257ba53"
-  },
-  {
-   "cur": "Marea (We’ve Lost Dancing)",
-   "kind": "lookahead",
-   "ord": 5,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Lane 8\", \"title\": \"Fingerprint\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"A Boogie Wit Da Hoodie\", \"title\": \"Drowning (feat. Kodak Black) [Official Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 129, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Aqua\", \"title\": \"Doctor Jones\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"fred again..\", \"title\": \"chanel x a new error x i am a party\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 110, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Kerala (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "eb4a1c94999e0f55"
-  },
-  {
-   "cur": "Little Voices",
-   "kind": "lookahead",
-   "ord": 6,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"ilan Bluestone\", \"title\": \"43\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bad Bunny\", \"title\": \"Yonaguni (Audio Oficial)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"BICEP\", \"title\": \"BICEP | MELI (I) (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"J. Balvin, Skrillex\", \"title\": \"In Da Getto (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"DENNIS FERRER\", \"title\": \"Hey Hey [Official Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "9dc3e28f89d7ee54"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 4,
-   "reply": "{}",
-   "sig": "89f1e2be3a448fb9"
-  },
-  {
-   "cur": "Scary monsters and nice sprites (reprise)",
-   "kind": "lookahead",
-   "ord": 7,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Anyma\", \"title\": \"The Light [Visualizer]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Madeon\", \"title\": \"The City\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma & Meg Myers\", \"title\": \"Running (feat. Meg Myers)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"ROSAL\\u00cdA\", \"title\": \"DESPECH\\u00c1 (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Kerala (NFS Payback Soundtrack)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "9c9c955bd771b745"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 5,
-   "reply": "{}",
-   "sig": "14c0b7e4a85203f9"
-  },
-  {
-   "cur": "Drowning",
-   "kind": "lookahead",
-   "ord": 8,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Felix Cartal\", \"title\": \"No Sleep (feat. Natalie Angiuli)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"R\\u00dcF\\u00dcS DU SOL\", \"title\": \"You Were Right\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"SBTRKT\", \"title\": \"Wildfire (feat. Little Dragon)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"MK\", \"title\": \"17 (Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"4B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"Cry For Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "67feff1e768f0f8a"
-  },
-  {
-   "cur": "Drowning",
+   "cur": "Parallel 4",
    "kind": "suggest",
+   "latency_s": null,
+   "ord": 1,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Elderbrook\", \"title\": \"Inner Light with Bob Moses (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 121, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Marea (We\\u2019ve Lost Dancing)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "e7a24ad4058041af",
+   "stable": "suggest|Parallel 4"
+  },
+  {
+   "cur": "Parallel 4",
+   "kind": "suggest",
+   "latency_s": null,
    "ord": 2,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Gorgon City\", \"title\": \"Ready For Your Love ft. MNEK\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Daddy Yankee\", \"title\": \"Gasolina [Remix]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Burna Boy\", \"title\": \"Ye [Official Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 135, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.., The Blessed Madonna\", \"title\": \"Marea (we\\u2019ve lost dancing)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"HUGEL x SOLTO\", \"title\": \"Jamaican (Bam Bam) (Sammy Flash Afro House Remix)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "f724a57ac300e033"
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"YOTTO\", \"title\": \"Is This Trance\\uff1f (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Sian & Burko\", \"title\": \"'Holding On' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "36e48139977a1b37",
+   "stable": "suggest|Parallel 4"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "092db8d26214c05f",
+   "stable": "plan|125.7|2B|123.0|4A"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "007fe78612cbb9f3",
+   "stable": "plan|123.0|4A|124.0|3B"
+  },
+  {
+   "cur": "Beyond Beliefs",
+   "kind": "lookahead",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"CHVRCHES\", \"title\": \"Clearest Blue (lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Jon Hopkins\", \"title\": \"Open Eye Signal (under the fabric)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"YOTTO\", \"title\": \"Is This Trance\\uff1f (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Marea (We\\u2019ve Lost Dancing)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. feat. The Blessed Madonna\", \"title\": \"Marea (We\\u2019ve Lost Dancing) (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "66c8d9bad5f37008",
+   "stable": "lookahead|Beyond Beliefs"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "2234c0c39ce00144",
+   "stable": "plan|124.0|3B|122.5|4A"
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "70a7d0b280d40a3d",
+   "stable": "audition|Merged layers: A drums + B bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "abdf37682c1e118f",
+   "stable": "audition|Merged layers: B drums + A bass + A vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "70a7d0b280d40a3d",
+   "stable": "audition|Merged layers: A drums + B bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "abdf37682c1e118f",
+   "stable": "audition|Merged layers: B drums + A bass + A vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "Clearest Blue",
+   "kind": "suggest",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Four Tet\", \"title\": \"Parallel 4\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"2B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x I. Jordan\", \"title\": \"Admit (U Don't Want 2) (10 February 2022)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Jungle\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 134, \"expected_key\": \"1A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Overmono\", \"title\": \"So U Kno (Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "d0adc490fe0a718f",
+   "stable": "suggest|Clearest Blue"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "28d62dc4a44ca6ed",
+   "stable": "plan|123.0|2B|130.0|6A"
+  },
+  {
+   "cur": "So U Kno",
+   "kind": "suggest",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Yotto & S\\u00d8NIN\", \"title\": \"'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. x Skepta x PlaqueBoyMax\", \"title\": \"Victory Lap (NYC, 17th June 2025)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Charli xcx\", \"title\": \"Guess (official lyric video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"After Earth\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8\", \"title\": \"Childish (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "c97d58a12ee7c204",
+   "stable": "suggest|So U Kno"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "7b94c2b351879c82",
+   "stable": "plan|130.0|6A|126.0|6A"
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "051daefc89d5bff2",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "026b847f30c7c7ff",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "6f19ca7a9abbe49a",
+   "stable": "audition|Merged layers: B drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "051daefc89d5bff2",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "026b847f30c7c7ff",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "6f19ca7a9abbe49a",
+   "stable": "audition|Merged layers: B drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "4ca9da0d376dfe8c",
+   "stable": "plan|126.0|6A|123.0|4A"
   }
  ],
  "mode": "long",
@@ -333,16 +470,15 @@
  "occasion": "",
  "pool": [
   "03937aaf6be182debd6ed8ddf2ac2f969294c38434466c10a0aad6ab95ab756e",
-  "2864a2100b6fb57d74aabcdc3a954ae1e8a23fd8a3d641db340346d3d7cfe0fb",
+  "395f442a91d05ee4b3e28c76b10425eef646904d1870b42c73a90eeaaebb544c",
   "3d69d5afd4040fa37a5d1973a6652f4d3bc06a78ea67e94e03af4ca2f2bc8672",
-  "3e7f5cb54933510b904dab170673b742fbd965eee1056cc924ba756e5ee3f94a",
+  "5c33b5c58a77e6d25fde0cb48f18a3eee1f1b1039ab25dcdfedecf7c96e89346",
   "799c8837ad49d936ddbda551c2d014da09200d770299374475634a8ef2f61f24",
-  "8effb826199f696681e2002b2f6143a506601e44aa26738c6635cede5947942e",
-  "ae9e8a18d5695254d983110d44b9e7f2ade1d18e99a8c3ab7a64b792c985cbfc",
+  "84d11de8989bd4cfa463cc0ae2716b71f350854ff20f510a9ad495d467ab555a",
+  "9f014158c0eeb25a76a2d4d48aa61d68849aea5d63165020355d8798fd472586",
   "bdaca2491f8c24519ca63f6707bfbe6b35227154ee35cc59bd55865589a71f62",
   "cf116c1712bb69545e0c3829b8612fff367b2ef770af9a86bba6bd84a94068c8",
   "d694195c66b9fa5227da466546dfdd5ff67b7beb8e2ff5a8efb4d21eab5ef100",
-  "db9ba06444fe23df7399252c8983266bc5fb968ec27fa59f385ecbe4298d82e6",
   "dd3d1dabab4c2cee7b90ddfbe31742d9102a898d0f3aaaf4350474952a1d4e50",
   "e66c795db024c76c0bce7ef9ed2a04d9ce5e21fe975a4c7391632ffaeef28e6a",
   "f987af898cd50266f17673610906899eca646d4510f750e184adcf793fc9f979"
@@ -356,50 +492,33 @@
  "source": "library",
  "tracks": 10,
  "verify": {
-  "A Boogie Wit Da Hoodie|Drowning (feat. Kodak Black) [Official Audio]": true,
-  "Anyma & Meg Myers|Running (feat. Meg Myers)": true,
-  "Anyma|The Light [Visualizer]": true,
-  "Bad Bunny|Yonaguni (Audio Oficial)": true,
   "Ben Böhmer|Beyond Beliefs (Official Visualiser)": true,
-  "Bonobo|Kerala (NFS Payback Soundtrack)": true,
-  "Bonobo|Kerala (Official Audio)": true,
-  "DENNIS FERRER|Hey Hey [Official Video]": true,
+  "CHVRCHES|Clearest Blue (lyric video)": true,
   "Dorian Electra|My Agenda (feat. Village People & Pussy Riot) [Official Audio]": true,
   "Elderbrook|Inner Light with Bob Moses (Official Music Video)": true,
-  "Felix Cartal|No Sleep (feat. Natalie Angiuli)": true,
   "Four Tet|Parallel 4": true,
   "Fred again.. x I. Jordan|Admit (U Don't Want 2) (10 February 2022)": true,
-  "Fred again.. x Skepta x PlaqueBoyMax|Victory Lap (NYC, 17th June 2025)": true,
   "Fred again..|Jungle": true,
   "Fred again..|Marea (We’ve Lost Dancing)": true,
-  "Gorgon City|Ready For Your Love ft. MNEK": true,
-  "J. Balvin, Skrillex|In Da Getto (Official Audio)": true,
   "Jon Hopkins|Open Eye Signal (under the fabric)": true,
-  "Lane 8|Fingerprint": true,
-  "Lane 8|Little Voices": true,
-  "MK|17 (Lyric Video)": true,
-  "Madeon|The City": true,
-  "ROSALÍA|DESPECHÁ (Official Audio)": true,
-  "RÜFÜS DU SOL|You Were Right": true,
-  "SBTRKT|Wildfire (feat. Little Dragon)": true,
-  "Skrillex|Scary monsters and nice sprites  (reprise)": true,
+  "Overmono|So U Kno (Audio)": true,
   "Stephan Bodzin|Singularity (Original) - Life and Death": true,
   "Tems|Free Mind": true,
-  "The Weeknd|Cry For Me (Official Music Video)": true,
   "YOTTO|Is This Trance？ (Official Audio) [Odd One Out]": true,
-  "ilan Bluestone|43": true
+  "Yotto & SØNIN|'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]": true
  },
  "version": 1,
  "views": {
-  "A Boogie Wit Da Hoodie - Drowning (feat. Kodak Black) [Official Audio]": null,
   "BICEP - BICEP | GLUE (Official Video)": null,
   "Ben Böhmer - Beyond Beliefs (Official Visualiser)": null,
+  "CHVRCHES - Clearest Blue (lyric video)": null,
   "Four Tet - Parallel 4": null,
   "Fred again.. - Jungle": null,
   "Fred again.. - Marea (We’ve Lost Dancing)": null,
+  "Fred again.. x I. Jordan - Admit (U Don't Want 2) (10 February 2022)": null,
   "Jon Hopkins - Open Eye Signal (under the fabric)": null,
-  "Lane 8 - Little Voices": null,
-  "Skrillex - Scary monsters and nice sprites  (reprise)": null,
-  "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]": null
+  "Overmono - So U Kno (Audio)": null,
+  "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]": null,
+  "Yotto & SØNIN - 'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]": null
  }
 }

@@ -1,9 +1,9 @@
 {
  "downloads": {
-  "ytmsearch:ARTBAT - Horizon (Official Audio Video)": [
+  "ytmsearch:Alvvays - Belinda Says [Official Video]": [
    {
-    "hash": "a955f9369451bfdc28b11b06b44dd383765823b6c3a651e0a3371d12dc47055a",
-    "name": "ARTBAT - Horizon (Official Audio Video)",
+    "hash": "c9447fbde572a377beeb23ab4c8c338bb93ab5974c56421d07ca9e146a19f53c",
+    "name": "Alvvays - Belinda Says [Official Video]",
     "suffix": ".wav"
    }
   ],
@@ -14,10 +14,17 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Ben Böhmer - Beyond Beliefs (Official Visualiser)": [
+  "ytmsearch:Anyma & Rebūke - Syren": [
    {
-    "hash": "dd3d1dabab4c2cee7b90ddfbe31742d9102a898d0f3aaaf4350474952a1d4e50",
-    "name": "Ben Böhmer - Beyond Beliefs (Official Visualiser)",
+    "hash": "6efe461f8131c4fa13051369eba67cd199f65f82077910782173464cf6cc5598",
+    "name": "Anyma & Rebūke - Syren",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:Black Coffee & David Guetta - Drive feat. Delilah Montagu (Official Video) [Ultra Music]": [
+   {
+    "hash": "1859de2407f463d3ecf34cba25884d7fdd08fa105d4816a9000d97b53349b36e",
+    "name": "Black Coffee & David Guetta - Drive feat. Delilah Montagu (Official Video) [Ultra Music]",
     "suffix": ".wav"
    }
   ],
@@ -28,10 +35,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Fred again.. & Obongjayar - adore u": [
+  "ytmsearch:Ellie Goulding - Anything Could Happen (TWINSICK Remix)": [
    {
-    "hash": "e427837d5fca4c8b335e818d2d443aea51e8263b2d371a4605af1d38f6cb941d",
-    "name": "Fred again.. & Obongjayar - adore u",
+    "hash": "3118bc9ac9911f37a8432da7d9ddf8b818ca387929039942c476c75cfcfab8cf",
+    "name": "Ellie Goulding - Anything Could Happen (TWINSICK Remix)",
     "suffix": ".wav"
    }
   ],
@@ -42,17 +49,24 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Lane 8, Kasbo & BJOERN - World Is Mine (Official Music Video)": [
+  "ytmsearch:KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID - GUT GENUG": [
    {
-    "hash": "340ccd303d2264fbcc9eb4c6006367a1384c7dbdeeb1412be1806e304013ef1d",
-    "name": "Lane 8, Kasbo & BJOERN - World Is Mine (Official Music Video)",
+    "hash": "3aee6b897bcf5f240f63bc0a7269b49accc0878b9dbdbe6f1b6e70b4bca5f7c8",
+    "name": "KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID - GUT GENUG",
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Sian & Burko - 'Holding On' (Official Audio) [Odd One Out]": [
+  "ytmsearch:Lane 8 - No Captain (feat. Poliça)": [
    {
-    "hash": "94fe7d05617785cedceb10cb9e159142fef098810b5a3a9105223d9a5e8e9d2e",
-    "name": "Sian & Burko  - 'Holding On' (Official Audio) [Odd One Out]",
+    "hash": "abebaf5b16d1331291893f08bc1d2aa87413a64c0fe644f120889f87ed9cd322",
+    "name": "Lane 8 - No Captain (feat. Poliça)",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:Taylor Swift - The Albatross (Official Lyric Video)": [
+   {
+    "hash": "67222fae706cf684d9faff7adbf18191e44a72b1f0176e471b656dd463481a4e",
+    "name": "Taylor Swift - The Albatross (Official Lyric Video)",
     "suffix": ".wav"
    }
   ],
@@ -63,17 +77,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:The Weeknd - Starboy (Audio) ft. Daft Punk": [
+  "ytmsearch:🎵 BEN Böhmer - PROMISE YOU 🎵": [
    {
-    "hash": "15132a271043f4d6a3e24bb17381eb1918d545be9254e2a0a028ea59b21eab59",
-    "name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:Tinlicker & Helsloot - Because You Move Me (Official Music Video)": [
-   {
-    "hash": "b11da4f27a23e5574d9419be79987f7693cc9ef07812c3d0cf303516a12de91a",
-    "name": "Tinlicker & Helsloot - Because You Move Me (Official Music Video)",
+    "hash": "33d1b0a1492fa306af02c79395e39035e3ab3347b9ec335645ae75fd544c7c48",
+    "name": "🎵 BEN Böhmer - PROMISE YOU 🎵",
     "suffix": ".wav"
    }
   ]
@@ -183,100 +190,92 @@
   {
    "cur": "The Fate of Ophelia",
    "kind": "suggest",
+   "latency_s": null,
    "ord": 0,
+   "quality": "ok",
    "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Hasan Raheem\", \"title\": \"Wishes ft Talwiinder \\uff5c Prod by Umair (Official Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 138, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.., LATIN MAFIA, Lil Yachty\", \"title\": \"Halo\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Cirrus (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 119, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Koreless\", \"title\": \"Sun\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"9B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 1, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Tate (How I Feel) (Lyrics) \\uff5c And you ain't heard from none of the broskis\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "92d3a619ed9ff7be"
+   "sig": "92d3a619ed9ff7be",
+   "stable": "suggest|The Fate of Ophelia"
   },
   {
    "cur": "The Fate of Ophelia",
    "kind": "suggest",
+   "latency_s": null,
    "ord": 1,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Days To Come (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Danielle (smile on my face)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8, Kasbo & BJOERN\", \"title\": \"World Is Mine (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Amelie Lens\", \"title\": \"Exhale\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "f8e5f320b224cf00"
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Taylor Swift\", \"title\": \"The Albatross (Official Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 118, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Koreless\", \"title\": \"Sun\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"9B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 1, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"\\ud83c\\udfb5 BEN B\\u00f6hmer\", \"title\": \"PROMISE YOU \\ud83c\\udfb5\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Cirrus (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 119, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Amelie Lens\", \"title\": \"Exhale\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "f8e5f320b224cf00",
+   "stable": "suggest|The Fate of Ophelia"
   },
   {
    "cur": "",
    "kind": "plan",
+   "latency_s": null,
    "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "ca2bc882eb1e3c81"
+   "sig": "394dafa930b97c68",
+   "stable": "plan|124.0|8B|118.3|10B"
   },
   {
-   "cur": "",
-   "kind": "plan",
+   "cur": "The Albatross",
+   "kind": "suggest",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Amelie Lens\", \"title\": \"Exhale\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma & Reb\\u016bke\", \"title\": \"Syren\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Black Coffee & David Guetta\", \"title\": \"Drive feat. Delilah Montagu (Official Video) [Ultra Music]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 118, \"expected_key\": \"11A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.., LATIN MAFIA, Lil Yachty\", \"title\": \"Halo\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID\", \"title\": \"GUT GENUG\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "ff134040d0146218",
+   "stable": "suggest|The Albatross"
+  },
+  {
+   "cur": "The Albatross",
+   "kind": "suggest",
+   "latency_s": null,
    "ord": 1,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID\", \"title\": \"GUT GENUG\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8\", \"title\": \"No Captain (feat. Poli\\u00e7a)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ellie Goulding\", \"title\": \"Anything Could Happen (TWINSICK Remix)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Koreless\", \"title\": \"Sun\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"9B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 1, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Alvvays\", \"title\": \"Belinda Says [Official Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 119, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "94a1ab612cfdef88",
+   "stable": "suggest|The Albatross"
+  },
+  {
+   "cur": "",
+   "kind": "ear",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
    "reply": "{}",
-   "sig": "30ebf806fa1643db"
+   "sig": "579d8820e2d33fa8",
+   "stable": "ear|b|True"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 2,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "408569517a07d069"
-  },
-  {
-   "cur": "Halo",
-   "kind": "suggest",
-   "ord": 2,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"ARTBAT\", \"title\": \"Horizon (Official Audio Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"Starboy (Audio) ft. Daft Punk\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.. & Obongjayar\", \"title\": \"adore u\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"After Earth\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Atlantic Records\", \"title\": \"CA7RIEL, Paco Amoroso, PinkPantheress, Fred again..\\u2013Sexy Magic (From Grand Theft Auto VI: The Album)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "7fa1d2d969f697fc"
+   "sig": "a0b9ff19b10e5130",
+   "stable": "plan|118.3|10B|120.0|10B"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 3,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "edeb2b04d63135d5"
+   "sig": "b0c8f83fc3d2f50c",
+   "stable": "plan|120.0|10B|122.2|10B"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 4,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "c333b48bbe3e7a1d"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 5,
-   "reply": "{}",
-   "sig": "de3f34d3ff4228c2"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 6,
-   "reply": "{}",
-   "sig": "15e2b23d7c802721"
-  },
-  {
-   "cur": "Starboy",
-   "kind": "suggest",
-   "ord": 3,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Sian & Burko\", \"title\": \"'Holding On' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Yotto & S\\u00d8NIN\", \"title\": \"'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 126, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 9, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Moloko\", \"title\": \"Sing It Back (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"2A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"I Feel It Coming (Audio) ft. Daft Punk\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anuel AA, Daddy Yankee, Karol G\", \"title\": \"China (Audio) ft. J Balvin, Ozuna\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "33a6fcfa3cc5b99d"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 7,
-   "reply": "{}",
-   "sig": "758c3d08e35a549d"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
-   "ord": 8,
-   "reply": "{}",
-   "sig": "a5eb2c20f41fd278"
-  },
-  {
-   "cur": "adore u",
-   "kind": "suggest",
-   "ord": 4,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"The Weeknd\", \"title\": \"Starboy ft. Daft Punk (Official Video) ft. Daft Punk\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 8, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8, Kasbo & BJOREN\", \"title\": \"World Is Mine\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ben B\\u00f6hmer\", \"title\": \"Beyond Beliefs (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"3B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 10, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bairan\", \"title\": \"Animated Love Story \\uff5c Banjaare (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 140, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma\", \"title\": \"The Light [Visualizer]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "443cece51b0fc657"
+   "sig": "6dae526e30bc38e7",
+   "stable": "plan|122.2|10B|119.0|12B"
   }
  ],
  "mode": "quick",
@@ -284,16 +283,17 @@
  "occasion": "",
  "pool": [
   "097dd2030ba26c8ddfafc5c42f940e0a260e9d9e752bdf8115f757683989f86f",
-  "15132a271043f4d6a3e24bb17381eb1918d545be9254e2a0a028ea59b21eab59",
+  "1859de2407f463d3ecf34cba25884d7fdd08fa105d4816a9000d97b53349b36e",
+  "3118bc9ac9911f37a8432da7d9ddf8b818ca387929039942c476c75cfcfab8cf",
   "327573551700a49dd32bfa269b269a2af9140a17b42557d1f4f981da005e3b32",
-  "340ccd303d2264fbcc9eb4c6006367a1384c7dbdeeb1412be1806e304013ef1d",
-  "94fe7d05617785cedceb10cb9e159142fef098810b5a3a9105223d9a5e8e9d2e",
+  "33d1b0a1492fa306af02c79395e39035e3ab3347b9ec335645ae75fd544c7c48",
+  "3aee6b897bcf5f240f63bc0a7269b49accc0878b9dbdbe6f1b6e70b4bca5f7c8",
+  "67222fae706cf684d9faff7adbf18191e44a72b1f0176e471b656dd463481a4e",
+  "6efe461f8131c4fa13051369eba67cd199f65f82077910782173464cf6cc5598",
   "9548c6c4b808d9e8f9f5734766999bba20d12a07e6d0891a149a8f015bb609ab",
-  "a955f9369451bfdc28b11b06b44dd383765823b6c3a651e0a3371d12dc47055a",
-  "b11da4f27a23e5574d9419be79987f7693cc9ef07812c3d0cf303516a12de91a",
-  "ccecfc9a505c5ac6c75f58386429b0f79ebeb3b38d982be96d82f87e2675e626",
-  "dd3d1dabab4c2cee7b90ddfbe31742d9102a898d0f3aaaf4350474952a1d4e50",
-  "e427837d5fca4c8b335e818d2d443aea51e8263b2d371a4605af1d38f6cb941d"
+  "abebaf5b16d1331291893f08bc1d2aa87413a64c0fe644f120889f87ed9cd322",
+  "c9447fbde572a377beeb23ab4c8c338bb93ab5974c56421d07ca9e146a19f53c",
+  "ccecfc9a505c5ac6c75f58386429b0f79ebeb3b38d982be96d82f87e2675e626"
  ],
  "search": {},
  "seed": 4,
@@ -304,33 +304,25 @@
  "source": "library",
  "tracks": 10,
  "verify": {
-  "ARTBAT|Horizon (Official Audio Video)": true,
+  "Alvvays|Belinda Says [Official Video]": true,
   "Amelie Lens|Exhale": true,
-  "Atlantic Records|CA7RIEL, Paco Amoroso, PinkPantheress, Fred again..–Sexy Magic (From Grand Theft Auto VI: The Album)": true,
-  "Ben Böhmer|After Earth": true,
-  "Ben Böhmer|Beyond Beliefs (Official Visualiser)": true,
+  "Anyma & Rebūke|Syren": true,
+  "Black Coffee & David Guetta|Drive feat. Delilah Montagu (Official Video) [Ultra Music]": true,
   "Bonobo|Cirrus (Official Video)": true,
-  "Bonobo|Days To Come (Official Audio)": true,
-  "Fred again.. & Obongjayar|adore u": true,
+  "Ellie Goulding|Anything Could Happen (TWINSICK Remix)": true,
   "Fred again.., LATIN MAFIA, Lil Yachty|Halo": true,
-  "Fred again..|Danielle (smile on my face)": true,
   "Fred again..|Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis": true,
-  "Lane 8, Kasbo & BJOERN|World Is Mine (Official Music Video)": true,
-  "Sian & Burko|'Holding On' (Official Audio) [Odd One Out]": true,
-  "The Weeknd|Starboy (Audio) ft. Daft Punk": true,
-  "Tinlicker & Helsloot|Because You Move Me (Official Music Video)": true
+  "KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID|GUT GENUG": true,
+  "Lane 8|No Captain (feat. Poliça)": true,
+  "Taylor Swift|The Albatross (Official Lyric Video)": true,
+  "🎵 BEN Böhmer|PROMISE YOU 🎵": true
  },
  "version": 1,
  "views": {
-  "ARTBAT - Horizon (Official Audio Video)": null,
-  "Amelie Lens - Exhale": null,
-  "Bonobo - Cirrus (Official Video)": null,
-  "Fred again.. & Obongjayar - adore u": null,
-  "Fred again.., LATIN MAFIA, Lil Yachty - Halo": null,
-  "Lane 8, Kasbo & BJOERN - World Is Mine (Official Music Video)": null,
-  "Sian & Burko  - 'Holding On' (Official Audio) [Odd One Out]": null,
-  "Taylor Swift - The Fate of Ophelia (Official Music Video)": null,
-  "The Weeknd - Starboy (Audio) ft. Daft Punk": null,
-  "Tinlicker & Helsloot - Because You Move Me (Official Music Video)": null
+  "Alvvays - Belinda Says [Official Video]": null,
+  "Ellie Goulding - Anything Could Happen (TWINSICK Remix)": null,
+  "Lane 8 - No Captain (feat. Poliça)": null,
+  "Taylor Swift - The Albatross (Official Lyric Video)": null,
+  "Taylor Swift - The Fate of Ophelia (Official Music Video)": null
  }
 }
