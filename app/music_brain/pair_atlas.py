@@ -17,12 +17,14 @@ tracks with a cached analysis is judged by the console's OWN rules:
   mascot.js CUE_MOVES announce as supermoves (MERGE, MASHUP, RIFF OVER RAP, ...).
 
 Played evidence (sessions, set logs, learned_techniques sightings) is mined and
-attached on every build. Stored in CACHE_DIR/pair_atlas.json (schema + rules hash;
+attached on every build, and so is STUDIED evidence (the transitions of the famous sets
+the set learner studied, studied_combos.py): a studied pair is a combo. Stored in CACHE_DIR/pair_atlas.json (schema + rules hash;
 incremental: a pair is rescored only when either track's inputs or the rules change).
 
     python3 -m app.music_brain.pair_atlas build [--cache-dir D] [--out F] [--full]
     python3 -m app.music_brain.pair_atlas show <track id|name> [--move merge] [-n 10]
     python3 -m app.music_brain.pair_atlas best [--move supermove] [-n 15] [--chains 3]
+    python3 -m app.music_brain.pair_atlas studied [--missing] [--json]
 """
 from __future__ import annotations
 
@@ -65,7 +67,8 @@ MERGE_TRIES = 6             # A exit phrase lines tried for a merge -> hold per 
 COMBO_MIN_WORKS = 65        # a pair is a COMBO when it works this well AND a combo move fits
 COMBO_MOVES = ("merge", "riff", "mashup", "double_drop", "drop_swap")
 COMBO_LABEL = {"merge": "MERGE", "riff": "RIFF x RAP", "mashup": "MASHUP",
-               "double_drop": "DOUBLE DROP", "drop_swap": "DROP SWAP"}
+               "double_drop": "DOUBLE DROP", "drop_swap": "DROP SWAP",
+               "studied": "STUDIED COMBO"}      # a pair a studied famous set played (studied_combos.py)
 MOVES = ("merge", "riff", "mashup", "stem_bridge", "stem_intro", "bass_swap", "echo_out",
          "hook_drop", "learned", "artist", "double_drop", "drop_swap", "supermove")
 # columns the atlas cannot judge offline (same answer for every pair, not stored per pair)
@@ -892,6 +895,11 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
             p["seed"] = True
             if s.get("move") == "merge" and p["merge"]["ok"]:
                 p["combo"] = "merge"
+    # studied combos: transitions the famous studied sets played (recomputed every build)
+    from app.music_brain import studied_combos as sc
+
+    studied = sc.load(cache_dir, {**lib.names(), **names})
+    n_studied = sc.attach(pairs, sc.evidence(studied))
     doc = {"schema": SCHEMA, "rules": rh, "built_at": time.time(), "cache_dir": str(cache_dir),
            "tracks": {t: dict(feats[t], name=names.get(t, t), artist=artist_of(names.get(t, t))) for t in ids},
            "pairs": pairs,
@@ -899,6 +907,7 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
                      "feature_tracks": len(redo), "played_pairs": sum(1 for p in pairs.values() if p.get("played")),
                      "merge_ok": sum(1 for p in pairs.values() if p["merge"]["ok"]),
                      "combos": sum(1 for p in pairs.values() if p.get("combo")),
+                     "studied_transitions": len(studied), "studied_pairs": n_studied,
                      "seconds": {"features": round(t_feat, 1), "python": round(t_py, 1), "node": round(t_node, 1),
                                  "total": round(time.time() - t0, 1)}}}
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -907,7 +916,7 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
     tmp.replace(out)
     log(json.dumps(doc["stats"]))
     if seed_macros_to is not None:
-        doc["seeded"] = seed_macros(doc, seed_macros_to)
+        doc["seeded"] = seed_macros(doc, seed_macros_to) + sc.write_macros(doc, studied, seed_macros_to)
         log(f"seeded macros: {len(doc['seeded'])} ({', '.join(m['name'] for m in doc['seeded'][:4])} ...)")
     return doc
 
@@ -962,7 +971,9 @@ def seed_macros(doc: dict, cache_dir: Path, top: int = 20, n_chains: int = 4) ->
                else f"seed combo: merge -> hold refused ({m.get('gate')}: {m.get('reason')}), plays {p['recipe']}")
         write({"name": f"combo-seed-{_short(tr[p['a']]['name'])}-{_short(tr[p['b']]['name'])}", "source": "atlas:seed",
                "steps": [step_of(p, why)], "note": why})
-    combos = sorted((p for p in doc["pairs"].values() if p.get("combo")), key=lambda p: (-p["works"], p["a"], p["b"]))
+    # studied combos get their own macros (studied_combos.write_macros)
+    combos = sorted((p for p in doc["pairs"].values() if p.get("combo") and p["combo"] != "studied"),
+                    key=lambda p: (-p["works"], p["a"], p["b"]))
     for p in combos[:top]:
         lab = COMBO_LABEL.get(p["combo"], p["combo"])
         write({"name": f"combo-{_short(tr[p['a']]['name'])}-{_short(tr[p['b']]['name'])}", "source": "atlas:combo",
@@ -1023,6 +1034,13 @@ def best_pairs(atlas: dict, move: Optional[str] = None, n: int = 15) -> List[dic
     return [summary(atlas, p) for _, p in rows[:n]]
 
 
+def _studied_brief(st: Optional[dict]) -> Optional[dict]:
+    """What the console shows of a studied pair: count, sets, DJs, techniques, the move it plays."""
+    if not st:
+        return None
+    return {k: st.get(k) for k in ("count", "sets", "djs", "techniques", "move", "recipe", "why")}
+
+
 def summary(atlas: dict, p: dict) -> dict:
     tr = atlas["tracks"]
     tb = tr.get(p["b"], {})
@@ -1034,6 +1052,7 @@ def summary(atlas: dict, p: dict) -> dict:
             "merge": {k: p["merge"].get(k) for k in ("ok", "gate", "reason", "hold_bars", "hold_phrases", "M", "aT", "bT")},
             "moves": {m: move_of(p, m) for m in MOVES},
             "energy": p["energy"], "played": bool(p.get("played")), "seed": bool(p.get("seed")),
+            "studied": _studied_brief(p.get("studied")),
             "played_good": (p.get("played") or {}).get("good", 0), "played_bad": (p.get("played") or {}).get("bad", 0)}
 
 
@@ -1148,7 +1167,7 @@ class Index:
                 s["plan"] = plan_of(p)
                 rows.append(s)
                 self.pairs[f"{a}>{p['b']}"] = s
-            rows.sort(key=lambda s: (-s["works"], s["b"]))
+            rows.sort(key=lambda s: (not s.get("studied"), -s["works"], s["b"]))   # studied combos first
             self.by_a[a] = rows
 
     def partners(self, a: str, move: Optional[str] = None, n: int = 10) -> List[dict]:
@@ -1164,10 +1183,13 @@ class Index:
 
 
 def plan_of(p: dict) -> dict:
-    """The transition plan the console can use as its default for this pair (re-validated live)."""
+    """The transition plan the console can use as its default for this pair (re-validated live).
+    A studied pair plays the move its studied technique maps to (studied_combos.pick_move)."""
     m = p["merge"]
-    return {"recipe": "Stem Merge" if m["ok"] else p["recipe"], "a_time": p["exit"], "b_time": p["entry"],
-            "merge": {k: m.get(k) for k in ("hold_bars", "hold_phrases", "M", "aT", "bT", "pick", "phases")} if m["ok"] else None,
+    recipe = (p.get("studied") or {}).get("recipe") or ("Stem Merge" if m["ok"] else p["recipe"])
+    return {"recipe": recipe, "a_time": p["exit"], "b_time": p["entry"],
+            "merge": {k: m.get(k) for k in ("hold_bars", "hold_phrases", "M", "aT", "bT", "pick", "phases")}
+            if m["ok"] and recipe == "Stem Merge" else None,
             "lock": p["lock"], "combo": p.get("combo")}
 
 
@@ -1205,11 +1227,33 @@ def _fmt(r: dict) -> str:
             f"gap {r['gap']:.1%}, {m}{combo}{pl}")
 
 
+def _studied_cli(cache_dir: Path, missing: bool, as_json: bool) -> int:
+    """List the studied combos (resolved / missing / skipped, technique, source set); offline."""
+    from app.music_brain import studied_combos as sc
+
+    rows = sc.load(cache_dir)
+    st = sc.status(rows)
+    if as_json:
+        print(json.dumps(st if missing else dict(st, transitions=rows), indent=1, default=str))
+        return 0
+    if not missing:
+        for r in rows:
+            print(sc.row_line(r))
+        print()
+        for s in st["sets"]:
+            print(f"{s['set_id']:<12} {s['dj'][:40]:<40} transitions {s['transitions']:3d}  resolved {s['resolved']:3d}  "
+                  f"missing {s['missing']:3d}  skipped {s['skipped']:3d}")
+    print(f"\nsongs to download ({len(st['missing_songs'])}):")
+    for m in st["missing_songs"]:
+        print(f"  {m['blocks']:2d}  {m['name']}  [{', '.join(m['sets'])}]" + ("  (set download was the wrong song)" if m["wrong_download"] else ""))
+    return 0
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     from app.music_brain.config import CACHE_DIR
 
     ap = argparse.ArgumentParser(prog="pair_atlas")
-    ap.add_argument("cmd", choices=("build", "show", "best", "chains", "picks"))
+    ap.add_argument("cmd", choices=("build", "show", "best", "chains", "picks", "studied"))
     ap.add_argument("arg", nargs="*")
     ap.add_argument("--cache-dir", default=str(CACHE_DIR))
     ap.add_argument("--out", default=None, help="atlas file (default CACHE_DIR/pair_atlas.json)")
@@ -1222,11 +1266,14 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--length", type=int, default=8)
     ap.add_argument("--locked", action="store_true")
     ap.add_argument("--json", action="store_true")
+    ap.add_argument("--missing", action="store_true", help="studied: only the songs to download to complete the chains")
     a = ap.parse_args(argv)
     if a.cmd == "build":
         build(Path(a.cache_dir), Path(a.out) if a.out else None, full=a.full, only=a.arg or None,
               seed_macros_to=None if a.no_macros else Path(a.macros_dir or a.cache_dir))
         return 0
+    if a.cmd == "studied":
+        return _studied_cli(Path(a.cache_dir), a.missing, a.json)
     atlas = load(Path(a.cache_dir), Path(a.out) if a.out else None)
     if atlas is None:
         print(json.dumps({"error": "no atlas: run `python3 -m app.music_brain.pair_atlas build`"}))
