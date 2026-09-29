@@ -1,0 +1,32 @@
+{
+ "created": 1790674935.4836109,
+ "name": "studied-orb_81stwy8-28",
+ "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 28), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "2c59975e97c24947",
+   "a_name": "Kevin de Vries & Add-us - Nami",
+   "a_time": 111.614,
+   "b": "7922a419da56967b",
+   "b_name": "Fred again.. & Swedish House Mafia ft Future - Turn On The Lights Again.. (Anyma Remix)",
+   "b_time": 0.163,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Anyma #28, atlas plan Long Blend",
+   "works": 82
+  }
+ ],
+ "title": "Anyma @ Live from Atomium - Brussels, Belgium #28: Kevin de Vries - Nami → Fred again.. - Turn On The Lights Again.. (An",
+ "tracks": [
+  "2c59975e97c24947",
+  "7922a419da56967b"
+ ],
+ "version": 1
+}

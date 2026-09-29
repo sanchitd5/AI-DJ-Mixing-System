@@ -1,0 +1,131 @@
+{
+ "created": 1790674935.4779289,
+ "name": "studied-set-gff8jzbvwvm",
+ "note": "studied set Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) in set order: 8 of 59 songs; skipped 51: #1 Mythologies (not in the library); #2 L'Accouchement (not in the library); #3 My House (wrong download); #6 ANMHE (not in the library); #7 Hackney Pigeon (Sammy Virji VIP) (not in the library); #8 Daft Punk - Rollin' & Scratchin' (not in the library); #9 Spinal Scratch (not in the library); #10 808 State (not in the library); #11 Fred again.. & Skrillex & Four Tet - Baby",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "8bb6d55d3ba8226e",
+   "a_name": "Daft Punk - One More Time (Official Video)",
+   "a_time": 280.683,
+   "b": "7b7fd36abc9af3f0",
+   "b_name": "Fred again.. - Marea (We’ve Lost Dancing)",
+   "b_time": 47.694,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #5, atlas plan Echo Out",
+   "works": 45
+  },
+  {
+   "a": "7b7fd36abc9af3f0",
+   "a_name": "Fred again.. - Marea (We’ve Lost Dancing)",
+   "a_time": 101.207,
+   "b": "96481c9efddd078d",
+   "b_name": "Skrillex, Fred again.. & Flowdan - Rumble [Official Audio]",
+   "b_time": 6.966,
+   "n": 2,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #12, atlas plan; gap: skipped ANMHE, Hackney Pigeon (Sammy Virji VIP), Daft Punk - Rollin' & Scratchin', Spinal Scratch, 808 State, Fred again.. & Skrillex & Four Tet - Baby again..",
+   "works": 38
+  },
+  {
+   "a": "96481c9efddd078d",
+   "a_name": "Skrillex, Fred again.. & Flowdan - Rumble [Official Audio]",
+   "a_time": 128.622,
+   "b": "1cf2704ed35730f5",
+   "b_name": "Daft Punk - Aerodynamic (Official Audio)",
+   "b_time": 0.372,
+   "n": 3,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #43, atlas plan; gap: skipped Wildchild - Renegade Master, LFO - LFO, Daft Punk - Crescendolls (MPH edit), Daft Punk - Technologic, stop&watch, Pulse Z, Dylan Brady - Needle Guy, Circles, Daft Punk - Technologic, Dylan Brady - Needle Guy, Daft Punk - Tech",
+   "works": 64
+  },
+  {
+   "a": "1cf2704ed35730f5",
+   "a_name": "Daft Punk - Aerodynamic (Official Audio)",
+   "a_time": 186.567,
+   "b": "f1a519a13f6d8955",
+   "b_name": "Victory Lap Five",
+   "b_time": 1.765,
+   "combo": "studied",
+   "n": 4,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #44, atlas plan Stem Bridge",
+   "works": 46
+  },
+  {
+   "a": "f1a519a13f6d8955",
+   "a_name": "Victory Lap Five",
+   "a_time": 240.051,
+   "b": "15132a271043f4d6",
+   "b_name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
+   "b_time": 15.766,
+   "combo": "studied",
+   "n": 5,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #45, atlas plan Stem Bridge",
+   "works": 42
+  },
+  {
+   "a": "15132a271043f4d6",
+   "a_name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
+   "a_time": 98.36,
+   "b": "718489ccc67ba2fc",
+   "b_name": "Fred again.. - Delilah (pull me out of this)",
+   "b_time": 35.898,
+   "n": 6,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #56, atlas plan; gap: skipped Fred again.. & Baby Keem - leavemealone, Fred again.. - leavemealone (Nia Archives Remix), Stardust - Music Sounds Better With You, Daft Punk - Da Funk, 2009, ICEY.., Never the End, Caribou - Can't Do Without You, DJ Mehdi - ",
+   "works": 45
+  },
+  {
+   "a": "718489ccc67ba2fc",
+   "a_name": "Fred again.. - Delilah (pull me out of this)",
+   "a_time": 233.205,
+   "b": "8bb6d55d3ba8226e",
+   "b_name": "Daft Punk - One More Time (Official Video)",
+   "b_time": 15.79,
+   "combo": "studied",
+   "n": 7,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #57, atlas plan Stem Bridge",
+   "works": 42
+  }
+ ],
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (studied set, 8 songs)",
+ "tracks": [
+  "8bb6d55d3ba8226e",
+  "7b7fd36abc9af3f0",
+  "96481c9efddd078d",
+  "1cf2704ed35730f5",
+  "f1a519a13f6d8955",
+  "15132a271043f4d6",
+  "718489ccc67ba2fc",
+  "8bb6d55d3ba8226e"
+ ],
+ "version": 1
+}

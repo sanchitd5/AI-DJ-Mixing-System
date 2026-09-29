@@ -1,0 +1,32 @@
+{
+ "created": 1790674935.356443,
+ "name": "combo-seed-rick-astley---neve-karol-g---provenza",
+ "note": "seed combo: merge -> hold refused (vocal_clash: no clean hold: 8 bars vocal_clash; 16 bars vocal_clash), plays Mashup → Transition",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:seed",
+ "steps": [
+  {
+   "a": "8a6d0c824962f92f",
+   "a_name": "Rick Astley - Never Gonna Give You Up (Official Video) (4K Remaster)",
+   "a_time": 157.687,
+   "b": "81495f19980db9fc",
+   "b_name": "KAROL G - PROVENZA",
+   "b_time": 18.019,
+   "combo": "mashup",
+   "n": 1,
+   "recipe": "Mashup → Transition",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "seed combo: merge -> hold refused (vocal_clash: no clean hold: 8 bars vocal_clash; 16 bars vocal_clash), plays Mashup → Transition",
+   "works": 85
+  }
+ ],
+ "title": "Seed combo: Rick Astley - Never Gonna Give You Up (4K Remaster) → Karol G - Provenza",
+ "tracks": [
+  "8a6d0c824962f92f",
+  "81495f19980db9fc"
+ ],
+ "version": 1
+}
