@@ -1,5 +1,5 @@
 {
- "created": 1790674935.485919,
+ "created": 1790702216.0677109,
  "name": "studied-orb_81stwy8-34",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 34), techniques none heard",
  "parent": null,
@@ -9,10 +9,10 @@
   {
    "a": "f6c530de96afeeee",
    "a_name": "Goom Gum - Enough",
-   "a_time": 158.987,
+   "a_time": 101.246,
    "b": "b9f496401006f299",
    "b_name": "Mau P - People Talk People Sing",
-   "b_time": 36.409,
+   "b_time": 6.757,
    "combo": "studied",
    "n": 1,
    "recipe": "Echo Out",
@@ -20,7 +20,7 @@
     "lock": "keylock"
    },
    "why": "studied combo: Anyma #34, atlas plan Echo Out",
-   "works": 45
+   "works": 53
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #34: Goom Gum - Enough → Mau P - People Talk People Sing",

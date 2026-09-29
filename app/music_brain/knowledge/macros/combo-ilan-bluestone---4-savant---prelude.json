@@ -1,5 +1,5 @@
 {
- "created": 1790674935.395382,
+ "created": 1790702215.98797,
  "name": "combo-ilan-bluestone---4-savant---prelude",
  "note": "",
  "parent": null,
@@ -9,15 +9,15 @@
   {
    "a": "47c21409aec7ff7a",
    "a_name": "ilan Bluestone - 43",
-   "a_time": 300.257,
+   "a_time": 210.257,
    "b": "3cbdd41f76d106de",
    "b_name": "Savant - Prelude",
-   "b_time": 85.682,
+   "b_time": 100.333,
    "combo": "merge",
    "merge": {
     "M": 8,
-    "aT": 300.257,
-    "bT": 85.682,
+    "aT": 210.257,
+    "bT": 100.333,
     "hold_bars": 6,
     "hold_phrases": 1,
     "phases": {
@@ -37,18 +37,18 @@
      "merge_start": {
       "at_bar": 0,
       "bars": 2,
-      "combo": "B drums + B bass + A vox + A synth"
+      "combo": "A drums + A bass + A vox + B synth"
      }
     },
     "pick": {
      "combo": {
-      "bass": "b",
-      "drums": "b",
-      "other": "a",
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
       "vocals": "a"
      },
-     "label": "B drums + B bass + A vox + A synth",
-     "score": 95.9
+     "label": "A drums + A bass + A vox + B synth",
+     "score": 99.7
     }
    },
    "n": 1,

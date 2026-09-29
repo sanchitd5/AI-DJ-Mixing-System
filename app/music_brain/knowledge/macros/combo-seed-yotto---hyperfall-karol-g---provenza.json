@@ -1,7 +1,7 @@
 {
- "created": 1790674935.362567,
+ "created": 1790702215.9656682,
  "name": "combo-seed-yotto---hyperfall-karol-g---provenza",
- "note": "seed combo: merge -> hold 6 bars (1 phrases)",
+ "note": "seed combo: merge -> hold 14 bars (2 phrases)",
  "parent": null,
  "schema": 1,
  "source": "atlas:seed",
@@ -9,30 +9,30 @@
   {
    "a": "9075692fe9d12259",
    "a_name": "Yotto - Hyperfall",
-   "a_time": 132.238,
+   "a_time": 97.315,
    "b": "81495f19980db9fc",
    "b_name": "KAROL G - PROVENZA",
    "b_time": 18.019,
    "combo": "merge",
    "merge": {
-    "M": 8,
-    "aT": 132.238,
+    "M": 16,
+    "aT": 97.315,
     "bT": 18.019,
-    "hold_bars": 6,
-    "hold_phrases": 1,
+    "hold_bars": 14,
+    "hold_phrases": 2,
     "phases": {
      "handover": {
-      "at_bar": 8,
+      "at_bar": 16,
       "bars": 8,
       "sub_overlap_bars": 0,
       "vocal_overlap": 0
      },
      "hold": {
-      "bars": 6,
+      "bars": 14,
       "from_bar": 2,
-      "phrases": 1,
-      "seconds": 13.1,
-      "to_bar": 8
+      "phrases": 2,
+      "seconds": 30.5,
+      "to_bar": 16
      },
      "merge_start": {
       "at_bar": 0,
@@ -48,7 +48,7 @@
       "vocals": "b"
      },
      "label": "B drums + A bass + B vox + B synth",
-     "score": 77.5
+     "score": 77.2
     }
    },
    "n": 1,
@@ -56,7 +56,7 @@
    "tempo": {
     "lock": "pitched"
    },
-   "why": "seed combo: merge -> hold 6 bars (1 phrases)",
+   "why": "seed combo: merge -> hold 14 bars (2 phrases)",
    "works": 85
   }
  ],

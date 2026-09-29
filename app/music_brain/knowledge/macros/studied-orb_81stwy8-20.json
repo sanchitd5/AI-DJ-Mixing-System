@@ -1,5 +1,5 @@
 {
- "created": 1790674935.4812958,
+ "created": 1790702216.0647612,
  "name": "studied-orb_81stwy8-20",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 20), techniques none heard",
  "parent": null,
@@ -9,14 +9,14 @@
   {
    "a": "2a6d88a88d753df3",
    "a_name": "GENESI - Hyper",
-   "a_time": 130.589,
+   "a_time": 68.708,
    "b": "e60f89ea9d0d0bf4",
    "b_name": "TH;EN - Bodyrock",
    "b_time": 7.198,
    "combo": "merge",
    "merge": {
     "M": 8,
-    "aT": 130.589,
+    "aT": 68.708,
     "bT": 7.198,
     "hold_bars": 6,
     "hold_phrases": 1,
@@ -25,7 +25,7 @@
       "at_bar": 8,
       "bars": 8,
       "sub_overlap_bars": 0,
-      "vocal_overlap": 0
+      "vocal_overlap": 0.06
      },
      "hold": {
       "bars": 6,
@@ -37,18 +37,18 @@
      "merge_start": {
       "at_bar": 0,
       "bars": 2,
-      "combo": "B drums + B bass + A vox + B synth"
+      "combo": "B drums + B bass + A vox + A synth"
      }
     },
     "pick": {
      "combo": {
       "bass": "b",
       "drums": "b",
-      "other": "b",
+      "other": "a",
       "vocals": "a"
      },
-     "label": "B drums + B bass + A vox + B synth",
-     "score": 92.9
+     "label": "B drums + B bass + A vox + A synth",
+     "score": 92
     }
    },
    "n": 1,
@@ -57,7 +57,7 @@
     "lock": "pitched"
    },
    "why": "studied combo: Anyma #20, atlas plan Stem Merge",
-   "works": 85
+   "works": 94
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #20: Genesi - Hyper → Th;En - Bodyrock",

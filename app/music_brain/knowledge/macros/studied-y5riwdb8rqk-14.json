@@ -1,0 +1,32 @@
+{
+ "created": 1790702216.0579531,
+ "name": "studied-y5riwdb8rqk-14",
+ "note": "studied combo from Argy | Tomorrowland Brasil 2025 (position 14), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "9ae0c077431a4889",
+   "a_name": "Anyma & Argy & Son Of Son - Voices In My Head",
+   "a_time": 128.286,
+   "b": "958d51abf4640a6a",
+   "b_name": "Cassian, YOTTO, Da Hool - Love Parade",
+   "b_time": 6.664,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Argy #14, atlas plan Long Blend",
+   "works": 78
+  }
+ ],
+ "title": "Argy @ Tomorrowland Brasil 2025 #14: Anyma - Voices In My Head → Cassian - Love Parade",
+ "tracks": [
+  "9ae0c077431a4889",
+  "958d51abf4640a6a"
+ ],
+ "version": 1
+}

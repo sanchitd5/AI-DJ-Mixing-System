@@ -1,5 +1,5 @@
 {
- "created": 1790674935.484065,
+ "created": 1790702216.0665238,
  "name": "studied-orb_81stwy8-29",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 29), techniques none heard",
  "parent": null,
@@ -9,18 +9,55 @@
   {
    "a": "7922a419da56967b",
    "a_name": "Fred again.. & Swedish House Mafia ft Future - Turn On The Lights Again.. (Anyma Remix)",
-   "a_time": 91.347,
+   "a_time": 100.163,
    "b": "2e5ed7c2b8a5ab92",
    "b_name": "Joshlane - System Overload",
-   "b_time": 16.37,
-   "combo": "double_drop",
+   "b_time": 1.393,
+   "combo": "merge",
+   "merge": {
+    "M": 8,
+    "aT": 100.163,
+    "bT": 1.393,
+    "hold_bars": 6,
+    "hold_phrases": 1,
+    "phases": {
+     "handover": {
+      "at_bar": 8,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0.16
+     },
+     "hold": {
+      "bars": 6,
+      "from_bar": 2,
+      "phrases": 1,
+      "seconds": 11.4,
+      "to_bar": 8
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "B drums + A bass + B vox + A synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "b",
+      "other": "a",
+      "vocals": "b"
+     },
+     "label": "B drums + A bass + B vox + A synth",
+     "score": 73.1
+    }
+   },
    "n": 1,
-   "recipe": "Mashup → Transition",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied combo: Anyma #29, atlas plan Mashup → Transition",
-   "works": 82
+   "why": "studied combo: Anyma #29, atlas plan Stem Merge",
+   "works": 85
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #29: Fred again.. - Turn On The Lights Again.. (Anyma Remix) → Joshlane -",

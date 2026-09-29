@@ -1,7 +1,7 @@
 {
- "created": 1790674935.479049,
+ "created": 1790702216.062167,
  "name": "studied-set-mdtud5flgfq",
- "note": "studied set Latin house/pop open-format set (mDtud5fLgFQ) in set order: 7 of 14 songs; skipped 8: #1 Hey Hey (wrong download); #3 Bonita (wrong download); #4 benjy chord (not in the library); #8 casino143 (Rue De La Fortuna Remix) (not in the library); #11 Piensas En Mi (not in the library); #13 Te Estoy Correteando (not in the library); #14 Te Estoy Correteando (not in the library); #16 Mabe (not in the library)",
+ "note": "studied set Latin house/pop open-format set (mDtud5fLgFQ) in set order: 10 of 14 songs; skipped 5: #1 Hey Hey (wrong download); #3 Bonita (wrong download); #13 Te Estoy Correteando (not in the library); #14 Te Estoy Correteando (not in the library); #16 Mabe (not in the library)",
  "parent": null,
  "schema": 1,
  "source": "atlas:studied",
@@ -10,16 +10,32 @@
    "a": "4176a8f42788f0eb",
    "a_name": "LATIN MAFIA, Fred again.. - Alvafro",
    "a_time": 194.746,
+   "b": "3695183278db383b",
+   "b_name": "benjy chord",
+   "b_time": 28.909,
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: Latin house/pop open-format set #4, atlas plan; gap: skipped Bonita",
+   "works": 40
+  },
+  {
+   "a": "3695183278db383b",
+   "a_name": "benjy chord",
+   "a_time": 101.805,
    "b": "accb84f688920782",
    "b_name": "Fred again.., Brian Eno, LATIN MAFIA - Cmon (LATIN MAFIA & Fred edit)",
    "b_time": 18.715,
-   "n": 1,
-   "recipe": "Long Blend",
+   "combo": "studied",
+   "n": 2,
+   "recipe": "Stem Bridge",
    "tempo": {
-    "lock": "pitched"
+    "lock": "none"
    },
-   "why": "studied set: Latin house/pop open-format set #5, atlas plan; gap: skipped Bonita, benjy chord",
-   "works": 79
+   "why": "studied set: Latin house/pop open-format set #5, atlas plan Stem Bridge",
+   "works": 36
   },
   {
    "a": "accb84f688920782",
@@ -29,28 +45,45 @@
    "b_name": "LATIN MAFIA, Fred again.., bby - Quiereme",
    "b_time": 12.957,
    "combo": "studied",
-   "n": 2,
-   "recipe": "Stem Bridge",
-   "tempo": {
-    "lock": "none"
-   },
-   "why": "studied set: Latin house/pop open-format set #6, atlas plan Stem Bridge",
-   "works": 42
-  },
-  {
-   "a": "fc1f625f7770f6e3",
-   "a_name": "LATIN MAFIA, Fred again.., bby - Quiereme",
-   "a_time": 156.475,
-   "b": "d694195c66b9fa52",
-   "b_name": "Jon Hopkins - Open Eye Signal (under the fabric)",
-   "b_time": 15.372,
    "n": 3,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Latin house/pop open-format set #9, atlas plan; gap: skipped casino143 (Rue De La Fortuna Remix)",
-   "works": 50
+   "why": "studied set: Latin house/pop open-format set #6, atlas plan Stem Bridge",
+   "works": 46
+  },
+  {
+   "a": "fc1f625f7770f6e3",
+   "a_name": "LATIN MAFIA, Fred again.., bby - Quiereme",
+   "a_time": 156.475,
+   "b": "a8a4331cc2c1bb9a",
+   "b_name": "casino143 (Rue De La Fortuna Remix)",
+   "b_time": 25.449,
+   "combo": "studied",
+   "n": 4,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Latin house/pop open-format set #8, atlas plan Stem Bridge",
+   "works": 56
+  },
+  {
+   "a": "a8a4331cc2c1bb9a",
+   "a_name": "casino143 (Rue De La Fortuna Remix)",
+   "a_time": 160.673,
+   "b": "d694195c66b9fa52",
+   "b_name": "Jon Hopkins - Open Eye Signal (under the fabric)",
+   "b_time": 15.372,
+   "combo": "studied",
+   "n": 5,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Latin house/pop open-format set #9, atlas plan Stem Bridge",
+   "works": 68
   },
   {
    "a": "d694195c66b9fa52",
@@ -60,52 +93,72 @@
    "b_name": "Fred again.., LATIN MAFIA - Film Scene Soundtrack",
    "b_time": 12.957,
    "combo": "studied",
-   "n": 4,
+   "n": 6,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Latin house/pop open-format set #10, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "5620142bb2d1f323",
    "a_name": "Fred again.., LATIN MAFIA - Film Scene Soundtrack",
    "a_time": 147.504,
+   "b": "5be63cd9482fd58a",
+   "b_name": "Piensas En Mi",
+   "b_time": 12.446,
+   "combo": "studied",
+   "n": 7,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: Latin house/pop open-format set #11, studied stem_intro -> Long Blend",
+   "works": 65
+  },
+  {
+   "a": "5be63cd9482fd58a",
+   "a_name": "Piensas En Mi",
+   "a_time": 95.225,
    "b": "9548c6c4b808d9e8",
    "b_name": "Fred again.., LATIN MAFIA, Lil Yachty - Halo",
    "b_time": 10.101,
-   "n": 5,
-   "recipe": "Long Blend",
+   "combo": "studied",
+   "n": 8,
+   "recipe": "Echo Out",
    "tempo": {
-    "lock": "pitched"
+    "lock": "keylock"
    },
-   "why": "studied set: Latin house/pop open-format set #12, atlas plan; gap: skipped Piensas En Mi",
-   "works": 80
+   "why": "studied set: Latin house/pop open-format set #12, atlas plan Echo Out",
+   "works": 45
   },
   {
    "a": "9548c6c4b808d9e8",
    "a_name": "Fred again.., LATIN MAFIA, Lil Yachty - Halo",
-   "a_time": 165.424,
+   "a_time": 100.424,
    "b": "fc1f625f7770f6e3",
    "b_name": "LATIN MAFIA, Fred again.., bby - Quiereme",
    "b_time": 12.957,
-   "n": 6,
+   "n": 9,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
    "why": "studied set: Latin house/pop open-format set #15, atlas plan; gap: skipped Te Estoy Correteando, Te Estoy Correteando",
-   "works": 38
+   "works": 32
   }
  ],
- "title": "Latin house/pop open-format set (mDtud5fLgFQ) (studied set, 7 songs)",
+ "title": "Latin house/pop open-format set (mDtud5fLgFQ) (studied set, 10 songs)",
  "tracks": [
   "4176a8f42788f0eb",
+  "3695183278db383b",
   "accb84f688920782",
   "fc1f625f7770f6e3",
+  "a8a4331cc2c1bb9a",
   "d694195c66b9fa52",
   "5620142bb2d1f323",
+  "5be63cd9482fd58a",
   "9548c6c4b808d9e8",
   "fc1f625f7770f6e3"
  ],

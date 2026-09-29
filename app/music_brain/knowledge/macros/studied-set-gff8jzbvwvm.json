@@ -1,7 +1,7 @@
 {
- "created": 1790674935.4779289,
+ "created": 1790702216.060074,
  "name": "studied-set-gff8jzbvwvm",
- "note": "studied set Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) in set order: 8 of 59 songs; skipped 51: #1 Mythologies (not in the library); #2 L'Accouchement (not in the library); #3 My House (wrong download); #6 ANMHE (not in the library); #7 Hackney Pigeon (Sammy Virji VIP) (not in the library); #8 Daft Punk - Rollin' & Scratchin' (not in the library); #9 Spinal Scratch (not in the library); #10 808 State (not in the library); #11 Fred again.. & Skrillex & Four Tet - Baby",
+ "note": "studied set Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) in set order: 10 of 59 songs; skipped 49: #1 Mythologies (not in the library); #2 L'Accouchement (not in the library); #3 My House (wrong download); #6 ANMHE (not in the library); #7 Hackney Pigeon (Sammy Virji VIP) (not in the library); #8 Daft Punk - Rollin' & Scratchin' (not in the library); #9 Spinal Scratch (not in the library); #10 808 State (not in the library); #11 Fred again.. & Skrillex & Four Tet - Bab",
  "parent": null,
  "schema": 1,
  "source": "atlas:studied",
@@ -20,7 +20,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #5, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "7b7fd36abc9af3f0",
@@ -35,7 +35,7 @@
     "lock": "none"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #12, atlas plan; gap: skipped ANMHE, Hackney Pigeon (Sammy Virji VIP), Daft Punk - Rollin' & Scratchin', Spinal Scratch, 808 State, Fred again.. & Skrillex & Four Tet - Baby again..",
-   "works": 38
+   "works": 42
   },
   {
    "a": "96481c9efddd078d",
@@ -55,7 +55,7 @@
   {
    "a": "1cf2704ed35730f5",
    "a_name": "Daft Punk - Aerodynamic (Official Audio)",
-   "a_time": 186.567,
+   "a_time": 194.567,
    "b": "f1a519a13f6d8955",
    "b_name": "Victory Lap Five",
    "b_time": 1.765,
@@ -71,7 +71,7 @@
   {
    "a": "f1a519a13f6d8955",
    "a_name": "Victory Lap Five",
-   "a_time": 240.051,
+   "a_time": 318.571,
    "b": "15132a271043f4d6",
    "b_name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
    "b_time": 15.766,
@@ -88,26 +88,56 @@
    "a": "15132a271043f4d6",
    "a_name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
    "a_time": 98.36,
-   "b": "718489ccc67ba2fc",
-   "b_name": "Fred again.. - Delilah (pull me out of this)",
-   "b_time": 35.898,
+   "b": "325530ff2307964a",
+   "b_name": "Stardust - Music Sounds Better With You ｜Audio HQ]",
+   "b_time": 15.813,
    "n": 6,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #48, atlas plan; gap: skipped Fred again.. & Baby Keem - leavemealone, Fred again.. - leavemealone (Nia Archives Remix)",
+   "works": 49
+  },
+  {
+   "a": "325530ff2307964a",
+   "a_name": "Stardust - Music Sounds Better With You ｜Audio HQ]",
+   "a_time": 93.275,
+   "b": "98121caa5cb39b2c",
+   "b_name": "CARIBOU - Can't Do Without You",
+   "b_time": 76.858,
+   "n": 7,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #56, atlas plan; gap: skipped Fred again.. & Baby Keem - leavemealone, Fred again.. - leavemealone (Nia Archives Remix), Stardust - Music Sounds Better With You, Daft Punk - Da Funk, 2009, ICEY.., Never the End, Caribou - Can't Do Without You, DJ Mehdi - ",
+   "why": "studied set: Fred again.. & Thomas Bangalter #53, atlas plan; gap: skipped Daft Punk - Da Funk, 2009, ICEY.., Never the End",
    "works": 45
+  },
+  {
+   "a": "98121caa5cb39b2c",
+   "a_name": "CARIBOU - Can't Do Without You",
+   "a_time": 196.65,
+   "b": "718489ccc67ba2fc",
+   "b_name": "Fred again.. - Delilah (pull me out of this)",
+   "b_time": 35.898,
+   "n": 8,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #56, atlas plan; gap: skipped DJ Mehdi - Signatune, Daft Punk - Around the World",
+   "works": 66
   },
   {
    "a": "718489ccc67ba2fc",
    "a_name": "Fred again.. - Delilah (pull me out of this)",
-   "a_time": 233.205,
+   "a_time": 225.205,
    "b": "8bb6d55d3ba8226e",
    "b_name": "Daft Punk - One More Time (Official Video)",
    "b_time": 15.79,
    "combo": "studied",
-   "n": 7,
+   "n": 9,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
@@ -116,7 +146,7 @@
    "works": 42
   }
  ],
- "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (studied set, 8 songs)",
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (studied set, 10 songs)",
  "tracks": [
   "8bb6d55d3ba8226e",
   "7b7fd36abc9af3f0",
@@ -124,6 +154,8 @@
   "1cf2704ed35730f5",
   "f1a519a13f6d8955",
   "15132a271043f4d6",
+  "325530ff2307964a",
+  "98121caa5cb39b2c",
   "718489ccc67ba2fc",
   "8bb6d55d3ba8226e"
  ],

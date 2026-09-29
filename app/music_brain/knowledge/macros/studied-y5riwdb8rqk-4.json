@@ -1,0 +1,32 @@
+{
+ "created": 1790702216.057125,
+ "name": "studied-y5riwdb8rqk-4",
+ "note": "studied combo from Argy | Tomorrowland Brasil 2025 (position 4), techniques stem_intro",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "1befe637865e47d0",
+   "a_name": "Argy & John Cala - BOOM",
+   "a_time": 232.292,
+   "b": "35a302716faa6e0e",
+   "b_name": "Argy & Omiki - WIND",
+   "b_time": 48.228,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied combo: Argy #4, studied stem_intro -> Long Blend",
+   "works": 86
+  }
+ ],
+ "title": "Argy @ Tomorrowland Brasil 2025 #4: Argy - Boom → Argy - Wind",
+ "tracks": [
+  "1befe637865e47d0",
+  "35a302716faa6e0e"
+ ],
+ "version": 1
+}

@@ -1,5 +1,5 @@
 {
- "created": 1790674935.486183,
+ "created": 1790702216.06796,
  "name": "studied-orb_81stwy8-37",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 37), techniques none heard",
  "parent": null,
@@ -9,14 +9,14 @@
   {
    "a": "f7533130d3a1fbd8",
    "a_name": "Anyma & Chris Avantgarde - Eternity",
-   "a_time": 136.417,
+   "a_time": 43.909,
    "b": "b2dfbc4e15d13108",
    "b_name": "Kevin de Vries & Jast - Born Like That",
    "b_time": 29.814,
    "combo": "merge",
    "merge": {
     "M": 8,
-    "aT": 136.417,
+    "aT": 43.909,
     "bT": 29.814,
     "hold_bars": 6,
     "hold_phrases": 1,
@@ -48,7 +48,7 @@
       "vocals": "a"
      },
      "label": "B drums + B bass + A vox + A synth",
-     "score": 93.7
+     "score": 92.1
     }
    },
    "n": 1,
@@ -57,7 +57,7 @@
     "lock": "pitched"
    },
    "why": "studied combo: Anyma #37, atlas plan Stem Merge",
-   "works": 91
+   "works": 93
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #37: Anyma - Eternity → Kevin de Vries - Born Like That",

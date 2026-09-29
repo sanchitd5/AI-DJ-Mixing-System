@@ -1,5 +1,5 @@
 {
- "created": 1790674935.486454,
+ "created": 1790702216.068214,
  "name": "studied-orb_81stwy8-38",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 38), techniques none heard",
  "parent": null,
@@ -9,30 +9,30 @@
   {
    "a": "b2dfbc4e15d13108",
    "a_name": "Kevin de Vries & Jast - Born Like That",
-   "a_time": 182.811,
+   "a_time": 60.279,
    "b": "a9b2890db8df1ba6",
    "b_name": "Cassian & SCRIPT & Belladonna - Where I'm From",
    "b_time": 30.975,
    "combo": "merge",
    "merge": {
-    "M": 48,
-    "aT": 182.811,
+    "M": 40,
+    "aT": 60.279,
     "bT": 30.975,
-    "hold_bars": 46,
-    "hold_phrases": 6,
+    "hold_bars": 38,
+    "hold_phrases": 5,
     "phases": {
      "handover": {
-      "at_bar": 48,
+      "at_bar": 40,
       "bars": 8,
       "sub_overlap_bars": 0,
-      "vocal_overlap": 0.04
+      "vocal_overlap": 0.2
      },
      "hold": {
-      "bars": 46,
+      "bars": 38,
       "from_bar": 2,
-      "phrases": 6,
-      "seconds": 87.6,
-      "to_bar": 48
+      "phrases": 5,
+      "seconds": 72.4,
+      "to_bar": 40
      },
      "merge_start": {
       "at_bar": 0,
@@ -57,7 +57,7 @@
     "lock": "pitched"
    },
    "why": "studied combo: Anyma #38, atlas plan Stem Merge",
-   "works": 85
+   "works": 96
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #38: Kevin de Vries - Born Like That → Cassian - Where I'm From",

@@ -1,5 +1,5 @@
 {
- "created": 1790674935.402015,
+ "created": 1790702215.989491,
  "name": "combo-artbat---horizon-o-chemicals",
  "note": "",
  "parent": null,
@@ -56,8 +56,8 @@
    "tempo": {
     "lock": "pitched"
    },
-   "why": "atlas combo MERGE (works 97)",
-   "works": 97
+   "why": "atlas combo MERGE (works 100)",
+   "works": 100
   }
  ],
  "title": "Artbat - Horizon → Chemicals (Merge-Hold)",
