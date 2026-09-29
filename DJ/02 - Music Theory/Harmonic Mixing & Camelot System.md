@@ -81,6 +81,8 @@ CRITICAL (Key Matters 100%)       MODERATE                           NEGLIGIBLE 
 2. **The "Drop Swap" / Cut on the "1":** When you cut instantly from Track A's build-up into Track B's drop, there is zero harmonic overlap. The sudden key shift acts as a thrilling acoustic shock rather than a clash. (See [[Drop Swap]]).
 3. **Echo Out / Filter Sweeps:** High-pass filtering Track A while echoing it out strips the fundamental tonal frequencies, clearing the harmonic spectrum for Track B to enter in any key.
 
+### A Long Blend Carries the Clash for Its Whole Length
+Clash tolerance depends on how long two tonal layers sound together, not on the moment of the swap. A [[Bass Swap]] or long EQ blend keeps both tracks' mids, synths and vocals audible for 16-32 bars, so a 3+ hour key clash is heard for that whole stretch even though the bass is cleanly owned by one track. Rule of thumb used by the automated console: blend only at Camelot score 0.8 or better; otherwise use an [[Echo Out]] or [[Breakdown Transition]], which clear the harmonic spectrum first. Big tempo gaps behave the same way: stretching a track past roughly 8% to force a blend smears the drums and vocals, so prefer an Echo Out (the 8% figure is an implementation cap; how it sounds is unverified by listening).
 ---
 
 ## The 5 Pedagogical Questions for Harmonic Mixing

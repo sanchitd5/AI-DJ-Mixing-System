@@ -105,6 +105,8 @@ Filters are steep, resonant frequency sweepers (typically 12dB or 24dB per octav
 * On Beat 1 of the new phrase: **In one decisive motion, snap Track A's Low EQ from 12 o'clock to 7 o'clock, and snap Track B's Low EQ from 7 o'clock to 12 o'clock.**
 * *Result:* The crowd feels an instant, thunderous transition of groove with zero volume dip or phase cancellation.
 
+### Hazard: Dead Air From Muting the Only Band the Other Track Has
+Ownership is a hand-off, so the incoming track must actually contain the band you let through. Cutting Track A to its highs and bringing Track B in on "drums only" leaves a hole if B has no drums at that point (a long ambient intro, an empty stem after a remix or acapella cut). The master goes near silent for a second or two, which a dancefloor hears as a crash. Check that the band you are handing over is audible on the incoming track before you cut the outgoing one; otherwise keep A's full mix and bring B in on the stem that plays (or use an [[Echo Out]]). The same applies to stem tricks such as a voice-alone strip or synth hold on a stem with no energy in that section.
 ---
 
 ## Related Notes
