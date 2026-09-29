@@ -453,7 +453,9 @@ def write_macros(atlas: dict, transitions: List[dict], cache_dir: Path) -> List[
     fresh = {m["name"] for m in out}
     d = mc.macros_dir(cache_dir)
     for p in d.glob("studied-*.json") if d.is_dir() else []:
-        if p.stem not in fresh and str((_read(p, {}) or {}).get("source", "")) == MACRO_SOURCE:
+        old = _read(p, {}) or {}
+        # a macro seeded from the tracked knowledge/ studies a set this cache never studied: keep it
+        if p.stem not in fresh and str(old.get("source", "")) == MACRO_SOURCE and not old.get("knowledge"):
             p.unlink()
     return out
 
