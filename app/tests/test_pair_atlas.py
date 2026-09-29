@@ -153,11 +153,78 @@ def test_incremental_rebuild_and_rules_versioning(cache, monkeypatch):
     full = _build(cache)
     assert full["stats"]["scored"] == 6
     # a schema bump is not read
-    p = pa.atlas_path(cache)
+    p = pa.atlas_path(cache) / pa.META
     doc = json.loads(p.read_text())
     doc["schema"] = 999
     p.write_text(json.dumps(doc))
     assert pa.load(cache) is None
+
+
+def test_segmented_layout_round_trips_and_migrates(cache):
+    doc = {k: v for k, v in _build(cache).items() if k not in ("seeded", "written")}
+    root = pa.atlas_path(cache)
+    assert pa.load(cache) == doc, "load() of the folder is the old single-file dict"
+    assert sorted(p.stem for p in (root / "pairs").glob("*.json")) == sorted(IDS)
+    a = IDS[0]
+    assert pa.pairs_for(a, cache) == {k: v for k, v in doc["pairs"].items() if v["a"] == a}
+    assert pa.track(a, cache) == doc["tracks"][a] and pa.track("../x", cache) is None and pa.pairs_for("..", cache) == {}
+    part = pa.load_for([IDS[0], IDS[1]], cache)
+    assert set(part["pairs"]) == {k for k, v in doc["pairs"].items() if v["a"] in IDS[:2]}
+    assert part["tracks"][IDS[2]]["name"] == NAMES[2] and "bars" not in part["tracks"][IDS[2]]
+    # an old checkout's single file, no folder: migrated once, old file kept renamed
+    shutil.rmtree(root)
+    (cache / "pair_atlas.json").write_text(json.dumps(doc, separators=(",", ":")))
+    assert pa.load(cache) == doc
+    assert (root / pa.META).is_file() and not (cache / "pair_atlas.json").exists()
+    assert json.loads((cache / "pair_atlas.json.migrated").read_text()) == doc
+    # the folder wins from now on: a stale single file written again by old code is ignored
+    (cache / "pair_atlas.json").write_text(json.dumps(dict(doc, pairs={})))
+    assert pa.load(cache) == doc and pa.migrate(root) is False
+
+
+def test_incremental_build_writes_only_changed_shards(cache):
+    first = _build(cache, only=IDS[:2])
+    assert first["written"] == {"tracks": 2, "pairs": 2, "removed": 0}
+    root = pa.atlas_path(cache)
+    stamp = {p.name: p.stat().st_mtime_ns for p in root.rglob("*.json")}
+    again = _build(cache, only=IDS[:2])
+    assert again["written"] == {"tracks": 0, "pairs": 0, "removed": 0}, "0 rescored: no shard written"
+    assert {p.name: p.stat().st_mtime_ns for p in root.rglob("*.json") if p.name != pa.META} == \
+        {k: v for k, v in stamp.items() if k != pa.META}
+    # one new song: its own track + pairs shard, plus A -> new appended to each old A's shard
+    one = _build(cache)
+    assert one["stats"]["scored"] == 4 and one["written"] == {"tracks": 1, "pairs": 3, "removed": 0}
+    # a song leaves the library (only=): its shards go
+    gone = _build(cache, only=IDS[:2])
+    assert gone["written"]["removed"] == 2 and not (root / "tracks" / f"{IDS[2]}.json").exists()
+
+
+def test_build_takes_the_lock_and_nests(cache):
+    import threading
+    from app.music_brain.set_import import _atlas_lock
+
+    with _atlas_lock(cache):
+        _build(cache, only=IDS[:2])                      # re-entrant: a caller already holding it
+        t = threading.Thread(target=_build, args=(cache,), kwargs={"only": IDS[:2]})
+        t.start()
+        t.join(0.5)
+        assert t.is_alive(), "another thread's build waits for the lock"
+    t.join(60)
+    assert not t.is_alive() and pa.load(cache)["stats"]["tracks"] == 2
+
+
+def test_index_is_lazy_per_track(cache, monkeypatch):
+    doc = _build(cache)
+    full = pa.Index(pa.load(cache))
+    reads = []
+    real = pa.pairs_for
+    monkeypatch.setattr(pa, "pairs_for", lambda a, *x, **k: reads.append(a) or real(a, *x, **k))
+    pa._INDEX.clear()
+    idx = pa.cached_index(cache)
+    assert reads == [] and idx.names == full.names and idx.rules == doc["rules"]
+    assert idx.partners(IDS[0]) == full.partners(IDS[0]) and reads == [IDS[0]]
+    assert idx.pair(IDS[0], IDS[1]) == full.pair(IDS[0], IDS[1]) and reads == [IDS[0]]
+    assert pa.cached_index(cache) is idx, "same meta.json: same Index"
 
 
 def _atlas(tracks, pairs):

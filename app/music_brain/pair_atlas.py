@@ -18,10 +18,20 @@ tracks with a cached analysis is judged by the console's OWN rules:
 
 Played evidence (sessions, set logs, learned_techniques sightings) is mined and
 attached on every build, and so is STUDIED evidence (the transitions of the famous sets
-the set learner studied, studied_combos.py): a studied pair is a combo. Stored in CACHE_DIR/pair_atlas.json (schema + rules hash;
-incremental: a pair is rescored only when either track's inputs or the rules change).
+the set learner studied, studied_combos.py): a studied pair is a combo. Incremental: a pair is
+rescored only when either track's inputs or the rules change.
 
-    python3 -m app.music_brain.pair_atlas build [--cache-dir D] [--out F] [--full]
+Stored segmented in the folder CACHE_DIR/pair_atlas/ (write_atlas):
+    meta.json          schema, rules hash, built_at, stats, track_index (light per-track fields), shards
+    tracks/<id>.json   one track's full entry (features)
+    pairs/<a>.json     every A -> * pair of track A ({"a>b": pair})
+A build rewrites only the shards whose bytes changed, meta.json last, under _atlas_lock. load()
+still returns the whole atlas as one dict; request paths use pairs_for / track / load_for /
+cached_index (lazy per A). An old single CACHE_DIR/pair_atlas.json is migrated once into the
+folder and renamed pair_atlas.json.migrated (older checkouts then see "no atlas" and rebuild
+their own file, which this code ignores once the folder exists).
+
+    python3 -m app.music_brain.pair_atlas build [--cache-dir D] [--out DIR] [--full]
     python3 -m app.music_brain.pair_atlas show <track id|name> [--move merge] [-n 10]
     python3 -m app.music_brain.pair_atlas best [--move supermove] [-n 15] [--chains 3]
     python3 -m app.music_brain.pair_atlas studied [--missing] [--json]
@@ -34,9 +44,11 @@ import hashlib
 import json
 import math
 import os
+import re
 import shutil
 import subprocess
 import sys
+import threading
 import time
 from collections import Counter
 from concurrent.futures import ProcessPoolExecutor
@@ -49,7 +61,11 @@ HERE = Path(__file__).resolve().parent
 STATIC = HERE.parent / "ui" / "static"
 RULES_JS = HERE / "pair_atlas_rules.js"
 SCHEMA = 1
-ATLAS_NAME = "pair_atlas.json"
+ATLAS_NAME = "pair_atlas"            # a folder: meta.json, tracks/<id>.json, pairs/<a>.json (see write_atlas)
+META = "meta.json"
+_META_ONLY = ("track_index", "shards")          # meta.json keys that are not part of the atlas dict
+LIGHT_FIELDS = ("name", "artist", "bpm", "key", "duration", "level", "stems", "knowledge")
+_ID_RE = re.compile(r"[A-Za-z0-9_-]{1,64}")
 STEM_NAMES = ("drums", "bass", "vocals", "other")
 
 # the files whose rules the atlas applies: any edit invalidates every pair
@@ -762,18 +778,171 @@ def mine_history(cache_dir: Path, names: Dict[str, str]) -> Dict[str, dict]:
 # ---------------------------------------------------------------- build
 
 def atlas_path(cache_dir: Path) -> Path:
+    """The atlas folder, CACHE_DIR/pair_atlas/ (meta.json, tracks/<id>.json, pairs/<a>.json)."""
     return Path(cache_dir) / ATLAS_NAME
 
 
-def load(cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[dict]:
+def _root(cache_dir: Optional[Path], path: Optional[Path]) -> Path:
     from app.music_brain.config import CACHE_DIR
 
-    p = Path(path) if path else atlas_path(Path(cache_dir) if cache_dir else CACHE_DIR)
+    return Path(path) if path else atlas_path(Path(cache_dir) if cache_dir else CACHE_DIR)
+
+
+def _safe_id(tid: str) -> bool:
+    return isinstance(tid, str) and bool(_ID_RE.fullmatch(tid))
+
+
+def _read_json(p: Path):
     try:
-        d = json.loads(p.read_text(encoding="utf-8"))
+        return json.loads(p.read_text(encoding="utf-8"))
     except (OSError, ValueError):
         return None
+
+
+def _dumps(obj) -> bytes:
+    return json.dumps(obj, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+
+def _write_if_changed(p: Path, data: bytes) -> bool:
+    """Atomic per-process tmp + replace; False (nothing written) when the file already holds these bytes."""
+    try:
+        if p.read_bytes() == data:
+            return False
+    except OSError:
+        pass
+    p.parent.mkdir(parents=True, exist_ok=True)
+    tmp = p.with_name(f"{p.name}.{os.getpid()}.{threading.get_ident()}.tmp")
+    tmp.write_bytes(data)
+    tmp.replace(p)
+    return True
+
+
+def _legacy(root: Path) -> Path:
+    return root.with_name(root.name + ".json")          # pair_atlas/ -> the old single file pair_atlas.json
+
+
+def _meta(root: Path) -> Optional[dict]:
+    d = _read_json(root / META)
     return d if isinstance(d, dict) and d.get("schema") == SCHEMA else None
+
+
+def migrate(root: Path, log=lambda m: None) -> bool:
+    """Old single pair_atlas.json and no folder yet: write the folder once, then rename the old file
+    pair_atlas.json.migrated (kept, never deleted). True when it migrated."""
+    root = Path(root)
+    if root.is_file() or (root / META).exists() or not _legacy(root).is_file():
+        return False
+    from app.music_brain.set_import import _atlas_lock
+
+    with _atlas_lock(root.parent):
+        if (root / META).exists() or not _legacy(root).is_file():
+            return False                                  # another process migrated first
+        old = _load_file(_legacy(root))
+        if old is None:
+            return False                                  # unreadable / other schema: left alone
+        write_atlas(old, root)
+        dest = _legacy(root).with_name(_legacy(root).name + ".migrated")
+        if dest.exists():
+            dest = dest.with_name(f"{dest.name}.{int(time.time())}")
+        _legacy(root).replace(dest)
+        log(f"atlas migrated: {_legacy(root).name} -> {root.name}/ (old file kept as {dest.name})")
+        return True
+
+
+def _load_file(p: Path) -> Optional[dict]:
+    d = _read_json(p)
+    return d if isinstance(d, dict) and d.get("schema") == SCHEMA else None
+
+
+def load(cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[dict]:
+    """The whole atlas as ONE dict (schema, rules, built_at, cache_dir, stats, tracks, pairs), the same
+    shape the old single file had. Parses every shard: request paths use pairs_for / track / load_for."""
+    root = _root(cache_dir, path)
+    if root.is_file():
+        return _load_file(root)                          # an explicit old-style single file
+    migrate(root)
+    meta = _meta(root)
+    if meta is None:
+        return None
+    doc = {k: v for k, v in meta.items() if k not in _META_ONLY}
+    doc["tracks"] = {}
+    for t in meta.get("track_index") or {}:
+        f = _read_json(root / "tracks" / f"{t}.json") if _safe_id(t) else None
+        if isinstance(f, dict):
+            doc["tracks"][t] = f
+    doc["pairs"] = {}
+    for a in meta.get("shards") or []:
+        doc["pairs"].update(pairs_for(a, path=root))
+    return doc
+
+
+def load_meta(cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[dict]:
+    """meta.json only: rules, built_at, stats, track_index {id: name, artist, bpm, key, ...}, shards."""
+    root = _root(cache_dir, path)
+    migrate(root)
+    return _meta(root)
+
+
+def pairs_for(a: str, cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Dict[str, dict]:
+    """Every A -> * pair of one track ({"a>b": pair}) from its own shard; {} when unknown."""
+    if not _safe_id(a):
+        return {}
+    d = _read_json(_root(cache_dir, path) / "pairs" / f"{a}.json")
+    return d if isinstance(d, dict) else {}
+
+
+def track(tid: str, cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[dict]:
+    """One track's full per-track entry (features included); None when unknown."""
+    if not _safe_id(tid):
+        return None
+    d = _read_json(_root(cache_dir, path) / "tracks" / f"{tid}.json")
+    return d if isinstance(d, dict) else None
+
+
+def load_for(ids: Sequence[str], cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[dict]:
+    """A partial atlas for a set of picks: meta fields, the light track_index as tracks (name, artist,
+    bpm, key, duration, level, stems) and only the A -> * pairs of `ids`. Enough for order_picks /
+    macros.from_picks without parsing every shard."""
+    root = _root(cache_dir, path)
+    if root.is_file():
+        return _load_file(root)
+    meta = load_meta(path=root)
+    if meta is None:
+        return None
+    doc = {k: v for k, v in meta.items() if k not in _META_ONLY}
+    doc["tracks"] = dict(meta.get("track_index") or {})
+    doc["pairs"] = {}
+    for a in dict.fromkeys(ids):
+        doc["pairs"].update(pairs_for(a, path=root))
+    return doc
+
+
+def write_atlas(doc: dict, root: Path) -> dict:
+    """Write an atlas dict as the folder: only shards whose bytes changed (atomic each), meta.json
+    last, then shards no longer listed are removed. Callers hold _atlas_lock. Returns counts."""
+    root = Path(root)
+    tracks, pairs = doc.get("tracks") or {}, doc.get("pairs") or {}
+    by_a: Dict[str, Dict[str, dict]] = {}
+    for k, p in pairs.items():
+        by_a.setdefault(p["a"], {})[k] = p
+    bad = [t for t in list(tracks) + list(by_a) if not _safe_id(t)]
+    if bad:
+        raise ValueError(f"atlas track id not usable as a file name: {bad[0]!r}")
+    rep = {"tracks": 0, "pairs": 0, "removed": 0}
+    for t, f in tracks.items():
+        rep["tracks"] += _write_if_changed(root / "tracks" / f"{t}.json", _dumps(f))
+    for a, ps in by_a.items():
+        rep["pairs"] += _write_if_changed(root / "pairs" / f"{a}.json", _dumps(ps))
+    meta = {k: v for k, v in doc.items() if k not in ("tracks", "pairs", "seeded", "written")}
+    meta["track_index"] = {t: {f: tr[f] for f in LIGHT_FIELDS if f in tr} for t, tr in tracks.items()}
+    meta["shards"] = sorted(by_a)
+    _write_if_changed(root / META, json.dumps(meta, sort_keys=True, indent=1).encode("utf-8") + b"\n")
+    for sub, keep in (("tracks", tracks), ("pairs", by_a)):
+        for p in (root / sub).glob("*.json") if (root / sub).is_dir() else []:
+            if p.stem not in keep:
+                p.unlink(missing_ok=True)
+                rep["removed"] += 1
+    return rep
 
 
 def library_levels(feats: Dict[str, dict], cache_dir: Path) -> Dict[str, Optional[int]]:
@@ -793,12 +962,22 @@ def library_levels(feats: Dict[str, dict], cache_dir: Path) -> Dict[str, Optiona
 
 def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, workers: Optional[int] = None,
           log=print, only: Optional[Sequence[str]] = None, seed_macros_to: Optional[Path] = None) -> dict:
-    """Score every ordered pair; only: restrict to these track ids (tests, trial runs)."""
+    """Score every ordered pair; only: restrict to these track ids (tests, trial runs). Runs under
+    _atlas_lock (re-entrant in one process, so callers that already hold it are fine)."""
+    from app.music_brain.set_import import _atlas_lock
+
+    with _atlas_lock(Path(cache_dir)):
+        return _build(cache_dir, out, full, workers, log, only, seed_macros_to)
+
+
+def _build(cache_dir: Path, out: Optional[Path], full: bool, workers: Optional[int], log,
+           only: Optional[Sequence[str]], seed_macros_to: Optional[Path]) -> dict:
     from app.music_brain import keylock
 
     t0 = time.time()
     cache_dir = Path(cache_dir)
     out = Path(out) if out else atlas_path(cache_dir)
+    migrate(out, log)
     lib = Library(cache_dir)
     rh = rules_hash()
     old = None if full else load(path=out)
@@ -911,11 +1090,8 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
                      "studied_transitions": len(studied), "studied_pairs": n_studied,
                      "seconds": {"features": round(t_feat, 1), "python": round(t_py, 1), "node": round(t_node, 1),
                                  "total": round(time.time() - t0, 1)}}}
-    out.parent.mkdir(parents=True, exist_ok=True)
-    tmp = out.with_suffix(f".json.{os.getpid()}.tmp")   # per process: two builds never share one tmp
-    tmp.write_text(json.dumps(doc, separators=(",", ":")), encoding="utf-8")
-    tmp.replace(out)
-    log(json.dumps(doc["stats"]))
+    doc["written"] = write_atlas(doc, out)          # changed shards only, meta.json last (not stored)
+    log(json.dumps(doc["stats"]) + f" written {json.dumps(doc['written'])}")
     if seed_macros_to is not None:
         doc["seeded"] = seed_macros(doc, seed_macros_to) + sc.write_macros(doc, studied, seed_macros_to)
         log(f"seeded macros: {len(doc['seeded'])} ({', '.join(m['name'] for m in doc['seeded'][:4])} ...)")
@@ -1138,48 +1314,73 @@ def order_picks(atlas: dict, ids: Sequence[str], locked: bool = False) -> dict:
 
 class Index:
     """What the server keeps in memory: per A, the partner summaries worth serving
-    (top `keep` by works, top `per_move` per move, every combo and played pair), so the
-    full atlas (all pairs) is parsed once and dropped."""
+    (top `keep` by works, top `per_move` per move, every combo and played pair).
+    Index(atlas): from a whole atlas dict, every A up front. Index.lazy(root, meta): from the folder,
+    meta.json now and one A's shard (pairs/<a>.json) the first time A is asked for, so a request
+    never parses every shard."""
 
-    def __init__(self, atlas: dict, keep: int = 60, per_move: int = 20):
-        self.rules, self.built_at, self.stats = atlas.get("rules"), atlas.get("built_at"), atlas.get("stats")
-        self.names = {t: f.get("name") for t, f in atlas["tracks"].items()}
-        by_a: Dict[str, List[dict]] = {}
-        for p in atlas["pairs"].values():
-            by_a.setdefault(p["a"], []).append(p)
+    def __init__(self, atlas: Optional[dict] = None, keep: int = 60, per_move: int = 20, *,
+                 root: Optional[Path] = None, meta: Optional[dict] = None):
+        head = atlas if atlas is not None else (meta or {})
+        self.rules, self.built_at, self.stats = head.get("rules"), head.get("built_at"), head.get("stats")
+        self.keep, self.per_move, self.root = keep, per_move, root
+        tracks = atlas["tracks"] if atlas is not None else (meta or {}).get("track_index") or {}
+        self._light = {"tracks": tracks}                # all summary() reads: name, bpm, duration
+        self.names = {t: f.get("name") for t, f in tracks.items()}
         self.by_a: Dict[str, List[dict]] = {}
         self.pairs: Dict[str, dict] = {}
-        for a, ps in by_a.items():
-            ps.sort(key=lambda p: (-p["works"], p["b"]))
-            pick = {p["b"]: p for p in ps[:keep]}
-            for p in ps:
-                if p.get("combo") or p.get("played") or p.get("seed"):
-                    pick[p["b"]] = p
-            for m in MOVES:
-                if m in UNJUDGED:
-                    continue
-                ok = [p for p in ps if move_of(p, m).get("ok")]
-                ok.sort(key=lambda p: (-(move_of(p, m).get("score") or 0), -p["works"], p["b"]))
-                for p in ok[:per_move]:
-                    pick[p["b"]] = p
-            rows = []
-            for p in pick.values():
-                s = summary(atlas, p)
-                s["plan"] = plan_of(p)
-                rows.append(s)
-                self.pairs[f"{a}>{p['b']}"] = s
-            rows.sort(key=lambda s: (not s.get("studied"), -s["works"], s["b"]))   # studied combos first
-            self.by_a[a] = rows
+        if atlas is not None:
+            by_a: Dict[str, List[dict]] = {}
+            for p in atlas["pairs"].values():
+                by_a.setdefault(p["a"], []).append(p)
+            for a, ps in by_a.items():
+                self._fill(a, ps)
+
+    @classmethod
+    def lazy(cls, root: Path, meta: dict, keep: int = 60, per_move: int = 20) -> "Index":
+        return cls(None, keep, per_move, root=Path(root), meta=meta)
+
+    def _fill(self, a: str, ps: List[dict]) -> List[dict]:
+        ps.sort(key=lambda p: (-p["works"], p["b"]))
+        pick = {p["b"]: p for p in ps[:self.keep]}
+        for p in ps:
+            if p.get("combo") or p.get("played") or p.get("seed"):
+                pick[p["b"]] = p
+        for m in MOVES:
+            if m in UNJUDGED:
+                continue
+            ok = [p for p in ps if move_of(p, m).get("ok")]
+            ok.sort(key=lambda p: (-(move_of(p, m).get("score") or 0), -p["works"], p["b"]))
+            for p in ok[:self.per_move]:
+                pick[p["b"]] = p
+        rows = []
+        for p in pick.values():
+            s = summary(self._light, p)
+            s["plan"] = plan_of(p)
+            rows.append(s)
+            self.pairs[f"{a}>{p['b']}"] = s
+        rows.sort(key=lambda s: (not s.get("studied"), -s["works"], s["b"]))   # studied combos first
+        self.by_a[a] = rows
+        return rows
+
+    def rows(self, a: str) -> List[dict]:
+        """A's served partner summaries (lazy mode: reads A's shard the first time)."""
+        if a in self.by_a or self.root is None:
+            return self.by_a.get(a, [])
+        if a not in self.names:
+            return []
+        return self._fill(a, list(pairs_for(a, path=self.root).values()))
 
     def partners(self, a: str, move: Optional[str] = None, n: int = 10) -> List[dict]:
         move = normalize_move(move)
-        rows = self.by_a.get(a, [])
+        rows = self.rows(a)
         if move:
             rows = [r for r in rows if r["moves"].get(move, {}).get("ok")]
             rows = sorted(rows, key=lambda r: (-((r["moves"][move].get("score") or 0) + r["works"] / 100), r["b"]))
         return rows[:max(1, min(100, n))]
 
     def pair(self, a: str, b: str) -> Optional[dict]:
+        self.rows(a)
         return self.pairs.get(f"{a}>{b}")
 
 
@@ -1198,22 +1399,26 @@ _INDEX: Dict[str, tuple] = {}
 
 
 def cached_index(cache_dir: Optional[Path] = None, path: Optional[Path] = None) -> Optional[Index]:
-    """Index of the atlas file, rebuilt when the file changes (mtime + size). None: no atlas."""
-    from app.music_brain.config import CACHE_DIR
-
-    p = Path(path) if path else atlas_path(Path(cache_dir) if cache_dir else CACHE_DIR)
+    """Lazy Index of the atlas folder, rebuilt when meta.json changes (mtime + size; a build writes
+    it last). None: no atlas. An old single-file path is still read whole."""
+    p = _root(cache_dir, path)
+    migrate(p)
     try:
-        st = p.stat()
+        st = (p if p.is_file() else p / META).stat()
     except OSError:
         return None
     stamp = (st.st_mtime_ns, st.st_size)
     hit = _INDEX.get(str(p))
     if hit and hit[0] == stamp:
         return hit[1]
-    atlas = load(path=p)
-    if atlas is None:
+    if p.is_file():
+        atlas = _load_file(p)
+        idx = Index(atlas) if atlas is not None else None
+    else:
+        meta = _meta(p)
+        idx = Index.lazy(p, meta) if meta is not None else None
+    if idx is None:
         return None
-    idx = Index(atlas)
     _INDEX[str(p)] = (stamp, idx)
     return idx
 
@@ -1285,7 +1490,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("cmd", choices=("build", "show", "best", "chains", "picks", "studied", "import-set"))
     ap.add_argument("arg", nargs="*")
     ap.add_argument("--cache-dir", default=str(CACHE_DIR))
-    ap.add_argument("--out", default=None, help="atlas file (default CACHE_DIR/pair_atlas.json)")
+    ap.add_argument("--out", default=None, help="atlas folder (default CACHE_DIR/pair_atlas/)")
     ap.add_argument("--full", action="store_true", help="rescore everything")
     ap.add_argument("--no-macros", action="store_true", help="build: do not write the ready-made macros")
     ap.add_argument("--macros-dir", default=None, help="build: cache dir whose macros/ gets them (default --cache-dir)")
