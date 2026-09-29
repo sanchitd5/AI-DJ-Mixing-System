@@ -6,11 +6,11 @@
    "From 2214 to 2218 seconds, the DJ played the vocal stem of 'Open Eye Signal' with no lyrics over a beat that was already playing, then dropped the beat at 2218 seconds.",
    "At 3998 seconds, the DJ played the vocal 'music sounds better with you' with the beat removed, then dropped the beat at 4002 seconds to create an acapella drop.",
    "At 4034 seconds, the DJ played the vocals from 'Fred again.. - Victory Lap Five' over a silent beat (drums at -62.1 dB, bass at -78.2 dB) for 8 seconds until dropping the beat at 4042 seconds.",
-   "The DJ played the vocals of 'Koi Ladki afro blend - Bianca Maieli' alone for 12 seconds starting at 548.0s, then dropped the beat at 560.0s.",
    "The DJ played the 'Last Night' vocal stem in isolation for 8 seconds, then introduced the beat and bass at 4781.0s, creating an acapella drop effect.",
-   "The DJ played the 'Last Night' vocal stem in isolation for 8 seconds, then introduced the beat and bass at 4797.0s, creating an acapella drop effect."
+   "The DJ played the 'Last Night' vocal stem in isolation for 8 seconds, then introduced the beat and bass at 4797.0s, creating an acapella drop effect.",
+   "The DJ played the 'Last Night' vocal stem in isolation for 24 seconds, then introduced the beat and bass at 4904.0s, creating an acapella drop effect."
   ],
-  "count": 15,
+  "count": 14,
   "key_score_min": null,
   "kind": "acapella_drop",
   "live": true,
@@ -143,32 +143,6 @@
     "set_id": "gfF8jzBVWvM",
     "tempo_gap": null,
     "track_a": "Fred again.. - Victory Lap Five",
-    "track_b": ""
-   },
-   {
-    "at": 548.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocals of 'Koi Ladki afro blend - Bianca Maieli' alone for 12 seconds starting at 548.0s, then dropped the beat at 560.0s.",
-     "drop_at": 560.0,
-     "held_s": 12.0,
-     "hook": false,
-     "levels_db": {
-      "bass": -87.1,
-      "drums": -51.7,
-      "other": -23.9,
-      "vocals": -21.5
-     },
-     "src_span": [
-      60.1,
-      72.1
-     ],
-     "words": ""
-    },
-    "key_score": null,
-    "kind": "acapella_drop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Koi Ladki afro blend - Bianca Maieli",
     "track_b": ""
    },
    {
@@ -411,10 +385,9 @@
    "From 772s, the DJ played 'Cmon (LATIN MAFIA & Fred edit)' with drums, bass, and other stems at low levels while overlaying the vocals of 'benjy chord' as an acapella.",
    "From 2987s, the DJ played 'Fred again.. - Halo' with drums, bass, and other stems low while overlaying the vocals of 'Te Estoy Correteando' as an acapella.",
    "The DJ played the vocals from 'Caribou - Can't Do Without You' over the instrumental of 'DJ Mehdi - Signatune' starting at 5796.0s.",
-   "The DJ played the vocals of 'Taal se taal - Jyoty remix' over the instrumental of 'Aap Jaisa Koi - MadStarBase remix' starting at 2352.0s.",
    "At 7808.0 seconds, the DJ played the 'drums' and 'bass' stems from 'Cassian & SCRIPT & Belladonna - Where I'm From' while overlaying the 'vocals' stem from 'Da Hool - Meet Her At The Love Parade (YOTTO & Cassian Rework)' as an acapella over."
   ],
-  "count": 6,
+  "count": 5,
   "key_score_min": 0.0,
   "kind": "acapella_over",
   "live": true,
@@ -477,25 +450,6 @@
     "track_b": "DJ Mehdi - Signatune"
    },
    {
-    "at": 2352.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocals of 'Taal se taal - Jyoty remix' over the instrumental of 'Aap Jaisa Koi - MadStarBase remix' starting at 2352.0s.",
-     "levels_db": {
-      "bass": -29.5,
-      "drums": -23.7,
-      "other": -29.3,
-      "vocals": -27.1
-     },
-     "vocal_from": "B"
-    },
-    "key_score": 0.0,
-    "kind": "acapella_over",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": 0.2964,
-    "track_a": "Aap Jaisa Koi - MadStarBase remix",
-    "track_b": "Taal se taal - Jyoty remix"
-   },
-   {
     "at": 7808.0,
     "detail": {
      "ai_rule": "At 7808.0 seconds, the DJ played the 'drums' and 'bass' stems from 'Cassian & SCRIPT & Belladonna - Where I'm From' while overlaying the 'vocals' stem from 'Da Hool - Meet Her At The Love Parade (YOTTO & Cassian Rework)' as an acapella over.",
@@ -534,7 +488,7 @@
    }
   ],
   "stems": true,
-  "tempo_gap_max": 0.2964,
+  "tempo_gap_max": 0.2258,
   "what": "one record's vocal rides the other record's drums and bass"
  },
  "bass_swap": {
@@ -574,10 +528,9 @@
   "ai_rules": [
    "From 2754s, the DJ looped the vocals of 'Piensas En Mi' over the beat of 'Fred again.. - Halo' to extend the section.",
    "From 3447s, the DJ looped the vocals of 'Te Estoy Correteando' over the beat of 'Quiereme' to extend the section.",
-   "The DJ looped the section from 'Caribou - Can't Do Without You' and extended it over 'DJ Mehdi - Signatune' starting at 5668.0s.",
-   "The DJ looped the 'Taal se taal - Jyoty remix' track for 10 seconds starting at 2284.0s, extending a section that was already playing in 'Aap Jaisa Koi - MadStarBase remix'."
+   "The DJ looped the section from 'Caribou - Can't Do Without You' and extended it over 'DJ Mehdi - Signatune' starting at 5668.0s."
   ],
-  "count": 5,
+  "count": 4,
   "key_score_min": 0.0,
   "kind": "loop_extend",
   "live": false,
@@ -640,25 +593,6 @@
     "track_b": "DJ Mehdi - Signatune"
    },
    {
-    "at": 2284.0,
-    "detail": {
-     "ai_rule": "The DJ looped the 'Taal se taal - Jyoty remix' track for 10 seconds starting at 2284.0s, extending a section that was already playing in 'Aap Jaisa Koi - MadStarBase remix'.",
-     "levels_db": {
-      "bass": -26.3,
-      "drums": -27.2,
-      "other": -27.5,
-      "vocals": -27.2
-     },
-     "src_t": 23.26
-    },
-    "key_score": 0.0,
-    "kind": "loop_extend",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": 0.2964,
-    "track_a": "Aap Jaisa Koi - MadStarBase remix",
-    "track_b": "Taal se taal - Jyoty remix"
-   },
-   {
     "at": 974.0,
     "detail": {
      "levels_db": {
@@ -678,7 +612,7 @@
    }
   ],
   "stems": false,
-  "tempo_gap_max": 0.2964,
+  "tempo_gap_max": 0.0833,
   "what": "A's section is looped (source time stops advancing) to stretch the blend"
  },
  "stem_intro": {
@@ -692,7 +626,7 @@
    "The DJ introduced the stems in the order vocals, other, drums, and bass for 'Daft Punk - Touch' over 'Serious Sounds (VIP)' starting at 2652.0s.",
    "The DJ introduced the stems in the order other, bass, vocals, and drums for 'Daft Punk - Giorgio by Moroder' over 'Daft Punk - Touch' starting at 2712.0s."
   ],
-  "count": 21,
+  "count": 19,
   "key_score_min": 0.0,
   "kind": "stem_intro",
   "live": true,
@@ -972,55 +906,6 @@
     "track_b": "Femi"
    },
    {
-    "at": 2056.0,
-    "detail": {
-     "ai_rule": "The DJ introduced the 'other' stem first, then added bass, then vocals from 'Go to sleep - Hanumankind & Parimal Shais' at 2056.0s, while the 'Nrithyadhurjadikaragathadamaruka - RHYTHOM' track was playing.",
-     "lead_s": 8.0,
-     "levels_db": {
-      "bass": -77.2,
-      "drums": -11.8,
-      "other": -27.0,
-      "vocals": -30.1
-     },
-     "order": [
-      "other",
-      "bass",
-      "vocals"
-     ]
-    },
-    "key_score": 1.0,
-    "kind": "stem_intro",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": 0.0,
-    "track_a": "Nrithyadhurjadikaragathadamaruka - RHYTHOM",
-    "track_b": "Go to sleep - Hanumankind & Parimal Shais"
-   },
-   {
-    "at": 2344.0,
-    "detail": {
-     "ai_rule": "The DJ introduced 'Pinnak - Sambata' by starting with vocals, then drums, then bass, and finally 'other' stem at 2344.0s, after playing 'Taal se taal - Jyoty remix'.",
-     "lead_s": 48.0,
-     "levels_db": {
-      "bass": -17.2,
-      "drums": -22.3,
-      "other": -28.3,
-      "vocals": -34.3
-     },
-     "order": [
-      "vocals",
-      "drums",
-      "bass",
-      "other"
-     ]
-    },
-    "key_score": 0.9,
-    "kind": "stem_intro",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": 0.2027,
-    "track_a": "Taal se taal - Jyoty remix",
-    "track_b": "Pinnak - Sambata"
-   },
-   {
     "at": 2900.0,
     "detail": {
      "ai_rule": "At 2900.0 seconds, the DJ introduced the 'other' stem from 'Anyma & HILLS - Dreams' followed by the 'vocals' stem from 'PACS & Ruiz (BR) - No Control' in a stem intro.",
@@ -1219,7 +1104,7 @@
    "From 2683 to 2685 seconds, the DJ chopped the phrases 'Y tú no puedes verlo así' and 'Todo el mundo está observando' from 'Piensas En Mi' and played them in a loop.",
    "From 2721 to 2723 seconds, the DJ chopped the phrase 'Todo el mundo está observando' from 'Piensas En Mi' and played it in a loop."
   ],
-  "count": 85,
+  "count": 80,
   "key_score_min": null,
   "kind": "vocal_chop",
   "live": false,
@@ -2717,411 +2602,6 @@
     "set_id": "gfF8jzBVWvM",
     "tempo_gap": null,
     "track_a": "Caribou - Can't Do Without You",
-    "track_b": ""
-   },
-   {
-    "at": 1956.25,
-    "detail": {
-     "ai_rule": "The DJ chopped and re-triggered short vocal fragments from 'Paleta x Faint - DJ g2g' at various timestamps between 29.8-87.5s.",
-     "fragments": [
-      [
-       29.79,
-       31.05
-      ],
-      [
-       34.28,
-       35.52
-      ],
-      [
-       32.12,
-       34.16
-      ],
-      [
-       30.24,
-       32.51
-      ],
-      [
-       86.19,
-       87.45
-      ],
-      [
-       43.2,
-       44.7
-      ],
-      [
-       34.38,
-       35.64
-      ],
-      [
-       43.63,
-       44.89
-      ],
-      [
-       42.29,
-       43.78
-      ],
-      [
-       42.47,
-       43.7
-      ],
-      [
-       43.49,
-       45.0
-      ],
-      [
-       47.11,
-       49.4
-      ],
-      [
-       48.94,
-       51.24
-      ],
-      [
-       51.3,
-       53.05
-      ],
-      [
-       52.85,
-       54.63
-      ],
-      [
-       54.12,
-       56.16
-      ],
-      [
-       55.96,
-       57.73
-      ],
-      [
-       57.53,
-       59.55
-      ],
-      [
-       59.58,
-       60.86
-      ],
-      [
-       61.16,
-       62.93
-      ],
-      [
-       63.51,
-       65.02
-      ],
-      [
-       51.48,
-       52.74
-      ],
-      [
-       64.8,
-       67.36
-      ],
-      [
-       67.13,
-       68.38
-      ]
-     ],
-     "jumps": 9,
-     "levels_db": {
-      "bass": -28.5,
-      "drums": -15.9,
-      "other": -23.1,
-      "vocals": -28.6
-     },
-     "set_span": [
-      1956.25,
-      1996.5
-     ],
-     "words": []
-    },
-    "key_score": null,
-    "kind": "vocal_chop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Paleta x Faint - DJ g2g",
-    "track_b": ""
-   },
-   {
-    "at": 2099.25,
-    "detail": {
-     "ai_rule": "From 88.1 to 94.9 seconds, the DJ cut between short vocal clips from 'Nrithyadhurjadikaragathadamaruka - RHYTHOM' to create a chopped vocal loop while drums and bass played underneath.",
-     "fragments": [
-      [
-       88.14,
-       89.65
-      ],
-      [
-       40.78,
-       42.01
-      ],
-      [
-       89.4,
-       91.14
-      ],
-      [
-       93.67,
-       94.92
-      ],
-      [
-       91.68,
-       92.95
-      ],
-      [
-       44.08,
-       45.32
-      ],
-      [
-       92.71,
-       94.23
-      ],
-      [
-       45.86,
-       47.37
-      ],
-      [
-       94.76,
-       96.02
-      ],
-      [
-       47.15,
-       48.41
-      ],
-      [
-       56.76,
-       58.26
-      ],
-      [
-       63.51,
-       65.03
-      ],
-      [
-       63.07,
-       64.84
-      ],
-      [
-       55.1,
-       57.12
-      ],
-      [
-       63.92,
-       65.19
-      ],
-      [
-       59.48,
-       61.72
-      ],
-      [
-       62.55,
-       64.02
-      ],
-      [
-       69.27,
-       70.52
-      ]
-     ],
-     "jumps": 6,
-     "levels_db": {
-      "bass": -14.2,
-      "drums": -28.5,
-      "other": -34.3,
-      "vocals": -28.0
-     },
-     "set_span": [
-      2099.25,
-      2123.25
-     ],
-     "words": []
-    },
-    "key_score": null,
-    "kind": "vocal_chop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Nrithyadhurjadikaragathadamaruka - RHYTHOM",
-    "track_b": ""
-   },
-   {
-    "at": 2130.75,
-    "detail": {
-     "ai_rule": "From 24.2 to 84.1 seconds, the DJ layered short vocal fragments from 'Nrithyadhurjadikaragathadamaruka - RHYTHOM' in a non-linear sequence to form a vocal chop effect over the instrumental.",
-     "fragments": [
-      [
-       24.2,
-       26.45
-      ],
-      [
-       73.85,
-       75.08
-      ],
-      [
-       28.01,
-       29.54
-      ],
-      [
-       76.92,
-       78.15
-      ],
-      [
-       29.3,
-       31.58
-      ],
-      [
-       32.37,
-       33.88
-      ],
-      [
-       33.65,
-       35.18
-      ],
-      [
-       82.57,
-       84.06
-      ],
-      [
-       37.24,
-       39.01
-      ],
-      [
-       86.4,
-       87.66
-      ]
-     ],
-     "jumps": 3,
-     "levels_db": {
-      "bass": -15.6,
-      "drums": -29.8,
-      "other": -26.0,
-      "vocals": -26.3
-     },
-     "set_span": [
-      2130.75,
-      2145.75
-     ],
-     "words": []
-    },
-    "key_score": null,
-    "kind": "vocal_chop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Nrithyadhurjadikaragathadamaruka - RHYTHOM",
-    "track_b": ""
-   },
-   {
-    "at": 2205.0,
-    "detail": {
-     "ai_rule": "From 71.9 to 207.6 seconds, the DJ isolated and repeated key vocal lines from 'Go to sleep - Hanumankind & Parimal Shais' to create a vocal chop, with music continuing underneath.",
-     "fragments": [
-      [
-       164.47,
-       165.98
-      ],
-      [
-       71.87,
-       73.38
-      ],
-      [
-       73.75,
-       75.0
-      ],
-      [
-       75.86,
-       77.37
-      ],
-      [
-       206.38,
-       207.63
-      ],
-      [
-       79.88,
-       81.36
-      ],
-      [
-       176.94,
-       178.17
-      ],
-      [
-       82.78,
-       84.03
-      ]
-     ],
-     "jumps": 6,
-     "levels_db": {
-      "bass": -88.1,
-      "drums": -33.0,
-      "other": -27.7,
-      "vocals": -24.2
-     },
-     "set_span": [
-      2205.0,
-      2219.75
-     ],
-     "words": [
-      "Got some shit that's in the basement, and if you just keep patient",
-      "Maybe you can get yourself a decent view",
-      "Maybe you can get yourself a decent view / Tired of feeling complacent, tired of feeling vacant",
-      "Tired of feeling complacent, tired of feeling vacant / Inside of my head's a never-ending loop",
-      "Maybe all this shit was just motherfucking dream (shit was just a motherfucking dreaming)",
-      "I'm just tired all the time, man",
-      "I'm just tired all the time, man",
-      "Guess it's goodnight for the time being"
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_chop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Go to sleep - Hanumankind & Parimal Shais",
-    "track_b": ""
-   },
-   {
-    "at": 2556.25,
-    "detail": {
-     "ai_rule": "From 30.7 to 80.4 seconds, the DJ selected and reordered short vocal phrases from 'Pinnak - Sambata' to form a chopped vocal sequence over the beat.",
-     "fragments": [
-      [
-       79.09,
-       80.32
-      ],
-      [
-       30.81,
-       32.12
-      ],
-      [
-       313.47,
-       314.96
-      ],
-      [
-       30.7,
-       32.01
-      ],
-      [
-       79.16,
-       80.39
-      ]
-     ],
-     "jumps": 4,
-     "levels_db": {
-      "bass": -16.5,
-      "drums": -18.9,
-      "other": -34.8,
-      "vocals": -20.9
-     },
-     "set_span": [
-      2556.25,
-      2568.25
-     ],
-     "words": [
-      "'Shani' deto hope mala, scene chi kalji mhanun",
-      "Baki kay nay / 'DON' lok chaltyat kon bhardi bhai nay",
-      "(Ae naye SAMBATA) / Pn tumchya sukha dukhat kayam mala lakshat theva,",
-      "Baki kay nay / 'DON' lok chaltyat kon bhardi bhai nay",
-      "'Shani' deto hope mala, scene chi kalji mhanun"
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_chop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Pinnak - Sambata",
     "track_b": ""
    },
    {
@@ -7659,7 +7139,7 @@
    "The DJ looped the vocal line 'Hold on, if love is the answer, you're home' from 'Daft Punk - Touch' by repeating it across sections 280.1 to 287.1, 324.6 to 329.6, 316.8 to 321.8, and so on, while the drums were low and the bass provided support.",
    "At 5673 seconds, the DJ repeated the phrase 'I can't do without you' four times across different source sections to create a vocal loop."
   ],
-  "count": 21,
+  "count": 20,
   "key_score_min": null,
   "kind": "vocal_loop",
   "live": false,
@@ -8066,55 +7546,6 @@
     "set_id": "gfF8jzBVWvM",
     "tempo_gap": null,
     "track_a": "DJ Mehdi - Signatune",
-    "track_b": ""
-   },
-   {
-    "at": 1953.0,
-    "detail": {
-     "ai_rule": "The DJ looped the vocal line from 'Paleta x Faint - DJ g2g' three times between 23.2-68.9s, repeating it once.",
-     "levels_db": {
-      "bass": -22.9,
-      "drums": -18.0,
-      "other": -24.7,
-      "vocals": -27.2
-     },
-     "repeats": 1,
-     "set_span": [
-      1953.0,
-      1997.0
-     ],
-     "source_lines": [
-      [
-       23.2,
-       29.3
-      ],
-      [
-       29.5,
-       34.5
-      ],
-      [
-       30.4,
-       35.5
-      ],
-      [
-       37.8,
-       46.0
-      ],
-      [
-       45.1,
-       64.7
-      ],
-      [
-       63.8,
-       68.9
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_loop",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Paleta x Faint - DJ g2g",
     "track_b": ""
    },
    {
@@ -8635,7 +8066,7 @@
    "At 1656s, the DJ played the chorus 'Todo lo que dice sé que va a doler, va a volver' from 'casino143 (Rue De La Fortuna Remix)' at 125.5s, then the line 'Resultó de nuevo que faltó creer / Suele ser mentira si dicen volver' from 112.1s, and looped the original chorus again from 43.8s.",
    "At 2198s, the DJ played the repeated line 'Podrías mirarme como tú quieras' from 'Film Scene Soundtrack' at 37.5s, then played the same line again from 52.8s."
   ],
-  "count": 89,
+  "count": 84,
   "key_score_min": null,
   "kind": "vocal_resequence",
   "live": false,
@@ -9886,178 +9317,6 @@
     "set_id": "gfF8jzBVWvM",
     "tempo_gap": null,
     "track_a": "Caribou - Can't Do Without You",
-    "track_b": ""
-   },
-   {
-    "at": 502.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocal lines from 'Koi Ladki afro blend - Bianca Maieli' in a different order than the original, using sections at 90.8-95.8s and 29.9-53.9s.",
-     "levels_db": {
-      "bass": -29.2,
-      "drums": -30.8,
-      "other": -22.3,
-      "vocals": -30.5
-     },
-     "set_span": [
-      502.0,
-      542.0
-     ],
-     "source_lines": [
-      [
-       90.8,
-       95.8
-      ],
-      [
-       29.9,
-       53.9
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_resequence",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Koi Ladki afro blend - Bianca Maieli",
-    "track_b": ""
-   },
-   {
-    "at": 2082.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocal lines from 'Nrithyadhurjadikaragathadamaruka - RHYTHOM' in a different order than the original, using sections at 70.8-81.9s, 31.8-45.8s, 62.0-67.0s, 54.1-59.1s, and 58.2-68.3s.",
-     "levels_db": {
-      "bass": -17.0,
-      "drums": -31.2,
-      "other": -33.0,
-      "vocals": -23.6
-     },
-     "set_span": [
-      2082.0,
-      2127.0
-     ],
-     "source_lines": [
-      [
-       70.8,
-       81.9
-      ],
-      [
-       31.8,
-       45.8
-      ],
-      [
-       62.0,
-       67.0
-      ],
-      [
-       54.1,
-       59.1
-      ],
-      [
-       58.2,
-       68.3
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_resequence",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Nrithyadhurjadikaragathadamaruka - RHYTHOM",
-    "track_b": ""
-   },
-   {
-    "at": 2129.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocal lines from 'Nrithyadhurjadikaragathadamaruka - RHYTHOM' in a different order than the original, using sections at 70.5-79.7s and 29.6-39.7s.",
-     "levels_db": {
-      "bass": -15.6,
-      "drums": -29.8,
-      "other": -26.0,
-      "vocals": -26.3
-     },
-     "set_span": [
-      2129.0,
-      2146.0
-     ],
-     "source_lines": [
-      [
-       70.5,
-       79.7
-      ],
-      [
-       29.6,
-       39.7
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_resequence",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Nrithyadhurjadikaragathadamaruka - RHYTHOM",
-    "track_b": ""
-   },
-   {
-    "at": 2334.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocal lines from 'Aap Jaisa Koi - MadStarBase remix' in a different order than the original, using sections at 149.7-156.7s and 90.7-98.7s.",
-     "levels_db": {
-      "bass": -34.4,
-      "drums": -19.9,
-      "other": -34.7,
-      "vocals": -29.0
-     },
-     "set_span": [
-      2334.0,
-      2347.0
-     ],
-     "source_lines": [
-      [
-       149.7,
-       156.7
-      ],
-      [
-       90.7,
-       98.7
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_resequence",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Aap Jaisa Koi - MadStarBase remix",
-    "track_b": ""
-   },
-   {
-    "at": 2359.0,
-    "detail": {
-     "ai_rule": "The DJ played the vocal lines from 'Taal se taal - Jyoty remix' in a different order than the original, using sections at 36.6-41.5s and 30.7-38.5s.",
-     "levels_db": {
-      "bass": -34.0,
-      "drums": -22.5,
-      "other": -30.8,
-      "vocals": -28.4
-     },
-     "set_span": [
-      2359.0,
-      2374.0
-     ],
-     "source_lines": [
-      [
-       36.6,
-       41.5
-      ],
-      [
-       30.7,
-       38.5
-      ]
-     ]
-    },
-    "key_score": null,
-    "kind": "vocal_resequence",
-    "set_id": "C5GWPd1Qng0",
-    "tempo_gap": null,
-    "track_a": "Taal se taal - Jyoty remix",
     "track_b": ""
    },
    {
