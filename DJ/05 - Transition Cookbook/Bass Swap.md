@@ -41,6 +41,7 @@ Solves the catastrophic problem of low-end clashing (sub-bass phase cancellation
 ### When NOT to use it
 * During ambient, drumless breakdowns where no kick drums exist.
 * In Hip-Hop or slow R&B where transitions are executed via cuts or echo throws.
+* Across clashing keys (3+ hours apart on the Camelot wheel) or a tempo gap too big to lock. The swap moves only the bass; the mids and highs of both tracks still overlap for the whole blend. See [[Harmonic Mixing & Camelot System]] (section on long blends).
 
 ### Best genres
 * House, Tech House, Drum & Bass, EDM, Techno, Trance.
