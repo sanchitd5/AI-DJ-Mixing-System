@@ -9,7 +9,7 @@ key_name: "C Minor"
 energy: 6.7
 duration: "03:34"
 duration_seconds: 214.7
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Agent Vinod Pyar Ki Pungi Full Video Song (HD) ｜ Saif Ali Khan ｜ Pritam.mp3"
+audio_path: "data/songs/Agent Vinod Pyar Ki Pungi Full Video Song (HD) ｜ Saif Ali Khan ｜ Pritam.mp3"
 tags:
   - dj/track
   - dj/library

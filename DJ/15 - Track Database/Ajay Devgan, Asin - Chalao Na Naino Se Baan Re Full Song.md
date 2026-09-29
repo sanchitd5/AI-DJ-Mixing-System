@@ -9,7 +9,7 @@ key_name: "G Minor"
 energy: 4.0
 duration: "03:00"
 duration_seconds: 180.8
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\＂Chalao Na Naino Se＂ Baan Re Full Song ｜ Bol Bachchan ｜ Ajay Devgan, Asin.mp3"
+audio_path: "data/songs/＂Chalao Na Naino Se＂ Baan Re Full Song ｜ Bol Bachchan ｜ Ajay Devgan, Asin.mp3"
 tags:
   - dj/track
   - dj/library

@@ -9,7 +9,7 @@ key_name: "D Major"
 energy: 3.8
 duration: "01:36"
 duration_seconds: 96.6
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Chandu Ki Girlfriend   ABCD Any Body Can Dance) (2013) HD Music Videos.mp3"
+audio_path: "data/songs/Chandu Ki Girlfriend   ABCD Any Body Can Dance) (2013) HD Music Videos.mp3"
 tags:
   - dj/track
   - dj/library

@@ -9,7 +9,7 @@ key_name: "G Major"
 energy: 4.9
 duration: "01:51"
 duration_seconds: 112.0
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Khoon Choosle - Video Song ｜ Sachin-Jigar ｜ Arjun Kanungo, Suraj Jagan, Priya Panchal ｜ Go Goa Gone.mp3"
+audio_path: "data/songs/Khoon Choosle - Video Song ｜ Sachin-Jigar ｜ Arjun Kanungo, Suraj Jagan, Priya Panchal ｜ Go Goa Gone.mp3"
 tags:
   - dj/track
   - dj/library

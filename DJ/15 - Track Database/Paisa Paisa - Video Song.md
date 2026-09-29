@@ -9,7 +9,7 @@ key_name: "F# Minor"
 energy: 4.9
 duration: "03:10"
 duration_seconds: 190.7
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Paisa Paisa -Video Song ｜De Dana Dan ｜Akshay Kumar & Katrina Kaif ｜ Pritam ｜RDB, Manak-E & Selina.mp3"
+audio_path: "data/songs/Paisa Paisa -Video Song ｜De Dana Dan ｜Akshay Kumar & Katrina Kaif ｜ Pritam ｜RDB, Manak-E & Selina.mp3"
 tags:
   - dj/track
   - dj/library

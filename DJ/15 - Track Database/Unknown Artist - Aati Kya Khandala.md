@@ -9,7 +9,7 @@ key_name: "F# Minor"
 energy: 4.6
 duration: "03:45"
 duration_seconds: 225.9
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Aati Kya Khandala ｜ Ghulam ｜ Aamir Khan ｜ Rani Mukherjee ｜ Alka Yagnik.mp3"
+audio_path: "data/songs/Aati Kya Khandala ｜ Ghulam ｜ Aamir Khan ｜ Rani Mukherjee ｜ Alka Yagnik.mp3"
 tags:
   - dj/track
   - dj/library

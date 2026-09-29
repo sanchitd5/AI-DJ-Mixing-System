@@ -9,7 +9,7 @@ key_name: "D Major"
 energy: 3.8
 duration: "02:53"
 duration_seconds: 173.4
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\𝐊𝐚𝐥𝐚 𝐂𝐡𝐚𝐬𝐡𝐦𝐚 🕶️ ｜ Baar Baar Dekho ｜ Sidharth M & Katrina Kaif ｜ Badshah, Neha Kakkar, Prem & Hardeep.mp3"
+audio_path: "data/songs/𝐊𝐚𝐥𝐚 𝐂𝐡𝐚𝐬𝐡𝐦𝐚 🕶️ ｜ Baar Baar Dekho ｜ Sidharth M & Katrina Kaif ｜ Badshah, Neha Kakkar, Prem & Hardeep.mp3"
 tags:
   - dj/track
   - dj/library

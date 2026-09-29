@@ -9,7 +9,7 @@ key_name: "C# Major"
 energy: 5.8
 duration: "03:50"
 duration_seconds: 230.8
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Katy Perry - Last Friday Night (T.G.I.F) [Lyrics].mp3"
+audio_path: "data/songs/Katy Perry - Last Friday Night (T.G.I.F) [Lyrics].mp3"
 tags:
   - dj/track
   - dj/library

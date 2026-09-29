@@ -9,7 +9,7 @@ key_name: "B Minor"
 energy: 5.3
 duration: "04:35"
 duration_seconds: 275.4
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Lyrical： Tees Maar Khan Title Track ｜ Akshay Kumar, Katrina Kaif.mp3"
+audio_path: "data/songs/Lyrical： Tees Maar Khan Title Track ｜ Akshay Kumar, Katrina Kaif.mp3"
 tags:
   - dj/track
   - dj/library

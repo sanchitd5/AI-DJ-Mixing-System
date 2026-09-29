@@ -9,7 +9,7 @@ key_name: "G# Major"
 energy: 5.5
 duration: "04:23"
 duration_seconds: 263.0
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\'HEER TOH BADI SAD HAI' full VIDEO song ｜ Tamasha Songs ｜ Ranbir Kapoor, Deepika Padukone ｜ T-Series.mp3"
+audio_path: "data/songs/'HEER TOH BADI SAD HAI' full VIDEO song ｜ Tamasha Songs ｜ Ranbir Kapoor, Deepika Padukone ｜ T-Series.mp3"
 tags:
   - dj/track
   - dj/library

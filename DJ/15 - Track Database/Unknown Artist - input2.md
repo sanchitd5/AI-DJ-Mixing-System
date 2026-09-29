@@ -9,7 +9,7 @@ key_name: "F Major"
 energy: 4.8
 duration: "02:28"
 duration_seconds: 148.6
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\songs\input2.mp3"
+audio_path: "songs/input2.mp3"
 tags:
   - dj/track
   - dj/library

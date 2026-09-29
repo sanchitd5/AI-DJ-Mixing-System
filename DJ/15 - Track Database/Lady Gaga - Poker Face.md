@@ -9,7 +9,7 @@ key_name: "G# Minor"
 energy: 5.8
 duration: "03:33"
 duration_seconds: 213.6
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Lady Gaga - Poker Face (Official Music Video).mp3"
+audio_path: "data/songs/Lady Gaga - Poker Face (Official Music Video).mp3"
 tags:
   - dj/track
   - dj/library

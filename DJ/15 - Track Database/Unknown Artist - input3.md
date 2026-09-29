@@ -9,7 +9,7 @@ key_name: "F# Minor"
 energy: 5.7
 duration: "03:51"
 duration_seconds: 231.5
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\input3.mp3"
+audio_path: "data/songs/input3.mp3"
 tags:
   - dj/track
   - dj/library

@@ -9,7 +9,7 @@ key_name: "G Minor"
 energy: 4.9
 duration: "03:38"
 duration_seconds: 218.2
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Tujhe Aksa Beach Ghuma Du (Full Song) Film - God Tussi Great Ho.mp3"
+audio_path: "data/songs/Tujhe Aksa Beach Ghuma Du (Full Song) Film - God Tussi Great Ho.mp3"
 tags:
   - dj/track
   - dj/library

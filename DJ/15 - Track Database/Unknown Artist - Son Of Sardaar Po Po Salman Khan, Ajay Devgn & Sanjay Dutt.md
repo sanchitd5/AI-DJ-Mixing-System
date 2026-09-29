@@ -9,7 +9,7 @@ key_name: "A Major"
 energy: 5.5
 duration: "02:11"
 duration_seconds: 131.9
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Son Of Sardaar Po Po Full Video Song ｜ Salman Khan, Ajay Devgn & Sanjay Dutt.mp3"
+audio_path: "data/songs/Son Of Sardaar Po Po Full Video Song ｜ Salman Khan, Ajay Devgn & Sanjay Dutt.mp3"
 tags:
   - dj/track
   - dj/library

@@ -9,7 +9,7 @@ key_name: "D Minor"
 energy: 5.4
 duration: "03:39"
 duration_seconds: 219.4
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Dreamum Wakeupum Aiyyaa Full Video Song ｜ Rani Mukherjee, Prithviraj Sukumaran.mp3"
+audio_path: "data/songs/Dreamum Wakeupum Aiyyaa Full Video Song ｜ Rani Mukherjee, Prithviraj Sukumaran.mp3"
 tags:
   - dj/track
   - dj/library

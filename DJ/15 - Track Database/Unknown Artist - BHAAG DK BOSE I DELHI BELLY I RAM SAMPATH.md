@@ -9,7 +9,7 @@ key_name: "C# Major"
 energy: 5.9
 duration: "03:10"
 duration_seconds: 190.1
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\BHAAG DK BOSE I DELHI BELLY I RAM SAMPATH.mp3"
+audio_path: "data/songs/BHAAG DK BOSE I DELHI BELLY I RAM SAMPATH.mp3"
 tags:
   - dj/track
   - dj/library

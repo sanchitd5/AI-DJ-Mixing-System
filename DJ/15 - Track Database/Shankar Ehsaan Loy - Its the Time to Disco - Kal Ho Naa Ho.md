@@ -9,7 +9,7 @@ key_name: "G Minor"
 energy: 4.0
 duration: "05:09"
 duration_seconds: 309.4
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\It's the Time to Disco - Kal Ho Naa Ho ｜ Shahrukh, Saif, Preity ｜ Shankar Ehsaan Loy.mp3"
+audio_path: "data/songs/It's the Time to Disco - Kal Ho Naa Ho ｜ Shahrukh, Saif, Preity ｜ Shankar Ehsaan Loy.mp3"
 tags:
   - dj/track
   - dj/library

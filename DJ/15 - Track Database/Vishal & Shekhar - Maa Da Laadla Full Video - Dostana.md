@@ -9,7 +9,7 @@ key_name: "G# Major"
 energy: 4.3
 duration: "02:46"
 duration_seconds: 166.2
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Maa Da Laadla Full Video - Dostana｜John, Abhishek｜Master Saleem｜Vishal & Shekhar.mp3"
+audio_path: "data/songs/Maa Da Laadla Full Video - Dostana｜John, Abhishek｜Master Saleem｜Vishal & Shekhar.mp3"
 tags:
   - dj/track
   - dj/library

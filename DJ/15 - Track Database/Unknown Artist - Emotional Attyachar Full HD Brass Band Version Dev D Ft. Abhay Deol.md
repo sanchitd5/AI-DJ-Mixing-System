@@ -9,7 +9,7 @@ key_name: "G# Major"
 energy: 5.1
 duration: "03:46"
 duration_seconds: 226.4
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Emotional Attyachar Full HD Video Song Brass Band Version Dev D Ft. Abhay Deol.mp3"
+audio_path: "data/songs/Emotional Attyachar Full HD Video Song Brass Band Version Dev D Ft. Abhay Deol.mp3"
 tags:
   - dj/track
   - dj/library

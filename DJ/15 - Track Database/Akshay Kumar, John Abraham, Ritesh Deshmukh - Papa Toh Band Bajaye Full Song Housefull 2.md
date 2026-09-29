@@ -9,7 +9,7 @@ key_name: "G Major"
 energy: 5.2
 duration: "03:43"
 duration_seconds: 223.1
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\＂Papa Toh Band Bajaye Full Song＂ Housefull 2 ｜ Akshay Kumar, John Abraham, Ritesh Deshmukh.mp3"
+audio_path: "data/songs/＂Papa Toh Band Bajaye Full Song＂ Housefull 2 ｜ Akshay Kumar, John Abraham, Ritesh Deshmukh.mp3"
 tags:
   - dj/track
   - dj/library

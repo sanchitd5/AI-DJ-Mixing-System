@@ -9,7 +9,7 @@ key_name: "A# Major"
 energy: 5.4
 duration: "04:08"
 duration_seconds: 248.3
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\3 - Why This Kolaveri Di Official Video ｜ Dhanush ｜ Anirudh Ravichander ｜ Shruti Haasan.mp3"
+audio_path: "data/songs/3 - Why This Kolaveri Di Official Video ｜ Dhanush ｜ Anirudh Ravichander ｜ Shruti Haasan.mp3"
 tags:
   - dj/track
   - dj/library

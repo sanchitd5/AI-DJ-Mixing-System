@@ -9,7 +9,7 @@ key_name: "B Minor"
 energy: 5.2
 duration: "04:30"
 duration_seconds: 270.1
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\＂Sheila Ki Jawani＂ Full Song ｜ Tees Maar Khan ｜ Katrina Kaif ｜ Vishal Dadlani, Sunidhi Chauhan.mp3"
+audio_path: "data/songs/＂Sheila Ki Jawani＂ Full Song ｜ Tees Maar Khan ｜ Katrina Kaif ｜ Vishal Dadlani, Sunidhi Chauhan.mp3"
 tags:
   - dj/track
   - dj/library

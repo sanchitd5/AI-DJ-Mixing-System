@@ -9,7 +9,7 @@ key_name: "A Minor"
 energy: 3.6
 duration: "03:31"
 duration_seconds: 211.3
-audio_path: "C:\Users\kaiwa\Documents\DJAITest\data\songs\Ganpat (Full Song) ｜ Shoot Out At Lokhandwala.mp3"
+audio_path: "data/songs/Ganpat (Full Song) ｜ Shoot Out At Lokhandwala.mp3"
 tags:
   - dj/track
   - dj/library
