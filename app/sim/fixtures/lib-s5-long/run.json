@@ -1,12 +1,5 @@
 {
  "downloads": {
-  "ytmsearch:Anyma & Rebūke - Syren": [
-   {
-    "hash": "6efe461f8131c4fa13051369eba67cd199f65f82077910782173464cf6cc5598",
-    "name": "Anyma & Rebūke - Syren",
-    "suffix": ".wav"
-   }
-  ],
   "ytmsearch:Big Thief - Mythological Beauty [Official Music Video]": [
    {
     "hash": "48a52c70e2dc044dc49bb480dffab8b15fe04069f7eedb67fcd2780030d2f0c6",
@@ -14,10 +7,31 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Daft Punk - One More Time (Official Video)": [
+  "ytmsearch:Bonobo - Kerala (NFS Payback Soundtrack)": [
    {
-    "hash": "8bb6d55d3ba8226e357cd16d86a255ff4d0f33d5988ca3ea88d642b71f56ccea",
-    "name": "Daft Punk - One More Time (Official Video)",
+    "hash": "7520ba28c2d372b83f095926eaca0e31076de24d0587ed77087c7ef74859a338",
+    "name": "Bonobo - Kerala (NFS Payback Soundtrack)",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:Charli xcx - Guess featuring billie eilish (official video)": [
+   {
+    "hash": "bc662bef9ec911d3af8be93903f5fe32318ad9ec08cb6de7a07c9ace7c398e8b",
+    "name": "Charli xcx - Guess featuring billie eilish (official video)",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:DENNIS FERRER - Hey Hey [Official Video]": [
+   {
+    "hash": "8d7ea28112308f49ddd91aeb64a6db42a67e6b15796aaa8d3bb7bc716bb64414",
+    "name": "DENNIS FERRER - Hey Hey [Official Video]",
+    "suffix": ".wav"
+   }
+  ],
+  "ytmsearch:Ellie Goulding - Anything Could Happen (TWINSICK Remix)": [
+   {
+    "hash": "3118bc9ac9911f37a8432da7d9ddf8b818ca387929039942c476c75cfcfab8cf",
+    "name": "Ellie Goulding - Anything Could Happen (TWINSICK Remix)",
     "suffix": ".wav"
    }
   ],
@@ -28,24 +42,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Fred again.. - Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis": [
-   {
-    "hash": "a4f583906aecdc5b9727767b3519ed84878f8bbe1af5ca4553017284f7bd62f3",
-    "name": "Fred again.. - Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis",
-    "suffix": ".wav"
-   }
-  ],
   "ytmsearch:Gorgon City - Ready For Your Love ft. MNEK": [
    {
     "hash": "ef9dd5355cd8e2bda16edbb4767a7fd510af37c2c1ffa41448c9fcc7250094f4",
     "name": "Gorgon City - Ready For Your Love ft. MNEK",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:Hasan Raheem - Wishes ft Talwiinder ｜ Prod by Umair (Official Lyric Video)": [
-   {
-    "hash": "66eed068a1ca6d82535190c1ca29485ebbbde375f6ba774a8a720043c2d7fb3f",
-    "name": "Hasan Raheem - Wishes ft Talwiinder ｜ Prod by Umair (Official Lyric Video)",
     "suffix": ".wav"
    }
   ],
@@ -56,31 +56,10 @@
     "suffix": ".wav"
    }
   ],
-  "ytmsearch:Kavinsky - Nightcall (Drive Original Movie Soundtrack) (Official Audio)": [
-   {
-    "hash": "a201869206c4c17a9be70f0fee42b2dee300f76e25067b16527bf65d2f3e2798",
-    "name": "Kavinsky - Nightcall (Drive Original Movie Soundtrack) (Official Audio)",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:LATIN MAFIA, Fred again.., bby - Quiereme": [
-   {
-    "hash": "fc1f625f7770f6e3c0a5f055c1b08970af7e43579d8d7e3ef596c3ae7949a565",
-    "name": "LATIN MAFIA, Fred again.., bby - Quiereme",
-    "suffix": ".wav"
-   }
-  ],
   "ytmsearch:Rina Sawayama - XS": [
    {
     "hash": "132068e3a9ea78e5da3a935d4bc01960f3d07e3c0accf4a1109ae5c1270dc3ac",
     "name": "Rina Sawayama - XS",
-    "suffix": ".wav"
-   }
-  ],
-  "ytmsearch:Taylor Swift - The Fate of Ophelia (Official Music Video)": [
-   {
-    "hash": "097dd2030ba26c8ddfafc5c42f940e0a260e9d9e752bdf8115f757683989f86f",
-    "name": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
     "suffix": ".wav"
    }
   ],
@@ -204,155 +183,199 @@
   {
    "cur": "Sunset",
    "kind": "suggest",
+   "latency_s": null,
    "ord": 0,
+   "quality": "ok",
    "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID\", \"title\": \"GUT GENUG\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Flume\", \"title\": \"Never Be Like You feat. Kai\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 116, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Becky Hill, Chase & Status\", \"title\": \"Disconnect (Official Visualiser)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 117, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "8386a947829ed52d"
+   "sig": "8386a947829ed52d",
+   "stable": "suggest|Sunset"
   },
   {
    "cur": "",
    "kind": "plan",
+   "latency_s": null,
    "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "7076c3247b20ab33"
+   "sig": "7076c3247b20ab33",
+   "stable": "plan|114.0|8B|116.3|7A"
   },
   {
    "cur": "Sunset",
    "kind": "suggest",
+   "latency_s": null,
    "ord": 1,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Big Thief\", \"title\": \"Mythological Beauty [Official Music Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 107, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma\", \"title\": \"The Light [Visualizer]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Daft Punk\", \"title\": \"One More Time (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Rina Sawayama\", \"title\": \"XS\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 117, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Kylie Minogue\", \"title\": \"Padam Padam (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "f16af8ded96afe22"
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma\", \"title\": \"The Light [Visualizer]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 127, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID\", \"title\": \"GUT GENUG\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.., LATIN MAFIA, Lil Yachty\", \"title\": \"Halo\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Taylor Swift\", \"title\": \"The Fate of Ophelia (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "f16af8ded96afe22",
+   "stable": "suggest|Sunset"
   },
   {
-   "cur": "",
-   "kind": "plan",
-   "ord": 1,
-   "reply": "{}",
-   "sig": "181a3ee9ccc42804"
-  },
-  {
-   "cur": "",
-   "kind": "plan",
+   "cur": "Sunset",
+   "kind": "suggest",
+   "latency_s": null,
    "ord": 2,
-   "reply": "{}",
-   "sig": "5401efcef2eb1af5"
-  },
-  {
-   "cur": "Never Be Like You",
-   "kind": "suggest",
-   "ord": 2,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 2, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Gorgon City\", \"title\": \"Ready For Your Love ft. MNEK\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Midnight\", \"title\": \"Sunset (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 114, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Koreless\", \"title\": \"Sun\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"9B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 1, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Tate (How I Feel) (Lyrics) \\uff5c And you ain't heard from none of the broskis\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"AL006\", \"title\": \"Tale Of Us & Vaal - Monument\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "fcd6f7ea6962b378"
-  },
-  {
-   "cur": "Never Be Like You",
-   "kind": "suggest",
-   "ord": 3,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 2, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Culoe de Song ft. Busi Mhlongo\", \"title\": \"Webaba [Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bairan 2 (Official Lyrical Video)\", \"title\": \"Sohmm \\uff5c New Haryanvi Song 2026\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 139, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Kerala (NFS Payback Soundtrack)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Daft Punk\", \"title\": \"Aerodynamic (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"10A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ellie Goulding\", \"title\": \"Anything Could Happen (TWINSICK Remix)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "dfde66999d9b1e7a"
-  },
-  {
-   "cur": "Never Be Like You",
-   "kind": "suggest",
-   "ord": 4,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 2, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Kavinsky\", \"title\": \"Nightcall (Drive Original Movie Soundtrack) (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 91, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"laid-back\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8, Kasbo & BJOERN\", \"title\": \"World Is Mine (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"LATIN MAFIA, Fred again.., bby\", \"title\": \"Quiereme\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 86, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 3, \"tempo_feel\": \"laid-back\", \"mood\": \"euphoric\"}}, {\"artist\": \"Hasan Raheem\", \"title\": \"Wishes ft Talwiinder \\uff5c Prod by Umair (Official Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 138, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Kerala (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "5fb7e5dc2439fa7b"
-  },
-  {
-   "cur": "Never Be Like You",
-   "kind": "suggest",
-   "ord": 5,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 2, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Julien Baker\", \"title\": \"\\uff02Appointments\\uff02 (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 111, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tourist\", \"title\": \"Patterns feat. Lianne La Havas\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 132, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again.., LATIN MAFIA, Lil Yachty\", \"title\": \"Halo\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tourist\", \"title\": \"Apollo (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"fred again..\", \"title\": \"chanel x a new error x i am a party\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 110, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 7, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}]}",
-   "sig": "3e764e4da179a225"
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Big Thief\", \"title\": \"Mythological Beauty [Official Music Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 107, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Kylie Minogue\", \"title\": \"Padam Padam (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Ellie Goulding\", \"title\": \"Anything Could Happen (TWINSICK Remix)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 2, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tinlicker & Helsloot\", \"title\": \"Because You Move Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "b8c4d6667d5cd45e",
+   "stable": "suggest|Sunset"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 3,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "1b57146312311bcb"
-  },
-  {
-   "cur": "Tate (How I Feel) ｜ And you ain't heard from none of the broskis",
-   "kind": "suggest",
-   "ord": 6,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Taylor Swift\", \"title\": \"The Fate of Ophelia (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma & Reb\\u016bke\", \"title\": \"Syren\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Backstreet Boys\", \"title\": \"Everybody (Backstreet's Back) (Official HD Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"6B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Fred again..\", \"title\": \"Danielle (smile on my face)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Boys Like Girls\", \"title\": \"The Great Escape (ZAXX Remix)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 128, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "112f1c59f8d812c3"
-  },
-  {
-   "cur": "The Fate of Ophelia",
-   "kind": "suggest",
-   "ord": 7,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Lane 8\", \"title\": \"No Captain (feat. Poli\\u00e7a)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Days To Come (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"J. Balvin, Willy William\", \"title\": \"Mi Gente (Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 136, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Cirrus (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 119, \"expected_key\": \"7A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"\\ud83c\\udfb5 BEN B\\u00f6hmer\", \"title\": \"PROMISE YOU \\ud83c\\udfb5\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "d289491d6c9ff48a"
-  },
-  {
-   "cur": "The Fate of Ophelia",
-   "kind": "suggest",
-   "ord": 8,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 3, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Amelie Lens\", \"title\": \"Exhale\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"9A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Anyma & Meg Myers\", \"title\": \"Running (feat. Meg Myers)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Madeon\", \"title\": \"The City\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 125, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Felix Cartal\", \"title\": \"No Sleep (feat. Natalie Angiuli)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"Cry For Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "68f30c1416e3066d"
+   "sig": "181a3ee9ccc42804",
+   "stable": "plan|114.0|8B|106.6|7B"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 4,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "e95bc05685176211"
+   "sig": "06a4e51461ebe555",
+   "stable": "plan|106.6|7B|116.3|7A"
   },
   {
-   "cur": "One More Time",
-   "kind": "suggest",
-   "ord": 9,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Mitski\", \"title\": \"My Love Mine All Mine (Official Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 114, \"expected_key\": \"11B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Laura & The Comrats Live\", \"title\": \"Rise\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"11B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"ROSAL\\u00cdA, J Balvin\", \"title\": \"Con Altura (Official Video) ft. El Guincho\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 131, \"expected_key\": \"11B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Tamiya Lockheed P-38H Lightning\", \"title\": \"1_48 scale model\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 131, \"expected_key\": \"10A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Alvvays\", \"title\": \"Belinda Says [Official Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 119, \"expected_key\": \"12B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "92a6a56e91932715"
-  },
-  {
-   "cur": "One More Time",
-   "kind": "suggest",
-   "ord": 10,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Shakira, Burna Boy\", \"title\": \"Dai Dai (Official Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 116, \"expected_key\": \"12A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Taylor Swift\", \"title\": \"The Albatross (Official Lyric Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 118, \"expected_key\": \"10B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"R\\u00dcF\\u00dcS DU SOL\", \"title\": \"You Were Right\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Black Coffee & David Guetta\", \"title\": \"Drive feat. Delilah Montagu (Official Video) [Ultra Music]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 118, \"expected_key\": \"11A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"SUMMER HIGH\", \"title\": \"AP DHILLON (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 115, \"expected_key\": \"12A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}]}",
-   "sig": "834c74db8dc00fa7"
+   "cur": "Never Be Like You",
+   "kind": "lookahead",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 2, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Koreless\", \"title\": \"Sun\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"9B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 1, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Midnight\", \"title\": \"Sunset (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 114, \"expected_key\": \"8B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Days To Come (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"8A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Gorgon City\", \"title\": \"Ready For Your Love ft. MNEK\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Rina Sawayama\", \"title\": \"XS\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 117, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 4, \"tempo_feel\": \"mid\", \"mood\": \"euphoric\"}}]}",
+   "sig": "7d25c85fbc294e94",
+   "stable": "lookahead|Never Be Like You"
   },
   {
    "cur": "",
    "kind": "plan",
-   "ord": 5,
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
    "reply": "{}",
-   "sig": "ef8204b72d0e5ad4"
+   "sig": "ff36fa2b7d5f3a5a",
+   "stable": "plan|116.3|7A|122.0|6A"
+  },
+  {
+   "cur": "",
+   "kind": "plan",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "empty",
+   "reply": "{}",
+   "sig": "0ecdac82db976e52",
+   "stable": "plan|116.3|7A|117.0|6A"
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "6bff54c02e0deae9",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "2c3e3f29b55cdf27",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "98f6c0aea34c50a6",
+   "stable": "audition|Merged layers: A drums + A bass + A vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "6bff54c02e0deae9",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + A other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "2c3e3f29b55cdf27",
+   "stable": "audition|Merged layers: A drums + A bass + B vocals + B other. Rate this merge."
+  },
+  {
+   "cur": "",
+   "kind": "audition",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "98f6c0aea34c50a6",
+   "stable": "audition|Merged layers: A drums + A bass + A vocals + B other. Rate this merge."
   },
   {
    "cur": "Ready For Your Love",
    "kind": "suggest",
-   "ord": 11,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Lane 8\", \"title\": \"Fingerprint\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 124, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Lane 8, Kasbo & BJOREN\", \"title\": \"World Is Mine\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"7B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Charli xcx\", \"title\": \"Guess featuring billie eilish (official video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Nora En Pure\", \"title\": \"Morning Dew\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"ROSAL\\u00cdA\", \"title\": \"DESPECH\\u00c1 (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "45166639b0efe59f"
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"Bonobo\", \"title\": \"Kerala (NFS Payback Soundtrack)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Charli xcx\", \"title\": \"Guess featuring billie eilish (official video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 130, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Bonobo\", \"title\": \"Kerala (Official Audio)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"DENNIS FERRER\", \"title\": \"Hey Hey [Official Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"The Weeknd\", \"title\": \"Cry For Me (Official Music Video)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 120, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
+   "sig": "aab3f6b7af94808e",
+   "stable": "suggest|Ready For Your Love"
   },
   {
-   "cur": "Ready For Your Love",
-   "kind": "suggest",
-   "ord": 12,
-   "reply": "{\"steering\": \"stay\", \"occasion_fit\": 0, \"current_genre\": \"\", \"current_era\": \"\", \"current_profile\": {\"energy\": 4, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}, \"suggestions\": [{\"artist\": \"DENNIS FERRER\", \"title\": \"Hey Hey [Official Video]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 122, \"expected_key\": \"5B\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"A Boogie Wit Da Hoodie\", \"title\": \"Drowning (feat. Kodak Black) [Official Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 129, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Burna Boy\", \"title\": \"Ye [Official Audio]\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 135, \"expected_key\": \"4A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Skrillex\", \"title\": \"Scary monsters and nice sprites  (reprise)\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 123, \"expected_key\": \"6A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 6, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}, {\"artist\": \"Portishead\", \"title\": \"Glory Box - Remastered\", \"reason\": \"similar tempo and key\", \"genre\": \"\", \"era\": \"\", \"expected_bpm\": 121, \"expected_key\": \"5A\", \"energy_delta\": \"maintain\", \"genre_hop\": 0, \"occasion_fit\": 0, \"track_profile\": {\"energy\": 5, \"tempo_feel\": \"driving\", \"mood\": \"euphoric\"}}]}",
-   "sig": "78108f3be6e84bba"
+   "cur": "",
+   "kind": "ear",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "ee06481e62b666fa",
+   "stable": "ear|a|True"
+  },
+  {
+   "cur": "",
+   "kind": "ear",
+   "latency_s": null,
+   "ord": 0,
+   "quality": "ok",
+   "reply": "{}",
+   "sig": "684d81c07d154fd7",
+   "stable": "ear|b|True"
   }
  ],
  "mode": "long",
  "name": "lib-s5-long",
  "occasion": "",
  "pool": [
-  "097dd2030ba26c8ddfafc5c42f940e0a260e9d9e752bdf8115f757683989f86f",
   "132068e3a9ea78e5da3a935d4bc01960f3d07e3c0accf4a1109ae5c1270dc3ac",
+  "3118bc9ac9911f37a8432da7d9ddf8b818ca387929039942c476c75cfcfab8cf",
   "3aee6b897bcf5f240f63bc0a7269b49accc0878b9dbdbe6f1b6e70b4bca5f7c8",
   "48a52c70e2dc044dc49bb480dffab8b15fe04069f7eedb67fcd2780030d2f0c6",
   "5f8874d6932d3d575d8a201af30e6b64eaa8a9e284923987ac4b3d9a7475931f",
-  "66eed068a1ca6d82535190c1ca29485ebbbde375f6ba774a8a720043c2d7fb3f",
   "6c680012c75e60ac27883389dc446877b10d02cd38129df37c4e2841cf6beb79",
-  "6efe461f8131c4fa13051369eba67cd199f65f82077910782173464cf6cc5598",
-  "8bb6d55d3ba8226e357cd16d86a255ff4d0f33d5988ca3ea88d642b71f56ccea",
-  "a201869206c4c17a9be70f0fee42b2dee300f76e25067b16527bf65d2f3e2798",
-  "a4f583906aecdc5b9727767b3519ed84878f8bbe1af5ca4553017284f7bd62f3",
+  "7520ba28c2d372b83f095926eaca0e31076de24d0587ed77087c7ef74859a338",
+  "8d7ea28112308f49ddd91aeb64a6db42a67e6b15796aaa8d3bb7bc716bb64414",
+  "bc662bef9ec911d3af8be93903f5fe32318ad9ec08cb6de7a07c9ace7c398e8b",
   "c763cc93bbe36fe8cd56b0aae63acc23224a1f2e535810f4440a7f587db79a17",
-  "ef9dd5355cd8e2bda16edbb4767a7fd510af37c2c1ffa41448c9fcc7250094f4",
-  "fc1f625f7770f6e3c0a5f055c1b08970af7e43579d8d7e3ef596c3ae7949a565"
+  "ef9dd5355cd8e2bda16edbb4767a7fd510af37c2c1ffa41448c9fcc7250094f4"
  ],
  "search": {},
  "seed": 5,
@@ -363,49 +386,28 @@
  "source": "library",
  "tracks": 10,
  "verify": {
-  "Alvvays|Belinda Says [Official Video]": true,
-  "Anyma & Meg Myers|Running (feat. Meg Myers)": true,
-  "Anyma & Rebūke|Syren": true,
   "Becky Hill, Chase & Status|Disconnect (Official Visualiser)": true,
   "Big Thief|Mythological Beauty [Official Music Video]": true,
-  "Black Coffee & David Guetta|Drive feat. Delilah Montagu (Official Video) [Ultra Music]": true,
-  "Bonobo|Cirrus (Official Video)": true,
-  "Bonobo|Days To Come (Official Audio)": true,
+  "Bonobo|Kerala (NFS Payback Soundtrack)": true,
+  "Bonobo|Kerala (Official Audio)": true,
+  "Charli xcx|Guess featuring billie eilish (official video)": true,
   "DENNIS FERRER|Hey Hey [Official Video]": true,
-  "Daft Punk|One More Time (Official Video)": true,
+  "Ellie Goulding|Anything Could Happen (TWINSICK Remix)": true,
   "Flume|Never Be Like You feat. Kai": true,
-  "Fred again..|Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis": true,
   "Gorgon City|Ready For Your Love ft. MNEK": true,
-  "Hasan Raheem|Wishes ft Talwiinder ｜ Prod by Umair (Official Lyric Video)": true,
   "KITSCHKRIEG feat. BLUMENGARTEN & SHIRIN DAVID|GUT GENUG": true,
-  "Kavinsky|Nightcall (Drive Original Movie Soundtrack) (Official Audio)": true,
-  "LATIN MAFIA, Fred again.., bby|Quiereme": true,
-  "Lane 8|Fingerprint": true,
-  "Lane 8|No Captain (feat. Poliça)": true,
-  "Laura & The Comrats Live|Rise": true,
-  "Madeon|The City": true,
-  "Mitski|My Love Mine All Mine (Official Lyric Video)": true,
-  "Portishead|Glory Box - Remastered": true,
   "Rina Sawayama|XS": true,
-  "SUMMER HIGH|AP DHILLON (Official Music Video)": true,
-  "Shakira, Burna Boy|Dai Dai (Official Video)": true,
-  "Skrillex|Scary monsters and nice sprites  (reprise)": true,
-  "Taylor Swift|The Albatross (Official Lyric Video)": true,
-  "Taylor Swift|The Fate of Ophelia (Official Music Video)": true,
   "The Weeknd|Cry For Me (Official Music Video)": true,
   "Tinlicker & Helsloot|Because You Move Me": true,
-  "Tinlicker & Helsloot|Because You Move Me (Official Music Video)": true,
-  "🎵 BEN Böhmer|PROMISE YOU 🎵": true
+  "Tinlicker & Helsloot|Because You Move Me (Official Music Video)": true
  },
  "version": 1,
  "views": {
   "Big Thief - Mythological Beauty [Official Music Video]": null,
-  "Daft Punk - One More Time (Official Video)": null,
+  "Bonobo - Kerala (NFS Payback Soundtrack)": null,
   "Flume - Never Be Like You feat. Kai": null,
-  "Fred again.. - Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis": null,
   "Gorgon City - Ready For Your Love ft. MNEK": null,
   "Rina Sawayama - XS": null,
-  "Taylor Swift - The Fate of Ophelia (Official Music Video)": null,
   "The Midnight - Sunset (Official Audio)": null,
   "Tinlicker & Helsloot - Because You Move Me": null
  }
