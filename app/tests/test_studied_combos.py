@@ -125,6 +125,84 @@ def test_macros_written_and_stale_ones_removed(tmp_path):
     assert (cache / "macros" / "studied-mine.json").exists()
 
 
+def test_set_chain_in_set_order_bridges_missing_songs(tmp_path):
+    cache = _study(tmp_path)
+    F = "ffffffffffffffff"
+    rows = sc.resolve(sc.extract(cache), dict(NAMES, **{F: "Mau P - People Talk People Sing"}), {})
+    atlas = _atlas([_pair(A, B), _pair(B, C), _pair(C, F, recipe="Hard Cut")])
+    atlas["tracks"][F] = {"name": "Mau P - People Talk People Sing"}
+    sc.attach(atlas["pairs"], sc.evidence(rows))
+    steps, gaps = sc.set_chain(atlas, [r for r in rows if not r["layered"]])
+    assert [(s["a"], s["b"]) for s in steps] == [(A, B), (B, C), (C, F)], "set order, the wrong download skipped"
+    assert gaps == ["#4 GENESI - Hyper (wrong download)"]
+    assert "gap: skipped GENESI - Hyper" in steps[2]["why"]
+    assert steps[2]["recipe"] == "Echo Out", "a bridging step never books a cut"
+    assert steps[1]["recipe"] == "Echo Out" and "hard_cut" in steps[1]["why"], "a studied hard cut maps to a blend"
+
+
+def _import_cache(tmp_path):
+    cache = tmp_path
+    (cache / "uploads").mkdir()
+    songs = cache / "sets" / "S1" / "songs"
+    songs.mkdir(parents=True)
+    files = {}
+    for name, body in (("Argy_Omiki_-_WIND.mp3", b"wind"), ("Resonance_Melodic_Techno_WAV_Samples_Serum_Presets.mp3", b"pack"),
+                       ("Anyma_HILLS_-_Dreams_Isolated_Vocals.mp3", b"vox"), ("PACS_No_Control_Extended_Mix.mp3", b"pacs"),
+                       ("Cassian_-_SOS.mp3", b"sos"), ("Some_Set_Live_at_Awakenings_2020.mp3", b"live"), ("x.mp3", b"wrong")):
+        (songs / name).write_bytes(body)
+        files[name] = str(songs / name)
+    from app.music_brain import set_import as si
+    sos_id = si.content_id(songs / "Cassian_-_SOS.mp3")
+    (cache / "uploads" / f"{sos_id}.mp3").write_bytes(b"sos")                  # the same file is already a library track
+    (cache / "uploads" / "1111111111111111.mp3").write_bytes(b"other upload")
+    (cache / "uploads" / "_names.json").write_text(json.dumps({sos_id: "Cassian - SOS", "1111111111111111": "Argy & Omiki - WIND (Official)"}))
+    tr = lambda title, f, **kw: dict({"start": 0.0, "title": title, "path": files.get(f), "heard_share": 0.9, "likely_wrong_song": False}, **kw)
+    study = {"set_id": "S1", "tracks": [
+        tr("Argy & Omiki - WIND", "Argy_Omiki_-_WIND.mp3"), tr("Bittermind - Resonance", "Resonance_Melodic_Techno_WAV_Samples_Serum_Presets.mp3"),
+        tr("Anyma & HILLS - Dreams", "Anyma_HILLS_-_Dreams_Isolated_Vocals.mp3"), tr("PACS & Ruiz (BR) - No Control", "PACS_No_Control_Extended_Mix.mp3"),
+        tr("Cassian - SOS", "Cassian_-_SOS.mp3"), tr("ID ID - Higher", None), tr("Adam Beyer - ID", "x.mp3"),
+        tr("Some - Song", "Some_Set_Live_at_Awakenings_2020.mp3"), tr("Wrong - Download", "x.mp3", likely_wrong_song=True, heard_share=0.04),
+        tr("Cherry - Puer", None)], "observations": [], "timeline": []}
+    (cache / "sets" / "S1" / "study.json").write_text(json.dumps(study))
+    return cache
+
+
+def test_import_set_plan_skips_and_reuses(tmp_path):
+    from app.music_brain import set_import as si
+
+    cache = _import_cache(tmp_path)
+    rows = si.plan(cache, "S1")
+    act = {r["title"]: (r["action"], r["why"]) for r in rows}
+    assert act["Argy & Omiki - WIND"][0] == "reuse" and "same recording" in act["Argy & Omiki - WIND"][1], "dedup: the library copy by name"
+    assert act["Cassian - SOS"] == ("reuse", "already in the library (same file)")
+    assert act["PACS & Ruiz (BR) - No Control"][0] == "import", "an Extended Mix is a release, not a DJ mix"
+    for t, why in (("Bittermind - Resonance", "not the song"), ("Anyma & HILLS - Dreams", "not the song"), ("ID ID - Higher", "ID"),
+                   ("Adam Beyer - ID", "ID"), ("Some - Song", "live"), ("Wrong - Download", "wrong download"), ("Cherry - Puer", "not downloaded")):
+        assert act[t][0] == "skip" and why in act[t][1], (t, act[t])
+    assert [r["id"] for r in rows if r["action"] == "import"] == [si.content_id(Path(rows[3]["path"]))]
+
+
+def test_import_set_apply_goes_through_the_upload_path(tmp_path, capsys):
+    from app.music_brain import set_import as si
+
+    cache = _import_cache(tmp_path)
+    calls = []
+
+    def upload(path, name):        # stands in for POST /api/tracks
+        calls.append((path.name, name))
+        return {"track_id": si.content_id(path), "filename": name}
+
+    rows = si.apply(si.plan(cache, "S1"), upload=upload)
+    assert calls == [("PACS_No_Control_Extended_Mix.mp3", "PACS & Ruiz (BR) - No Control")], "only new songs, named from the tracklist"
+    s = si.summary(rows)
+    assert (s["entries"], s["playable"], s["imported"], s["reused"], len(s["skipped"])) == (10, 3, 1, 2, 7)
+    bad = si.apply(si.plan(cache, "S1"), upload=lambda p, n: {"track_id": "0000000000000000"})
+    assert si.summary(bad)["errors"], "an id that is not the content hash is an error"
+    assert pa.main(["import-set", "S1", "--dry-run", "--cache-dir", str(cache)]) == 0
+    assert "3 playable" in capsys.readouterr().out
+    assert pa.main(["import-set", "nope", "--cache-dir", str(cache)]) == 1
+
+
 def test_cli_lists_and_missing(tmp_path, capsys):
     cache = _study(tmp_path)
     assert pa.main(["studied", "--cache-dir", str(cache)]) == 0

@@ -302,6 +302,8 @@ def _step(atlas: dict, t: dict, why_prefix: str) -> Optional[dict]:
     if p is None:
         return None
     pl = pa.plan_of(p)
+    if is_cut_recipe(pl["recipe"]):                 # a macro never books a cut
+        pl["recipe"] = "Echo Out"
     st = p.get("studied") or {}
     tr = atlas["tracks"]
     return {"a": t["a_id"], "b": t["b_id"], "a_name": tr.get(t["a_id"], {}).get("name"), "b_name": tr.get(t["b_id"], {}).get("name"),
@@ -311,9 +313,48 @@ def _step(atlas: dict, t: dict, why_prefix: str) -> Optional[dict]:
             "why": f"{why_prefix}: {t['dj']} #{t['position']}, {st.get('why') or 'atlas plan'}"}
 
 
+def set_chain(atlas: dict, ts: List[dict]) -> Tuple[List[dict], List[str]]:
+    """The set in SET ORDER as macro steps over the songs the library holds. A studied
+    transition keeps its technique (pick_move: a console move, never a cut); a song that is
+    missing (or the wrong download) is skipped and the step bridging the gap says so.
+    ts: the set's adjacent (not layered) transitions. -> (steps, skipped song notes)"""
+    songs: Dict[int, Tuple[Optional[str], str, bool]] = {}         # tracklist position -> (id, title, wrong)
+    for t in ts:
+        wrong = set(t.get("wrong") or [])
+        songs[t["position"] - 1] = (t.get("a_id"), t["a_title"], t["a_title"] in wrong)
+        songs[t["position"]] = (t.get("b_id"), t["b_title"], t["b_title"] in wrong)
+    by_pos = {t["position"]: t for t in ts}
+    steps, gaps, skipped = [], [], []
+    prev: Optional[Tuple[int, str]] = None
+    for pos in sorted(songs):
+        tid, title, wrong = songs[pos]
+        if not tid or wrong:
+            skipped.append(title)
+            gaps.append(f"#{pos} {title} ({'wrong download' if wrong else 'not in the library'})")
+            continue
+        if prev is None:
+            prev = (pos, tid)
+            skipped = []
+            continue
+        if tid == prev[1]:                  # the same song again (a reprise): nothing to mix
+            continue
+        t = by_pos.get(pos) if pos == prev[0] + 1 else None
+        step_t = t or {"a_id": prev[1], "b_id": tid, "dj": ts[0]["dj"], "position": pos}
+        s = _step(atlas, step_t, "studied set")
+        if s is None:                       # no atlas pair (unanalysed song): skip it, keep A
+            gaps.append(f"#{pos} {title} (no atlas pair)")
+            skipped.append(title)
+            continue
+        if skipped:
+            s["why"] = (s["why"] + f"; gap: skipped {', '.join(skipped)}")[:300]
+        steps.append(s)
+        prev, skipped = (pos, tid), []
+    return steps, gaps
+
+
 def write_macros(atlas: dict, transitions: List[dict], cache_dir: Path) -> List[dict]:
-    """studied-<set_id>-<n> per resolved pair and studied-set-<set_id> (the longest resolved
-    consecutive run of the set). Stale macros this function wrote before are removed; a user's
+    """studied-<set_id>-<n> per resolved pair and studied-set-<set_id> (the whole set in set
+    order, missing songs skipped). Stale macros this function wrote before are removed; a user's
     macro of the same name is never touched (macros.write_seed)."""
     from app.music_brain import macros as mc
 
@@ -330,28 +371,17 @@ def write_macros(atlas: dict, transitions: List[dict], cache_dir: Path) -> List[
 
     for sid, ts in by_set.items():
         good = [t for t in ts if not t.get("skip") and t.get("a_id") and t.get("b_id") and t["a_id"] != t["b_id"]]
-        steps = {}
         for t in good:
             s = _step(atlas, t, "studied combo")
             if s is not None:
-                steps[t["position"]] = (t, s)
                 write({"name": f"studied-{sid}-{t['position']}", "steps": [s],
                        "note": f"studied combo from {t['set_title']} (position {t['position']}), techniques "
                                f"{', '.join(k for k, _ in t['techniques']) or 'none heard'}"})
-        runs, cur = [], []
-        for pos in sorted(steps):
-            t, s = steps[pos]
-            if cur and (pos != cur[-1][0] + 1 or cur[-1][1]["b"] != s["a"]):
-                runs.append(cur)
-                cur = []
-            cur.append((pos, s))
-        if cur:
-            runs.append(cur)
-        best = max(runs, key=len) if runs else []
-        if len(best) >= 2:
-            write({"name": f"studied-set-{sid}", "steps": [s for _, s in best][:mc.MAX_STEPS],
-                   "note": f"studied set {ts[0]['set_title']}: positions {best[0][0]}-{best[-1][0]} "
-                           f"(the longest resolved run, {len(runs)} run(s) in the set)"})
+        chain, gaps = set_chain(atlas, ts)
+        if len(chain) >= 2:
+            write({"name": f"studied-set-{sid}", "steps": chain[:mc.MAX_STEPS],
+                   "note": f"studied set {ts[0]['set_title']} in set order: {len(chain) + 1} of {len(ts) + 1} songs"
+                           + (f"; skipped {len(gaps)}: " + "; ".join(gaps) if gaps else "")})
     fresh = {m["name"] for m in out}
     d = mc.macros_dir(cache_dir)
     for p in d.glob("studied-*.json") if d.is_dir() else []:

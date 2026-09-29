@@ -25,6 +25,7 @@ incremental: a pair is rescored only when either track's inputs or the rules cha
     python3 -m app.music_brain.pair_atlas show <track id|name> [--move merge] [-n 10]
     python3 -m app.music_brain.pair_atlas best [--move supermove] [-n 15] [--chains 3]
     python3 -m app.music_brain.pair_atlas studied [--missing] [--json]
+    python3 -m app.music_brain.pair_atlas import-set <set_id> [--dry-run]   # studied set's songs -> library
 """
 from __future__ import annotations
 
@@ -1249,11 +1250,36 @@ def _studied_cli(cache_dir: Path, missing: bool, as_json: bool) -> int:
     return 0
 
 
+def _import_set_cli(cache_dir: Path, args: Sequence[str], dry_run: bool, as_json: bool) -> int:
+    """Register a studied set's downloaded songs as library tracks (set_import.py); offline."""
+    from app.music_brain import set_import as si
+
+    if len(args) != 1 or not (cache_dir / "sets" / args[0] / "study.json").is_file():
+        print(json.dumps({"error": f"import-set needs one studied set id with CACHE_DIR/sets/<id>/study.json (got {list(args)})"}))
+        return 1
+    rows = si.plan(cache_dir, args[0])
+    if not dry_run:
+        rows = si.apply(rows)
+    out = dict(si.summary(rows), set_id=args[0], dry_run=dry_run)
+    if as_json:
+        print(json.dumps(dict(out, rows=rows), indent=1, default=str))
+        return 0 if not out["errors"] else 1
+    for r in rows:
+        err = f"  ERROR {r['error']}" if r.get("error") else ""
+        print(f"#{r['position']:<3} {r['action']:<6} {r['title'][:52]:<52} {r['id'] or '':<16}  {r['why'] or ''}{err}")
+    print(f"\n{args[0]}: {out['entries']} entries, {out['playable']} playable ({out['imported']} "
+          f"{'to import' if dry_run else 'imported'}, {out['reused']} already in the library), {len(out['skipped'])} skipped"
+          + (f", {len(out['errors'])} errors" if out["errors"] else ""))
+    if not dry_run and out["imported"]:
+        print("next: python3 -m app.music_brain.pair_atlas build   (atlas + studied macros with the new songs)")
+    return 0 if not out["errors"] else 1
+
+
 def main(argv: Optional[Sequence[str]] = None) -> int:
     from app.music_brain.config import CACHE_DIR
 
     ap = argparse.ArgumentParser(prog="pair_atlas")
-    ap.add_argument("cmd", choices=("build", "show", "best", "chains", "picks", "studied"))
+    ap.add_argument("cmd", choices=("build", "show", "best", "chains", "picks", "studied", "import-set"))
     ap.add_argument("arg", nargs="*")
     ap.add_argument("--cache-dir", default=str(CACHE_DIR))
     ap.add_argument("--out", default=None, help="atlas file (default CACHE_DIR/pair_atlas.json)")
@@ -1267,6 +1293,7 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
     ap.add_argument("--locked", action="store_true")
     ap.add_argument("--json", action="store_true")
     ap.add_argument("--missing", action="store_true", help="studied: only the songs to download to complete the chains")
+    ap.add_argument("--dry-run", action="store_true", help="import-set: show the plan, register nothing")
     a = ap.parse_args(argv)
     if a.cmd == "build":
         build(Path(a.cache_dir), Path(a.out) if a.out else None, full=a.full, only=a.arg or None,
@@ -1274,6 +1301,8 @@ def main(argv: Optional[Sequence[str]] = None) -> int:
         return 0
     if a.cmd == "studied":
         return _studied_cli(Path(a.cache_dir), a.missing, a.json)
+    if a.cmd == "import-set":
+        return _import_set_cli(Path(a.cache_dir), a.arg, a.dry_run, a.json)
     atlas = load(Path(a.cache_dir), Path(a.out) if a.out else None)
     if atlas is None:
         print(json.dumps({"error": "no atlas: run `python3 -m app.music_brain.pair_atlas build`"}))
