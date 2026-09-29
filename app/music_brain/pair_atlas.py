@@ -70,7 +70,7 @@ MOVES = ("merge", "riff", "mashup", "stem_bridge", "stem_intro", "bass_swap", "e
          "hook_drop", "learned", "artist", "double_drop", "drop_swap", "supermove")
 # columns the atlas cannot judge offline (same answer for every pair, not stored per pair)
 UNJUDGED = {"hook_drop": "judged live only (needs synced-lyrics hooks of A)",
-            "artist": "no artist-move planner on main yet"}
+            "artist": "artist moves are judged live only (not wired into the atlas yet)"}
 MOVE_ALIASES = {"riff_over_rap": "riff", "rap": "riff", "hold": "merge", "super": "supermove",
                 "peak": "supermove", "mashup_layer": "mashup"}
 # the works score: weights of the 0-1 sub-scores (sum 1)
