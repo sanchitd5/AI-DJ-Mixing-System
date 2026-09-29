@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -186,7 +187,7 @@ def save(macro: dict, cache_dir: Optional[Path] = None, new_version: bool = True
         m["parent"], m["name"], m["version"] = base, f"{root}-v{k}", k
     m["created"] = time.time()
     p = d / f"{m['name']}.json"
-    tmp = p.with_suffix(".tmp")
+    tmp = p.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
     tmp.replace(p)
     return m
@@ -208,7 +209,7 @@ def write_seed(macro: dict, cache_dir: Optional[Path] = None) -> dict:
             old = {}
         if not str(old.get("source", "")).startswith("atlas"):
             raise ValueError(f"macro {m['name']} is the user's")
-    tmp = p.with_suffix(".tmp")
+    tmp = p.with_suffix(f".{os.getpid()}.tmp")
     tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
     tmp.replace(p)
     return m
@@ -256,7 +257,7 @@ def backfill_titles(cache_dir: Optional[Path] = None) -> List[str]:
             raw["title"] = normalize(raw)["title"]
         except (OSError, ValueError):
             continue
-        tmp = p.with_suffix(".tmp")
+        tmp = p.with_suffix(f".{os.getpid()}.tmp")
         tmp.write_text(json.dumps(raw, indent=1), encoding="utf-8")
         tmp.replace(p)
         done.append(p.stem)

@@ -912,7 +912,7 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
                      "seconds": {"features": round(t_feat, 1), "python": round(t_py, 1), "node": round(t_node, 1),
                                  "total": round(time.time() - t0, 1)}}}
     out.parent.mkdir(parents=True, exist_ok=True)
-    tmp = out.with_suffix(".json.tmp")
+    tmp = out.with_suffix(f".json.{os.getpid()}.tmp")   # per process: two builds never share one tmp
     tmp.write_text(json.dumps(doc, separators=(",", ":")), encoding="utf-8")
     tmp.replace(out)
     log(json.dumps(doc["stats"]))
