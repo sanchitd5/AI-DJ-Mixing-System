@@ -1266,11 +1266,14 @@ def _import_set_cli(cache_dir: Path, args: Sequence[str], dry_run: bool, as_json
         return 0 if not out["errors"] else 1
     for r in rows:
         err = f"  ERROR {r['error']}" if r.get("error") else ""
-        print(f"#{r['position']:<3} {r['action']:<6} {r['title'][:52]:<52} {r['id'] or '':<16}  {r['why'] or ''}{err}")
+        inf = r.get("info") or {}
+        inf = f"  [{inf.get('bpm') or 0:.1f} BPM, key {inf.get('key')}, {inf.get('duration') or 0:.0f} s]" if inf else ""
+        print(f"#{r['position']:<3} {r['action']:<6} {r['title'][:52]:<52} {r['id'] or '':<16}  {r['why'] or ''}{inf}{err}")
     print(f"\n{args[0]}: {out['entries']} entries, {out['playable']} playable ({out['imported']} "
-          f"{'to import' if dry_run else 'imported'}, {out['reused']} already in the library), {len(out['skipped'])} skipped"
+          f"{'to import' if dry_run else 'imported'}, {out['cut']} ID(s) {'to cut' if dry_run else 'cut'} from the set, "
+          f"{out['reused']} already in the library), {len(out['skipped'])} skipped"
           + (f", {len(out['errors'])} errors" if out["errors"] else ""))
-    if not dry_run and out["imported"]:
+    if not dry_run and (out["imported"] or out["cut"]):
         print("next: python3 -m app.music_brain.pair_atlas build   (atlas + studied macros with the new songs)")
     return 0 if not out["errors"] else 1
 

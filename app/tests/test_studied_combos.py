@@ -203,6 +203,46 @@ def test_import_set_apply_goes_through_the_upload_path(tmp_path, capsys):
     assert pa.main(["import-set", "nope", "--cache-dir", str(cache)]) == 1
 
 
+@pytest.mark.skipif(__import__("shutil").which("ffmpeg") is None, reason="ffmpeg cuts the ID out of the set")
+def test_import_set_cuts_ids_out_of_the_set_and_they_resolve(tmp_path):
+    import numpy as np
+    import soundfile as sf
+
+    from app.music_brain import set_import as si
+
+    cache = _import_cache(tmp_path)
+    sr = 22050
+    sf.write(cache / "sets" / "S1.wav", (0.1 * np.sin(2 * np.pi * 220 * np.arange(sr * 400) / sr)).astype("float32"), sr)
+    study = json.loads((cache / "sets" / "S1" / "study.json").read_text())
+    for i, t in enumerate(study["tracks"]):
+        t["start"] = 60.0 * i
+    (cache / "sets" / "S1" / "study.json").write_text(json.dumps(study))
+    rows = si.plan(cache, "S1")
+    cuts = [r for r in rows if r["action"] == "cut"]
+    assert [(r["position"], r["name"], r["t0"], r["t1"]) for r in cuts] == [
+        (6, "ID ID - Higher [set cut S1 #6]", 300.0, 360.0), (7, "Adam Beyer - ID [set cut S1 #7]", 360.0, 420.0)]
+    names = json.loads((cache / "uploads" / "_names.json").read_text())
+
+    def upload(path, name):        # POST /api/tracks stand-in: the file lands under its content id
+        tid = si.content_id(path)
+        (cache / "uploads" / f"{tid}{path.suffix}").write_bytes(path.read_bytes())
+        names[tid] = name
+        (cache / "uploads" / "_names.json").write_text(json.dumps(names))
+        return {"track_id": tid}
+
+    out = si.apply(cuts, upload=upload, analysis=lambda tid: {"bpm": 124.0, "key": {"camelot": "8A"}, "duration": 60.0})
+    assert all(r.get("info") == {"bpm": 124.0, "key": "8A", "duration": 60.0} for r in out), out
+    assert si.summary(out)["cut"] == 2
+    again = {r["position"]: r for r in si.plan(cache, "S1")}
+    assert again[6]["action"] == "reuse" and again[6]["id"] == out[0]["id"], "a second run reuses the cut"
+    # the studied chain sees the cut: the ID's slot resolves, its wrong-download flag no longer applies
+    rows = sc.resolve(sc.extract(cache), sc.library_names(cache), {})
+    t = next(r for r in rows if r["position"] == 7)
+    assert t["a_id"] == out[0]["id"] and t["b_id"] == out[1]["id"] and not t["skip"]
+    fs = {x["position"]: x for x in sc.set_songs(cache)[0]["songs"]}
+    assert fs[6]["status"] == "library" and fs[6]["track_id"] == out[0]["id"]
+
+
 def test_set_songs_for_follow_set_and_endpoint(tmp_path, monkeypatch):
     cache = _study(tmp_path)
     for tid in NAMES:

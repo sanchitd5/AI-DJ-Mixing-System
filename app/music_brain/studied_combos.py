@@ -206,11 +206,31 @@ class Resolver:
         return hit
 
 
+def cut_name(title: str, set_id: str, position: int) -> str:
+    """The library name of an unreleased "ID" cut out of the set recording (set_import): unique
+    per set slot, so two "ID - ID" entries never read as one recording to the dedup."""
+    return f"{title} [set cut {set_id} #{position}]"
+
+
 def resolve(transitions: List[dict], names: Dict[str, str], aliases: Optional[Dict[str, str]] = None) -> List[dict]:
-    """Adds a_id / b_id (None: not in the library) to every transition."""
+    """Adds a_id / b_id (None: not in the library) to every transition. An "ID" entry is the
+    track cut out of the set at that slot (cut_name), never a name match."""
     r = Resolver(names, aliases)
+    rev = {n: tid for tid, n in names.items()}
+
+    def find(title: str, set_id: str, pos: int) -> Optional[str]:
+        if _ID_ONLY.search(title or ""):
+            return rev.get(cut_name(title, set_id, pos))
+        return r.find(title)
+
     for t in transitions:
-        t["a_id"], t["b_id"] = r.find(t["a_title"]), r.find(t["b_title"])
+        t["a_id"] = find(t["a_title"], t["set_id"], t["position"] - 1)
+        t["b_id"] = find(t["b_title"], t["set_id"], t["position"])
+        # a cut out of the set IS the song the set played, whatever the learner's own download was
+        cut = {x for x, tid in ((t["a_title"], t["a_id"]), (t["b_title"], t["b_id"])) if tid and _ID_ONLY.search(x or "")}
+        if cut and t.get("wrong"):
+            t["wrong"] = [w for w in t["wrong"] if w not in cut]
+            t["skip"] = f"probably the wrong download: {', '.join(t['wrong'])}" if t["wrong"] else None
     return transitions
 
 
@@ -245,7 +265,8 @@ def set_songs(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[d
     up = cache_dir / "uploads"
     have = {p.stem for p in up.glob("*") if not p.name.startswith("_")} if up.is_dir() else None
     res = Resolver({k: v for k, v in names.items() if have is None or k in have}, ds.load_aliases(cache_dir))
-    notes = Path(__file__).resolve().parents[2] / "research" / "notes"
+    rev = {n: tid for tid, n in names.items() if have is None or tid in have}
+    notes =Path(__file__).resolve().parents[2] / "research" / "notes"
     out = []
     for p in sorted((cache_dir / "sets").glob("*/study.json")):
         study = _read(p)
@@ -258,8 +279,12 @@ def set_songs(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[d
             title = str((t or {}).get("title") or "")
             if not title:
                 continue
-            tid = None if _ID_ONLY.search(title) else res.find(title)
-            status = "id" if _ID_ONLY.search(title) else "library" if tid else "download"
+            if _ID_ONLY.search(title):          # an unreleased ID: only its cut out of the set (set_import)
+                tid = rev.get(cut_name(title, sid, i + 1))
+                status = "library" if tid else "id"
+            else:
+                tid = res.find(title)
+                status = "library" if tid else "download"
             songs.append({"position": i + 1, "title": title, "track_id": tid, "status": status})
         out.append({"set_id": sid, "dj": meta["dj"], "title": meta["title"], "songs": songs})
     return out
