@@ -203,6 +203,21 @@ def test_import_set_apply_goes_through_the_upload_path(tmp_path, capsys):
     assert pa.main(["import-set", "nope", "--cache-dir", str(cache)]) == 1
 
 
+def test_set_songs_for_follow_set_and_endpoint(tmp_path, monkeypatch):
+    cache = _study(tmp_path)
+    for tid in NAMES:
+        (cache / "uploads" / f"{tid}.mp3").write_bytes(tid.encode())
+    sets = sc.set_songs(cache)
+    assert [s["set_id"] for s in sets] == ["oRb_81stwy8"] and sets[0]["dj"] == "Anyma"
+    got = [(x["position"], x["track_id"], x["status"]) for x in sets[0]["songs"]]
+    assert got == [(1, A, "library"), (2, B, "library"), (3, C, "library"), (4, D, "library"), (5, None, "download")]
+    from app.ui import atlas_api
+
+    monkeypatch.setattr(atlas_api, "ATLAS_CACHE_DIR", cache)
+    atlas_api._SETS_MEMO.clear()
+    assert atlas_api.studied_sets()["sets"][0]["songs"][1]["track_id"] == B
+
+
 def test_cli_lists_and_missing(tmp_path, capsys):
     cache = _study(tmp_path)
     assert pa.main(["studied", "--cache-dir", str(cache)]) == 0

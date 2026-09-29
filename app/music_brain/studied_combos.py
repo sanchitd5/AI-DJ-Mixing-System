@@ -226,6 +226,45 @@ def load(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[dict]:
     return resolve(extract(cache_dir), library_names(cache_dir) if names is None else names, ds.load_aliases(Path(cache_dir)))
 
 
+# ---------------------------------------------------------------------------------------------- follow a set
+
+# "ID", "ID - ID", "ID ID - Higher", "Adam Beyer - ID": an unreleased track, no song to find
+_ID_ONLY = re.compile(r"^\s*id(\s*[-–—]?\s*id)?\s*([-–—]|$)|[-–—]\s*id\s*$", re.I)
+
+
+def set_songs(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[dict]:
+    """Every studied set as its tracklist in set order, for FOLLOW SET (macro-mode.js):
+    [{set_id, dj, title, songs: [{position, title, track_id, status}]}]; status: library (the
+    library holds it), download (missing: offered through the normal suggest -> download
+    path), id (an unreleased "ID": nothing to fetch). A wrong download of the learner is not
+    used: the library copy, else the title to download."""
+    from app.ui import dedup_songs as ds
+
+    cache_dir = Path(cache_dir)
+    names = library_names(cache_dir) if names is None else names
+    up = cache_dir / "uploads"
+    have = {p.stem for p in up.glob("*") if not p.name.startswith("_")} if up.is_dir() else None
+    res = Resolver({k: v for k, v in names.items() if have is None or k in have}, ds.load_aliases(cache_dir))
+    notes = Path(__file__).resolve().parents[2] / "research" / "notes"
+    out = []
+    for p in sorted((cache_dir / "sets").glob("*/study.json")):
+        study = _read(p)
+        if not isinstance(study, dict):
+            continue
+        sid = str(study.get("set_id") or p.parent.name)
+        meta = set_meta(cache_dir, sid, notes)
+        songs = []
+        for i, t in enumerate(study.get("tracks") or []):
+            title = str((t or {}).get("title") or "")
+            if not title:
+                continue
+            tid = None if _ID_ONLY.search(title) else res.find(title)
+            status = "id" if _ID_ONLY.search(title) else "library" if tid else "download"
+            songs.append({"position": i + 1, "title": title, "track_id": tid, "status": status})
+        out.append({"set_id": sid, "dj": meta["dj"], "title": meta["title"], "songs": songs})
+    return out
+
+
 # ---------------------------------------------------------------------------------------------- atlas evidence
 
 def evidence(transitions: List[dict]) -> Dict[str, dict]:
