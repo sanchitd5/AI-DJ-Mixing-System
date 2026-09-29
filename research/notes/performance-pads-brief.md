@@ -19,26 +19,38 @@ quote or a publication reporting what he said or did on camera), SECONDARY
 | Octatrack in his live rig | GUESS | no source found; not used as a design input |
 | "USB" sets use pads the same way | GUESS | only the tour/series name surfaced; nothing on pad use |
 
-## Machine translation (what ships)
+## Machine translation (design; nothing shipped yet)
 
-- 16 pads, anything on them: 4x4 grid with three banks (user samples, slices
-  cut from the playing deck's stems, the synth one-shots).
-- Chops played over a DJ bed: slices come from the live deck's vocal and
-  drum stems, quantised to the master beatgrid (1/16, 1/8, 1/4, off), key
-  checked against the master and pitched at most 2 semitones, else refused.
-- Short phrase looped live: per-pad-phrase loop record of 1/2/4 bars locked to
-  the grid (beat positions, so it follows tempo changes).
-- The bed stays in charge: pads duck ~6 dB while the deck's vocal sings, are
-  high-passed at 120 Hz while a deck plays (one sub owner), and sit ~6 dB
-  under the measured programme level.
+Planned for a 4x4 pad grid (a draft `pads.js` exists outside the branch; see
+Status):
+- 16 pads, anything on them: three banks (user samples from /api/samples,
+  vocal chops and drum hits cut from the clock deck's stems, 16 synthesized
+  one-shots rendered once to buffers, so no bundled audio).
+- Chops over a DJ bed: hits snap to the master beatgrid (1/16, 1/8, 1/4, or
+  off); a tonal slice plays only if it is compatible with the master key, or
+  becomes compatible with a shift of at most 2 semitones, else it is refused
+  and the reason is shown.
+- Live loops: record a 1, 2 or 4 bar pad phrase from a bar line and loop it
+  in beat units, so it follows the grid.
+- The bed stays in charge: pads sit ~6 dB under the measured deck level, duck
+  (-9 dB tonal, -3 dB drums) while the deck's vocal sings, and are high-passed
+  at 120 Hz while a deck owns the low end.
 
-## Not shipped and why
+## Status: not shipped, and why
 
-- AUTO PADS (AI plays a chop phrase): the gates that matter (transition in
-  progress, merge hold, FX budget) live in dj-mind.js / autopilot.js state,
-  which this work may not edit, and nothing exposes them as events. Without
-  those gates it would fire over transitions. Needs a Host-port hook first.
-- 909 + bass-synth jam layer: the beat grid (sampler-deck.js) already is the
-  909-style drum layer; a bass synth under a playing deck breaks the single
-  sub-owner rule by construction.
-- Crowd reading: the app has no crowd signal (no camera, no mic of the room).
+- PADS (item 1): stopped at the owner's wrap-up call. The pure core was
+  drafted (grid and quantise math, key shift, gain / duck / sub rules, choke,
+  note repeat, loop record, slicing, one-shot synthesis). Still missing: the
+  index.html panel, pads.css, the node check, and a smoke load in the sim.
+  Nobody has played it in a browser or listened to it. It misses the quality
+  bar, so it stays off the branch.
+- AUTO PADS (item 2): depends on item 1. The gates can be read through the
+  Host port without touching the owned files: `autopilotState.active`,
+  `.activeDeck`, `.fireAt` (the booked transition, in track time) and
+  `.layering`, plus "both decks audible" and recent `ai-activity`. No FX
+  budget exists in the app today.
+- 909 + bass-synth jam layer (item 3): the BEAT GRID (sampler-deck.js) is
+  already a 909-style drum layer. A bass synth under a playing deck breaks
+  the one-sub-owner rule by design.
+- Crowd reading: the app has no crowd signal (no camera, no room mic), so
+  there is nothing to read.
