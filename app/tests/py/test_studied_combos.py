@@ -254,7 +254,7 @@ def test_set_songs_for_follow_set_and_endpoint(tmp_path, monkeypatch):
     assert [s["set_id"] for s in sets] == ["oRb_81stwy8"] and sets[0]["dj"] == "Anyma"
     got = [(x["position"], x["track_id"], x["status"]) for x in sets[0]["songs"]]
     assert got == [(1, A, "library"), (2, B, "library"), (3, C, "library"), (4, D, "library"), (5, None, "download")]
-    from app.ui import atlas_api
+    from app.ui.services import atlas_api
 
     monkeypatch.setattr(atlas_api, "ATLAS_CACHE_DIR", cache)
     atlas_api._SETS_MEMO.clear()

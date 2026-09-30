@@ -27,7 +27,7 @@ def test_get_macro_endpoint_resolves_through_the_alias_file(tmp_path, monkeypatc
     from fastapi import FastAPI
 
     from app.tests.py.testclient_compat import TestClient
-    from app.ui import atlas_api
+    from app.ui.services import atlas_api
 
     (tmp_path / "track_aliases.json").write_text(json.dumps({DUP_B: LIB_B}))
     mc.save(_macro(), tmp_path)

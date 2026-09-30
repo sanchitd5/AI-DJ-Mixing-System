@@ -171,7 +171,7 @@ class Resolver:
     """Studied song title -> library track id (canonical through the dedup alias map)."""
 
     def __init__(self, names: Dict[str, str], aliases: Optional[Dict[str, str]] = None):
-        from app.ui import dedup_songs as ds
+        from app.ui.services import dedup_songs as ds
 
         self.ds, self.aliases = ds, aliases or {}
         self.items = [(tid, ds.identity(n), n) for tid, n in names.items() if isinstance(n, str)]
@@ -241,7 +241,7 @@ def library_names(cache_dir: Path) -> Dict[str, str]:
 
 def load(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[dict]:
     """extract + resolve against the library names and the alias map."""
-    from app.ui import dedup_songs as ds
+    from app.ui.services import dedup_songs as ds
 
     return resolve(extract(cache_dir), library_names(cache_dir) if names is None else names, ds.load_aliases(Path(cache_dir)))
 
@@ -258,7 +258,7 @@ def set_songs(cache_dir: Path, names: Optional[Dict[str, str]] = None) -> List[d
     library holds it), download (missing: offered through the normal suggest -> download
     path), id (an unreleased "ID": nothing to fetch). A wrong download of the learner is not
     used: the library copy, else the title to download."""
-    from app.ui import dedup_songs as ds
+    from app.ui.services import dedup_songs as ds
 
     cache_dir = Path(cache_dir)
     names = library_names(cache_dir) if names is None else names

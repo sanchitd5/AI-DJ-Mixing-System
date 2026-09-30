@@ -328,7 +328,7 @@ def test_endpoints(cache, monkeypatch):
     from fastapi import FastAPI
 
     from app.tests.py.testclient_compat import TestClient
-    from app.ui import atlas_api
+    from app.ui.services import atlas_api
 
     monkeypatch.setattr(atlas_api, "ATLAS_CACHE_DIR", cache)
     monkeypatch.setattr(pa, "load_seeds", lambda path=None: [{"a": IDS[2], "b": IDS[0], "move": "merge", "b_name": NAMES[0]}])

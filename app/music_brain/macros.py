@@ -123,7 +123,7 @@ def kind_of(m: dict) -> str:
 
 def song_label(name: str) -> str:
     """'Artist - Title' without upload noise ('(Official Audio)', '[Odd One Out]', lyric tags)."""
-    from app.ui.track_identity import clean_identity
+    from app.ui.services.track_identity import clean_identity
     raw = str(name or "").strip()
     if not raw:
         return "?"
@@ -132,7 +132,7 @@ def song_label(name: str) -> str:
 
 
 def _artist(name: str) -> str:
-    from app.ui.track_identity import clean_identity
+    from app.ui.services.track_identity import clean_identity
     artist, title = clean_identity(str(name or "").strip() or "?")
     return title if artist == "Unknown" else artist
 

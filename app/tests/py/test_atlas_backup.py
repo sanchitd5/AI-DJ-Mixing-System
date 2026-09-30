@@ -10,8 +10,8 @@ def test_backup_endpoint_marks_earlier_sets_and_levels(cache, monkeypatch):  # n
     from fastapi import FastAPI
 
     from app.tests.py.testclient_compat import TestClient
-    from app.ui import atlas_api
-    from app.ui import set_memory as sm
+    from app.ui.services import atlas_api
+    from app.ui.services import set_memory as sm
 
     monkeypatch.setattr(atlas_api, "ATLAS_CACHE_DIR", cache)
     monkeypatch.setattr(pa, "load_seeds", lambda path=None: [])
@@ -32,8 +32,8 @@ def test_backup_endpoint_marks_earlier_sets_and_levels(cache, monkeypatch):  # n
 
 
 def test_earlier_set_keys_reads_the_set_memory(tmp_path, monkeypatch):
-    from app.ui import atlas_api
-    from app.ui import set_memory as sm
+    from app.ui.services import atlas_api
+    from app.ui.services import set_memory as sm
 
     monkeypatch.setattr(atlas_api, "ATLAS_CACHE_DIR", tmp_path)
     import app.ui.server as srv

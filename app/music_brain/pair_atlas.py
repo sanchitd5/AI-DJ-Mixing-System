@@ -245,7 +245,7 @@ class Library:
 
     def tracks(self) -> List[dict]:
         """Every upload with a v5 analysis: [{id, name, path, analysis, digest, stems, energy}]"""
-        from app.ui.download_service import _is_live, _is_mix
+        from app.ui.services.download_service import _is_live, _is_mix
 
         names = self.names()
         out = []
