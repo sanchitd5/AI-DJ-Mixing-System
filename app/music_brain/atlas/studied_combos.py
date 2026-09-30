@@ -152,7 +152,9 @@ def extract(cache_dir: Path, notes_dir: Optional[Path] = None) -> List[dict]:
     cache_dir = Path(cache_dir)
     if notes_dir is None:
         notes_dir = Path(__file__).resolve().parents[3] / "research" / "notes"
-    lt = _read(cache_dir / "learned_techniques.json", {}) or {}
+    from app.music_brain.learning.set_learner import load_learned
+
+    lt = load_learned(cache_dir / "learned_techniques.json")
     learned = [o for e in (lt.values() if isinstance(lt, dict) else []) if isinstance(e, dict)
                for o in e.get("observations") or [] if isinstance(o, dict)]
     out = []
