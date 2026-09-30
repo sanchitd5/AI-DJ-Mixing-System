@@ -62,8 +62,9 @@ graph TD
 > In fact, requiring every transition to match on Rhythm, Harmony, Energy, and Mood creates monotonous, boring sets.
 
 * **Continuity Transitions:** Score high on Rhythm, Harmony, and Energy (e.g., House $\to$ House long blend).
-* **Contrast Transitions:** Intentionally score LOW on Rhythm and Genre, but score a massive 10/10 on **Emotion and Surprise** (e.g., cutting from dark techno directly into a 174 BPM pop-sing-along Drum & Bass anthem!).
-* **The Rule of Two Anchors:** As long as a transition is strongly anchored by **at least two dimensions** (e.g., shared Vocal + shared Key, or shared Rhythm + shared Energy), the crowd will follow you across radical genre leaps.
+* **Contrast Transitions:** Stay in the set's genre and scene, but change one thing hard: energy, texture, vocal vs instrumental, or a key move. A peak-time banger after a stripped-back groove track of the same genre is contrast; a jump to an unrelated genre is not.
+* **The Rule of Two Anchors:** Every transition needs **at least two strong anchors** (Rhythm, Key, Energy, Vocal feel). On an electronic set the genre (same or close neighbour) must be one of them. Anchors make contrast safe inside the scene; they never license a genre leap.
+* **Changing genre:** only as a prepared, multi-song bridge (see [[Genre Bridge Playbook]]).
 
 ---
 
@@ -73,7 +74,7 @@ Before loading a track onto Deck 2, run your eye down this micro-checklist:
 1. **BPM:** Within $\pm 5\%$ or mathematical half/double-time?
 2. **Key:** Compatible or percussive entry?
 3. **Energy:** Matches the set narrative?
-4. **Genre:** Continuity or deliberate contrast?
+4. **Genre:** Same scene or a close neighbour? (Genre changes only through a prepared bridge.)
 5. **Vocal Compatibility:** Will vocals clash with Track A?
 6. **Groove:** Does the swing feel good?
 7. **Texture:** Organic vs. electronic?
@@ -82,7 +83,7 @@ Before loading a track onto Deck 2, run your eye down this micro-checklist:
 10. **Time of Night:** Right for this hour?
 11. **Context:** Fits the venue and expectations?
 12. **Familiarity:** Do they need a safe anthem right now?
-13. **Surprise:** Is it time for an unreleased ID or bootleg?
+13. **Surprise:** Is it time for an unreleased ID or bootleg that still fits the scene, tempo and key rules?
 14. **Momentum:** Will this keep people on the floor?
 
 ---
