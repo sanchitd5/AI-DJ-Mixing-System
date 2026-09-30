@@ -198,50 +198,98 @@ def test_incremental_rebuild_and_rules_versioning(cache, monkeypatch):
     full = _build(cache)
     assert full["stats"]["scored"] == 6
     # a schema bump is not read
-    p = pa.atlas_path(cache) / pa.META
-    doc = json.loads(p.read_text())
-    doc["schema"] = 999
-    p.write_text(json.dumps(doc))
+    from app.music_brain import db
+    with db.tx(pa._db(pa.atlas_path(cache))) as conn:
+        conn.execute("UPDATE atlas_meta SET value = '999' WHERE key = 'schema'")
     assert pa.load(cache) is None
+
+
+def _drop_db(cache):
+    from app.music_brain import db
+    db.close_all()
+    for p in cache.glob(db.DB_NAME + "*"):
+        p.unlink()
+
+
+def _write_folder(doc, root):
+    """The pre-SQLite segmented layout (meta.json, tracks/<id>.json, pairs/<a>.json)."""
+    by_a = {}
+    for k, p in doc["pairs"].items():
+        by_a.setdefault(p["a"], {})[k] = p
+    for sub in ("tracks", "pairs"):
+        (root / sub).mkdir(parents=True, exist_ok=True)
+    for t, f in doc["tracks"].items():
+        (root / "tracks" / f"{t}.json").write_text(json.dumps(f))
+    for a, ps in by_a.items():
+        (root / "pairs" / f"{a}.json").write_text(json.dumps(ps))
+    meta = {k: v for k, v in doc.items() if k not in ("tracks", "pairs")}
+    meta["track_index"] = {t: {k: f[k] for k in pa.LIGHT_FIELDS if k in f} for t, f in doc["tracks"].items()}
+    meta["shards"] = sorted(by_a)
+    (root / pa.META).write_text(json.dumps(meta))
 
 
 def test_segmented_layout_round_trips_and_migrates(cache):
     doc = {k: v for k, v in _build(cache).items() if k not in ("seeded", "written")}
     root = pa.atlas_path(cache)
-    assert pa.load(cache) == doc, "load() of the folder is the old single-file dict"
-    assert sorted(p.stem for p in (root / "pairs").glob("*.json")) == sorted(IDS)
+    assert pa.load(cache) == doc, "load() of the database is the old single-file dict"
+    assert not root.exists() and pa.load_meta(cache)["shards"] == sorted(IDS)
     a = IDS[0]
     assert pa.pairs_for(a, cache) == {k: v for k, v in doc["pairs"].items() if v["a"] == a}
     assert pa.track(a, cache) == doc["tracks"][a] and pa.track("../x", cache) is None and pa.pairs_for("..", cache) == {}
     part = pa.load_for([IDS[0], IDS[1]], cache)
     assert set(part["pairs"]) == {k for k, v in doc["pairs"].items() if v["a"] in IDS[:2]}
     assert part["tracks"][IDS[2]]["name"] == NAMES[2] and "bars" not in part["tracks"][IDS[2]]
-    # an old checkout's single file, no folder: migrated once, old file kept renamed
-    shutil.rmtree(root)
+    # the segmented folder of the previous release: migrated once into the DB, folder kept renamed
+    _drop_db(cache)
+    _write_folder(doc, root)
+    assert pa.load(cache) == doc
+    assert not root.exists() and (cache / "pair_atlas.migrated" / pa.META).is_file()
+    assert pa.pairs_for(a, cache) == {k: v for k, v in doc["pairs"].items() if v["a"] == a}
+    # an older checkout's single file, no folder, no DB: migrated the same way
+    _drop_db(cache)
     (cache / "pair_atlas.json").write_text(json.dumps(doc, separators=(",", ":")))
     assert pa.load(cache) == doc
-    assert (root / pa.META).is_file() and not (cache / "pair_atlas.json").exists()
+    assert not (cache / "pair_atlas.json").exists()
     assert json.loads((cache / "pair_atlas.json.migrated").read_text()) == doc
-    # the folder wins from now on: a stale single file written again by old code is ignored
+    # the DB wins from now on: a stale file / folder written again by old code is ignored
     (cache / "pair_atlas.json").write_text(json.dumps(dict(doc, pairs={})))
+    _write_folder(dict(doc, pairs={}), root)
     assert pa.load(cache) == doc and pa.migrate(root) is False
 
 
-def test_incremental_build_writes_only_changed_shards(cache):
+def test_incremental_build_writes_only_changed_rows(cache):
     first = _build(cache, only=IDS[:2])
     assert first["written"] == {"tracks": 2, "pairs": 2, "removed": 0}
-    root = pa.atlas_path(cache)
-    stamp = {p.name: p.stat().st_mtime_ns for p in root.rglob("*.json")}
+    conn = pa._db(pa.atlas_path(cache))
+    rows = lambda: (conn.execute("SELECT * FROM atlas_tracks ORDER BY id").fetchall(),  # noqa: E731
+                    conn.execute("SELECT * FROM atlas_pairs ORDER BY a, b").fetchall())
+    before = rows()
     again = _build(cache, only=IDS[:2])
-    assert again["written"] == {"tracks": 0, "pairs": 0, "removed": 0}, "0 rescored: no shard written"
-    assert {p.name: p.stat().st_mtime_ns for p in root.rglob("*.json") if p.name != pa.META} == \
-        {k: v for k, v in stamp.items() if k != pa.META}
-    # one new song: its own track + pairs shard, plus A -> new appended to each old A's shard
+    assert again["written"] == {"tracks": 0, "pairs": 0, "removed": 0}, "0 rescored: no row written"
+    assert rows() == before
+    # one new song: its track row + its 4 pair rows (new -> 2 old, 2 old -> new)
     one = _build(cache)
-    assert one["stats"]["scored"] == 4 and one["written"] == {"tracks": 1, "pairs": 3, "removed": 0}
-    # a song leaves the library (only=): its shards go
+    assert one["stats"]["scored"] == 4 and one["written"] == {"tracks": 1, "pairs": 4, "removed": 0}
+    # a song leaves the library (only=): its track row and every pair naming it go
     gone = _build(cache, only=IDS[:2])
-    assert gone["written"]["removed"] == 2 and not (root / "tracks" / f"{IDS[2]}.json").exists()
+    assert gone["written"]["removed"] == 5 and pa.track(IDS[2], cache) is None
+    assert rows() == before
+
+
+def test_a_reader_sees_the_last_commit_during_a_write(cache):
+    import threading
+    from app.music_brain import db
+
+    doc = {k: v for k, v in _build(cache, only=IDS[:2]).items() if k not in ("seeded", "written")}
+    conn = pa._db(pa.atlas_path(cache))
+    seen = []
+    with db.tx(conn):                                    # a build mid-transaction (write lock held)
+        conn.execute("DELETE FROM atlas_pairs")
+        t = threading.Thread(target=lambda: seen.append(pa.load(cache)))
+        t.start()
+        t.join(10)
+    assert seen == [doc], "the server's read neither blocks nor sees half a build"
+    assert pa.load(cache)["pairs"] == {}
 
 
 def test_build_takes_the_lock_and_nests(cache):
