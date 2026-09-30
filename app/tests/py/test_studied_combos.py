@@ -121,8 +121,8 @@ def test_macros_written_and_stale_ones_removed(tmp_path):
     assert chain["tracks"] == [A, B, C] and chain["source"] == sc.MACRO_SOURCE
     assert chain["steps"][0]["recipe"] == "Long Blend" and chain["steps"][1]["recipe"] == "Echo Out"
     assert "Anyma #2" in chain["steps"][0]["why"]
-    assert not (cache / "macros" / "studied-old-1.json").exists()
-    assert (cache / "macros" / "studied-mine.json").exists()
+    kept = mc.stored(cache)                              # the old folder migrated into the app DB first
+    assert "studied-old-1" not in kept and kept["studied-mine"] == {"source": "console"}
 
 
 def test_set_chain_in_set_order_bridges_missing_songs(tmp_path):
