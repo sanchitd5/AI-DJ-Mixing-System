@@ -73,6 +73,14 @@ def clean_step(s: dict, n: int) -> dict:
         out["combo"] = str(s["combo"])[:24]
     if s.get("works") is not None:
         out["works"] = s.get("works")
+    # a replay step (source replay:<session>): when it played and what the log could not say
+    for k in ("seconds", "set_s"):
+        if _num(s.get(k)) is not None:
+            out[k] = _num(s.get(k))
+    if s.get("played_at"):
+        out["played_at"] = str(s["played_at"])[:8]
+    if isinstance(s.get("gaps"), list):
+        out["gaps"] = [str(g)[:200] for g in s["gaps"]][:12]
     return out
 
 

@@ -757,6 +757,12 @@ def mine_history(cache_dir: Path, names: Dict[str, str]) -> Dict[str, dict]:
             e = slot(a, b)
             e["count"] += 1
             e["sources"]["set_log"] += 1
+    from app.music_brain.learning import liked as _liked   # the owner's liked transitions: PLAYED_GOOD evidence
+    for a, b in _liked.pairs(cache_dir):
+        if a != b:
+            e = slot(a, b)
+            e["good"] += 1
+            e["sources"]["liked"] += 1
     try:
         store = json.loads((Path(cache_dir) / "learned_techniques.json").read_text(encoding="utf-8"))
     except (OSError, ValueError):
