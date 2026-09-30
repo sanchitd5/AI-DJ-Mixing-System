@@ -1,5 +1,5 @@
 {
- "created": 1790754337.593514,
+ "created": 1790784033.307032,
  "name": "studied-set-raj9es-61ze",
  "note": "studied set rAJ9Es-61ZE in set order: 3 of 3 songs",
  "parent": null,
@@ -57,15 +57,15 @@
     "lock": "pitched"
    },
    "why": "studied set: rAJ9Es-61ZE #2, atlas plan Stem Merge",
-   "works": 82
+   "works": 76
   },
   {
    "a": "4df364159e2a8ac7",
    "a_name": "A New Error",
-   "a_time": 86.657,
+   "a_time": 69.358,
    "b": "bb77208f0c1a3800",
    "b_name": "Sabrina (i am a party)",
-   "b_time": 75.047,
+   "b_time": 19.644,
    "combo": "studied",
    "n": 2,
    "recipe": "Long Blend",

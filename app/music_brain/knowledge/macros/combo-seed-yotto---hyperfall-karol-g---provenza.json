@@ -1,5 +1,5 @@
 {
- "created": 1790702457.463222,
+ "created": 1790771405.8814871,
  "name": "combo-seed-yotto---hyperfall-karol-g---provenza",
  "note": "seed combo: merge -> hold 14 bars (2 phrases)",
  "parent": null,
@@ -9,14 +9,14 @@
   {
    "a": "9075692fe9d12259",
    "a_name": "Yotto - Hyperfall",
-   "a_time": 97.315,
+   "a_time": 101.311,
    "b": "81495f19980db9fc",
    "b_name": "KAROL G - PROVENZA",
    "b_time": 18.019,
    "combo": "merge",
    "merge": {
     "M": 16,
-    "aT": 97.315,
+    "aT": 101.311,
     "bT": 18.019,
     "hold_bars": 14,
     "hold_phrases": 2,
@@ -48,7 +48,7 @@
       "vocals": "b"
      },
      "label": "B drums + A bass + B vox + B synth",
-     "score": 77.2
+     "score": 77.4
     }
    },
    "n": 1,
@@ -57,7 +57,7 @@
     "lock": "pitched"
    },
    "why": "seed combo: merge -> hold 14 bars (2 phrases)",
-   "works": 85
+   "works": 88
   }
  ],
  "title": "Seed combo: Yotto - Hyperfall → Karol G - Provenza",

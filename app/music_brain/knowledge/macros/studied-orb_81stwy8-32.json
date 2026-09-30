@@ -1,5 +1,5 @@
 {
- "created": 1790702457.571241,
+ "created": 1790771406.0601978,
  "name": "studied-orb_81stwy8-32",
  "note": "studied combo from Anyma | Live from Atomium - Brussels, Belgium (position 32), techniques none heard",
  "parent": null,
@@ -9,14 +9,14 @@
   {
    "a": "c3e7b2768ac21cbd",
    "a_name": "SLVR - Music 4 Ur Body",
-   "a_time": 58.746,
+   "a_time": 101.497,
    "b": "c0e122fa3f6dcf6c",
    "b_name": "Anyma & Chris Avantgarde - Simulation (SCRIPT Remix)",
    "b_time": 122.276,
    "combo": "merge",
    "merge": {
     "M": 24,
-    "aT": 58.746,
+    "aT": 101.497,
     "bT": 122.276,
     "hold_bars": 22,
     "hold_phrases": 3,
@@ -48,7 +48,7 @@
       "vocals": "b"
      },
      "label": "A drums + A bass + B vox + B synth",
-     "score": 101.5
+     "score": 102.8
     }
    },
    "n": 1,
@@ -57,7 +57,7 @@
     "lock": "keylock"
    },
    "why": "studied combo: Anyma #32, atlas plan Stem Merge",
-   "works": 91
+   "works": 86
   }
  ],
  "title": "Anyma @ Live from Atomium - Brussels, Belgium #32: Slvr - Music 4 Ur Body → Anyma - Simulation (SCRIPT Remix)",

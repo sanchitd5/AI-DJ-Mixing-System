@@ -1,5 +1,5 @@
 {
- "created": 1790702457.4887428,
+ "created": 1790771405.928666,
  "name": "combo-tourist---run-offi-ilan-bluestone---4",
  "note": "",
  "parent": null,
@@ -9,30 +9,30 @@
   {
    "a": "5f4798caf5ed3e16",
    "a_name": "Tourist - Run (Official Audio)",
-   "a_time": 122.671,
+   "a_time": 183.623,
    "b": "47c21409aec7ff7a",
    "b_name": "ilan Bluestone - 43",
-   "b_time": 75.488,
+   "b_time": 60.836,
    "combo": "merge",
    "merge": {
-    "M": 16,
-    "aT": 122.671,
-    "bT": 75.488,
-    "hold_bars": 14,
-    "hold_phrases": 2,
+    "M": 24,
+    "aT": 183.623,
+    "bT": 60.836,
+    "hold_bars": 22,
+    "hold_phrases": 3,
     "phases": {
      "handover": {
-      "at_bar": 16,
+      "at_bar": 24,
       "bars": 8,
       "sub_overlap_bars": 0,
       "vocal_overlap": 0
      },
      "hold": {
-      "bars": 14,
+      "bars": 22,
       "from_bar": 2,
-      "phrases": 2,
-      "seconds": 26.7,
-      "to_bar": 16
+      "phrases": 3,
+      "seconds": 41.9,
+      "to_bar": 24
      },
      "merge_start": {
       "at_bar": 0,
@@ -48,7 +48,7 @@
       "vocals": "a"
      },
      "label": "B drums + B bass + A vox + A synth",
-     "score": 99.9
+     "score": 97.4
     }
    },
    "n": 1,

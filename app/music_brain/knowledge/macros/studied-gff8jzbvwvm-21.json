@@ -1,5 +1,5 @@
 {
- "created": 1790729111.472652,
+ "created": 1790771406.056967,
  "name": "studied-gff8jzbvwvm-21",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 21), techniques none heard",
  "parent": null,
@@ -9,10 +9,10 @@
   {
    "a": "097b045c2d5f6465",
    "a_name": "Circles",
-   "a_time": 197.354,
+   "a_time": 176.565,
    "b": "687fde89b2508f2a",
    "b_name": "Daft Punk - Technologic",
-   "b_time": 8.22,
+   "b_time": 98.128,
    "combo": "studied",
    "n": 1,
    "recipe": "Echo Out",

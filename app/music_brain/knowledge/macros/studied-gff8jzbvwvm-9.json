@@ -1,5 +1,5 @@
 {
- "created": 1790729111.471662,
+ "created": 1790771406.056423,
  "name": "studied-gff8jzbvwvm-9",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 9), techniques none heard",
  "parent": null,
@@ -9,10 +9,10 @@
   {
    "a": "5d3d150d24856231",
    "a_name": "Daft Punk - Rollin' & Scratchin'",
-   "a_time": 238.144,
+   "a_time": 240.082,
    "b": "1cd10b0fa5876f02",
    "b_name": "Spinal Scratch",
-   "b_time": 25.937,
+   "b_time": 11.238,
    "combo": "studied",
    "n": 1,
    "recipe": "Echo Out",

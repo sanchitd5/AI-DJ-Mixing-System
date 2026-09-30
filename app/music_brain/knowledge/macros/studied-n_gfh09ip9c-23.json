@@ -1,5 +1,5 @@
 {
- "created": 1790754337.5682392,
+ "created": 1790771406.0498219,
  "name": "studied-n_gfh09ip9c-23",
  "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 23), techniques none heard",
  "parent": null,
@@ -9,55 +9,18 @@
   {
    "a": "9046e5b644bd44db",
    "a_name": "Chris M - Rhapsody (Quantum Light Music Remix)",
-   "a_time": 215.086,
+   "a_time": 100.035,
    "b": "b534b3c878ca25de",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
-   "b_time": 34.157,
-   "combo": "merge",
-   "merge": {
-    "M": 48,
-    "aT": 215.086,
-    "bT": 34.157,
-    "hold_bars": 46,
-    "hold_phrases": 6,
-    "phases": {
-     "handover": {
-      "at_bar": 48,
-      "bars": 8,
-      "sub_overlap_bars": 0,
-      "vocal_overlap": 0
-     },
-     "hold": {
-      "bars": 46,
-      "from_bar": 2,
-      "phrases": 6,
-      "seconds": 88.3,
-      "to_bar": 48
-     },
-     "merge_start": {
-      "at_bar": 0,
-      "bars": 2,
-      "combo": "A drums + A bass + B vox + B synth"
-     }
-    },
-    "pick": {
-     "combo": {
-      "bass": "a",
-      "drums": "a",
-      "other": "b",
-      "vocals": "b"
-     },
-     "label": "A drums + A bass + B vox + B synth",
-     "score": 100.7
-    }
-   },
+   "b_time": 3.437,
+   "combo": "mashup",
    "n": 1,
-   "recipe": "Stem Merge",
+   "recipe": "Mashup → Transition",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied combo: Lane 8 #23, atlas plan Stem Merge",
-   "works": 92
+   "why": "studied combo: Lane 8 #23, atlas plan Mashup → Transition",
+   "works": 80
   }
  ],
  "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #23: Chris M - Rhapsody (Quantum Light Music Remix) →",

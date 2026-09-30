@@ -1,5 +1,5 @@
 {
- "created": 1790754337.5801358,
+ "created": 1790784033.302133,
  "name": "studied-set-alwcv6mgyho",
  "note": "studied set DJ TIMELESS PRESENTS: NYC Live Sessions 1 (Bollywood, Punjabi, Hip Hop, Dance, Pop) in set order: 47 of 51 songs; skipped 4: #6 THE CARTERS - APESHIT (wrong download); #7 JAY-Z - Dirt Off Your Shoulder (wrong download); #25 Enrique Iglesias - MOVE TO MIAMI (wrong download); #40 Calvin Harris - Summer (wrong download)",
  "parent": null,
@@ -52,7 +52,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #4, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   },
   {
    "a": "f58bb773e1569ccf",
@@ -68,12 +68,12 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #5, atlas plan Stem Bridge",
-   "works": 68
+   "works": 66
   },
   {
    "a": "e9b4efe4f420c866",
    "a_name": "A$AP Ferg - Plain Jane",
-   "a_time": 156.848,
+   "a_time": 100.478,
    "b": "b6597bf9c8107464",
    "b_name": "Hanumankind & Kalmi - Big Dawgs",
    "b_time": 16.022,
@@ -83,12 +83,12 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #8, atlas plan; gap: skipped THE CARTERS - APESHIT, JAY-Z - Dirt Off Your Shoulder",
-   "works": 38
+   "works": 42
   },
   {
    "a": "b6597bf9c8107464",
    "a_name": "Hanumankind & Kalmi - Big Dawgs",
-   "a_time": 172.667,
+   "a_time": 100.271,
    "b": "27341ee372ae058d",
    "b_name": "Big Boss Vette - Pretty Girls Walk",
    "b_time": 21.432,
@@ -99,12 +99,12 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #9, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   },
   {
    "a": "27341ee372ae058d",
    "a_name": "Big Boss Vette - Pretty Girls Walk",
-   "a_time": 120.879,
+   "a_time": 100.101,
    "b": "eed406502b379a24",
    "b_name": "Beyonce - Naughty Girl",
    "b_time": 9.729,
@@ -115,7 +115,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #10, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   },
   {
    "a": "eed406502b379a24",
@@ -131,7 +131,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #11, atlas plan Stem Bridge",
-   "works": 68
+   "works": 72
   },
   {
    "a": "0e6e34551d89ccb9",
@@ -147,44 +147,44 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #12, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   },
   {
    "a": "0e22b8e75d8b0a13",
    "a_name": "Kendrick Lamar - Not Like Us",
-   "a_time": 235.288,
+   "a_time": 83.22,
    "b": "0d745c18cd9b1a42",
    "b_name": "Daddy Yankee - Gasolina (Bhangra Remix)",
    "b_time": 50.805,
-   "combo": "studied",
+   "combo": "mashup",
    "n": 10,
-   "recipe": "Long Blend",
+   "recipe": "Mashup → Transition",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #13, atlas plan Long Blend",
-   "works": 74
+   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #13, atlas plan Mashup → Transition",
+   "works": 82
   },
   {
    "a": "0d745c18cd9b1a42",
    "a_name": "Daddy Yankee - Gasolina (Bhangra Remix)",
-   "a_time": 131.146,
+   "a_time": 151.139,
    "b": "64b3e80d2195bddb",
    "b_name": "Sage the Gemini - Gas Pedal",
    "b_time": 87.562,
-   "combo": "mashup",
+   "combo": "studied",
    "n": 11,
-   "recipe": "Mashup → Transition",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #14, atlas plan Mashup → Transition",
+   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #14, atlas plan Long Blend",
    "works": 86
   },
   {
    "a": "64b3e80d2195bddb",
    "a_name": "Sage the Gemini - Gas Pedal",
-   "a_time": 189.265,
+   "a_time": 181.265,
    "b": "f47b62b11c556add",
    "b_name": "Asha Bhosle - Sharara",
    "b_time": 27.098,
@@ -200,55 +200,18 @@
   {
    "a": "f47b62b11c556add",
    "a_name": "Asha Bhosle - Sharara",
-   "a_time": 128.197,
+   "a_time": 188.825,
    "b": "b84dbc59ef3f3bb3",
    "b_name": "50 Cent - Candy Shop",
    "b_time": 4.899,
-   "combo": "merge",
-   "merge": {
-    "M": 24,
-    "aT": 128.197,
-    "bT": 4.899,
-    "hold_bars": 22,
-    "hold_phrases": 3,
-    "phases": {
-     "handover": {
-      "at_bar": 24,
-      "bars": 8,
-      "sub_overlap_bars": 0,
-      "vocal_overlap": 0.42
-     },
-     "hold": {
-      "bars": 22,
-      "from_bar": 2,
-      "phrases": 3,
-      "seconds": 55.6,
-      "to_bar": 24
-     },
-     "merge_start": {
-      "at_bar": 0,
-      "bars": 2,
-      "combo": "A drums + A bass + B vox + B synth"
-     }
-    },
-    "pick": {
-     "combo": {
-      "bass": "a",
-      "drums": "a",
-      "other": "b",
-      "vocals": "b"
-     },
-     "label": "A drums + A bass + B vox + B synth",
-     "score": 108
-    }
-   },
+   "combo": "mashup",
    "n": 13,
-   "recipe": "Stem Merge",
+   "recipe": "Mashup → Transition",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #16, atlas plan Stem Merge",
-   "works": 86
+   "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #16, atlas plan Mashup → Transition",
+   "works": 84
   },
   {
    "a": "b84dbc59ef3f3bb3",
@@ -423,7 +386,7 @@
   {
    "a": "ea13f66949b105df",
    "a_name": "Panjabi MC - Jogi",
-   "a_time": 182.028,
+   "a_time": 174.028,
    "b": "1113761b4a0fe000",
    "b_name": "Kendrick Lamar - peekaboo",
    "b_time": 17.508,
@@ -473,7 +436,7 @@
    "a_time": 128.035,
    "b": "8503c16499b2b044",
    "b_name": "Neha Kakkar - Yaad Piya Ki Aane Lagi",
-   "b_time": 58.584,
+   "b_time": 23.011,
    "combo": "studied",
    "n": 23,
    "recipe": "Echo Out",
@@ -486,7 +449,7 @@
   {
    "a": "8503c16499b2b044",
    "a_name": "Neha Kakkar - Yaad Piya Ki Aane Lagi",
-   "a_time": 236.333,
+   "a_time": 240.791,
    "b": "d1152d8c8797fd49",
    "b_name": "Bad Bunny - Tití Me Preguntó (360° Visualizer) ｜ Un Verano Sin Ti",
    "b_time": 10.24,
@@ -497,12 +460,12 @@
     "lock": "keylock"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #28, atlas plan Long Blend",
-   "works": 73
+   "works": 70
   },
   {
    "a": "d1152d8c8797fd49",
    "a_name": "Bad Bunny - Tití Me Preguntó (360° Visualizer) ｜ Un Verano Sin Ti",
-   "a_time": 186.99,
+   "a_time": 205.636,
    "b": "cc978618cb313250",
    "b_name": "Avvy Sra & Karan Aujla - White Brown Black",
    "b_time": 11.656,
@@ -582,7 +545,7 @@
   {
    "a": "b238138c72602d82",
    "a_name": "Benny Benassi - Satisfaction",
-   "a_time": 228.329,
+   "a_time": 138.948,
    "b": "967035f253ed2eb7",
    "b_name": "Sean Paul - Temperature",
    "b_time": 15.65,
@@ -667,10 +630,10 @@
   {
    "a": "d316aa81817aa5d4",
    "a_name": "DJ LaiKa - Sounds From Heaven",
-   "a_time": 274.013,
+   "a_time": 261.666,
    "b": "1d43afa0647bccdc",
    "b_name": "Akon - Chammak Challo",
-   "b_time": 9.427,
+   "b_time": 52.431,
    "combo": "studied",
    "n": 33,
    "recipe": "Echo Out",
@@ -686,7 +649,7 @@
    "a_time": 195.698,
    "b": "f7ddfcd26fe40648",
    "b_name": "Yo Yo Honey Singh - High Heels Te Nachche",
-   "b_time": 63.832,
+   "b_time": 7.361,
    "combo": "studied",
    "n": 34,
    "recipe": "Echo Out",
@@ -699,7 +662,7 @@
   {
    "a": "f7ddfcd26fe40648",
    "a_name": "Yo Yo Honey Singh - High Heels Te Nachche",
-   "a_time": 176.774,
+   "a_time": 100.302,
    "b": "cd648262554b4d89",
    "b_name": "USHER - OMG",
    "b_time": 11.726,
@@ -715,17 +678,17 @@
   {
    "a": "cd648262554b4d89",
    "a_name": "USHER - OMG",
-   "a_time": 240.649,
+   "a_time": 188.941,
    "b": "77067ef272b94179",
    "b_name": "Ice Spice - Deli",
-   "b_time": 12.098,
+   "b_time": 25.821,
    "n": 36,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #41, atlas plan; gap: skipped Calvin Harris - Summer",
-   "works": 45
+   "works": 43
   },
   {
    "a": "77067ef272b94179",
@@ -741,7 +704,7 @@
     "lock": "keylock"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #42, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "4f4063f55c300b72",
@@ -757,7 +720,7 @@
     "lock": "keylock"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #43, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "12c85e1950148057",
@@ -773,7 +736,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #44, atlas plan Stem Bridge",
-   "works": 60
+   "works": 64
   },
   {
    "a": "c0ed725c25677d2a",
@@ -789,7 +752,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #45, atlas plan Stem Bridge",
-   "works": 68
+   "works": 72
   },
   {
    "a": "1b44c1ac9a29c4d5",
@@ -805,7 +768,7 @@
     "lock": "none"
    },
    "why": "studied set: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #46, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   },
   {
    "a": "b397c3b0ade799d9",
@@ -861,7 +824,7 @@
    "a_time": 166.65,
    "b": "519ddbb5b379bcbf",
    "b_name": "Cardi B, Bad Bunny & J Balvin - I Like It [Dillon Francis Remix]",
-   "b_time": 62.462,
+   "b_time": 11.285,
    "combo": "studied",
    "n": 45,
    "recipe": "Echo Out",

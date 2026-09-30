@@ -1,5 +1,5 @@
 {
- "created": 1790702457.491033,
+ "created": 1790771405.929285,
  "name": "combo-jon-hopkins---open-yotto---is-this-tr",
  "note": "",
  "parent": null,
@@ -12,27 +12,27 @@
    "a_time": 93.484,
    "b": "e66c795db024c76c",
    "b_name": "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]",
-   "b_time": 31.393,
+   "b_time": 15.79,
    "combo": "merge",
    "merge": {
-    "M": 24,
+    "M": 32,
     "aT": 93.484,
-    "bT": 31.393,
-    "hold_bars": 22,
-    "hold_phrases": 3,
+    "bT": 15.79,
+    "hold_bars": 30,
+    "hold_phrases": 4,
     "phases": {
      "handover": {
-      "at_bar": 24,
+      "at_bar": 32,
       "bars": 8,
       "sub_overlap_bars": 0,
       "vocal_overlap": 0
      },
      "hold": {
-      "bars": 22,
+      "bars": 30,
       "from_bar": 2,
-      "phrases": 3,
-      "seconds": 43.1,
-      "to_bar": 24
+      "phrases": 4,
+      "seconds": 58.8,
+      "to_bar": 32
      },
      "merge_start": {
       "at_bar": 0,
@@ -48,7 +48,7 @@
       "vocals": "a"
      },
      "label": "A drums + A bass + A vox + B synth",
-     "score": 94.9
+     "score": 93.3
     }
    },
    "n": 1,

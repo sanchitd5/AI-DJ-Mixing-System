@@ -1,5 +1,5 @@
 {
- "created": 1790754337.5853162,
+ "created": 1790771406.057544,
  "name": "studied-gff8jzbvwvm-39",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 39), techniques none heard",
  "parent": null,
@@ -9,7 +9,7 @@
   {
    "a": "ffb29e98845f5802",
    "a_name": "Daft Punk - Teachers",
-   "a_time": 155.488,
+   "a_time": 101.478,
    "b": "4912379704d75559",
    "b_name": "Joy Orbison - flight fm",
    "b_time": 27.562,
@@ -20,7 +20,7 @@
     "lock": "none"
    },
    "why": "studied combo: Fred again.. & Thomas Bangalter #39, atlas plan Stem Bridge",
-   "works": 38
+   "works": 42
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #39: Daft Punk - Teachers → Joy Orbison - flight",

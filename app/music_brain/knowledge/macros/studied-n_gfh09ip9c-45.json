@@ -1,5 +1,5 @@
 {
- "created": 1790735039.1365,
+ "created": 1790771406.050575,
  "name": "studied-n_gfh09ip9c-45",
  "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 45), techniques acapella_over, loop_extend",
  "parent": null,
@@ -13,14 +13,14 @@
    "b": "c97fc9899bed6bf7",
    "b_name": "Mathias Kaden - Inner Signal",
    "b_time": 91.928,
-   "combo": "studied",
+   "combo": "drop_swap",
    "n": 1,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied combo: Lane 8 #45, atlas plan Long Blend",
-   "works": 78
+   "works": 82
   }
  ],
  "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #45: Rinzen - Pangea [THIS NEVER HAPPENED] → Mathias",

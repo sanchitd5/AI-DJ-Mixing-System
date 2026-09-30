@@ -1,5 +1,5 @@
 {
- "created": 1790754337.592576,
+ "created": 1790784033.3066041,
  "name": "studied-set-orb_81stwy8",
  "note": "studied set Anyma | Live from Atomium - Brussels, Belgium in set order: 35 of 43 songs; skipped 8: #1 Anyma & SCRIPT - In My Mind (not in the library); #3 Cherry - Puer (not in the library); #4 Son Of Son - Hide (not in the library); #12 Anyma & HILLS - Dreams (not in the library); #14 GENESI - Right Now (not in the library); #16 Mila Journée & Olivier Giacomotto - Smash It (not in the library); #22 Final Request - Cut The Line (not in the library); #35 Felix Da Housecat ft Miss Kittin - Silver ",
  "parent": null,
@@ -57,12 +57,12 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #5, atlas plan; gap: skipped Cherry - Puer, Son Of Son - Hide",
-   "works": 99
+   "works": 100
   },
   {
    "a": "b4141543d66ac3f2",
    "a_name": "Shakedown - At Night (Anyma & Layton Giordani Remix)",
-   "a_time": 241.255,
+   "a_time": 241.701,
    "b": "35a302716faa6e0e",
    "b_name": "Argy & Omiki - WIND",
    "b_time": 17.995,
@@ -73,7 +73,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #6, atlas plan Echo Out",
-   "works": 53
+   "works": 57
   },
   {
    "a": "35a302716faa6e0e",
@@ -105,7 +105,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #8, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "cae059077ad17c08",
@@ -126,7 +126,7 @@
   {
    "a": "9ae0c077431a4889",
    "a_name": "Anyma & Argy & Son Of Son - Voices In My Head",
-   "a_time": 128.286,
+   "a_time": 101.509,
    "b": "b2df5f7d6179c964",
    "b_name": "ID ID - Higher [set cut oRb_81stwy8 #10]",
    "b_time": 6.153,
@@ -158,7 +158,7 @@
   {
    "a": "dd3f0c201c0c0f03",
    "a_name": "Adapter - Catchaman",
-   "a_time": 100.047,
+   "a_time": 120.07,
    "b": "407c498ddd3a6dab",
    "b_name": "PACS & Ruiz (BR) - No Control",
    "b_time": 3.32,
@@ -168,7 +168,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #13, atlas plan; gap: skipped Anyma & HILLS - Dreams",
-   "works": 86
+   "works": 94
   },
   {
    "a": "407c498ddd3a6dab",
@@ -221,12 +221,12 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #15, atlas plan; gap: skipped GENESI - Right Now",
-   "works": 96
+   "works": 100
   },
   {
    "a": "c4a392ce13e82bc9",
    "a_name": "Anyma & Baset - Neverland (From Japan) (HNTR Remix)",
-   "a_time": 67.64,
+   "a_time": 100.139,
    "b": "3ef9ad4b3fd01c79",
    "b_name": "Adam Sellouk & Doriann - Nocturnal",
    "b_time": 3.785,
@@ -236,7 +236,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #17, atlas plan; gap: skipped Mila Journée & Olivier Giacomotto - Smash It",
-   "works": 49
+   "works": 57
   },
   {
    "a": "3ef9ad4b3fd01c79",
@@ -257,7 +257,7 @@
   {
    "a": "13af303da7c0e5c7",
    "a_name": "Anyma & Adam Sellouk - Girls M.I.A",
-   "a_time": 115.712,
+   "a_time": 95.086,
    "b": "2a6d88a88d753df3",
    "b_name": "GENESI - Hyper",
    "b_time": 6.78,
@@ -268,7 +268,7 @@
     "lock": "keylock"
    },
    "why": "studied set: Anyma #19, atlas plan Echo Out",
-   "works": 45
+   "works": 53
   },
   {
    "a": "2a6d88a88d753df3",
@@ -321,7 +321,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #20, atlas plan Stem Merge",
-   "works": 98
+   "works": 100
   },
   {
    "a": "e60f89ea9d0d0bf4",
@@ -337,7 +337,7 @@
     "lock": "none"
    },
    "why": "studied set: Anyma #21, atlas plan Stem Bridge",
-   "works": 46
+   "works": 16
   },
   {
    "a": "4b04dc77aa774a85",
@@ -389,7 +389,7 @@
   {
    "a": "ad02c4d3a6a1725a",
    "a_name": "Cassian - SOS",
-   "a_time": 60.999,
+   "a_time": 100.998,
    "b": "4eaf109a6e8f8068",
    "b_name": "Dom Dolla ft Daya - Dreamin (Anyma Remix)",
    "b_time": 14.396,
@@ -591,19 +591,19 @@
     "lock": "keylock"
    },
    "why": "studied set: Anyma #31, atlas plan Stem Merge",
-   "works": 92
+   "works": 84
   },
   {
    "a": "c3e7b2768ac21cbd",
    "a_name": "SLVR - Music 4 Ur Body",
-   "a_time": 58.746,
+   "a_time": 101.497,
    "b": "c0e122fa3f6dcf6c",
    "b_name": "Anyma & Chris Avantgarde - Simulation (SCRIPT Remix)",
    "b_time": 122.276,
    "combo": "merge",
    "merge": {
     "M": 24,
-    "aT": 58.746,
+    "aT": 101.497,
     "bT": 122.276,
     "hold_bars": 22,
     "hold_phrases": 3,
@@ -635,7 +635,7 @@
       "vocals": "b"
      },
      "label": "A drums + A bass + B vox + B synth",
-     "score": 101.5
+     "score": 102.8
     }
    },
    "n": 24,
@@ -644,7 +644,7 @@
     "lock": "keylock"
    },
    "why": "studied set: Anyma #32, atlas plan Stem Merge",
-   "works": 91
+   "works": 86
   },
   {
    "a": "c0e122fa3f6dcf6c",
@@ -665,10 +665,10 @@
   {
    "a": "f6c530de96afeeee",
    "a_name": "Goom Gum - Enough",
-   "a_time": 101.246,
+   "a_time": 49.644,
    "b": "b9f496401006f299",
    "b_name": "Mau P - People Talk People Sing",
-   "b_time": 6.757,
+   "b_time": 36.409,
    "combo": "studied",
    "n": 26,
    "recipe": "Echo Out",
@@ -744,7 +744,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #37, atlas plan Stem Merge",
-   "works": 93
+   "works": 97
   },
   {
    "a": "b2dfbc4e15d13108",
@@ -940,7 +940,7 @@
   {
    "a": "4ab32b0c9b9e5221",
    "a_name": "Empire Of The Sun - We Are The People (Adam Sellouk Remix)",
-   "a_time": 94.737,
+   "a_time": 101.068,
    "b": "8a7228923510ed1c",
    "b_name": "Anyma ft Luke Steele - Human Now",
    "b_time": 14.768,

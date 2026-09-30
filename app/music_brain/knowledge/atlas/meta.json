@@ -1,6 +1,6 @@
 {
- "built_at": 1790754572.4345448,
- "rules": "e843b9478a3a0f14",
+ "built_at": 1790784027.204443,
+ "rules": "85b1c5d2a1b143ce",
  "schema": 1,
  "shards": [
   "014821398ee71590",
@@ -24,6 +24,7 @@
   "0b1d2975041c407a",
   "0baa5899053cb8b0",
   "0bf08c3ce1e245be",
+  "0d1de2dc0bc22313",
   "0d40919b7bf672a6",
   "0d561ac10c20376b",
   "0d745c18cd9b1a42",
@@ -76,6 +77,7 @@
   "1fd5189051951e18",
   "20704e163b59db7a",
   "20c7256a39e5f483",
+  "2143f55cd8418545",
   "216b9f2a2c225f0e",
   "2188d82189761499",
   "21e3b0021c0e2a53",
@@ -103,6 +105,7 @@
   "2e0fb4850508b13a",
   "2e1a4c960c918c6a",
   "2e5ed7c2b8a5ab92",
+  "2e6c01dfcd927816",
   "2fadf1080565c151",
   "2fcaee2ca20cee1c",
   "308dcc110bef8729",
@@ -114,6 +117,7 @@
   "326c94e9b3608af3",
   "327573551700a49d",
   "32e128823c58b81e",
+  "3316100ead01d087",
   "33422baf42270134",
   "33596f621fcc1bb5",
   "33d1b0a1492fa306",
@@ -131,6 +135,7 @@
   "38fa309041e78800",
   "3913cfd8817be486",
   "395f442a91d05ee4",
+  "399c2860418c4009",
   "3a2d07c4fe3c4f5e",
   "3aa8f8523584256e",
   "3aee6b897bcf5f24",
@@ -166,6 +171,7 @@
   "4a297d5e76746e86",
   "4ab32b0c9b9e5221",
   "4ad75610778d35ac",
+  "4af39f6bff6f71c4",
   "4af8f94267ec87a9",
   "4b04dc77aa774a85",
   "4b4b852df3d60ecf",
@@ -242,6 +248,7 @@
   "68e1d7c8c32d53d3",
   "6938e627e48aebf5",
   "6950df07c5c7418d",
+  "696911ef142f72c7",
   "699a02e0c569dbe2",
   "69b8cb5e5caa5ae3",
   "69e7d4b68a6c16dd",
@@ -273,6 +280,7 @@
   "77c67b812873d1d6",
   "785814d6222cf275",
   "7871850bf697b0af",
+  "78ab44076df79245",
   "78c52fe173fbadae",
   "790bf91727578b10",
   "7922a419da56967b",
@@ -327,6 +335,8 @@
   "9046e5b644bd44db",
   "9070c035a65eb11c",
   "9075692fe9d12259",
+  "927b18e97eabeea7",
+  "9297745bd1232d41",
   "932af8d76ab4e19b",
   "94b8f4820c7317d4",
   "94fe7d05617785ce",
@@ -346,6 +356,7 @@
   "982db682be31f1db",
   "99fa8a78407295f4",
   "9a835a8d4d9372b4",
+  "9abdd840aa78fac0",
   "9ae0c077431a4889",
   "9ae8cb42a9210c0c",
   "9b4c236ca6b521dd",
@@ -367,6 +378,7 @@
   "a3d6c11341141e4b",
   "a433fd1d7a0759e4",
   "a4599c4ea8b05ac5",
+  "a4b5a50a613329ca",
   "a4bdf878b4be2e7a",
   "a4e816ba8d8460ba",
   "a4f583906aecdc5b",
@@ -420,6 +432,7 @@
   "baa20437b80c8e2b",
   "bae9feddb5825a5b",
   "bb77208f0c1a3800",
+  "bb8cf57843d23eed",
   "bbc20151d218e6dc",
   "bc2d27e2f5ac3d26",
   "bc2fc18bd390a1fc",
@@ -455,6 +468,7 @@
   "c97fc9899bed6bf7",
   "cae059077ad17c08",
   "cb416d6386d7bc4d",
+  "cc17c75b5cf9c6d1",
   "cc978618cb313250",
   "cca1a0aec24af671",
   "cce2ec220755615b",
@@ -467,6 +481,7 @@
   "d1152d8c8797fd49",
   "d1def708243ae30a",
   "d1fa5ab81816b76e",
+  "d22c2f797af83de7",
   "d2a2acf03dea42d9",
   "d2b241e2292578ed",
   "d2bb6cb060ed2314",
@@ -516,6 +531,7 @@
   "e9b4efe4f420c866",
   "ea13f66949b105df",
   "ea1ff2290eb9d61f",
+  "ea92a8c4829553cc",
   "eae1a54255af0609",
   "eb4059157ac88ffb",
   "eb46ecb6a575061f",
@@ -541,6 +557,7 @@
   "f44d599d3ff4de06",
   "f476f24266202c6a",
   "f47b62b11c556add",
+  "f5682ea7c9356476",
   "f58bb773e1569ccf",
   "f5b1d392e61839c7",
   "f630fcbd45f3f7b3",
@@ -576,10 +593,10 @@
   "per_move": 20
  },
  "stats": {
-  "pairs": 45799,
-  "source_pairs": 320922,
-  "source_tracks": 567,
-  "tracks": 567
+  "pairs": 48900,
+  "source_pairs": 340472,
+  "source_tracks": 584,
+  "tracks": 584
  },
  "tracks": {
   "014821398ee71590": {
@@ -614,7 +631,7 @@
    "bpm": 114.0,
    "duration": 138.32131519274375,
    "key": "11B",
-   "level": null,
+   "level": 1,
    "name": "Mitski - My Love Mine All Mine (Official Lyric Video)",
    "stems": true
   },
@@ -641,7 +658,7 @@
    "bpm": 124.0,
    "duration": 296.00802721088434,
    "key": "6A",
-   "level": 7,
+   "level": 8,
    "name": "Lane 8 - Childish (Official Music Video)",
    "stems": true
   },
@@ -659,7 +676,7 @@
    "bpm": 92.92,
    "duration": 174.69537414965987,
    "key": "4B",
-   "level": null,
+   "level": 2,
    "name": "Green Day - American Idiot (Official Audio)",
    "stems": true
   },
@@ -713,7 +730,7 @@
    "bpm": 117.54,
    "duration": 185.66680272108843,
    "key": "12B",
-   "level": 2,
+   "level": 3,
    "name": "For A Reason (Heavy Metal Remix) ｜ Karan Aujla ｜ Chmpionx",
    "stems": true
   },
@@ -749,7 +766,7 @@
    "bpm": 108.71,
    "duration": 329.57868480725625,
    "key": "5A",
-   "level": null,
+   "level": 7,
    "name": "Martin Roth - Simplicite [LUNATIQUE]",
    "stems": true
   },
@@ -769,6 +786,15 @@
    "key": "2A",
    "level": 5,
    "name": "Charli XCX - Vroom Vroom (Audio)",
+   "stems": true
+  },
+  "0d1de2dc0bc22313": {
+   "artist": "the killers",
+   "bpm": 135.51,
+   "duration": 246.60757369614512,
+   "key": "6B",
+   "level": null,
+   "name": "The Killers - Human",
    "stems": true
   },
   "0d40919b7bf672a6": {
@@ -803,7 +829,7 @@
    "bpm": 100.99,
    "duration": 273.3801814058957,
    "key": "5A",
-   "level": null,
+   "level": 8,
    "name": "Kendrick Lamar - Not Like Us",
    "stems": true
   },
@@ -866,7 +892,7 @@
    "bpm": 122.99,
    "duration": 176.54585034013604,
    "key": "8B",
-   "level": null,
+   "level": 9,
    "name": "Alex Wann & JUNO (DE) - Allo [CROSSTOWN REBELS]",
    "stems": true
   },
@@ -920,7 +946,7 @@
    "bpm": 106.0,
    "duration": 209.40920634920636,
    "key": "6A",
-   "level": null,
+   "level": 3,
    "name": "Disclosure - Omen ft. Sam Smith (Audio HQ)",
    "stems": true
   },
@@ -938,7 +964,7 @@
    "bpm": 132.0,
    "duration": 133.71215419501135,
    "key": "10B",
-   "level": null,
+   "level": 7,
    "name": "Anyma & Adam Sellouk - Girls M.I.A",
    "stems": true
   },
@@ -1127,7 +1153,7 @@
    "bpm": 133.99,
    "duration": 226.33655328798187,
    "key": "5A",
-   "level": null,
+   "level": 5,
    "name": "Akon - Chammak Challo",
    "stems": true
   },
@@ -1239,6 +1265,15 @@
    "name": "Vince Staples - Cotton [LOMA VISTA]",
    "stems": true
   },
+  "2143f55cd8418545": {
+   "artist": "prince and the revolution",
+   "bpm": 121.21,
+   "duration": 260.5627664399093,
+   "key": "11B",
+   "level": 2,
+   "name": "Prince and the Revolution - Raspberry Beret (Official 4K Music Video)",
+   "stems": true
+  },
   "216b9f2a2c225f0e": {
    "artist": "aqua",
    "bpm": 130.0,
@@ -1325,7 +1360,7 @@
    "bpm": 90.01,
    "duration": 138.87859410430838,
    "key": "3B",
-   "level": null,
+   "level": 8,
    "name": "Big Boss Vette - Pretty Girls Walk",
    "stems": true
   },
@@ -1370,7 +1405,7 @@
    "bpm": 140.02,
    "duration": 165.7324716553288,
    "key": "5B",
-   "level": 7,
+   "level": 8,
    "name": "Fred again.. x Skepta x PlaqueBoyMax - Victory Lap (NYC, 17th June 2025)",
    "stems": true
   },
@@ -1388,7 +1423,7 @@
    "bpm": 120.0,
    "duration": 187.36185941043084,
    "key": "8B",
-   "level": null,
+   "level": 3,
    "name": "Diljit Dosanjh： LOVER (Official Music Video) Intense ｜ Raj Ranjodh ｜ MoonChild Era",
    "stems": true
   },
@@ -1482,6 +1517,15 @@
    "name": "Joshlane - System Overload",
    "stems": true
   },
+  "2e6c01dfcd927816": {
+   "artist": "maceo plex",
+   "bpm": 132.99,
+   "duration": 377.33591836734695,
+   "key": "11A",
+   "level": 7,
+   "name": "Maceo Plex - All Night ft. Oscar and the Wolf (Garage Version)",
+   "stems": true
+  },
   "2fadf1080565c151": {
    "artist": "armin van buuren pres. perpetuous dreamer",
    "bpm": 136.18,
@@ -1541,7 +1585,7 @@
    "bpm": 127.01,
    "duration": 194.0,
    "key": "9A",
-   "level": null,
+   "level": 10,
    "name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
    "stems": true
   },
@@ -1568,7 +1612,7 @@
    "bpm": 130.0,
    "duration": 445.7651247165533,
    "key": "9A",
-   "level": null,
+   "level": 8,
    "name": "Amelie Lens - Exhale",
    "stems": true
   },
@@ -1581,12 +1625,21 @@
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #7]",
    "stems": true
   },
+  "3316100ead01d087": {
+   "artist": "björk-ancestors (full song)",
+   "bpm": 119.59,
+   "duration": 252.06426303854875,
+   "key": "7A",
+   "level": null,
+   "name": "Björk-Ancestors (Full Song)",
+   "stems": true
+  },
   "33422baf42270134": {
    "artist": "diljit dosanjh",
    "bpm": 107.19,
    "duration": 200.0980045351474,
    "key": "1A",
-   "level": 10,
+   "level": 9,
    "name": "Diljit Dosanjh ft. Badshah Proper Patola DJ Shadow Dubai Official Remix",
    "stems": true
   },
@@ -1694,7 +1747,7 @@
    "bpm": 147.99,
    "duration": 172.51269841269843,
    "key": "1A",
-   "level": 3,
+   "level": 4,
    "name": "Diljit Dosanjh Ft. Badshah - Proper Patola (Official Full Audio) HQ 2018",
    "stems": true
   },
@@ -1732,6 +1785,15 @@
    "key": "6A",
    "level": 10,
    "name": "Overmono - So U Kno (Audio)",
+   "stems": true
+  },
+  "399c2860418c4009": {
+   "artist": "dirt off your shoulder",
+   "bpm": 163.84,
+   "duration": 245.17333333333335,
+   "key": "4A",
+   "level": null,
+   "name": "Dirt Off Your Shoulder",
    "stems": true
   },
   "3a2d07c4fe3c4f5e": {
@@ -1919,7 +1981,7 @@
    "bpm": 142.0,
    "duration": 405.64104308390023,
    "key": "1A",
-   "level": null,
+   "level": 4,
    "name": "Omiki - Todo",
    "stems": true
   },
@@ -1982,7 +2044,7 @@
    "bpm": 128.0,
    "duration": 383.36149659863946,
    "key": "3B",
-   "level": 3,
+   "level": 4,
    "name": "ilan Bluestone - 43",
    "stems": true
   },
@@ -2000,7 +2062,7 @@
    "bpm": 91.42,
    "duration": 454.1653514739229,
    "key": "4A",
-   "level": null,
+   "level": 1,
    "name": "FKA twigs - sad day",
    "stems": true
   },
@@ -2009,7 +2071,7 @@
    "bpm": 93.34,
    "duration": 247.80340136054423,
    "key": "7A",
-   "level": null,
+   "level": 9,
    "name": "Joy Orbison - flight fm",
    "stems": true
   },
@@ -2027,7 +2089,7 @@
    "bpm": 123.98,
    "duration": 193.32267573696146,
    "key": "9A",
-   "level": null,
+   "level": 3,
    "name": "Julia Linkogel - Souls",
    "stems": true
   },
@@ -2049,12 +2111,21 @@
    "name": "Koreless - Sun",
    "stems": true
   },
+  "4af39f6bff6f71c4": {
+   "artist": "james blake",
+   "bpm": 118.1,
+   "duration": 242.0332426303855,
+   "key": "7A",
+   "level": null,
+   "name": "James Blake - Retrograde",
+   "stems": true
+  },
   "4af8f94267ec87a9": {
    "artist": "rüfüs du sol",
    "bpm": 122.0,
    "duration": 239.42403628117913,
    "key": "5B",
-   "level": 4,
+   "level": 5,
    "name": "RÜFÜS DU SOL - You Were Right",
    "stems": true
   },
@@ -2090,7 +2161,7 @@
    "bpm": 117.01,
    "duration": 421.7556916099773,
    "key": "1B",
-   "level": null,
+   "level": 8,
    "name": "Nina Kraviz - Love Or Go",
    "stems": true
   },
@@ -2108,7 +2179,7 @@
    "bpm": 114.99,
    "duration": 233.33736961451248,
    "key": "3A",
-   "level": null,
+   "level": 2,
    "name": "Tame Impala - Dracula (Official Video)",
    "stems": true
   },
@@ -2117,7 +2188,7 @@
    "bpm": 115.0,
    "duration": 205.41537414965987,
    "key": "12A",
-   "level": null,
+   "level": 4,
    "name": "SUMMER HIGH - AP DHILLON (Official Music Video)",
    "stems": true
   },
@@ -2243,7 +2314,7 @@
    "bpm": 125.0,
    "duration": 349.8026757369615,
    "key": "9A",
-   "level": null,
+   "level": 10,
    "name": "Sam Shure - Qualified [MAGNIFIK]",
    "stems": true
   },
@@ -2279,7 +2350,7 @@
    "bpm": 126.0,
    "duration": 137.1138775510204,
    "key": "8B",
-   "level": null,
+   "level": 7,
    "name": "Argy, Eli & Dani, Peki (Ofc) & ØSHER - Chasing Highs",
    "stems": true
   },
@@ -2306,7 +2377,7 @@
    "bpm": 137.84,
    "duration": 218.99904761904762,
    "key": "5A",
-   "level": null,
+   "level": 3,
    "name": "Chet Faker - Talk Is Cheap [Official Music Video]",
    "stems": true
   },
@@ -2432,7 +2503,7 @@
    "bpm": 132.0,
    "duration": 229.97047619047618,
    "key": "5A",
-   "level": null,
+   "level": 7,
    "name": "Bonobo - Me And You [NINJA]",
    "stems": true
   },
@@ -2486,7 +2557,7 @@
    "bpm": 111.0,
    "duration": 274.4533333333333,
    "key": "8B",
-   "level": null,
+   "level": 1,
    "name": "Julien Baker - ＂Appointments＂ (Official Video)",
    "stems": true
   },
@@ -2522,7 +2593,7 @@
    "bpm": 112.0,
    "duration": 267.8538321995465,
    "key": "7B",
-   "level": null,
+   "level": 3,
    "name": "College & Electric Youth - A Real Hero (Drive Original Movie Soundtrack)",
    "stems": true
   },
@@ -2567,7 +2638,7 @@
    "bpm": 118.68,
    "duration": 281.5071655328798,
    "key": "10B",
-   "level": 3,
+   "level": 4,
    "name": "Luis Fonsi - Despacito ft. Daddy Yankee",
    "stems": true
   },
@@ -2630,7 +2701,7 @@
    "bpm": 97.51,
    "duration": 207.26498866213151,
    "key": "4A",
-   "level": null,
+   "level": 5,
    "name": "Sage the Gemini - Gas Pedal",
    "stems": true
   },
@@ -2702,7 +2773,7 @@
    "bpm": 128.01,
    "duration": 370.7093424036281,
    "key": "11A",
-   "level": null,
+   "level": 9,
    "name": "RUBACK & Knorst - Relax Your Body",
    "stems": true
   },
@@ -2729,8 +2800,17 @@
    "bpm": 121.99,
    "duration": 329.39832199546487,
    "key": "9B",
-   "level": null,
+   "level": 7,
    "name": "Argy - Tataki (UnderCover Remix)",
+   "stems": true
+  },
+  "696911ef142f72c7": {
+   "artist": "sampha",
+   "bpm": 132.0,
+   "duration": 316.17455782312925,
+   "key": "1A",
+   "level": null,
+   "name": "Sampha - Plastic 100°C (Official Audio)",
    "stems": true
   },
   "699a02e0c569dbe2": {
@@ -2810,7 +2890,7 @@
    "bpm": 126.0,
    "duration": 187.79736961451246,
    "key": "4A",
-   "level": null,
+   "level": 7,
    "name": "Argy & TNY - DURO",
    "stems": true
   },
@@ -2936,7 +3016,7 @@
    "bpm": 89.01,
    "duration": 197.4277097505669,
    "key": "6A",
-   "level": null,
+   "level": 4,
    "name": "Kero Kero Bonito - Flamingo",
    "stems": true
   },
@@ -3008,8 +3088,17 @@
    "bpm": 127.99,
    "duration": 146.2509297052154,
    "key": "2A",
-   "level": null,
+   "level": 5,
    "name": "MORTEN & David Guetta - Lucky",
+   "stems": true
+  },
+  "78ab44076df79245": {
+   "artist": "banks",
+   "bpm": 103.99,
+   "duration": 283.7478911564626,
+   "key": "4A",
+   "level": null,
+   "name": "BANKS - Beggin For Thread (Official Audio)",
    "stems": true
   },
   "78c52fe173fbadae": {
@@ -3125,7 +3214,7 @@
    "bpm": 136.5,
    "duration": 220.0091156462585,
    "key": "1B",
-   "level": 4,
+   "level": 5,
    "name": "Adriatique - Nude",
    "stems": true
   },
@@ -3152,7 +3241,7 @@
    "bpm": 135.0,
    "duration": 154.69138321995464,
    "key": "10B",
-   "level": null,
+   "level": 4,
    "name": "Lost Frequencies, Argy & rhys from the sticks - Summer Skies",
    "stems": true
   },
@@ -3188,7 +3277,7 @@
    "bpm": 131.08,
    "duration": 290.73709750566894,
    "key": "10A",
-   "level": null,
+   "level": 6,
    "name": "Mat Zo - Frequency Flyer [ANJUNABEATS]",
    "stems": true
   },
@@ -3224,7 +3313,7 @@
    "bpm": 109.99,
    "duration": 210.2799546485261,
    "key": "5A",
-   "level": null,
+   "level": 2,
    "name": "Frank Ocean - Chanel",
    "stems": true
   },
@@ -3260,7 +3349,7 @@
    "bpm": 108.01,
    "duration": 276.6077551020408,
    "key": "5B",
-   "level": null,
+   "level": 3,
    "name": "Neha Kakkar - Yaad Piya Ki Aane Lagi",
    "stems": true
   },
@@ -3278,7 +3367,7 @@
    "bpm": 133.98,
    "duration": 228.67015873015873,
    "key": "4B",
-   "level": null,
+   "level": 2,
    "name": "The Weeknd - Call Out My Name (Official Audio)",
    "stems": true
   },
@@ -3449,7 +3538,7 @@
    "bpm": 127.0,
    "duration": 193.73573696145124,
    "key": "1A",
-   "level": null,
+   "level": 6,
    "name": "Argy, Omiki, Son Of Son - RITMO",
    "stems": true
   },
@@ -3476,7 +3565,7 @@
    "bpm": 125.0,
    "duration": 407.0690702947846,
    "key": "9B",
-   "level": null,
+   "level": 10,
    "name": "Chris M - Rhapsody (Quantum Light Music Remix)",
    "stems": true
   },
@@ -3498,6 +3587,24 @@
    "name": "Yotto - Hyperfall",
    "stems": true
   },
+  "927b18e97eabeea7": {
+   "artist": "elevate the sound",
+   "bpm": 115.0,
+   "duration": 197.41609977324262,
+   "key": "2A",
+   "level": 4,
+   "name": "ELEVATE THE SOUND - INFINITE AETHER",
+   "stems": true
+  },
+  "9297745bd1232d41": {
+   "artist": "calvin harris",
+   "bpm": 128.0,
+   "duration": 222.04086167800455,
+   "key": "9B",
+   "level": 2,
+   "name": "Calvin Harris - Summer (Audio)",
+   "stems": true
+  },
   "932af8d76ab4e19b": {
    "artist": "anyma",
    "bpm": 125.0,
@@ -3512,7 +3619,7 @@
    "bpm": 127.0,
    "duration": 406.4922448979592,
    "key": "11A",
-   "level": null,
+   "level": 10,
    "name": "Stimming & Lazarusman - In You Go",
    "stems": true
   },
@@ -3548,7 +3655,7 @@
    "bpm": 127.99,
    "duration": 249.41718820861678,
    "key": "11A",
-   "level": null,
+   "level": 10,
    "name": "Cassian, YOTTO, Da Hool - Love Parade",
    "stems": true
   },
@@ -3611,7 +3718,7 @@
    "bpm": 132.0,
    "duration": 183.63641723356008,
    "key": "3A",
-   "level": null,
+   "level": 6,
    "name": "Argy, Meduza, Pollyanna - Melodia (feat. PollyAnna)",
    "stems": true
   },
@@ -3656,7 +3763,7 @@
    "bpm": 112.0,
    "duration": 180.0107029478458,
    "key": "5A",
-   "level": null,
+   "level": 6,
    "name": "Argy, Omnya - Aria (Omiki Remix)",
    "stems": true
   },
@@ -3669,12 +3776,21 @@
    "name": "Lamborghini song ｜｜ guru randhawa ｜｜ neha kakkar｜｜",
    "stems": true
   },
+  "9abdd840aa78fac0": {
+   "artist": "the 1975",
+   "bpm": 100.99,
+   "duration": 347.6143764172336,
+   "key": "8B",
+   "level": null,
+   "name": "The 1975 - Somebody Else (Audio)",
+   "stems": true
+  },
   "9ae0c077431a4889": {
    "artist": "anyma",
    "bpm": 128.0,
    "duration": 146.28575963718822,
    "key": "10B",
-   "level": null,
+   "level": 7,
    "name": "Anyma & Argy & Son Of Son - Voices In My Head",
    "stems": true
   },
@@ -3858,6 +3974,15 @@
    "name": "Kaito Momota - Echo - Danganronpa Vocaloid",
    "stems": true
   },
+  "a4b5a50a613329ca": {
+   "artist": "let her go",
+   "bpm": 99.65,
+   "duration": 253.5271201814059,
+   "key": "9B",
+   "level": null,
+   "name": "Let Her Go - Passenger (Audio)",
+   "stems": true
+  },
   "a4bdf878b4be2e7a": {
    "artist": "maceo plex",
    "bpm": 125.88,
@@ -3890,7 +4015,7 @@
    "bpm": 102.01,
    "duration": 450.02598639455783,
    "key": "6A",
-   "level": null,
+   "level": 2,
    "name": "Rob Dougan - Clubbed To Death",
    "stems": true
   },
@@ -3899,7 +4024,7 @@
    "bpm": 128.0,
    "duration": 240.09437641723355,
    "key": "11A",
-   "level": null,
+   "level": 5,
    "name": "Tanchiky 「ENERGY SYNERGY MATRIX ＬＯＮＧ」",
    "stems": true
   },
@@ -3971,7 +4096,7 @@
    "bpm": 124.0,
    "duration": 464.5036281179138,
    "key": "9A",
-   "level": 10,
+   "level": 9,
    "name": "ARTBAT - Horizon (Official Audio Video)",
    "stems": true
   },
@@ -4115,7 +4240,7 @@
    "bpm": 130.0,
    "duration": 246.3289342403628,
    "key": "10A",
-   "level": null,
+   "level": 3,
    "name": "Benny Benassi - Satisfaction",
    "stems": true
   },
@@ -4196,7 +4321,7 @@
    "bpm": 125.02,
    "duration": 328.0,
    "key": "8B",
-   "level": null,
+   "level": 5,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
    "stems": true
   },
@@ -4214,7 +4339,7 @@
    "bpm": 137.14,
    "duration": 190.66666666666666,
    "key": "9A",
-   "level": null,
+   "level": 7,
    "name": "Hanumankind & Kalmi - Big Dawgs",
    "stems": true
   },
@@ -4232,7 +4357,7 @@
    "bpm": 124.98,
    "duration": 305.0,
    "key": "3B",
-   "level": null,
+   "level": 3,
    "name": "(Sultan + Shepard) - ID [set cut N_GfH09iP9c #61]",
    "stems": true
   },
@@ -4322,7 +4447,7 @@
    "bpm": 76.28,
    "duration": 216.31714285714287,
    "key": "5A",
-   "level": null,
+   "level": 3,
    "name": "Omar Souleyman - Dabke 2020： Folk & Pop Sounds of Syria - Shift Al Mani (I've Seen Her)",
    "stems": true
   },
@@ -4333,6 +4458,15 @@
    "key": "5A",
    "level": 9,
    "name": "Sabrina (i am a party)",
+   "stems": true
+  },
+  "bb8cf57843d23eed": {
+   "artist": "the cinematic orchestra",
+   "bpm": 154.16,
+   "duration": 369.6849433106576,
+   "key": "11B",
+   "level": null,
+   "name": "The Cinematic Orchestra - 'To Build A Home' (Official Video)",
    "stems": true
   },
   "bbc20151d218e6dc": {
@@ -4385,7 +4519,7 @@
    "bpm": 125.74,
    "duration": 287.9128344671202,
    "key": "2B",
-   "level": 10,
+   "level": 9,
    "name": "Four Tet - Parallel 4",
    "stems": true
   },
@@ -4628,7 +4762,7 @@
    "bpm": 128.0,
    "duration": 345.00267573696146,
    "key": "11A",
-   "level": null,
+   "level": 10,
    "name": "Mathias Kaden - Inner Signal",
    "stems": true
   },
@@ -4650,6 +4784,15 @@
    "name": "In And Out Of Love",
    "stems": true
   },
+  "cc17c75b5cf9c6d1": {
+   "artist": "dusky",
+   "bpm": 123.01,
+   "duration": 302.76503401360543,
+   "key": "10A",
+   "level": 7,
+   "name": "Dusky - Lost Highway",
+   "stems": true
+  },
   "cc978618cb313250": {
    "artist": "avvy sra",
    "bpm": 119.99,
@@ -4664,7 +4807,7 @@
    "bpm": 102.01,
    "duration": 210.74498866213153,
    "key": "3B",
-   "level": null,
+   "level": 6,
    "name": "Dr Zeus - Kangna",
    "stems": true
   },
@@ -4691,7 +4834,7 @@
    "bpm": 130.0,
    "duration": 276.9328344671202,
    "key": "10A",
-   "level": null,
+   "level": 2,
    "name": "USHER - OMG",
    "stems": true
   },
@@ -4736,7 +4879,7 @@
    "bpm": 111.0,
    "duration": 243.7863492063492,
    "key": "4A",
-   "level": null,
+   "level": 6,
    "name": "Bad Bunny - Tití Me Preguntó (360° Visualizer) ｜ Un Verano Sin Ti",
    "stems": true
   },
@@ -4756,6 +4899,15 @@
    "key": "10A",
    "level": 1,
    "name": "Mythologies： I. Premiers Mouvements",
+   "stems": true
+  },
+  "d22c2f797af83de7": {
+   "artist": "paul van dyk",
+   "bpm": 140.01,
+   "duration": 229.54090702947846,
+   "key": "12A",
+   "level": null,
+   "name": "Paul van Dyk feat Wayne Jackson ＂The Other Side＂",
    "stems": true
   },
   "d2a2acf03dea42d9": {
@@ -4826,7 +4978,7 @@
    "bpm": 112.0,
    "duration": 346.3140589569161,
    "key": "3B",
-   "level": null,
+   "level": 1,
    "name": "Phoebe Bridgers - I Know the End (Official Video)",
    "stems": true
   },
@@ -4916,7 +5068,7 @@
    "bpm": 111.2,
    "duration": 328.6901133786848,
    "key": "6A",
-   "level": null,
+   "level": 4,
    "name": "Daft Punk - Da Funk (Official Audio)",
    "stems": true
   },
@@ -5060,7 +5212,7 @@
    "bpm": 138.0,
    "duration": 313.0240362811791,
    "key": "5B",
-   "level": null,
+   "level": 3,
    "name": "Jamie xx - Gosh ⧸⧸ Nikes",
    "stems": true
   },
@@ -5105,7 +5257,7 @@
    "bpm": 123.0,
    "duration": 469.05473922902496,
    "key": "4A",
-   "level": 7,
+   "level": 8,
    "name": "YOTTO - Is This Trance？ (Official Audio) [Odd One Out]",
    "stems": true
   },
@@ -5141,7 +5293,7 @@
    "bpm": 188.0,
    "duration": 181.18403628117915,
    "key": "3B",
-   "level": null,
+   "level": 5,
    "name": "Daddy Yankee + Katy Perry feat. Snow - Con Calma Remix (Video con Letra Oficial)",
    "stems": true
   },
@@ -5177,7 +5329,7 @@
    "bpm": 169.99,
    "duration": 174.84802721088437,
    "key": "2A",
-   "level": null,
+   "level": 9,
    "name": "A$AP Ferg - Plain Jane",
    "stems": true
   },
@@ -5186,7 +5338,7 @@
    "bpm": 105.0,
    "duration": 200.0283446712018,
    "key": "6A",
-   "level": null,
+   "level": 5,
    "name": "Panjabi MC - Jogi",
    "stems": true
   },
@@ -5197,6 +5349,15 @@
    "key": "4A",
    "level": null,
    "name": "Burna Boy - Last Last [Audio]",
+   "stems": true
+  },
+  "ea92a8c4829553cc": {
+   "artist": "daniel avery",
+   "bpm": 89.33,
+   "duration": 301.41873015873017,
+   "key": "4A",
+   "level": 10,
+   "name": "Daniel Avery - Lemon (Official Audio)",
    "stems": true
   },
   "eae1a54255af0609": {
@@ -5231,7 +5392,7 @@
    "bpm": 126.48,
    "duration": 234.0,
    "key": "10A",
-   "level": null,
+   "level": 9,
    "name": "Omnya - Reflections (unreleased) - ID [set cut sL16rh73r-M #5]",
    "stems": true
   },
@@ -5294,7 +5455,7 @@
    "bpm": 131.16,
    "duration": 140.01637188208616,
    "key": "10A",
-   "level": null,
+   "level": 2,
    "name": "Tamiya Lockheed P-38H Lightning - 1_48 scale model",
    "stems": true
   },
@@ -5366,7 +5527,7 @@
    "bpm": 140.02,
    "duration": 344.5714739229025,
    "key": "5B",
-   "level": 5,
+   "level": 6,
    "name": "Victory Lap Five",
    "stems": true
   },
@@ -5424,12 +5585,21 @@
    "name": "Asha Bhosle - Sharara",
    "stems": true
   },
+  "f5682ea7c9356476": {
+   "artist": "the carters",
+   "bpm": 160.01,
+   "duration": 280.2986848072562,
+   "key": "7A",
+   "level": 9,
+   "name": "THE CARTERS - APESHIT  (Audio)",
+   "stems": true
+  },
   "f58bb773e1569ccf": {
    "artist": "travis scott",
    "bpm": 148.01,
    "duration": 193.25972789115647,
    "key": "2A",
-   "level": null,
+   "level": 6,
    "name": "Travis Scott - FE!N",
    "stems": true
   },
@@ -5492,7 +5662,7 @@
    "bpm": 136.0,
    "duration": 212.0107029478458,
    "key": "2B",
-   "level": null,
+   "level": 7,
    "name": "Yo Yo Honey Singh - High Heels Te Nachche",
    "stems": true
   },
@@ -5501,7 +5671,7 @@
    "bpm": 98.05,
    "duration": 236.80875283446713,
    "key": "2A",
-   "level": 3,
+   "level": 4,
    "name": "Panjabi MC - Mundian To Bach Ke (Beware Of The Boys) (Official Video)",
    "stems": true
   },
@@ -5528,7 +5698,7 @@
    "bpm": 132.0,
    "duration": 203.65065759637187,
    "key": "8A",
-   "level": null,
+   "level": 4,
    "name": "Dilbar Dilbar 2.0 ｜ Ft. Yo Yo Honey Singh ｜ Brazillian  🇧🇷 Funk ｜ DJ Dalal London Remix ｜ Mashup",
    "stems": true
   },
@@ -5555,7 +5725,7 @@
    "bpm": 92.01,
    "duration": 203.38362811791384,
    "key": "6A",
-   "level": null,
+   "level": 2,
    "name": "Madeon - Finale",
    "stems": true
   },
@@ -5681,7 +5851,7 @@
    "bpm": 123.18,
    "duration": 173.4879365079365,
    "key": "2B",
-   "level": null,
+   "level": 7,
    "name": "Daft Punk - Teachers",
    "stems": true
   }

@@ -1,5 +1,5 @@
 {
- "created": 1790754337.5818188,
+ "created": 1790771406.0565062,
  "name": "studied-gff8jzbvwvm-10",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 10), techniques none heard",
  "parent": null,
@@ -9,10 +9,10 @@
   {
    "a": "1cd10b0fa5876f02",
    "a_name": "Spinal Scratch",
-   "a_time": 216.921,
+   "a_time": 240.219,
    "b": "f9ba4335abc7a87f",
    "b_name": "808 State",
-   "b_time": 79.598,
+   "b_time": 48.53,
    "combo": "studied",
    "n": 1,
    "recipe": "Long Blend",
@@ -20,7 +20,7 @@
     "lock": "keylock"
    },
    "why": "studied combo: Fred again.. & Thomas Bangalter #10, atlas plan Long Blend",
-   "works": 81
+   "works": 76
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #10: Spinal Scratch → 808 State",

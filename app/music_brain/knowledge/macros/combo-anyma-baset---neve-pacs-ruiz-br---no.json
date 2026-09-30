@@ -1,5 +1,5 @@
 {
- "created": 1790702457.490795,
+ "created": 1790771405.929179,
  "name": "combo-anyma-baset---neve-pacs-ruiz-br---no",
  "note": "",
  "parent": null,
@@ -9,46 +9,46 @@
   {
    "a": "c4a392ce13e82bc9",
    "a_name": "Anyma & Baset - Neverland (From Japan) (HNTR Remix)",
-   "a_time": 97.64,
+   "a_time": 100.139,
    "b": "407c498ddd3a6dab",
    "b_name": "PACS & Ruiz (BR) - No Control",
    "b_time": 48.344,
    "combo": "merge",
    "merge": {
-    "M": 8,
-    "aT": 97.64,
+    "M": 16,
+    "aT": 100.139,
     "bT": 48.344,
-    "hold_bars": 6,
-    "hold_phrases": 1,
+    "hold_bars": 14,
+    "hold_phrases": 2,
     "phases": {
      "handover": {
-      "at_bar": 8,
+      "at_bar": 16,
       "bars": 8,
       "sub_overlap_bars": 0,
-      "vocal_overlap": 0.23
+      "vocal_overlap": 0
      },
      "hold": {
-      "bars": 6,
+      "bars": 14,
       "from_bar": 2,
-      "phrases": 1,
-      "seconds": 11.3,
-      "to_bar": 8
+      "phrases": 2,
+      "seconds": 26.3,
+      "to_bar": 16
      },
      "merge_start": {
       "at_bar": 0,
       "bars": 2,
-      "combo": "B drums + B bass + A vox + A synth"
+      "combo": "A drums + A bass + B vox + B synth"
      }
     },
     "pick": {
      "combo": {
-      "bass": "b",
-      "drums": "b",
-      "other": "a",
-      "vocals": "a"
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "b"
      },
-     "label": "B drums + B bass + A vox + A synth",
-     "score": 95.8
+     "label": "A drums + A bass + B vox + B synth",
+     "score": 107.5
     }
    },
    "n": 1,

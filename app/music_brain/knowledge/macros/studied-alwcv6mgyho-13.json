@@ -1,5 +1,5 @@
 {
- "created": 1790724891.612052,
+ "created": 1790771406.053494,
  "name": "studied-alwcv6mgyho-13",
  "note": "studied combo from DJ TIMELESS PRESENTS: NYC Live Sessions 1 (Bollywood, Punjabi, Hip Hop, Dance, Pop) (position 13), techniques none heard",
  "parent": null,
@@ -9,18 +9,18 @@
   {
    "a": "0e22b8e75d8b0a13",
    "a_name": "Kendrick Lamar - Not Like Us",
-   "a_time": 235.288,
+   "a_time": 83.22,
    "b": "0d745c18cd9b1a42",
    "b_name": "Daddy Yankee - Gasolina (Bhangra Remix)",
    "b_time": 50.805,
-   "combo": "studied",
+   "combo": "mashup",
    "n": 1,
-   "recipe": "Long Blend",
+   "recipe": "Mashup → Transition",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied combo: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #13, atlas plan Long Blend",
-   "works": 74
+   "why": "studied combo: DJ TIMELESS PRESENTS: NYC Live Sessions 1 #13, atlas plan Mashup → Transition",
+   "works": 82
   }
  ],
  "title": "DJ TIMELESS PRESENTS: NYC Live Sessions 1 (Bollywood, Punjabi, Hip Hop, Dance, Pop) #13: Kendrick Lamar - Not Like Us →",

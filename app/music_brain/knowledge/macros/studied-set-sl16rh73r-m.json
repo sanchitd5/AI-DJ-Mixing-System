@@ -1,5 +1,5 @@
 {
- "created": 1790754337.597518,
+ "created": 1790784033.3081331,
  "name": "studied-set-sl16rh73r-m",
  "note": "studied set Argy for Cercle at Jungfraujoch - Top of Europe, Switzerland in set order: 19 of 22 songs; skipped 3: #4 Argy, Weekend Heroes - No Ones Coming (not in the library); #19 Anyma, Argy, Magnus - Higher Power (not in the library); #22 Safri Duo - Played-A-Live (no atlas pair)",
  "parent": null,
@@ -9,7 +9,7 @@
   {
    "a": "c856810defd7dc3b",
    "a_name": "Argy, Son of Son - Faust",
-   "a_time": 69.962,
+   "a_time": 100.269,
    "b": "9f1819ca2e336a35",
    "b_name": "Son of Son - Du Ska Inte",
    "b_time": 11.912,
@@ -20,15 +20,15 @@
     "lock": "pitched"
    },
    "why": "studied set: Argy for Cercle at Jungfraujoch #2, atlas plan Long Blend",
-   "works": 74
+   "works": 78
   },
   {
    "a": "9f1819ca2e336a35",
    "a_name": "Son of Son - Du Ska Inte",
-   "a_time": 213.206,
+   "a_time": 240.299,
    "b": "bbc20151d218e6dc",
    "b_name": "Argy & Baset - Sierra",
-   "b_time": 61.928,
+   "b_time": 15.488,
    "combo": "studied",
    "n": 2,
    "recipe": "Echo Out",
@@ -56,7 +56,7 @@
   {
    "a": "ecccdb3484d54118",
    "a_name": "Omnya - Reflections (unreleased) - ID [set cut sL16rh73r-M #5]",
-   "a_time": 200.597,
+   "a_time": 101.353,
    "b": "78c52fe173fbadae",
    "b_name": "Argy, Cay - ID [set cut sL16rh73r-M #6]",
    "b_time": 10.008,
@@ -92,19 +92,19 @@
    "b": "1e42defaef847317",
    "b_name": "Jenia Tarsol & Jinga - Takadoom (Argy Edit)",
    "b_time": 0.604,
-   "combo": "studied",
+   "combo": "drop_swap",
    "n": 6,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Argy for Cercle at Jungfraujoch #8, atlas plan Long Blend",
-   "works": 74
+   "works": 78
   },
   {
    "a": "1e42defaef847317",
    "a_name": "Jenia Tarsol & Jinga - Takadoom (Argy Edit)",
-   "a_time": 121.069,
+   "a_time": 226.069,
    "b": "aa489d433007378b",
    "b_name": "Argy - All Day Long",
    "b_time": 27.353,
@@ -120,7 +120,7 @@
   {
    "a": "aa489d433007378b",
    "a_name": "Argy - All Day Long",
-   "a_time": 183.461,
+   "a_time": 206.811,
    "b": "71595047450f4e99",
    "b_name": "Son of Son - Lost Control",
    "b_time": 3.553,
@@ -152,10 +152,10 @@
   {
    "a": "f90b4db6c63f8109",
    "a_name": "Argy - Guru",
-   "a_time": 224.746,
+   "a_time": 240.223,
    "b": "982db682be31f1db",
    "b_name": "Shinedoe - Phunk (Steve Angello Re-Edit)",
-   "b_time": 14.861,
+   "b_time": 0.511,
    "combo": "studied",
    "n": 10,
    "recipe": "Echo Out",
@@ -184,10 +184,10 @@
   {
    "a": "5d6cdea9d108e32c",
    "a_name": "Enai - Horus",
-   "a_time": 328.818,
+   "a_time": 240.302,
    "b": "9f0a4fafa10d23bf",
    "b_name": "Argy - Wilderness",
-   "b_time": 61.858,
+   "b_time": 15.511,
    "combo": "studied",
    "n": 12,
    "recipe": "Echo Out",
@@ -248,7 +248,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Argy for Cercle at Jungfraujoch #15, atlas plan Stem Merge",
-   "works": 84
+   "works": 86
   },
   {
    "a": "549126424cba8cca",
@@ -269,7 +269,7 @@
   {
    "a": "dd87304d3660c5d1",
    "a_name": "Monolink - Laura (Argy & Omnya Remix)",
-   "a_time": 241.915,
+   "a_time": 201.038,
    "b": "f134e064bab1dcac",
    "b_name": "Argy - Dreamstates",
    "b_time": 7.639,
@@ -288,7 +288,7 @@
    "a_time": 190.984,
    "b": "c391fd6563b1fb42",
    "b_name": "Rabbit in the Moon - Deeper",
-   "b_time": 134.049,
+   "b_time": 65.457,
    "combo": "studied",
    "n": 16,
    "recipe": "Echo Out",
@@ -301,7 +301,7 @@
   {
    "a": "c391fd6563b1fb42",
    "a_name": "Rabbit in the Moon - Deeper",
-   "a_time": 134.049,
+   "a_time": 225.466,
    "b": "318837279de2a8fe",
    "b_name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
    "b_time": 12.167,
@@ -316,7 +316,7 @@
   {
    "a": "318837279de2a8fe",
    "a_name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
-   "a_time": 176.0,
+   "a_time": 100.83,
    "b": "ff7ac94a913b89af",
    "b_name": "Argy - Collision",
    "b_time": 7.221,

@@ -1,5 +1,5 @@
 {
- "created": 1790702457.5617752,
+ "created": 1790784033.299219,
  "name": "studied-set-y5riwdb8rqk",
  "note": "studied set Argy | Tomorrowland Brasil 2025 in set order: 17 of 22 songs; skipped 5: #6 Joshlane - System Overload (wrong download); #9 Swedish House Mafia & Niki & The Dove - Lionesse (Argy remix) (not in the library); #15 Omiki & Vegas - Kawana (not in the library); #18 Alok & Innerverse - Alle in Allein (feat. Frey) [Argy Remix] (not in the library); #19 CIS - New Phone (not in the library)",
  "parent": null,
@@ -44,15 +44,15 @@
    "a_time": 232.292,
    "b": "35a302716faa6e0e",
    "b_name": "Argy & Omiki - WIND",
-   "b_time": 48.228,
-   "combo": "studied",
+   "b_time": 17.995,
+   "combo": "double_drop",
    "n": 3,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: Argy #4, studied stem_intro -> Long Blend",
-   "works": 86
+   "works": 90
   },
   {
    "a": "35a302716faa6e0e",
@@ -73,7 +73,7 @@
   {
    "a": "7871850bf697b0af",
    "a_name": "MORTEN & David Guetta - Lucky",
-   "a_time": 128.251,
+   "a_time": 120.251,
    "b": "b2dfbc4e15d13108",
    "b_name": "Kevin de Vries & Jast - Born Like That",
    "b_time": 14.327,
@@ -119,7 +119,7 @@
   {
    "a": "54d8cf2e2d2438bb",
    "a_name": "Argy, Eli & Dani, Peki (Ofc) & ØSHER - Chasing Highs",
-   "a_time": 119.114,
+   "a_time": 101.27,
    "b": "688efe5619bfdbe0",
    "b_name": "RUBACK & Knorst - Relax Your Body",
    "b_time": 0.72,
@@ -135,10 +135,10 @@
   {
    "a": "688efe5619bfdbe0",
    "a_name": "RUBACK & Knorst - Relax Your Body",
-   "a_time": 135.744,
+   "a_time": 100.72,
    "b": "6cf43c1326d17131",
    "b_name": "Argy & TNY - DURO",
-   "b_time": 16.254,
+   "b_time": 0.998,
    "combo": "studied",
    "n": 9,
    "recipe": "Echo Out",
@@ -151,7 +151,7 @@
   {
    "a": "6cf43c1326d17131",
    "a_name": "Argy & TNY - DURO",
-   "a_time": 169.797,
+   "a_time": 100.998,
    "b": "9ae0c077431a4889",
    "b_name": "Anyma & Argy & Son Of Son - Voices In My Head",
    "b_time": 24.009,
@@ -167,7 +167,7 @@
   {
    "a": "9ae0c077431a4889",
    "a_name": "Anyma & Argy & Son Of Son - Voices In My Head",
-   "a_time": 128.286,
+   "a_time": 101.509,
    "b": "958d51abf4640a6a",
    "b_name": "Cassian, YOTTO, Da Hool - Love Parade",
    "b_time": 6.664,
@@ -178,35 +178,35 @@
     "lock": "pitched"
    },
    "why": "studied set: Argy #14, atlas plan Long Blend",
-   "works": 78
+   "works": 72
   },
   {
    "a": "958d51abf4640a6a",
    "a_name": "Cassian, YOTTO, Da Hool - Love Parade",
-   "a_time": 185.969,
+   "a_time": 96.432,
    "b": "8e572e1980b77e26",
    "b_name": "Argy, Omiki, Son Of Son - RITMO",
    "b_time": 7.152,
    "combo": "merge",
    "merge": {
-    "M": 16,
-    "aT": 185.969,
+    "M": 40,
+    "aT": 96.432,
     "bT": 7.152,
-    "hold_bars": 14,
-    "hold_phrases": 2,
+    "hold_bars": 38,
+    "hold_phrases": 5,
     "phases": {
      "handover": {
-      "at_bar": 16,
+      "at_bar": 40,
       "bars": 8,
       "sub_overlap_bars": 0,
-      "vocal_overlap": 0
+      "vocal_overlap": 0.03
      },
      "hold": {
-      "bars": 14,
+      "bars": 38,
       "from_bar": 2,
-      "phrases": 2,
-      "seconds": 26.3,
-      "to_bar": 16
+      "phrases": 5,
+      "seconds": 71.3,
+      "to_bar": 40
      },
      "merge_start": {
       "at_bar": 0,
@@ -222,7 +222,7 @@
       "vocals": "b"
      },
      "label": "A drums + A bass + B vox + B synth",
-     "score": 99.9
+     "score": 100.4
     }
    },
    "n": 12,
@@ -231,7 +231,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Argy #16, atlas plan; gap: skipped Omiki & Vegas - Kawana",
-   "works": 82
+   "works": 79
   },
   {
    "a": "8e572e1980b77e26",
@@ -247,12 +247,12 @@
     "lock": "none"
    },
    "why": "studied set: Argy #17, atlas plan Stem Bridge",
-   "works": 68
+   "works": 72
   },
   {
    "a": "430851e041f3581d",
    "a_name": "Omiki - Todo",
-   "a_time": 240.448,
+   "a_time": 360.448,
    "b": "99fa8a78407295f4",
    "b_name": "Argy, Omnya - Aria (Omiki Remix)",
    "b_time": 3.46,
@@ -262,7 +262,7 @@
     "lock": "none"
    },
    "why": "studied set: Argy #20, atlas plan; gap: skipped Alok & Innerverse - Alle in Allein (feat. Frey) [Argy Remix], CIS - New Phone",
-   "works": 38
+   "works": 50
   },
   {
    "a": "99fa8a78407295f4",
@@ -278,12 +278,12 @@
     "lock": "none"
    },
    "why": "studied set: Argy #21, atlas plan Stem Bridge",
-   "works": 38
+   "works": 50
   },
   {
    "a": "6950df07c5c7418d",
    "a_name": "Argy - Tataki (UnderCover Remix)",
-   "a_time": 240.076,
+   "a_time": 100.076,
    "b": "7f8449dd5e92a49c",
    "b_name": "Lost Frequencies, Argy & rhys from the sticks - Summer Skies",
    "b_time": 14.327,
@@ -294,7 +294,7 @@
     "lock": "none"
    },
    "why": "studied set: Argy #22, atlas plan Stem Bridge",
-   "works": 65
+   "works": 67
   }
  ],
  "title": "Argy @ Tomorrowland Brasil 2025 (studied set, 17 songs)",
