@@ -239,8 +239,11 @@ class Library:
         return load_learned(self.dir / "learned_techniques.json")
 
     def analysis_path(self, tid: str) -> Optional[Path]:
-        hits = sorted((self.dir / "analysis").glob(f"{tid}*.v5.json"))
-        return hits[0] if hits else None
+        for v in ("v6", "v5"):      # v6 = phrase-grid drops; v5 until the library is re-analysed
+            hits = sorted((self.dir / "analysis").glob(f"{tid}*.{v}.json"))
+            if hits:
+                return hits[0]
+        return None
 
     def stems(self, digest: str) -> Optional[Dict[str, str]]:
         from app.music_brain.audio.audio_io import read_manifest
@@ -252,7 +255,7 @@ class Library:
         return None
 
     def tracks(self) -> List[dict]:
-        """Every upload with a v5 analysis: [{id, name, path, analysis, digest, stems, energy}]"""
+        """Every upload with a v5 / v6 analysis: [{id, name, path, analysis, digest, stems, energy}]"""
         from app.ui.services.download_service import _is_live, _is_mix
 
         names = self.names()
@@ -440,7 +443,7 @@ def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
     lo, hi = _play_window(fa, levels.get(a))
     va = fa["vox"]
     recs, jobs = {}, []
-    a_drops = blend.drop_lines(ta.phrase_boundaries_8bar, ta.energy_times, ta.energy_curve, fa["bar"]) \
+    a_drops = blend.track_drop_lines(ta, fa["bar"]) \
         if fa["bpm"] > 0 else []
     for b in todo_b:
         fb = feats[b]
