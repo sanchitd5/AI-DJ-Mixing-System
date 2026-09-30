@@ -16,7 +16,9 @@ from app.ui.services import booking_vet as bv
 ROOT = Path(__file__).resolve().parents[3]
 PAIRS = json.loads((ROOT / "app/tests/fixtures/owner_liked_pairs.json").read_text())["pairs"]
 TRACKS = json.loads((ROOT / "app/tests/fixtures/owner_liked_tracks.json").read_text())["tracks"]
-SEED = vt.load(None)
+def _seed():
+    """The tracked veto seed, loaded when a test runs (the conftest keeps the cache private), never at import."""
+    return vt.load(None)
 
 
 def test_no_vet_gate_refuses_them():
@@ -24,7 +26,7 @@ def test_no_vet_gate_refuses_them():
         a, b = TRACKS[p["a"]], TRACKS[p["b"]]
         for stored in (False, True):
             r = bv.vet_one(a["name"], b["name"], a_genre=a["genre"], b_genre=b["genre"], a_era=a["era"], b_era=b["era"],
-                           history=[a["name"]], vetoes=SEED, stored=stored)
+                           history=[a["name"]], vetoes=_seed(), stored=stored)
             assert r is None, (k, stored, r)
         assert mashup.scene_gate(a["genre"], b["genre"]) is None, k
 

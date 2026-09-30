@@ -7,13 +7,14 @@ import pytest
 from app.music_brain.atlas import pair_atlas as pa
 from app.music_brain.atlas import vetoes as vt
 
-SEED = vt.load(None)          # the tracked seed (the conftest keeps the cache file private and empty)
 BODYROCK, WORK = "TH;EN - Bodyrock", "Masters At Work - Work (Skytech Remix)"
 HACKNEY, SANTI = "Sammy Virji - Hackney Pigeon", "Santigold - You\u2019ll Find a Way (Official Audio)"
 
 
 def test_seed_holds_the_two_pairs():
-    pairs = {(e["a_key"], e["b_key"]) for e in SEED if e["kind"] == "pair"}
+    seed = vt.load(None)      # the tracked seed; loaded inside the test (the conftest keeps the cache private),
+    #                           never at import time, which ran before the fixtures and read the real cache
+    pairs = {(e["a_key"], e["b_key"]) for e in seed if e["kind"] == "pair"}
     assert (vt.song_key(BODYROCK), vt.song_key(WORK)) in pairs
     assert (vt.song_key(HACKNEY), vt.song_key(SANTI)) in pairs
     assert vt.song_key(SANTI) == vt.song_key("Santigold - You'll Find a Way"), "curly and straight quotes, upload suffix"
