@@ -453,12 +453,11 @@ def write_macros(atlas: dict, transitions: List[dict], cache_dir: Path) -> List[
                    "note": f"studied set {ts[0]['set_title']} in set order: {len(chain) + 1} of {len(ts) + 1} songs"
                            + (f"; skipped {len(gaps)}: " + "; ".join(gaps) if gaps else "")})
     fresh = {m["name"] for m in out}
-    d = mc.macros_dir(cache_dir)
-    for p in d.glob("studied-*.json") if d.is_dir() else []:
-        old = _read(p, {}) or {}
+    for name, old in mc.stored(cache_dir).items():
         # a macro seeded from the tracked knowledge/ studies a set this cache never studied: keep it
-        if p.stem not in fresh and str(old.get("source", "")) == MACRO_SOURCE and not old.get("knowledge"):
-            p.unlink()
+        if name.startswith("studied-") and name not in fresh and str(old.get("source", "")) == MACRO_SOURCE \
+                and not old.get("knowledge"):
+            mc.delete(name, cache_dir)
     return out
 
 

@@ -1,4 +1,4 @@
-"""MACROS: fully specified, replayable sets and transitions (CACHE_DIR/macros/<name>.json).
+"""MACROS: fully specified, replayable sets and transitions (the macros table of CACHE_DIR/app.db).
 
 A macro is what the owner can reproduce: ordered track ids and, per transition, the
 recipe, A's exit and B's entry (song seconds, on 8-bar lines), the merge -> hold plan,
@@ -18,7 +18,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import os
 import re
 import sys
 import time
@@ -32,6 +31,7 @@ TRACK_ID_RE = re.compile(r"^[0-9a-f]{16}$")
 
 
 def macros_dir(cache_dir: Optional[Path] = None) -> Path:
+    """The old macros folder (migration source); its parent holds the app DB."""
     from app.music_brain.config import CACHE_DIR
 
     return Path(cache_dir or CACHE_DIR) / "macros"
@@ -180,24 +180,24 @@ def title_of(m: dict) -> str:
 
 def save(macro: dict, cache_dir: Optional[Path] = None, new_version: bool = True) -> dict:
     """Write a macro. An existing name is never overwritten: new_version saves it as
-    <name>-v<k> (version k, parent = the name it came from); else ValueError."""
+    <name>-v<k> (version k, parent = the name it came from); else ValueError. One transaction,
+    so two saves of the same name get two versions."""
+    from app.music_brain import db
+
     m = normalize(macro)
-    d = macros_dir(cache_dir)
-    d.mkdir(parents=True, exist_ok=True)
-    base = m["name"]
-    if (d / f"{base}.json").exists():
-        if not new_version:
-            raise ValueError(f"macro {base} exists")
-        root = re.sub(r"-v\d+$", "", base)
-        k = 2
-        while (d / f"{root}-v{k}.json").exists():
-            k += 1
-        m["parent"], m["name"], m["version"] = base, f"{root}-v{k}", k
-    m["created"] = time.time()
-    p = d / f"{m['name']}.json"
-    tmp = p.with_suffix(f".{os.getpid()}.tmp")
-    tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
-    tmp.replace(p)
+    conn = _mdb(cache_dir)
+    with db.tx(conn):
+        base = m["name"]
+        if _get(conn, base) is not None:
+            if not new_version:
+                raise ValueError(f"macro {base} exists")
+            root = re.sub(r"-v\d+$", "", base)
+            k = 2
+            while _get(conn, f"{root}-v{k}") is not None:
+                k += 1
+            m["parent"], m["name"], m["version"] = base, f"{root}-v{k}", k
+        m["created"] = time.time()
+        _put(conn, m)
     return m
 
 
@@ -205,43 +205,34 @@ def write_seed(macro: dict, cache_dir: Optional[Path] = None, owner: str = "atla
     """A ready-made macro from the atlas (source atlas:*, or another `owner` prefix such as
     "tracklist"): overwrites only a macro that owner wrote before, never one the user saved
     (ValueError then)."""
+    from app.music_brain import db
+
     m = normalize(macro)
     if not m["source"].startswith(owner):
         raise ValueError(f"seed macros come from {owner}")
-    d = macros_dir(cache_dir)
-    d.mkdir(parents=True, exist_ok=True)
-    p = d / f"{m['name']}.json"
-    if p.exists():
-        try:
-            old = json.loads(p.read_text(encoding="utf-8"))
-        except (OSError, ValueError):
-            old = {}
-        if not str(old.get("source", "")).startswith(owner):
-            raise ValueError(f"macro {m['name']} is the user's")
-        if "created" in old and {k: v for k, v in old.items() if k != "created"} == \
-                {k: v for k, v in m.items() if k != "created"}:
-            return dict(m, created=old["created"])      # unchanged: keep its created, write nothing
-    tmp = p.with_suffix(f".{os.getpid()}.tmp")
-    tmp.write_text(json.dumps(m, indent=1), encoding="utf-8")
-    tmp.replace(p)
+    conn = _mdb(cache_dir)
+    with db.tx(conn):
+        old = _get(conn, m["name"])
+        if old is not None:
+            if not str(old.get("source", "")).startswith(owner):
+                raise ValueError(f"macro {m['name']} is the user's")
+            if "created" in old and {k: v for k, v in old.items() if k != "created"} == \
+                    {k: v for k, v in m.items() if k != "created"}:
+                return dict(m, created=old["created"])      # unchanged: keep its created, write nothing
+        _put(conn, m)
     return m
 
 
 def load(name: str, cache_dir: Optional[Path] = None) -> dict:
-    p = macros_dir(cache_dir) / f"{slug(name)}.json"
-    try:
-        return normalize(json.loads(p.read_text(encoding="utf-8")))
-    except FileNotFoundError:
-        raise KeyError(name) from None
+    raw = _get(_mdb(cache_dir), slug(name))
+    if raw is None:
+        raise KeyError(name)
+    return normalize(raw)
 
 
 def list_macros(cache_dir: Optional[Path] = None) -> List[dict]:
     out = []
-    for p in sorted(macros_dir(cache_dir).glob("*.json")):
-        try:
-            m = json.loads(p.read_text(encoding="utf-8"))
-        except (OSError, ValueError):
-            continue
+    for m in stored(cache_dir).values():
         if isinstance(m, dict) and m.get("schema") == SCHEMA:
             title = m.get("title")
             if not title:
@@ -258,22 +249,108 @@ def list_macros(cache_dir: Optional[Path] = None) -> List[dict]:
 
 
 def backfill_titles(cache_dir: Optional[Path] = None) -> List[str]:
-    """Give every stored macro without a title its derived one (writes only data/cache/macros/).
+    """Give every stored macro without a title its derived one (writes only the macros table).
     The slug, steps and source are left as they are. -> names written."""
+    from app.music_brain import db
+
     done = []
-    for p in sorted(macros_dir(cache_dir).glob("*.json")):
-        try:
-            raw = json.loads(p.read_text(encoding="utf-8"))
+    conn = _mdb(cache_dir)
+    with db.tx(conn):
+        for name, raw in _all(conn).items():
             if not isinstance(raw, dict) or raw.get("schema") != SCHEMA or raw.get("title"):
                 continue
-            raw["title"] = normalize(raw)["title"]
-        except (OSError, ValueError):
-            continue
-        tmp = p.with_suffix(f".{os.getpid()}.tmp")
-        tmp.write_text(json.dumps(raw, indent=1), encoding="utf-8")
-        tmp.replace(p)
-        done.append(p.stem)
+            try:
+                raw["title"] = normalize(raw)["title"]
+            except ValueError:
+                continue
+            _put(conn, raw, name)
+            done.append(name)
     return done
+
+
+# ------------------------------------------------------------------------------------------ storage
+# SQLite, the APP DB (app.music_brain.db): the macros of CACHE_DIR live in CACHE_DIR/app.db, table
+# macros (name, source, created, data = the macro JSON exactly as saved). The old folder
+# CACHE_DIR/macros/<name>.json migrates once on first open and is renamed macros.migrated/.
+MACRO_STEPS = (
+    """CREATE TABLE macros (name TEXT PRIMARY KEY, source TEXT, created REAL, data TEXT NOT NULL);
+    CREATE INDEX macros_source ON macros (source);
+    CREATE TABLE macros_migrated (dir TEXT PRIMARY KEY, at REAL)""",
+)
+
+
+def _mdb(cache_dir: Optional[Path] = None):
+    from app.music_brain import db
+
+    d = macros_dir(cache_dir)
+    conn = db.connect(d.parent / db.APP_DB)
+    db.ensure(conn, "macros", MACRO_STEPS)
+    if d.is_dir() and conn.execute("SELECT 1 FROM macros_migrated WHERE dir = ?", (d.name,)).fetchone() is None:
+        with db.tx(conn):
+            if conn.execute("SELECT 1 FROM macros_migrated WHERE dir = ?", (d.name,)).fetchone() is None:
+                for p in sorted(d.glob("*.json")):
+                    try:
+                        raw = json.loads(p.read_text(encoding="utf-8"))
+                    except (OSError, ValueError):
+                        continue                             # unreadable: stays in macros.migrated/
+                    if isinstance(raw, dict) and conn.execute("SELECT 1 FROM macros WHERE name = ?",
+                                                              (p.stem,)).fetchone() is None:
+                        _put(conn, raw, p.stem)
+                conn.execute("INSERT INTO macros_migrated (dir, at) VALUES (?, ?)", (d.name, time.time()))
+                db.retire(d)
+    return conn
+
+
+def _get(conn, name: str) -> Optional[dict]:
+    row = conn.execute("SELECT data FROM macros WHERE name = ?", (name,)).fetchone()
+    return json.loads(row[0]) if row else None
+
+
+def _put(conn, m: dict, name: Optional[str] = None) -> None:
+    created = m.get("created")
+    conn.execute("INSERT OR REPLACE INTO macros (name, source, created, data) VALUES (?, ?, ?, ?)",
+                 (name or m["name"], str(m.get("source") or ""),
+                  created if isinstance(created, (int, float)) else None, json.dumps(m, indent=1)))
+
+
+def _all(conn) -> Dict[str, dict]:
+    out = {}
+    for name, data in conn.execute("SELECT name, data FROM macros ORDER BY name"):
+        try:
+            out[name] = json.loads(data)
+        except ValueError:
+            continue
+    return out
+
+
+def stored(cache_dir: Optional[Path] = None) -> Dict[str, dict]:
+    """Every stored macro as saved ({name: raw dict}, by name), normalised or not."""
+    return _all(_mdb(cache_dir))
+
+
+def exists(name: str, cache_dir: Optional[Path] = None) -> bool:
+    return _get(_mdb(cache_dir), name) is not None
+
+
+def put_new(macro: dict, cache_dir: Optional[Path] = None) -> bool:
+    """Store `macro` as is under its name unless that name exists (knowledge seed: the local
+    macro wins). True when written."""
+    from app.music_brain import db
+
+    conn = _mdb(cache_dir)
+    with db.tx(conn):
+        if _get(conn, macro["name"]) is not None:
+            return False
+        _put(conn, macro)
+    return True
+
+
+def delete(name: str, cache_dir: Optional[Path] = None) -> bool:
+    from app.music_brain import db
+
+    conn = _mdb(cache_dir)
+    with db.tx(conn):
+        return conn.execute("DELETE FROM macros WHERE name = ?", (name,)).rowcount > 0
 
 
 def validate(macro: dict, known: Callable[[str], bool], has_stems: Callable[[str], bool] = lambda t: True) -> List[dict]:
