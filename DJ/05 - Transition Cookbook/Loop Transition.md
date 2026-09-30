@@ -13,7 +13,7 @@ difficulty: Intermediate
 **The Loop Transition** (Infinite Groove / Structural Extension Mix)
 
 ### What it is
-A transition where an auto-loop (typically 4, 8, or 16 bars) is engaged on Track A's percussive outro or groove, freezing it in an infinite cycle, allowing the DJ to take as much time as necessary to layer, EQ-blend, and introduce Track B.
+A transition where an auto-loop (typically 4, 8, or 16 bars) is engaged on Track A's percussive outro or groove, repeating it for at most two cycles, which buys the DJ enough time to layer, EQ-blend, and introduce Track B without the groove going stale.
 
 ### What problem it solves
 Solves the problem of short, rushed outros. Many modern streaming edits fade out or end within 4 to 8 bars, leaving no time for a professional mix. Looping creates an artificial, customized DJ-extended mix on the fly.
@@ -27,11 +27,11 @@ Solves the problem of short, rushed outros. Many modern streaming edits fade out
 * **Track B:** Cued on Deck 2 at intro downbeat (Hot Cue 1).
 
 ### Step-by-step
-1. **Engage the Loop:** As Track A enters its final clean groove section, hit the **Auto-Loop** button on Beat 1 of an 8-bar phrase. Track A is now safely cycling indefinitely.
+1. **Engage the Loop (2 cycles max):** Loop A's last clean 8-bar groove at most 2 cycles, then hand off; never hold it open-ended. Hit **Auto-Loop** on Beat 1 of the phrase as Track A enters its final clean groove section.
 2. **Launch Track B:** When ready, launch Track B on Beat 1 of Track A's loop cycle.
-3. **The Blend:** Use standard [[EQ Blend]] techniques over 16 to 32 bars to introduce Track B's percussion and mids.
+3. **The Blend:** Use standard [[EQ Blend]] techniques across the two loop cycles (16 bars for an 8-bar loop) to introduce Track B's percussion and mids.
 4. **Bass Swap:** On Beat 1 of Track B's main phrase, execute the [[Bass Swap]].
-5. **Exit:** Disengage the loop or fade Track A's upfader down to 0 smoothly.
+5. **Exit:** By the end of the second cycle, disengage the loop or fade Track A's upfader down to 0 smoothly. If Track B still is not ready, leave with an [[Echo Out]] instead of looping again.
 
 ### When to use it
 * Mixing short radio edits or tracks without extended DJ intros/outros.
