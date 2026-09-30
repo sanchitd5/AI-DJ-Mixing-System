@@ -49,8 +49,9 @@ Trap and Bass Music (RL Grime, ISOxo, Knock2, Boombox Cartel) combine the rhythm
 * **From Dubstep (140 BPM):** Nudge tempo from 140 to 145–150 BPM during a build; execute an explosive [[Drop Swap]].
 
 ### How DJs Transition OUT of Trap:
-* **Into Drum & Bass (174 BPM):** Gradually ramp from 150 to 160 BPM during a high-energy build; engage a Loop Roll; slam into a 174 BPM DnB drop. (See [[Genre Bridge Playbook]]).
-* **Into House (128 BPM):** Wait for a drumless breakdown, slow the tempo fader down to 128 BPM, and drop a four-on-the-floor kick!
+* **First:** another trap track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: in a drumless breakdown, echo out the last phrase and slam into a 174 BPM DnB drop on Beat 1. No tempo ramp. (See [[Genre Bridge Playbook]]).
+* **Into House (128 BPM):** Breakdown first, [[Echo Out]] second: wait for a drumless breakdown, echo out its tail, then drop a four-on-the-floor kick. No tempo ramp.
 
 ---
 

@@ -52,7 +52,8 @@ Dubstep (from UK roots like Burial to modern American tearout / riddim like Subt
 * **From Trap (145–150 BPM):** Match tempo or nudge pitch fader; execute an instantaneous drop swap on the downbeat.
 
 ### How DJs Transition OUT of Dubstep:
-* **Into Drum & Bass (174 BPM):** Let the dubstep drop finish; on the breakdown, use an acapella bridge or drum ramp to launch directly into 174 BPM DnB.
+* **First:** another dubstep track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: let the dubstep drop finish; in the breakdown, echo out the last phrase and launch the DnB on Beat 1. No tempo ramp.
 * **Into Hip-Hop (70 BPM):** Because 140 BPM is mathematically double 70 BPM, you can drop a 70 BPM Hip-Hop rap verse directly on Beat 1 of the phrase!
 
 ---

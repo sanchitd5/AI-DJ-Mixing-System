@@ -51,8 +51,9 @@ Pop music is the universal connective tissue of open-format DJing. While purists
 * **From Hip-Hop:** Match tempo (or use 1/2-beat echo throw) on the last bar of the rap verse, slamming directly into the iconic first line of the pop chorus.
 
 ### How DJs Transition OUT of Pop:
+* **First:** another pop track, [[Bass Swap]] on the phrase.
 * **Into House / EDM:** On the final sing-along chorus, bring in the incoming EDM build-up directly underneath the pop vocal. On the drop, slam into the EDM kick and kill the pop track completely. (See [[Build-to-Drop Transition]]).
-* **Into Drum & Bass:** Wait for the pop bridge/breakdown; layer 174 BPM atmospheric rolling breaks under the vocal; drop into heavy DnB. (See [[Genre Bridge Playbook]]).
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: wait for the pop bridge/breakdown, echo out the vocal's last word, then drop into heavy DnB on Beat 1. No tempo ramp. (See [[Genre Bridge Playbook]]).
 
 ---
 

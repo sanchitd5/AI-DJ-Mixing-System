@@ -51,7 +51,8 @@ Hip-Hop is the cultural foundation of modern DJing. Unlike electronic genres whe
 * **From Drum & Bass:** Use the half-time metric relationship: an 87 BPM Hip-Hop track locks mathematically into 174 BPM DnB! (See [[Genre Bridge Playbook]]).
 
 ### How DJs Transition OUT of Hip-Hop:
-* **Into EDM / House:** Catch a 2-bar vocal loop of the rap hook; start ramping tempo from 95 to 120 BPM; drop a four-on-the-floor House kick underneath.
+* **First:** another hip-hop track, [[Bass Swap]] on the phrase.
+* **Into EDM / House (120-128 BPM):** Breakdown first, [[Echo Out]] second: catch a 2-bar loop of the rap hook, echo it out, then drop a four-on-the-floor House kick on Beat 1. No tempo ramp.
 * **Into Trap:** Jump directly from 75 BPM Hip-Hop into 150 BPM Trap by doubling the tempo and dropping an 808 snare roll.
 
 ---

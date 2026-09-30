@@ -46,7 +46,8 @@ House music (and specifically Tech House) is the world's most popular club genre
 * **From Techno / Minimal:** Use an [[EQ Blend]] across 32 bars, gradually replacing the dark industrial techno top-end with house swing.
 
 ### How DJs Transition OUT of House:
-* **Into Drum & Bass:** Ramp tempo from 128 to 134 BPM during a snare build, engage a 1/2-beat Loop Roll on the snare, and drop into 174 BPM DnB!
+* **First:** another house track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: let the house groove roll into its breakdown, echo out the last phrase and launch the DnB on Beat 1. No tempo ramp.
 * **Into Hip-Hop:** Let the house groove roll into a drum-only outro; hit an Echo Out on the final kick; drop a 90 BPM classic rap beat on the downbeat.
 
 ---
