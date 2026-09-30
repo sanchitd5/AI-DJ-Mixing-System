@@ -1,0 +1,32 @@
+{
+ "created": 1790729111.473459,
+ "name": "studied-gff8jzbvwvm-34",
+ "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 34), techniques stem_intro",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "708bb1c1011a7ce6",
+   "a_name": "Serious Sounds (VIP)",
+   "a_time": 240.604,
+   "b": "64dbf9f30f1f3679",
+   "b_name": "Daft Punk - Touch",
+   "b_time": 18.46,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied combo: Fred again.. & Thomas Bangalter #34, atlas plan Echo Out",
+   "works": 52
+  }
+ ],
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #34: Serious Sounds (VIP) → Daft Punk - Touch",
+ "tracks": [
+  "708bb1c1011a7ce6",
+  "64dbf9f30f1f3679"
+ ],
+ "version": 1
+}

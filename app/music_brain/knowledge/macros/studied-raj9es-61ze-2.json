@@ -1,0 +1,32 @@
+{
+ "created": 1790729111.481099,
+ "name": "studied-raj9es-61ze-2",
+ "note": "studied combo from rAJ9Es-61ZE (position 2), techniques acapella_drop",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "82e286ce705b0e86",
+   "a_name": "Frank Ocean - Chanel",
+   "a_time": 138.67,
+   "b": "4df364159e2a8ac7",
+   "b_name": "A New Error",
+   "b_time": 17.67,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: rAJ9Es-61ZE #2, atlas plan Long Blend",
+   "works": 78
+  }
+ ],
+ "title": "rAJ9Es-61ZE #2: Frank Ocean - Chanel → A New Error",
+ "tracks": [
+  "82e286ce705b0e86",
+  "4df364159e2a8ac7"
+ ],
+ "version": 1
+}

@@ -1,6 +1,6 @@
 {
- "built_at": 1790725042.543915,
- "rules": "4565dd2bf942f4f0",
+ "built_at": 1790729107.955939,
+ "rules": "ecba8fdacdcfdd20",
  "schema": 1,
  "shards": [
   "019e4fc2eb927bcc",
@@ -18,6 +18,7 @@
   "088d8bdea386631b",
   "08b1d07513fd2f0a",
   "08bf00a27cef4988",
+  "097b045c2d5f6465",
   "097dd2030ba26c8d",
   "0baa5899053cb8b0",
   "0bf08c3ce1e245be",
@@ -53,12 +54,15 @@
   "1a582126f6eda62d",
   "1b44c1ac9a29c4d5",
   "1befe637865e47d0",
+  "1c5d8584825ef580",
+  "1cd10b0fa5876f02",
   "1cf2704ed35730f5",
   "1cffc0daf3b67f01",
   "1d34ee58ede3a0bf",
   "1d43afa0647bccdc",
   "1d5bc29adcc2381d",
   "1d8cbde68445ada1",
+  "1dba9e6d744bd66a",
   "1e6fbc1ca2895d76",
   "1ede41facd56dfaf",
   "1fc80015fef8f496",
@@ -76,6 +80,7 @@
   "27341ee372ae058d",
   "277d6e326cac4cc1",
   "278b3cf31bebbd05",
+  "27e8a3e50da951b1",
   "2864a2100b6fb57d",
   "28ac0fc57bc8a4c7",
   "29375beac92bff4f",
@@ -105,6 +110,7 @@
   "3688f478444274fa",
   "3695183278db383b",
   "36bf851e85ffe905",
+  "3712c2e4183b3662",
   "37b12d6de2fa60ed",
   "37ee5468cd018498",
   "38a2671a2840eb7e",
@@ -125,6 +131,7 @@
   "3f13ee0f385dc40c",
   "407c498ddd3a6dab",
   "40f177a36b6b8903",
+  "414577afea6b828d",
   "414bcd5a78a56b67",
   "4176a8f42788f0eb",
   "428f6f12a5468e4e",
@@ -137,6 +144,8 @@
   "47c21409aec7ff7a",
   "48a52c70e2dc044d",
   "48ff2da20cf9cb1e",
+  "4912379704d75559",
+  "49fe280597b8a19b",
   "4ab32b0c9b9e5221",
   "4ad75610778d35ac",
   "4af8f94267ec87a9",
@@ -148,6 +157,7 @@
   "4d536379c8c344fc",
   "4dabab64361f0e56",
   "4df364159e2a8ac7",
+  "4e014903b03c2c9b",
   "4eaf109a6e8f8068",
   "4f4063f55c300b72",
   "5008ca8d78cda26f",
@@ -170,6 +180,8 @@
   "5a968d91b4f3be40",
   "5be63cd9482fd58a",
   "5c33b5c58a77e6d2",
+  "5d3d150d24856231",
+  "5d808f7420c5e2c0",
   "5ef32724cc89640e",
   "5f4798caf5ed3e16",
   "5f8874d6932d3d57",
@@ -188,11 +200,13 @@
   "63ec7e8c0c58dc57",
   "64986afa901f6695",
   "64b3e80d2195bddb",
+  "64dbf9f30f1f3679",
   "66eed068a1ca6d82",
   "67180522a58b168d",
   "67222fae706cf684",
   "681960f15ec92d07",
   "681972cdbb04ebb2",
+  "687fde89b2508f2a",
   "688efe5619bfdbe0",
   "68e1d7c8c32d53d3",
   "6938e627e48aebf5",
@@ -209,9 +223,11 @@
   "6e3ee890fbf3d9bc",
   "6e90e646c31ffc31",
   "6efe461f8131c4fa",
+  "708bb1c1011a7ce6",
   "70f42ce6598733d8",
   "715e2e938c6336e4",
   "718489ccc67ba2fc",
+  "71c1bd3376a93f20",
   "71d16e6e7144ae32",
   "721e2e5a7b72db42",
   "7318f7f28acf2471",
@@ -243,6 +259,7 @@
   "81495f19980db9fc",
   "81b28bb2267c8694",
   "82a25b967bf8f81a",
+  "82e286ce705b0e86",
   "8419b357cbb818d4",
   "843f81e27035fbb4",
   "84d11de8989bd4cf",
@@ -253,6 +270,7 @@
   "867c15787f9ca399",
   "8706c5ba422223de",
   "8a2e1912c97c54fc",
+  "8a37904caf3129da",
   "8a6d0c824962f92f",
   "8a7228923510ed1c",
   "8a81673aa5f43581",
@@ -271,6 +289,7 @@
   "9075692fe9d12259",
   "932af8d76ab4e19b",
   "94fe7d05617785ce",
+  "953b0a544b0b6ce6",
   "9548c6c4b808d9e8",
   "958d51abf4640a6a",
   "95e8a675637f3f9a",
@@ -303,6 +322,7 @@
   "a4bdf878b4be2e7a",
   "a4e816ba8d8460ba",
   "a4f583906aecdc5b",
+  "a5208fd82446daf1",
   "a5fcbc7987a0e252",
   "a62f20bd9e384771",
   "a7cb2155cb1c8805",
@@ -314,6 +334,7 @@
   "a955f9369451bfdc",
   "a9b2890db8df1ba6",
   "aa40faf6db1a818e",
+  "aa5ea3829538128d",
   "ab1453c21e1da556",
   "abebaf5b16d13312",
   "ac87b41058611bbe",
@@ -349,6 +370,7 @@
   "bc2d27e2f5ac3d26",
   "bc2fc18bd390a1fc",
   "bc662bef9ec911d3",
+  "bd9cea003f62d8b6",
   "bdaca2491f8c2451",
   "bdb825d6356adef0",
   "bec4acea28702b78",
@@ -380,6 +402,7 @@
   "cd648262554b4d89",
   "cf116c1712bb6954",
   "cf6b2744e2345978",
+  "d028d416b69c198d",
   "d073458c626990eb",
   "d1152d8c8797fd49",
   "d1def708243ae30a",
@@ -399,15 +422,18 @@
   "d694195c66b9fa52",
   "d6db231077bd31d9",
   "d70171c14d349b09",
+  "d7eb2f0203fa0b8a",
   "d978c7e7c8e5136f",
   "da0098092dc05ae2",
   "da2a2d36d2861e49",
   "db118c1e69207fda",
   "db9ba06444fe23df",
+  "dbff0e5e1ddd5d7d",
   "dc29cff8aff9aa9e",
   "dd3d1dabab4c2cee",
   "dd3f0c201c0c0f03",
   "dd5f8b461837541b",
+  "dd7ac424d2a2cb37",
   "def2d6f22bb75700",
   "e11f18ed33b8b9c0",
   "e1a6a1b38c2964de",
@@ -453,8 +479,10 @@
   "f782208f60ff2caf",
   "f7ddfcd26fe40648",
   "f804401fdc225bce",
+  "f8db1a94f8fda597",
   "f9492b6cca3048d5",
   "f987af898cd50266",
+  "f9ba4335abc7a87f",
   "f9cdc6e4109416a9",
   "fa0010ffee44ddef",
   "fa2095638c5fd352",
@@ -465,17 +493,18 @@
   "fc1c17c97f906671",
   "fc1f625f7770f6e3",
   "fc37d2cc2a73ff95",
-  "ff7f92e0e897efd5"
+  "ff7f92e0e897efd5",
+  "ffb29e98845f5802"
  ],
  "slim": {
   "keep": 60,
   "per_move": 20
  },
  "stats": {
-  "pairs": 34337,
-  "source_pairs": 213906,
-  "source_tracks": 463,
-  "tracks": 463
+  "pairs": 36951,
+  "source_pairs": 241572,
+  "source_tracks": 492,
+  "tracks": 492
  },
  "tracks": {
   "019e4fc2eb927bcc": {
@@ -612,6 +641,15 @@
    "level": 2,
    "name": "100 gecs - money machine (Official Audio Stream)",
    "stems": true
+  },
+  "097b045c2d5f6465": {
+   "artist": "circles",
+   "bpm": 120.0,
+   "duration": 215.353514739229,
+   "key": "8B",
+   "level": null,
+   "name": "Circles",
+   "stems": false
   },
   "097dd2030ba26c8d": {
    "artist": "taylor swift",
@@ -928,6 +966,24 @@
    "name": "Argy & John Cala - BOOM",
    "stems": true
   },
+  "1c5d8584825ef580": {
+   "artist": "g.o.a.t. (ai) ｜ karan aujla",
+   "bpm": 176.0,
+   "duration": 223.09736961451247,
+   "key": "1A",
+   "level": 8,
+   "name": "G.O.A.T. (AI) ｜ KARAN AUJLA x DILJIT DOSANJH ｜",
+   "stems": true
+  },
+  "1cd10b0fa5876f02": {
+   "artist": "spinal scratch",
+   "bpm": 130.68,
+   "duration": 389.99079365079365,
+   "key": "9B",
+   "level": null,
+   "name": "Spinal Scratch",
+   "stems": false
+  },
   "1cf2704ed35730f5": {
    "artist": "daft punk",
    "bpm": 122.88,
@@ -981,6 +1037,15 @@
    "level": null,
    "name": "True Stories -  AP Dhillon ｜ Shinda Kahlon (Official Music Video)",
    "stems": true
+  },
+  "1dba9e6d744bd66a": {
+   "artist": "gil scott-heron",
+   "bpm": 124.39,
+   "duration": 189.74190476190475,
+   "key": "12A",
+   "level": null,
+   "name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
+   "stems": false
   },
   "1e6fbc1ca2895d76": {
    "artist": "laura",
@@ -1134,6 +1199,15 @@
    "level": 2,
    "name": "Diana Ross ANMHE track no vocals",
    "stems": true
+  },
+  "27e8a3e50da951b1": {
+   "artist": "fred again..",
+   "bpm": 174.0,
+   "duration": 222.76068027210886,
+   "key": "7A",
+   "level": null,
+   "name": "Fred again.. - leavemealone (Nia Archives Remix)",
+   "stems": false
   },
   "2864a2100b6fb57d": {
    "artist": "fred again..",
@@ -1396,6 +1470,15 @@
    "name": "Avril 14th",
    "stems": true
   },
+  "3712c2e4183b3662": {
+   "artist": "daft punk",
+   "bpm": 124.04,
+   "duration": 211.64993197278912,
+   "key": "7B",
+   "level": null,
+   "name": "Daft Punk - Crescendolls (MPH edit)",
+   "stems": false
+  },
   "37b12d6de2fa60ed": {
    "artist": "sg lewis",
    "bpm": 99.99,
@@ -1576,6 +1659,15 @@
    "name": "Sammy Virji - Hackney Pigeon",
    "stems": true
   },
+  "414577afea6b828d": {
+   "artist": "soorma",
+   "bpm": 155.84,
+   "duration": 413.17333333333335,
+   "key": "11A",
+   "level": 5,
+   "name": "Soorma",
+   "stems": true
+  },
   "414bcd5a78a56b67": {
    "artist": "glasser",
    "bpm": 151.99908088235293,
@@ -1684,6 +1776,24 @@
    "name": "FKA twigs - sad day",
    "stems": true
   },
+  "4912379704d75559": {
+   "artist": "joy orbison",
+   "bpm": 93.34,
+   "duration": 247.80340136054423,
+   "key": "7A",
+   "level": null,
+   "name": "Joy Orbison - flight fm",
+   "stems": false
+  },
+  "49fe280597b8a19b": {
+   "artist": "daft punk",
+   "bpm": 113.18,
+   "duration": 553.7727437641723,
+   "key": "9A",
+   "level": null,
+   "name": "Daft Punk - Giorgio by Moroder",
+   "stems": false
+  },
   "4ab32b0c9b9e5221": {
    "artist": "empire of the sun",
    "bpm": 122.99,
@@ -1782,6 +1892,15 @@
    "level": 8,
    "name": "A New Error",
    "stems": true
+  },
+  "4e014903b03c2c9b": {
+   "artist": "hackney pigeon (sammy virji vip)",
+   "bpm": 110.78,
+   "duration": 200.5760090702948,
+   "key": "11A",
+   "level": null,
+   "name": "Hackney Pigeon (Sammy Virji VIP)",
+   "stems": false
   },
   "4eaf109a6e8f8068": {
    "artist": "dom dolla",
@@ -1981,6 +2100,24 @@
    "name": "Fred again.. x I. Jordan - Admit (U Don't Want 2) (10 February 2022)",
    "stems": true
   },
+  "5d3d150d24856231": {
+   "artist": "daft punk",
+   "bpm": 130.04,
+   "duration": 448.60956916099775,
+   "key": "3B",
+   "level": null,
+   "name": "Daft Punk - Rollin' & Scratchin'",
+   "stems": false
+  },
+  "5d808f7420c5e2c0": {
+   "artist": "o sanam o sanam ｜ shehnaaz gill",
+   "bpm": 111.82,
+   "duration": 200.87587301587303,
+   "key": "2A",
+   "level": 2,
+   "name": "O Sanam O Sanam ｜ Shehnaaz Gill & B Praak ｜ Latest Hindi Love Song ｜ Deep Melodies",
+   "stems": true
+  },
   "5ef32724cc89640e": {
    "artist": "nils frahm",
    "bpm": 149.65,
@@ -2076,7 +2213,7 @@
    "bpm": 118.68,
    "duration": 281.5071655328798,
    "key": "10B",
-   "level": 4,
+   "level": 3,
    "name": "Luis Fonsi - Despacito ft. Daddy Yankee",
    "stems": true
   },
@@ -2143,6 +2280,15 @@
    "name": "Sage the Gemini - Gas Pedal",
    "stems": true
   },
+  "64dbf9f30f1f3679": {
+   "artist": "daft punk",
+   "bpm": 116.16,
+   "duration": 508.1339229024943,
+   "key": "11A",
+   "level": null,
+   "name": "Daft Punk - Touch",
+   "stems": false
+  },
   "66eed068a1ca6d82": {
    "artist": "hasan raheem",
    "bpm": 137.64,
@@ -2157,7 +2303,7 @@
    "bpm": 154.0,
    "duration": 169.2502947845805,
    "key": "7A",
-   "level": null,
+   "level": 10,
    "name": "Yousif - No Costume",
    "stems": true
   },
@@ -2187,6 +2333,15 @@
    "level": null,
    "name": "Charlotte De Witte - Sgadi Li Mi (Out now on KNTXT)",
    "stems": true
+  },
+  "687fde89b2508f2a": {
+   "artist": "daft punk",
+   "bpm": 127.45,
+   "duration": 284.2819501133787,
+   "key": "6A",
+   "level": null,
+   "name": "Daft Punk - Technologic",
+   "stems": false
   },
   "688efe5619bfdbe0": {
    "artist": "ruback",
@@ -2332,6 +2487,15 @@
    "name": "Anyma & Rebūke - Syren",
    "stems": true
   },
+  "708bb1c1011a7ce6": {
+   "artist": "serious sounds (vip)",
+   "bpm": 86.88,
+   "duration": 423.59006802721086,
+   "key": "9A",
+   "level": null,
+   "name": "Serious Sounds (VIP)",
+   "stems": false
+  },
   "70f42ce6598733d8": {
    "artist": "odesza",
    "bpm": 90.01,
@@ -2358,6 +2522,15 @@
    "level": 5,
    "name": "Fred again.. - Delilah (pull me out of this)",
    "stems": true
+  },
+  "71c1bd3376a93f20": {
+   "artist": "mabe",
+   "bpm": 132.0,
+   "duration": 294.3360090702948,
+   "key": "4A",
+   "level": null,
+   "name": "Mabe",
+   "stems": false
   },
   "71d16e6e7144ae32": {
    "artist": "dusty kid",
@@ -2638,6 +2811,15 @@
    "name": "BANKS - Waiting Game (Official Audio)",
    "stems": true
   },
+  "82e286ce705b0e86": {
+   "artist": "frank ocean",
+   "bpm": 109.99,
+   "duration": 210.2799546485261,
+   "key": "5A",
+   "level": null,
+   "name": "Frank Ocean - Chanel",
+   "stems": false
+  },
   "8419b357cbb818d4": {
    "artist": "bittermind",
    "bpm": 127.0,
@@ -2727,6 +2909,15 @@
    "level": null,
    "name": "Lakk 28 kudi da Diljit ft Yo Yo Honey singh Lyrical  Video 2022",
    "stems": true
+  },
+  "8a37904caf3129da": {
+   "artist": "te estoy correteando",
+   "bpm": 96.01,
+   "duration": 198.402947845805,
+   "key": "8A",
+   "level": null,
+   "name": "Te Estoy Correteando",
+   "stems": false
   },
   "8a6d0c824962f92f": {
    "artist": "rick astley",
@@ -2889,6 +3080,15 @@
    "level": 7,
    "name": "Sian & Burko  - 'Holding On' (Official Audio) [Odd One Out]",
    "stems": true
+  },
+  "953b0a544b0b6ce6": {
+   "artist": "femi",
+   "bpm": 125.0,
+   "duration": 171.7348299319728,
+   "key": "9B",
+   "level": null,
+   "name": "Femi",
+   "stems": false
   },
   "9548c6c4b808d9e8": {
    "artist": "fred again..",
@@ -3178,6 +3378,15 @@
    "name": "Fred again.. - Tate (How I Feel) (Lyrics) ｜ And you ain't heard from none of the broskis",
    "stems": true
   },
+  "a5208fd82446daf1": {
+   "artist": "rob dougan",
+   "bpm": 102.01,
+   "duration": 450.02598639455783,
+   "key": "6A",
+   "level": null,
+   "name": "Rob Dougan - Clubbed To Death",
+   "stems": false
+  },
   "a5fcbc7987a0e252": {
    "artist": "tanchiky 「energy synergy matrix ｌｏｎｇ」",
    "bpm": 128.0,
@@ -3276,6 +3485,15 @@
    "level": null,
    "name": "Nora En Pure - Morning Dew",
    "stems": true
+  },
+  "aa5ea3829538128d": {
+   "artist": "fred again..",
+   "bpm": 127.0,
+   "duration": 319.9637188208617,
+   "key": "6A",
+   "level": null,
+   "name": "Fred again.. & Skrillex & Four Tet - Baby again..",
+   "stems": false
   },
   "ab1453c21e1da556": {
    "artist": "a walk",
@@ -3592,6 +3810,15 @@
    "name": "Charli xcx - Guess featuring billie eilish (official video)",
    "stems": true
   },
+  "bd9cea003f62d8b6": {
+   "artist": "anmhe",
+   "bpm": 99.93,
+   "duration": 415.6256235827664,
+   "key": "5B",
+   "level": null,
+   "name": "ANMHE",
+   "stems": false
+  },
   "bdaca2491f8c2451": {
    "artist": "four tet",
    "bpm": 125.74,
@@ -3871,6 +4098,15 @@
    "name": "Son Of Son – HIDE (Tuman Remix)",
    "stems": true
   },
+  "d028d416b69c198d": {
+   "artist": "daft punk",
+   "bpm": 118.72,
+   "duration": 260.35378684807256,
+   "key": "1A",
+   "level": null,
+   "name": "Daft Punk - Doin' it Right",
+   "stems": false
+  },
   "d073458c626990eb": {
    "artist": "50 cent",
    "bpm": 96.89,
@@ -4042,6 +4278,15 @@
    "name": "Myke Towers - LALA (Lyric Video)",
    "stems": true
   },
+  "d7eb2f0203fa0b8a": {
+   "artist": "animal collective",
+   "bpm": 120.0,
+   "duration": 345.36204081632656,
+   "key": "8B",
+   "level": null,
+   "name": "Animal Collective - My Girls",
+   "stems": false
+  },
   "d978c7e7c8e5136f": {
    "artist": "promise you",
    "bpm": 124.0,
@@ -4087,6 +4332,15 @@
    "name": "Skrillex - Scary monsters and nice sprites  (reprise)",
    "stems": true
   },
+  "dbff0e5e1ddd5d7d": {
+   "artist": "munni badnaam hui 2.0 (official-audio) •yo yo honey singh• ｜new rap song ｜ @officialmusicbeat",
+   "bpm": 99.0,
+   "duration": 169.90045351473924,
+   "key": "9A",
+   "level": 4,
+   "name": "Munni Badnaam Hui 2.0 (OFFICIAL-AUDIO) •YO YO HONEY SINGH• ｜New RAP Song ｜ @Officialmusicbeat",
+   "stems": true
+  },
   "dc29cff8aff9aa9e": {
    "artist": "the 1975 ~ it's not living (if it's not with you) lyrics",
    "bpm": 121.2,
@@ -4122,6 +4376,15 @@
    "level": 5,
    "name": "Abandon Window (Remaster 2023)",
    "stems": true
+  },
+  "dd7ac424d2a2cb37": {
+   "artist": "fred again..",
+   "bpm": 87.0,
+   "duration": 228.04321995464852,
+   "key": "7A",
+   "level": null,
+   "name": "Fred again.. - places to be",
+   "stems": false
   },
   "def2d6f22bb75700": {
    "artist": "drake",
@@ -4326,7 +4589,7 @@
    "bpm": 122.87,
    "duration": 197.45092970521543,
    "key": "5B",
-   "level": 10,
+   "level": 9,
    "name": "ORBITAL CHIME",
    "stems": true
   },
@@ -4528,6 +4791,15 @@
    "name": "Panjabi MC - Mundian To Bach Ke (Beware Of The Boys) (Official Video)",
    "stems": true
   },
+  "f8db1a94f8fda597": {
+   "artist": "pulse z",
+   "bpm": 136.0,
+   "duration": 155.52,
+   "key": "8B",
+   "level": null,
+   "name": "Pulse Z",
+   "stems": false
+  },
   "f9492b6cca3048d5": {
    "artist": "dilbar dilbar 2.0 ｜",
    "bpm": 132.0,
@@ -4545,6 +4817,15 @@
    "level": null,
    "name": "Dorian Electra - My Agenda (feat. Village People & Pussy Riot) [Official Audio]",
    "stems": true
+  },
+  "f9ba4335abc7a87f": {
+   "artist": "808 state",
+   "bpm": 124.08,
+   "duration": 393.3576870748299,
+   "key": "10B",
+   "level": null,
+   "name": "808 State",
+   "stems": false
   },
   "f9cdc6e4109416a9": {
    "artist": "madeon",
@@ -4644,6 +4925,15 @@
    "level": null,
    "name": "Pale Waves - She's My Religion",
    "stems": true
+  },
+  "ffb29e98845f5802": {
+   "artist": "daft punk",
+   "bpm": 123.18,
+   "duration": 173.4879365079365,
+   "key": "2B",
+   "level": null,
+   "name": "Daft Punk - Teachers",
+   "stems": false
   }
  }
 }

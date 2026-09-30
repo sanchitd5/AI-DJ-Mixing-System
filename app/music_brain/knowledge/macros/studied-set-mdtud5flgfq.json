@@ -1,7 +1,7 @@
 {
- "created": 1790702457.56576,
+ "created": 1790729111.476587,
  "name": "studied-set-mdtud5flgfq",
- "note": "studied set Latin house/pop open-format set (mDtud5fLgFQ) in set order: 10 of 14 songs; skipped 5: #1 Hey Hey (wrong download); #3 Bonita (wrong download); #13 Te Estoy Correteando (not in the library); #14 Te Estoy Correteando (not in the library); #16 Mabe (not in the library)",
+ "note": "studied set Latin house/pop open-format set (mDtud5fLgFQ) in set order: 11 of 14 songs; skipped 4: #1 Hey Hey (wrong download); #3 Bonita (wrong download); #13 Te Estoy Correteando (not in the library); #14 Te Estoy Correteando (not in the library)",
  "parent": null,
  "schema": 1,
  "source": "atlas:studied",
@@ -147,9 +147,25 @@
    },
    "why": "studied set: Latin house/pop open-format set #15, atlas plan; gap: skipped Te Estoy Correteando, Te Estoy Correteando",
    "works": 32
+  },
+  {
+   "a": "fc1f625f7770f6e3",
+   "a_name": "LATIN MAFIA, Fred again.., bby - Quiereme",
+   "a_time": 156.475,
+   "b": "71c1bd3376a93f20",
+   "b_name": "Mabe",
+   "b_time": 14.466,
+   "combo": "studied",
+   "n": 10,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Latin house/pop open-format set #16, atlas plan Echo Out",
+   "works": 51
   }
  ],
- "title": "Latin house/pop open-format set (mDtud5fLgFQ) (studied set, 10 songs)",
+ "title": "Latin house/pop open-format set (mDtud5fLgFQ) (studied set, 11 songs)",
  "tracks": [
   "4176a8f42788f0eb",
   "3695183278db383b",
@@ -160,7 +176,8 @@
   "5620142bb2d1f323",
   "5be63cd9482fd58a",
   "9548c6c4b808d9e8",
-  "fc1f625f7770f6e3"
+  "fc1f625f7770f6e3",
+  "71c1bd3376a93f20"
  ],
  "version": 1
 }

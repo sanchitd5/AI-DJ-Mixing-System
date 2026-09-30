@@ -1,0 +1,32 @@
+{
+ "created": 1790729111.4722738,
+ "name": "studied-gff8jzbvwvm-12",
+ "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 12), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "aa5ea3829538128d",
+   "a_name": "Fred again.. & Skrillex & Four Tet - Baby again..",
+   "a_time": 240.075,
+   "b": "96481c9efddd078d",
+   "b_name": "Skrillex, Fred again.. & Flowdan - Rumble [Official Audio]",
+   "b_time": 6.966,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied combo: Fred again.. & Thomas Bangalter #12, atlas plan Echo Out",
+   "works": 33
+  }
+ ],
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #12: Fred again.. - Baby again.. → Skrillex - Ru",
+ "tracks": [
+  "aa5ea3829538128d",
+  "96481c9efddd078d"
+ ],
+ "version": 1
+}

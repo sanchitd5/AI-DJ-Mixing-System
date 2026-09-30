@@ -1,0 +1,49 @@
+{
+ "created": 1790729111.4813929,
+ "name": "studied-set-raj9es-61ze",
+ "note": "studied set rAJ9Es-61ZE in set order: 3 of 3 songs",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "82e286ce705b0e86",
+   "a_name": "Frank Ocean - Chanel",
+   "a_time": 138.67,
+   "b": "4df364159e2a8ac7",
+   "b_name": "A New Error",
+   "b_time": 17.67,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied set: rAJ9Es-61ZE #2, atlas plan Long Blend",
+   "works": 78
+  },
+  {
+   "a": "4df364159e2a8ac7",
+   "a_name": "A New Error",
+   "a_time": 86.657,
+   "b": "bb77208f0c1a3800",
+   "b_name": "Sabrina (i am a party)",
+   "b_time": 75.047,
+   "combo": "studied",
+   "n": 2,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: rAJ9Es-61ZE #3, atlas plan Long Blend",
+   "works": 67
+  }
+ ],
+ "title": "rAJ9Es-61ZE (studied set, 3 songs)",
+ "tracks": [
+  "82e286ce705b0e86",
+  "4df364159e2a8ac7",
+  "bb77208f0c1a3800"
+ ],
+ "version": 1
+}

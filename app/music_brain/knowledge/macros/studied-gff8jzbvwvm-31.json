@@ -1,0 +1,32 @@
+{
+ "created": 1790729111.473207,
+ "name": "studied-gff8jzbvwvm-31",
+ "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 31), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "a5208fd82446daf1",
+   "a_name": "Rob Dougan - Clubbed To Death",
+   "a_time": 240.924,
+   "b": "1dba9e6d744bd66a",
+   "b_name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
+   "b_time": 2.694,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied combo: Fred again.. & Thomas Bangalter #31, atlas plan Echo Out",
+   "works": 28
+  }
+ ],
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #31: Rob Dougan - Clubbed To Death → Gil Scott-H",
+ "tracks": [
+  "a5208fd82446daf1",
+  "1dba9e6d744bd66a"
+ ],
+ "version": 1
+}
