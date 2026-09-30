@@ -233,6 +233,9 @@ def test_import_set_cuts_ids_out_of_the_set_and_they_resolve(tmp_path):
     out = si.apply(cuts, upload=upload, analysis=lambda tid: {"bpm": 124.0, "key": {"camelot": "8A"}, "duration": 60.0})
     assert all(r.get("info") == {"bpm": 124.0, "key": "8A", "duration": 60.0} for r in out), out
     assert si.summary(out)["cut"] == 2
+    assert all((cache / "uploads" / f"{r['id']}.flac").is_file() for r in out), "ID cuts register as FLAC"
+    recut = si.apply([dict(c) for c in cuts], upload=upload, analysis=lambda tid: {})
+    assert [r["id"] for r in recut] == [r["id"] for r in out], "a re-cut hashes to the same track id"
     again = {r["position"]: r for r in si.plan(cache, "S1")}
     assert again[6]["action"] == "reuse" and again[6]["id"] == out[0]["id"], "a second run reuses the cut"
     # the studied chain sees the cut: the ID's slot resolves, its wrong-download flag no longer applies
