@@ -1,6 +1,6 @@
 {
- "built_at": 1790735036.363915,
- "rules": "ecba8fdacdcfdd20",
+ "built_at": 1790746462.397726,
+ "rules": "be1bf8b6c7efd231",
  "schema": 1,
  "shards": [
   "014821398ee71590",
@@ -66,6 +66,7 @@
   "1d5bc29adcc2381d",
   "1d8cbde68445ada1",
   "1dba9e6d744bd66a",
+  "1e42defaef847317",
   "1e6fbc1ca2895d76",
   "1ede41facd56dfaf",
   "1fc80015fef8f496",
@@ -104,6 +105,7 @@
   "30af1a906dea07f4",
   "30bb47e949d37eb0",
   "3118bc9ac9911f37",
+  "318837279de2a8fe",
   "325530ff2307964a",
   "326c94e9b3608af3",
   "327573551700a49d",
@@ -112,6 +114,7 @@
   "33596f621fcc1bb5",
   "33d1b0a1492fa306",
   "340ccd303d2264fb",
+  "35966bcd8e4b4228",
   "35a302716faa6e0e",
   "363ede4a65dfb251",
   "3688f478444274fa",
@@ -182,6 +185,7 @@
   "52f0768190ec31d5",
   "5391ce3174bca91b",
   "543a0338066bff2e",
+  "549126424cba8cca",
   "54d8cf2e2d2438bb",
   "558c09a6780818a0",
   "5620142bb2d1f323",
@@ -197,6 +201,7 @@
   "5be63cd9482fd58a",
   "5c33b5c58a77e6d2",
   "5d3d150d24856231",
+  "5d6cdea9d108e32c",
   "5d808f7420c5e2c0",
   "5d86dc8566edb94a",
   "5e6daed10afc0999",
@@ -246,6 +251,7 @@
   "6fd5ec1b959fb72a",
   "708bb1c1011a7ce6",
   "70f42ce6598733d8",
+  "71595047450f4e99",
   "715e2e938c6336e4",
   "718489ccc67ba2fc",
   "71957c3c76c84a55",
@@ -261,6 +267,7 @@
   "77c67b812873d1d6",
   "785814d6222cf275",
   "7871850bf697b0af",
+  "78c52fe173fbadae",
   "790bf91727578b10",
   "7922a419da56967b",
   "799c8837ad49d936",
@@ -328,6 +335,7 @@
   "97c163872aa8de35",
   "98121caa5cb39b2c",
   "9818fb2991f0fb2c",
+  "982db682be31f1db",
   "99fa8a78407295f4",
   "9a835a8d4d9372b4",
   "9ae0c077431a4889",
@@ -339,6 +347,8 @@
   "9dbf5fd0ded0b284",
   "9e40659030305ac9",
   "9f014158c0eeb25a",
+  "9f0a4fafa10d23bf",
+  "9f1819ca2e336a35",
   "9f7060c991aeb80b",
   "a017cbd000ba5fa1",
   "a025151483a7843f",
@@ -364,6 +374,7 @@
   "a955f9369451bfdc",
   "a9b2890db8df1ba6",
   "aa40faf6db1a818e",
+  "aa489d433007378b",
   "aa5ea3829538128d",
   "ab1453c21e1da556",
   "abebaf5b16d13312",
@@ -420,6 +431,7 @@
   "c1b0655c5f502bb9",
   "c224fcb8d0c7d158",
   "c2f2201d746a9dce",
+  "c391fd6563b1fb42",
   "c3e7b2768ac21cbd",
   "c409c083a5edd25c",
   "c4a392ce13e82bc9",
@@ -427,6 +439,7 @@
   "c763cc93bbe36fe8",
   "c7a5768377fadc03",
   "c83e697be787dcd7",
+  "c856810defd7dc3b",
   "c9447fbde572a377",
   "c97fc9899bed6bf7",
   "cae059077ad17c08",
@@ -471,6 +484,7 @@
   "dd3f0c201c0c0f03",
   "dd5f8b461837541b",
   "dd7ac424d2a2cb37",
+  "dd87304d3660c5d1",
   "ddf63e61b113aaed",
   "def2d6f22bb75700",
   "e083182a3ac0e6c3",
@@ -493,6 +507,7 @@
   "eae1a54255af0609",
   "eb4059157ac88ffb",
   "eb46ecb6a575061f",
+  "ecccdb3484d54118",
   "ecf6f2e2935842f0",
   "ed1e9dda601b5529",
   "ed5ad2c2a8470c5b",
@@ -506,6 +521,7 @@
   "ef9dd5355cd8e2bd",
   "efdcb852809d897a",
   "efe6ebcd42dec009",
+  "f134e064bab1dcac",
   "f1a519a13f6d8955",
   "f226b43912b3261f",
   "f3458b03a15e38b8",
@@ -523,6 +539,7 @@
   "f7ddfcd26fe40648",
   "f804401fdc225bce",
   "f8db1a94f8fda597",
+  "f90b4db6c63f8109",
   "f9492b6cca3048d5",
   "f987af898cd50266",
   "f9ba4335abc7a87f",
@@ -537,6 +554,7 @@
   "fc1f625f7770f6e3",
   "fc37d2cc2a73ff95",
   "fc77f725ad4ff749",
+  "ff7ac94a913b89af",
   "ff7f92e0e897efd5",
   "ffb29e98845f5802"
  ],
@@ -545,10 +563,10 @@
   "per_move": 20
  },
  "stats": {
-  "pairs": 42751,
-  "source_pairs": 286760,
-  "source_tracks": 536,
-  "tracks": 536
+  "pairs": 44134,
+  "source_pairs": 306362,
+  "source_tracks": 554,
+  "tracks": 554
  },
  "tracks": {
   "014821398ee71590": {
@@ -1118,6 +1136,15 @@
    "name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
    "stems": false
   },
+  "1e42defaef847317": {
+   "artist": "jenia tarsol",
+   "bpm": 127.01,
+   "duration": 290.2726984126984,
+   "key": "7B",
+   "level": null,
+   "name": "Jenia Tarsol & Jinga - Takadoom (Argy Edit)",
+   "stems": true
+  },
   "1e6fbc1ca2895d76": {
    "artist": "laura",
    "bpm": 123.42,
@@ -1460,6 +1487,15 @@
    "name": "Ellie Goulding - Anything Could Happen (TWINSICK Remix)",
    "stems": true
   },
+  "318837279de2a8fe": {
+   "artist": "son of son",
+   "bpm": 127.01,
+   "duration": 194.0,
+   "key": "9A",
+   "level": null,
+   "name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
+   "stems": false
+  },
   "325530ff2307964a": {
    "artist": "stardust",
    "bpm": 123.92,
@@ -1531,6 +1567,15 @@
    "level": 5,
    "name": "Lane 8, Kasbo & BJOERN - World Is Mine (Official Music Video)",
    "stems": true
+  },
+  "35966bcd8e4b4228": {
+   "artist": "nick matthew",
+   "bpm": 126.48,
+   "duration": 234.0,
+   "key": "8A",
+   "level": null,
+   "name": "Nick Matthew, Valano - Celestial Pulse (unreleased) - ID [set cut sL16rh73r-M #7]",
+   "stems": false
   },
   "35a302716faa6e0e": {
    "artist": "argy",
@@ -2162,6 +2207,15 @@
    "name": "Ladies and gentlemen we are floating in space",
    "stems": true
   },
+  "549126424cba8cca": {
+   "artist": "argy",
+   "bpm": 121.99,
+   "duration": 236.04249433106577,
+   "key": "5A",
+   "level": null,
+   "name": "Argy, Omnya - Aria",
+   "stems": true
+  },
   "54d8cf2e2d2438bb": {
    "artist": "argy",
    "bpm": 126.0,
@@ -2296,6 +2350,15 @@
    "level": null,
    "name": "Daft Punk - Rollin' & Scratchin'",
    "stems": false
+  },
+  "5d6cdea9d108e32c": {
+   "artist": "enai",
+   "bpm": 122.01,
+   "duration": 367.27469387755104,
+   "key": "7A",
+   "level": null,
+   "name": "Enai - Horus",
+   "stems": true
   },
   "5d808f7420c5e2c0": {
    "artist": "o sanam o sanam ｜ shehnaaz gill",
@@ -2738,6 +2801,15 @@
    "name": "ODESZA - Line Of Sight (feat. WYNNE & Mansionair) - Official Video",
    "stems": true
   },
+  "71595047450f4e99": {
+   "artist": "son of son",
+   "bpm": 124.0,
+   "duration": 288.8960090702948,
+   "key": "7A",
+   "level": null,
+   "name": "Son of Son - Lost Control",
+   "stems": true
+  },
   "715e2e938c6336e4": {
    "artist": "starboy",
    "bpm": 124.03,
@@ -2872,6 +2944,15 @@
    "level": null,
    "name": "MORTEN & David Guetta - Lucky",
    "stems": true
+  },
+  "78c52fe173fbadae": {
+   "artist": "argy",
+   "bpm": 126.48,
+   "duration": 196.0,
+   "key": "1A",
+   "level": null,
+   "name": "Argy, Cay - ID [set cut sL16rh73r-M #6]",
+   "stems": false
   },
   "790bf91727578b10": {
    "artist": "french montana",
@@ -3476,6 +3557,15 @@
    "name": "Troye Sivan - Rush (Lyric Video)",
    "stems": true
   },
+  "982db682be31f1db": {
+   "artist": "shinedoe",
+   "bpm": 133.99,
+   "duration": 484.36195011337867,
+   "key": "6A",
+   "level": null,
+   "name": "Shinedoe - Phunk (Steve Angello Re-Edit)",
+   "stems": true
+  },
   "99fa8a78407295f4": {
    "artist": "argy",
    "bpm": 112.0,
@@ -3573,6 +3663,24 @@
    "key": "6A",
    "level": 8,
    "name": "Yotto & SØNIN - 'Let You Go' (feat. AunA)' (Official Audio) [Odd One Out]",
+   "stems": true
+  },
+  "9f0a4fafa10d23bf": {
+   "artist": "argy",
+   "bpm": 123.98,
+   "duration": 216.76802721088436,
+   "key": "5B",
+   "level": null,
+   "name": "Argy - Wilderness",
+   "stems": true
+  },
+  "9f1819ca2e336a35": {
+   "artist": "son of son",
+   "bpm": 124.0,
+   "duration": 343.38136054421767,
+   "key": "10B",
+   "level": null,
+   "name": "Son of Son - Du Ska Inte",
    "stems": true
   },
   "9f7060c991aeb80b": {
@@ -3798,6 +3906,15 @@
    "key": "4A",
    "level": null,
    "name": "Nora En Pure - Morning Dew",
+   "stems": true
+  },
+  "aa489d433007378b": {
+   "artist": "argy",
+   "bpm": 122.99,
+   "duration": 224.8107029478458,
+   "key": "4A",
+   "level": null,
+   "name": "Argy - All Day Long",
    "stems": true
   },
   "aa5ea3829538128d": {
@@ -4304,6 +4421,15 @@
    "name": "FKA twigs - Two Weeks",
    "stems": true
   },
+  "c391fd6563b1fb42": {
+   "artist": "rabbit in the moon",
+   "bpm": 124.05,
+   "duration": 350.6933333333333,
+   "key": "1A",
+   "level": null,
+   "name": "Rabbit in the Moon - Deeper",
+   "stems": true
+  },
   "c3e7b2768ac21cbd": {
    "artist": "slvr",
    "bpm": 130.0,
@@ -4365,6 +4491,15 @@
    "key": "9A",
    "level": null,
    "name": "Anyma - Pictures Of You (Cassian Remix)",
+   "stems": true
+  },
+  "c856810defd7dc3b": {
+   "artist": "argy",
+   "bpm": 124.0,
+   "duration": 218.000589569161,
+   "key": "11A",
+   "level": null,
+   "name": "Argy, Son of Son - Faust",
    "stems": true
   },
   "c9447fbde572a377": {
@@ -4763,6 +4898,15 @@
    "name": "Fred again.. - places to be",
    "stems": false
   },
+  "dd87304d3660c5d1": {
+   "artist": "monolink",
+   "bpm": 125.06,
+   "duration": 349.3449886621315,
+   "key": "10A",
+   "level": null,
+   "name": "Monolink - Laura (Argy & Omnya Remix)",
+   "stems": true
+  },
   "ddf63e61b113aaed": {
    "artist": "estiva",
    "bpm": 124.0,
@@ -4961,6 +5105,15 @@
    "name": "Ben Böhmer - Fade to Blue (Official Visualiser)",
    "stems": true
   },
+  "ecccdb3484d54118": {
+   "artist": "omnya",
+   "bpm": 126.48,
+   "duration": 234.0,
+   "key": "10A",
+   "level": null,
+   "name": "Omnya - Reflections (unreleased) - ID [set cut sL16rh73r-M #5]",
+   "stems": false
+  },
   "ecf6f2e2935842f0": {
    "artist": "the celestial suite dark matter",
    "bpm": 127.93,
@@ -5076,6 +5229,15 @@
    "key": "10B",
    "level": null,
    "name": "Lane 8 ft. POLIÇA - No Captain (OLING Remix) [THIS NEVER HAPPENED]",
+   "stems": true
+  },
+  "f134e064bab1dcac": {
+   "artist": "argy",
+   "bpm": 125.98,
+   "duration": 262.69868480725626,
+   "key": "4A",
+   "level": null,
+   "name": "Argy - Dreamstates",
    "stems": true
   },
   "f1a519a13f6d8955": {
@@ -5231,6 +5393,15 @@
    "name": "Pulse Z",
    "stems": false
   },
+  "f90b4db6c63f8109": {
+   "artist": "argy",
+   "bpm": 124.0,
+   "duration": 261.9307029478458,
+   "key": "11A",
+   "level": null,
+   "name": "Argy - Guru",
+   "stems": true
+  },
   "f9492b6cca3048d5": {
    "artist": "dilbar dilbar 2.0 ｜",
    "bpm": 132.0,
@@ -5356,6 +5527,15 @@
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #18]",
    "stems": false
+  },
+  "ff7ac94a913b89af": {
+   "artist": "argy",
+   "bpm": 125.0,
+   "duration": 226.60267573696146,
+   "key": "9A",
+   "level": null,
+   "name": "Argy - Collision",
+   "stems": true
   },
   "ff7f92e0e897efd5": {
    "artist": "pale waves",

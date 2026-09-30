@@ -1,0 +1,32 @@
+{
+ "created": 1790746465.954977,
+ "name": "studied-sl16rh73r-m-3",
+ "note": "studied combo from Argy for Cercle at Jungfraujoch - Top of Europe, Switzerland (position 3), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "9f1819ca2e336a35",
+   "a_name": "Son of Son - Du Ska Inte",
+   "a_time": 213.206,
+   "b": "bbc20151d218e6dc",
+   "b_name": "Argy & Baset - Sierra",
+   "b_time": 61.928,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Argy for Cercle at Jungfraujoch #3, atlas plan Echo Out",
+   "works": 45
+  }
+ ],
+ "title": "Argy for Cercle at Jungfraujoch @ Top of Europe, Switzerland #3: Son of Son - Du Ska Inte → Argy - Sierra",
+ "tracks": [
+  "9f1819ca2e336a35",
+  "bbc20151d218e6dc"
+ ],
+ "version": 1
+}

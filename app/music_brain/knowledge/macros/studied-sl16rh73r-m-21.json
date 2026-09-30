@@ -1,0 +1,32 @@
+{
+ "created": 1790746465.9569879,
+ "name": "studied-sl16rh73r-m-21",
+ "note": "studied combo from Argy for Cercle at Jungfraujoch - Top of Europe, Switzerland (position 21), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "318837279de2a8fe",
+   "a_name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
+   "a_time": 176.0,
+   "b": "ff7ac94a913b89af",
+   "b_name": "Argy - Collision",
+   "b_time": 7.221,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Argy for Cercle at Jungfraujoch #21, atlas plan Echo Out",
+   "works": 80
+  }
+ ],
+ "title": "Argy for Cercle at Jungfraujoch @ Top of Europe, Switzerland #21: Son of Son - Succession (unreleased) - ID [set cut sL1",
+ "tracks": [
+  "318837279de2a8fe",
+  "ff7ac94a913b89af"
+ ],
+ "version": 1
+}
