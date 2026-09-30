@@ -68,7 +68,7 @@ STEM_NAMES = ("drums", "bass", "vocals", "other")
 RULE_FILES = (
     HERE / "pair_atlas.py", RULES_JS, HERE.parent / "render" / "blend.py", HERE.parent / "analysis" / "energy.py", HERE.parent / "matching" / "techniques.py",
     STATIC / "autopilot.js", STATIC / "tempo-rule.js", STATIC / "stem-moves.js", STATIC / "dj-mind.js",
-    HERE.parent / "render" / "drop_line.py", STATIC / "drop-line.js",
+    HERE.parent / "render" / "drop_line.py", STATIC / "drop-line.js", HERE.parent / "render" / "entry_lines.py",
 )
 
 KEY_SAFE_MIN = 0.6          # autopilot.js KEY_SAFE_MIN (parity-tested)
@@ -427,6 +427,26 @@ def _play_window(f: dict, level: Optional[int]) -> Tuple[float, float]:
     return min(entry + lo, end), min(entry + hi, end)
 
 
+def _entry_lines_b(tb, fb: dict, vb, level: Optional[int], include: float) -> List[float]:
+    """B's strong-downbeat entry lines across the whole song (autopilot.js entryLines, band-free).
+    Room = B's play window minimum + crossfade + 2 s (autopilot.js entryRoomS)."""
+    from app.music_brain.render import blend, entry_lines
+
+    if not fb.get("bpm") or fb["bpm"] <= 0:
+        return []
+    key = "medium" if level is None else "quick" if level >= 7 else "medium" if level <= 3 else "long" if level <= 5 else "medium"
+    lo, xf = {"quick": (40, 8), "medium": (120, 16), "long": (180, 24)}[key]
+    drops = [{"t": t, "energy": e} for t, e, _ in
+             blend.drop_lines(tb.phrase_boundaries_8bar, tb.energy_times, tb.energy_curve, fb["bar"])]
+    db = (fb.get("bars") or {}).get("drums")      # drum-stem bar RMS on B's phrase grid (track_features)
+    drums = (lambda t: entry_lines.low_level_at(db, fb["anchor"], fb["bar"], t)) if db else None
+    out = entry_lines.entry_lines(
+        lines=tb.phrase_boundaries_8bar, include=include, energy_times=tb.energy_times,
+        energy_curve=tb.energy_curve, vocals=[tuple(x) for x in vb] if vb is not None else None,
+        drops=drops, bar=fb["bar"], end=fb["duration"], room_s=lo + xf + 2, band=None, drums=drums)
+    return [round(t, 3) for t in out["lines"]]
+
+
 def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
     """All B partners of one A: the Python half of each record plus the node jobs it needs."""
     from app.music_brain.render import blend, drop_line
@@ -498,7 +518,10 @@ def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
                                "gate": next((x[4:] for x in r["reasons"] if x.startswith("no: ")), None),
                                "score": int(round(100 * sum(x.startswith("ok: ") for x in r["reasons"])
                                                   / max(1, len(r["reasons"]))))} for r in ranked],
-               "learned_pick": pick, "mashup": mash}
+               "learned_pick": pick, "mashup": mash,
+               # late entry: every strong-downbeat line B may enter on (band-free: the live
+               # pick applies the main-drop-by-energy rule and the seeded uniform choice)
+               "entry_lines": _entry_lines_b(tb, fb, vb, lb, entry_t)}
         recs[b] = rec
         # node: the console's recipe choice
         o = {"recipe": "Long Blend", "blend": bl if bl and bl.get("ok") else None, "layer": False,
