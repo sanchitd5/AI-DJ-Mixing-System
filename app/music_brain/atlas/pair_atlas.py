@@ -438,10 +438,12 @@ def _entry_lines_b(tb, fb: dict, vb, level: Optional[int], include: float) -> Li
     lo, xf = {"quick": (40, 8), "medium": (120, 16), "long": (180, 24)}[key]
     drops = [{"t": t, "energy": e} for t, e, _ in
              blend.drop_lines(tb.phrase_boundaries_8bar, tb.energy_times, tb.energy_curve, fb["bar"])]
+    db = (fb.get("bars") or {}).get("drums")      # drum-stem bar RMS on B's phrase grid (track_features)
+    drums = (lambda t: entry_lines.low_level_at(db, fb["anchor"], fb["bar"], t)) if db else None
     out = entry_lines.entry_lines(
         lines=tb.phrase_boundaries_8bar, include=include, energy_times=tb.energy_times,
         energy_curve=tb.energy_curve, vocals=[tuple(x) for x in vb] if vb is not None else None,
-        drops=drops, bar=fb["bar"], end=fb["duration"], room_s=lo + xf + 2, band=None)
+        drops=drops, bar=fb["bar"], end=fb["duration"], room_s=lo + xf + 2, band=None, drums=drums)
     return [round(t, 3) for t in out["lines"]]
 
 
