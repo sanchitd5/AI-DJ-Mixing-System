@@ -1222,7 +1222,7 @@ def summary(atlas: dict, p: dict) -> dict:
     tr = atlas["tracks"]
     tb = tr.get(p["b"], {})
     return {"a": p["a"], "b": p["b"], "a_name": tr.get(p["a"], {}).get("name"), "b_name": tb.get("name"),
-            "b_bpm": tb.get("bpm"), "b_duration": tb.get("duration"),
+            "b_bpm": tb.get("bpm"), "b_duration": tb.get("duration"), "b_level": tb.get("level"),
             "works": p["works"], "best": p["best"], "recipe": p["recipe"], "combo": p.get("combo"),
             "combo_label": COMBO_LABEL.get(p.get("combo")), "key": p["key"], "gap": p["gap"], "lock": p["lock"],
             "exit": p["exit"], "entry": p["entry"], "merge_ok": p["merge"]["ok"],
