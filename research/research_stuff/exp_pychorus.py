@@ -221,4 +221,4 @@ if __name__ == "__main__":
     detect_first_chorus_times(args.mp3_path, args.output, args.clip_length, args.min_start)
 
 
-# To run - python test_chorus_detection.py "input.mp3" --output chorus.txt --clip-length 20                     
+# To run - python exp_pychorus.py "input.mp3" --output chorus.txt --clip-length 20                     
