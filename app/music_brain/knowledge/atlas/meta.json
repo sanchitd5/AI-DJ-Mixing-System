@@ -1,8 +1,9 @@
 {
- "built_at": 1790729107.955939,
+ "built_at": 1790735036.363915,
  "rules": "ecba8fdacdcfdd20",
  "schema": 1,
  "shards": [
+  "014821398ee71590",
   "019e4fc2eb927bcc",
   "01c5e0d3727652fd",
   "028c963e29a450e5",
@@ -20,6 +21,7 @@
   "08bf00a27cef4988",
   "097b045c2d5f6465",
   "097dd2030ba26c8d",
+  "0b1d2975041c407a",
   "0baa5899053cb8b0",
   "0bf08c3ce1e245be",
   "0d40919b7bf672a6",
@@ -32,6 +34,7 @@
   "0f62af1f2a55ba1c",
   "0f83b8e5b95526b3",
   "103085e338c59276",
+  "106093461d28b09f",
   "109bcab5aa1cd81d",
   "1113761b4a0fe000",
   "11dda16c2ef5f385",
@@ -68,6 +71,7 @@
   "1fc80015fef8f496",
   "1fd5189051951e18",
   "20704e163b59db7a",
+  "20c7256a39e5f483",
   "216b9f2a2c225f0e",
   "2188d82189761499",
   "21e3b0021c0e2a53",
@@ -78,6 +82,7 @@
   "23c40a1147087b77",
   "26f28759a1db412e",
   "27341ee372ae058d",
+  "274f46644657ddd9",
   "277d6e326cac4cc1",
   "278b3cf31bebbd05",
   "27e8a3e50da951b1",
@@ -97,10 +102,12 @@
   "2fcaee2ca20cee1c",
   "308dcc110bef8729",
   "30af1a906dea07f4",
+  "30bb47e949d37eb0",
   "3118bc9ac9911f37",
   "325530ff2307964a",
   "326c94e9b3608af3",
   "327573551700a49d",
+  "32e128823c58b81e",
   "33422baf42270134",
   "33596f621fcc1bb5",
   "33d1b0a1492fa306",
@@ -118,6 +125,7 @@
   "3913cfd8817be486",
   "395f442a91d05ee4",
   "3a2d07c4fe3c4f5e",
+  "3aa8f8523584256e",
   "3aee6b897bcf5f24",
   "3bcd65e3ba3c3f33",
   "3bd5e8ba82490072",
@@ -126,6 +134,7 @@
   "3d69d5afd4040fa3",
   "3da40fd3aac417d0",
   "3dbe0a15533ed631",
+  "3dc28e2b5d6007b0",
   "3e7f5cb54933510b",
   "3ef9ad4b3fd01c79",
   "3f13ee0f385dc40c",
@@ -141,16 +150,19 @@
   "4467663c4aadd38f",
   "45bbf454660fdad0",
   "46cbc303964165ad",
+  "478814a09ca9b6d8",
   "47c21409aec7ff7a",
   "48a52c70e2dc044d",
   "48ff2da20cf9cb1e",
   "4912379704d75559",
   "49fe280597b8a19b",
+  "4a297d5e76746e86",
   "4ab32b0c9b9e5221",
   "4ad75610778d35ac",
   "4af8f94267ec87a9",
   "4b04dc77aa774a85",
   "4b4b852df3d60ecf",
+  "4bb23fa7fc71e8e6",
   "4c13817061e1c273",
   "4c3ca323b79f1b9a",
   "4c728033d75bd9ae",
@@ -160,10 +172,14 @@
   "4e014903b03c2c9b",
   "4eaf109a6e8f8068",
   "4f4063f55c300b72",
+  "4ff4c49b754fbb42",
   "5008ca8d78cda26f",
+  "5031dd62c7a091c7",
+  "50a2fe4b550f1651",
   "519ddbb5b379bcbf",
   "52b001bbc767a470",
   "52c440bd956fb9dc",
+  "52f0768190ec31d5",
   "5391ce3174bca91b",
   "543a0338066bff2e",
   "54d8cf2e2d2438bb",
@@ -182,16 +198,20 @@
   "5c33b5c58a77e6d2",
   "5d3d150d24856231",
   "5d808f7420c5e2c0",
+  "5d86dc8566edb94a",
+  "5e6daed10afc0999",
   "5ef32724cc89640e",
   "5f4798caf5ed3e16",
   "5f8874d6932d3d57",
   "5f8af4054ce9d33e",
   "5f8be84ae1fb132b",
+  "607287d46a581769",
   "60c6eecd8caa0311",
   "60c990efea79e377",
   "6176bdce3e3870f9",
   "6202e7f560cdd4af",
   "626950853ac4b7db",
+  "62c45fe060b8b46e",
   "6324e2bca2e3ac74",
   "6325d76af6d3ca61",
   "6376c47e0f8fe4ab",
@@ -223,10 +243,12 @@
   "6e3ee890fbf3d9bc",
   "6e90e646c31ffc31",
   "6efe461f8131c4fa",
+  "6fd5ec1b959fb72a",
   "708bb1c1011a7ce6",
   "70f42ce6598733d8",
   "715e2e938c6336e4",
   "718489ccc67ba2fc",
+  "71957c3c76c84a55",
   "71c1bd3376a93f20",
   "71d16e6e7144ae32",
   "721e2e5a7b72db42",
@@ -247,6 +269,7 @@
   "7a02c557bbe4eedf",
   "7ab8af814128cece",
   "7b7fd36abc9af3f0",
+  "7c59bf5233a273d6",
   "7c76fe9537ed1c87",
   "7d051bd21e97e5d6",
   "7d24abdc35a9e9b8",
@@ -256,6 +279,7 @@
   "7fcadfb006f89c7a",
   "7ff0b2442c5b0238",
   "804eaba2a013bcd7",
+  "80b90dc966d51d8c",
   "81495f19980db9fc",
   "81b28bb2267c8694",
   "82a25b967bf8f81a",
@@ -285,9 +309,11 @@
   "8e572e1980b77e26",
   "8effb826199f6966",
   "8f0af22fec6b66f8",
+  "9046e5b644bd44db",
   "9070c035a65eb11c",
   "9075692fe9d12259",
   "932af8d76ab4e19b",
+  "94b8f4820c7317d4",
   "94fe7d05617785ce",
   "953b0a544b0b6ce6",
   "9548c6c4b808d9e8",
@@ -308,6 +334,7 @@
   "9ae8cb42a9210c0c",
   "9b4c236ca6b521dd",
   "9bd35950fb6398a8",
+  "9c0c11a203d3b4ac",
   "9ca1965f83c8bfe5",
   "9dbf5fd0ded0b284",
   "9e40659030305ac9",
@@ -315,8 +342,11 @@
   "9f7060c991aeb80b",
   "a017cbd000ba5fa1",
   "a025151483a7843f",
+  "a0f7a299883a8ee1",
   "a100545d4e56f401",
   "a201869206c4c17a",
+  "a260537e26e1e84e",
+  "a3d6c11341141e4b",
   "a433fd1d7a0759e4",
   "a4599c4ea8b05ac5",
   "a4bdf878b4be2e7a",
@@ -343,6 +373,7 @@
   "ae9e8a18d5695254",
   "af7347cd1d668e15",
   "b0e342aea5d2fb10",
+  "b11e35a70bbc221d",
   "b185d1ada689297e",
   "b238138c72602d82",
   "b2df5f7d6179c964",
@@ -353,8 +384,11 @@
   "b4141543d66ac3f2",
   "b4b6ed03bc63652a",
   "b4f2d40f34edf4f3",
+  "b534b3c878ca25de",
+  "b55ff91738781e86",
   "b6597bf9c8107464",
   "b6ae6cfaf1e0b254",
+  "b7c10f86b7a4f711",
   "b7f9741fda1d55c2",
   "b807b9111a0bd3ae",
   "b84dbc59ef3f3bb3",
@@ -380,6 +414,7 @@
   "c0309e3905fec60b",
   "c0e122fa3f6dcf6c",
   "c0ed725c25677d2a",
+  "c17555982f44bf82",
   "c183b7cb078956a3",
   "c18ecaa349f04983",
   "c1b0655c5f502bb9",
@@ -393,6 +428,7 @@
   "c7a5768377fadc03",
   "c83e697be787dcd7",
   "c9447fbde572a377",
+  "c97fc9899bed6bf7",
   "cae059077ad17c08",
   "cb416d6386d7bc4d",
   "cc978618cb313250",
@@ -413,6 +449,7 @@
   "d2dadfa602d80572",
   "d316aa81817aa5d4",
   "d3db711815371915",
+  "d4548fe3f860e41c",
   "d4de2b1028dc8a08",
   "d50dc1c6101fdf74",
   "d5cdeddead7faa1a",
@@ -434,7 +471,9 @@
   "dd3f0c201c0c0f03",
   "dd5f8b461837541b",
   "dd7ac424d2a2cb37",
+  "ddf63e61b113aaed",
   "def2d6f22bb75700",
+  "e083182a3ac0e6c3",
   "e11f18ed33b8b9c0",
   "e1a6a1b38c2964de",
   "e427837d5fca4c8b",
@@ -455,14 +494,18 @@
   "eb4059157ac88ffb",
   "eb46ecb6a575061f",
   "ecf6f2e2935842f0",
+  "ed1e9dda601b5529",
   "ed5ad2c2a8470c5b",
+  "ed92527d40adf09a",
   "edd0eca809d1078c",
   "edd6af6cedf24196",
   "edddd20582d464a7",
+  "ee2838829ac1240c",
   "ee4922440f021919",
   "eed406502b379a24",
   "ef9dd5355cd8e2bd",
   "efdcb852809d897a",
+  "efe6ebcd42dec009",
   "f1a519a13f6d8955",
   "f226b43912b3261f",
   "f3458b03a15e38b8",
@@ -493,6 +536,7 @@
   "fc1c17c97f906671",
   "fc1f625f7770f6e3",
   "fc37d2cc2a73ff95",
+  "fc77f725ad4ff749",
   "ff7f92e0e897efd5",
   "ffb29e98845f5802"
  ],
@@ -501,12 +545,21 @@
   "per_move": 20
  },
  "stats": {
-  "pairs": 36951,
-  "source_pairs": 241572,
-  "source_tracks": 492,
-  "tracks": 492
+  "pairs": 42751,
+  "source_pairs": 286760,
+  "source_tracks": 536,
+  "tracks": 536
  },
  "tracks": {
+  "014821398ee71590": {
+   "artist": "sultan + shepard",
+   "bpm": 124.98,
+   "duration": 291.1318367346939,
+   "key": "10B",
+   "level": null,
+   "name": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+   "stems": true
+  },
   "019e4fc2eb927bcc": {
    "artist": "fred again..",
    "bpm": 130.0,
@@ -660,6 +713,15 @@
    "name": "Taylor Swift - The Fate of Ophelia (Official Music Video)",
    "stems": true
   },
+  "0b1d2975041c407a": {
+   "artist": "martin roth",
+   "bpm": 108.71,
+   "duration": 329.57868480725625,
+   "key": "5A",
+   "level": null,
+   "name": "Martin Roth - Simplicite [LUNATIQUE]",
+   "stems": true
+  },
   "0baa5899053cb8b0": {
    "artist": "rosalía",
    "bpm": 130.66,
@@ -766,6 +828,15 @@
    "key": "5A",
    "level": null,
    "name": "SBTRKT - Wildfire (feat. Little Dragon)",
+   "stems": true
+  },
+  "106093461d28b09f": {
+   "artist": "alex wann",
+   "bpm": 122.99,
+   "duration": 176.54585034013604,
+   "key": "8B",
+   "level": null,
+   "name": "Alex Wann & JUNO (DE) - Allo [CROSSTOWN REBELS]",
    "stems": true
   },
   "109bcab5aa1cd81d": {
@@ -1092,6 +1163,15 @@
    "name": "Power (Full Video) Sidhu Moose Wala ｜ The Kidd ｜ Sukh Sanghera ｜ Moosetape",
    "stems": true
   },
+  "20c7256a39e5f483": {
+   "artist": "vince staples",
+   "bpm": 130.0,
+   "duration": 195.87197278911566,
+   "key": "8A",
+   "level": null,
+   "name": "Vince Staples - Cotton [LOMA VISTA]",
+   "stems": true
+  },
   "216b9f2a2c225f0e": {
    "artist": "aqua",
    "bpm": 130.0,
@@ -1180,6 +1260,15 @@
    "key": "3B",
    "level": null,
    "name": "Big Boss Vette - Pretty Girls Walk",
+   "stems": true
+  },
+  "274f46644657ddd9": {
+   "artist": "markus homm",
+   "bpm": 125.0,
+   "duration": 431.02045351473924,
+   "key": "7B",
+   "level": null,
+   "name": "Markus Homm & Mihai Popoviciu & Jay Bliss - Bis Co [DIYNAMIC]",
    "stems": true
   },
   "277d6e326cac4cc1": {
@@ -1353,6 +1442,15 @@
    "name": "Fred Again - Admit It (U Don't Want 2)",
    "stems": true
   },
+  "30bb47e949d37eb0": {
+   "artist": "rinzen",
+   "bpm": 122.19,
+   "duration": 266.21868480725624,
+   "key": "10B",
+   "level": null,
+   "name": "Rinzen & Ae:ther - Pangea [THIS NEVER HAPPENED]",
+   "stems": true
+  },
   "3118bc9ac9911f37": {
    "artist": "ellie goulding",
    "bpm": 122.16,
@@ -1388,6 +1486,15 @@
    "level": null,
    "name": "Amelie Lens - Exhale",
    "stems": true
+  },
+  "32e128823c58b81e": {
+   "artist": "id (unreleased)",
+   "bpm": 123.98,
+   "duration": 162.0,
+   "key": "5A",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #7]",
+   "stems": false
   },
   "33422baf42270134": {
    "artist": "diljit dosanjh",
@@ -1542,6 +1649,15 @@
    "name": "Lana Del Rey - Venice Bitch (Short Version)",
    "stems": true
   },
+  "3aa8f8523584256e": {
+   "artist": "budakid",
+   "bpm": 121.01,
+   "duration": 320.8934693877551,
+   "key": "1B",
+   "level": null,
+   "name": "Budakid - Lovin' Sun [FLORES]",
+   "stems": true
+  },
   "3aee6b897bcf5f24": {
    "artist": "kitschkrieg",
    "bpm": 122.0,
@@ -1612,6 +1728,15 @@
    "key": "3B",
    "level": null,
    "name": "Fred Again.. - Jungle (ON_1 Remix)",
+   "stems": true
+  },
+  "3dc28e2b5d6007b0": {
+   "artist": "franky rizardo",
+   "bpm": 129.0,
+   "duration": 167.903537414966,
+   "key": "1A",
+   "level": null,
+   "name": "Franky Rizardo - Shinjuku [LTF]",
    "stems": true
   },
   "3e7f5cb54933510b": {
@@ -1749,6 +1874,15 @@
    "name": "The Weeknd - Blinding Lights (Official Video)",
    "stems": true
   },
+  "478814a09ca9b6d8": {
+   "artist": "yotto",
+   "bpm": 125.0,
+   "duration": 507.2631746031746,
+   "key": "7A",
+   "level": null,
+   "name": "YOTTO - Aero [ODD ONE OUT]",
+   "stems": true
+  },
   "47c21409aec7ff7a": {
    "artist": "ilan bluestone",
    "bpm": 128.0,
@@ -1794,6 +1928,15 @@
    "name": "Daft Punk - Giorgio by Moroder",
    "stems": false
   },
+  "4a297d5e76746e86": {
+   "artist": "julia linkogel",
+   "bpm": 123.98,
+   "duration": 193.32267573696146,
+   "key": "9A",
+   "level": null,
+   "name": "Julia Linkogel - Souls",
+   "stems": true
+  },
   "4ab32b0c9b9e5221": {
    "artist": "empire of the sun",
    "bpm": 122.99,
@@ -1837,6 +1980,15 @@
    "key": "6A",
    "level": 5,
    "name": "WAVY (OFFICIAL VIDEO) KARAN AUJLA ｜ LATEST PUNJABI SONGS 2024",
+   "stems": true
+  },
+  "4bb23fa7fc71e8e6": {
+   "artist": "rage against the machine",
+   "bpm": 116.77,
+   "duration": 222.82666666666665,
+   "key": "10B",
+   "level": null,
+   "name": "Rage Against The Machine - Testify [EPIC (SONY BMG)]",
    "stems": true
   },
   "4c13817061e1c273": {
@@ -1920,6 +2072,15 @@
    "name": "F.L.Y. - Swag Surfin",
    "stems": true
   },
+  "4ff4c49b754fbb42": {
+   "artist": "jonathan kaspar",
+   "bpm": 127.44,
+   "duration": 378.4615873015873,
+   "key": "3A",
+   "level": null,
+   "name": "Jonathan Kaspar - Where Are You [THESE EYES]",
+   "stems": true
+  },
   "5008ca8d78cda26f": {
    "artist": "faithless",
    "bpm": 127.06,
@@ -1927,6 +2088,24 @@
    "key": "10A",
    "level": 7,
    "name": "Faithless - Insomnia (Official 4K Video)",
+   "stems": true
+  },
+  "5031dd62c7a091c7": {
+   "artist": "blancah",
+   "bpm": 123.0,
+   "duration": 456.4053514739229,
+   "key": "5A",
+   "level": null,
+   "name": "BLANCAh & NeoClassic - Travessia [MEANWHILE]",
+   "stems": true
+  },
+  "50a2fe4b550f1651": {
+   "artist": "martim rola",
+   "bpm": 124.0,
+   "duration": 356.20267573696145,
+   "key": "11A",
+   "level": null,
+   "name": "Martim Rola & David Mackay - Sunday Sunrise [ANJUNADEEP]",
    "stems": true
   },
   "519ddbb5b379bcbf": {
@@ -1954,6 +2133,15 @@
    "key": "11A",
    "level": 5,
    "name": "Jon Hopkins - Emerald Rush",
+   "stems": true
+  },
+  "52f0768190ec31d5": {
+   "artist": "sam shure",
+   "bpm": 125.0,
+   "duration": 349.8026757369615,
+   "key": "9A",
+   "level": null,
+   "name": "Sam Shure - Qualified [MAGNIFIK]",
    "stems": true
   },
   "5391ce3174bca91b": {
@@ -2118,6 +2306,24 @@
    "name": "O Sanam O Sanam ｜ Shehnaaz Gill & B Praak ｜ Latest Hindi Love Song ｜ Deep Melodies",
    "stems": true
   },
+  "5d86dc8566edb94a": {
+   "artist": "bonobo",
+   "bpm": 132.0,
+   "duration": 229.97047619047618,
+   "key": "5A",
+   "level": null,
+   "name": "Bonobo - Me And You [NINJA]",
+   "stems": true
+  },
+  "5e6daed10afc0999": {
+   "artist": "id (unreleased)",
+   "bpm": 124.98,
+   "duration": 245.0,
+   "key": "3A",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #56]",
+   "stems": false
+  },
   "5ef32724cc89640e": {
    "artist": "nils frahm",
    "bpm": 149.65,
@@ -2163,6 +2369,15 @@
    "name": "Julien Baker - ＂Appointments＂ (Official Video)",
    "stems": true
   },
+  "607287d46a581769": {
+   "artist": "giom",
+   "bpm": 124.0,
+   "duration": 202.22222222222223,
+   "key": "12B",
+   "level": null,
+   "name": "Giom - Light Years",
+   "stems": true
+  },
   "60c6eecd8caa0311": {
    "artist": "skrillex",
    "bpm": 106.7,
@@ -2206,6 +2421,15 @@
    "key": "9B",
    "level": null,
    "name": "Blood Bank",
+   "stems": true
+  },
+  "62c45fe060b8b46e": {
+   "artist": "aphex twin",
+   "bpm": 122.94,
+   "duration": 341.7165079365079,
+   "key": "5A",
+   "level": null,
+   "name": "Aphex Twin ft. Run Jeremy - Windowlicker [WARP]",
    "stems": true
   },
   "6324e2bca2e3ac74": {
@@ -2487,6 +2711,15 @@
    "name": "Anyma & Rebūke - Syren",
    "stems": true
   },
+  "6fd5ec1b959fb72a": {
+   "artist": "johannes brecht",
+   "bpm": 124.0,
+   "duration": 235.28195011337868,
+   "key": "6A",
+   "level": null,
+   "name": "Johannes Brecht - Chords In The Shadows",
+   "stems": true
+  },
   "708bb1c1011a7ce6": {
    "artist": "serious sounds (vip)",
    "bpm": 86.88,
@@ -2521,6 +2754,15 @@
    "key": "6B",
    "level": 5,
    "name": "Fred again.. - Delilah (pull me out of this)",
+   "stems": true
+  },
+  "71957c3c76c84a55": {
+   "artist": "budakid",
+   "bpm": 122.98,
+   "duration": 260.0170975056689,
+   "key": "9A",
+   "level": null,
+   "name": "Budakid - Endless [FLORES]",
    "stems": true
   },
   "71c1bd3376a93f20": {
@@ -2703,6 +2945,15 @@
    "name": "Fred again.. - Marea (We’ve Lost Dancing)",
    "stems": true
   },
+  "7c59bf5233a273d6": {
+   "artist": "id (unreleased)",
+   "bpm": 130.0,
+   "duration": 103.0,
+   "key": "9B",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #36]",
+   "stems": false
+  },
   "7c76fe9537ed1c87": {
    "artist": "the last ride",
    "bpm": 89.01,
@@ -2782,6 +3033,15 @@
    "key": "5A",
    "level": null,
    "name": "Felix Cartal - No Sleep (feat. Natalie Angiuli)",
+   "stems": true
+  },
+  "80b90dc966d51d8c": {
+   "artist": "mat zo",
+   "bpm": 131.08,
+   "duration": 290.73709750566894,
+   "key": "10A",
+   "level": null,
+   "name": "Mat Zo - Frequency Flyer [ANJUNABEATS]",
    "stems": true
   },
   "81495f19980db9fc": {
@@ -3045,6 +3305,15 @@
    "name": "Skrillex - First Of The Year (The Maze Runner)",
    "stems": true
   },
+  "9046e5b644bd44db": {
+   "artist": "chris m",
+   "bpm": 125.0,
+   "duration": 407.0690702947846,
+   "key": "9B",
+   "level": null,
+   "name": "Chris M - Rhapsody (Quantum Light Music Remix)",
+   "stems": true
+  },
   "9070c035a65eb11c": {
    "artist": "we are the people",
    "bpm": 122.98,
@@ -3070,6 +3339,15 @@
    "key": "9B",
    "level": 9,
    "name": "Anyma & Rebūke - Syren (Adam Sellouk Remix)",
+   "stems": true
+  },
+  "94b8f4820c7317d4": {
+   "artist": "stimming",
+   "bpm": 127.0,
+   "duration": 406.4922448979592,
+   "key": "11A",
+   "level": null,
+   "name": "Stimming & Lazarusman - In You Go",
    "stems": true
   },
   "94fe7d05617785ce": {
@@ -3252,6 +3530,15 @@
    "name": "Jannat (Official Video) ｜ SD Nara & Ishu Punjaban ｜ Singer - Raftaar  ｜ New Haryanvi Romantic Song ｜",
    "stems": true
   },
+  "9c0c11a203d3b4ac": {
+   "artist": "digitalism",
+   "bpm": 129.0,
+   "duration": 175.2320634920635,
+   "key": "10B",
+   "level": null,
+   "name": "Digitalism - Space Invaders",
+   "stems": true
+  },
   "9ca1965f83c8bfe5": {
    "artist": "wet leg",
    "bpm": 159.99,
@@ -3315,6 +3602,15 @@
    "name": "Fred again.., Brian Eno - Cmon (LATIN MAFIA, KatzPascale, Fred edit) (hour 10, Mexico City)",
    "stems": true
   },
+  "a0f7a299883a8ee1": {
+   "artist": "khåen",
+   "bpm": 119.99,
+   "duration": 219.0,
+   "key": "10A",
+   "level": null,
+   "name": "Khåen - ID [set cut N_GfH09iP9c #30]",
+   "stems": false
+  },
   "a100545d4e56f401": {
    "artist": "burial",
    "bpm": 135.17,
@@ -3331,6 +3627,24 @@
    "key": "8A",
    "level": 2,
    "name": "Kavinsky - Nightcall (Drive Original Movie Soundtrack) (Official Audio)",
+   "stems": true
+  },
+  "a260537e26e1e84e": {
+   "artist": "id (unreleased)",
+   "bpm": 124.0,
+   "duration": 274.0,
+   "key": "6B",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #11]",
+   "stems": false
+  },
+  "a3d6c11341141e4b": {
+   "artist": "boards of canada",
+   "bpm": 117.0,
+   "duration": 445.3355555555556,
+   "key": "12A",
+   "level": null,
+   "name": "Boards Of Canada - Age Of Capricorn",
    "stems": true
   },
   "a433fd1d7a0759e4": {
@@ -3567,6 +3881,15 @@
    "name": "Baby Wants to Ride",
    "stems": true
   },
+  "b11e35a70bbc221d": {
+   "artist": "the beach boys",
+   "bpm": 116.25,
+   "duration": 173.56,
+   "key": "12B",
+   "level": null,
+   "name": "The Beach Boys - God Only Knows (Lane 8 Remix) [CAPITOL]",
+   "stems": true
+  },
   "b185d1ada689297e": {
    "artist": "strangers",
    "bpm": 84.08,
@@ -3657,6 +3980,24 @@
    "name": "Ready For Your Love (Etherwood Remix)",
    "stems": true
   },
+  "b534b3c878ca25de": {
+   "artist": "id (unreleased)",
+   "bpm": 125.02,
+   "duration": 328.0,
+   "key": "8B",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
+   "stems": false
+  },
+  "b55ff91738781e86": {
+   "artist": "lane 8",
+   "bpm": 119.99,
+   "duration": 342.7265759637188,
+   "key": "7B",
+   "level": null,
+   "name": "Lane 8 - Fingerprint (OCULA Remix) [THIS NEVER HAPPENED]",
+   "stems": true
+  },
   "b6597bf9c8107464": {
    "artist": "hanumankind",
    "bpm": 137.14,
@@ -3674,6 +4015,15 @@
    "level": null,
    "name": "Burna Boy - Ye [Official Audio]",
    "stems": true
+  },
+  "b7c10f86b7a4f711": {
+   "artist": "(sultan + shepard)",
+   "bpm": 124.98,
+   "duration": 305.0,
+   "key": "3B",
+   "level": null,
+   "name": "(Sultan + Shepard) - ID [set cut N_GfH09iP9c #61]",
+   "stems": false
   },
   "b7f9741fda1d55c2": {
    "artist": "backstreet boys",
@@ -3900,6 +4250,15 @@
    "name": "Showtek - Booyah",
    "stems": true
   },
+  "c17555982f44bf82": {
+   "artist": "charli xcx",
+   "bpm": 116.38,
+   "duration": 123.9249433106576,
+   "key": "10B",
+   "level": null,
+   "name": "Charli xcx - Rock Music [ATLANTIC (WARNER MUSIC)]",
+   "stems": true
+  },
   "c183b7cb078956a3": {
    "artist": "tycho",
    "bpm": 139.99,
@@ -4015,6 +4374,15 @@
    "key": "12B",
    "level": 1,
    "name": "Alvvays - Belinda Says [Official Video]",
+   "stems": true
+  },
+  "c97fc9899bed6bf7": {
+   "artist": "mathias kaden",
+   "bpm": 128.0,
+   "duration": 345.00267573696146,
+   "key": "11A",
+   "level": null,
+   "name": "Mathias Kaden - Inner Signal",
    "stems": true
   },
   "cae059077ad17c08": {
@@ -4195,6 +4563,15 @@
    "key": "10B",
    "level": 8,
    "name": "Adam Beyer - ID [set cut oRb_81stwy8 #7]",
+   "stems": true
+  },
+  "d4548fe3f860e41c": {
+   "artist": "lane 8",
+   "bpm": 122.0,
+   "duration": 384.74666666666667,
+   "key": "12B",
+   "level": null,
+   "name": "Lane 8 & Cornelius SA & Alan Green - Sol [THIS NEVER HAPPENED]",
    "stems": true
   },
   "d4de2b1028dc8a08": {
@@ -4386,6 +4763,15 @@
    "name": "Fred again.. - places to be",
    "stems": false
   },
+  "ddf63e61b113aaed": {
+   "artist": "estiva",
+   "bpm": 124.0,
+   "duration": 211.30666666666667,
+   "key": "4A",
+   "level": null,
+   "name": "Estiva - Mistika [COLORIZE (ENHANCED)]",
+   "stems": true
+  },
   "def2d6f22bb75700": {
    "artist": "drake",
    "bpm": 101.33,
@@ -4393,6 +4779,15 @@
    "key": "11B",
    "level": null,
    "name": "Drake - Headlines",
+   "stems": true
+  },
+  "e083182a3ac0e6c3": {
+   "artist": "alex metric",
+   "bpm": 125.0,
+   "duration": 283.2834920634921,
+   "key": "11B",
+   "level": null,
+   "name": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
    "stems": true
   },
   "e11f18ed33b8b9c0": {
@@ -4575,6 +4970,15 @@
    "name": "The Celestial Suite Dark Matter & White Noise",
    "stems": true
   },
+  "ed1e9dda601b5529": {
+   "artist": "id (unreleased)",
+   "bpm": 125.0,
+   "duration": 397.0,
+   "key": "8B",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #21]",
+   "stems": false
+  },
   "ed5ad2c2a8470c5b": {
    "artist": "strip light hate",
    "bpm": 117.99,
@@ -4583,6 +4987,15 @@
    "level": 8,
    "name": "Strip Light Hate",
    "stems": true
+  },
+  "ed92527d40adf09a": {
+   "artist": "id (unreleased)",
+   "bpm": 124.98,
+   "duration": 228.0,
+   "key": "12A",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #47]",
+   "stems": false
   },
   "edd0eca809d1078c": {
    "artist": "orbital chime",
@@ -4610,6 +5023,15 @@
    "level": null,
    "name": "Tamiya Lockheed P-38H Lightning - 1_48 scale model",
    "stems": true
+  },
+  "ee2838829ac1240c": {
+   "artist": "id (unreleased)",
+   "bpm": 124.0,
+   "duration": 263.0,
+   "key": "6B",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #8]",
+   "stems": false
   },
   "ee4922440f021919": {
    "artist": "caroline polachek",
@@ -4645,6 +5067,15 @@
    "key": "7B",
    "level": 6,
    "name": "Lane 8, Kasbo & BJOREN - World Is Mine",
+   "stems": true
+  },
+  "efe6ebcd42dec009": {
+   "artist": "lane 8",
+   "bpm": 119.99,
+   "duration": 316.0107029478458,
+   "key": "10B",
+   "level": null,
+   "name": "Lane 8 ft. POLIÇA - No Captain (OLING Remix) [THIS NEVER HAPPENED]",
    "stems": true
   },
   "f1a519a13f6d8955": {
@@ -4916,6 +5347,15 @@
    "level": null,
    "name": "Something",
    "stems": true
+  },
+  "fc77f725ad4ff749": {
+   "artist": "id (unreleased)",
+   "bpm": 124.96,
+   "duration": 292.0,
+   "key": "7A",
+   "level": null,
+   "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #18]",
+   "stems": false
   },
   "ff7f92e0e897efd5": {
    "artist": "pale waves",

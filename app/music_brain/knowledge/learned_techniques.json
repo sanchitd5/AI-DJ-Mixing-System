@@ -412,7 +412,7 @@
    "The DJ played the vocals from 'Caribou - Can't Do Without You' over the instrumental of 'DJ Mehdi - Signatune' starting at 5796.0s.",
    "At 7808.0 seconds, the DJ played the 'drums' and 'bass' stems from 'Cassian & SCRIPT & Belladonna - Where I'm From' while overlaying the 'vocals' stem from 'Da Hool - Meet Her At The Love Parade (YOTTO & Cassian Rework)' as an acapella over."
   ],
-  "count": 7,
+  "count": 9,
   "key_score_min": 0.0,
   "kind": "acapella_over",
   "live": true,
@@ -546,6 +546,42 @@
     "tempo_gap": 0.0001,
     "track_a": "Soulja Boy - Kiss Me Thru the Phone",
     "track_b": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)"
+   },
+   {
+    "at": 2770.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.8,
+      "drums": -16.6,
+      "other": -34.8,
+      "vocals": -36.8
+     },
+     "vocal_from": "B"
+    },
+    "key_score": 0.85,
+    "kind": "acapella_over",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0157,
+    "track_a": "Stimming & Lazarusman - In You Go",
+    "track_b": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]"
+   },
+   {
+    "at": 9639.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.1,
+      "drums": -16.5,
+      "other": -24.2,
+      "vocals": -33.9
+     },
+     "vocal_from": "B"
+    },
+    "key_score": 0.0,
+    "kind": "acapella_over",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0475,
+    "track_a": "Rinzen & Ae:ther - Pangea [THIS NEVER HAPPENED]",
+    "track_b": "Mathias Kaden - Inner Signal"
    }
   ],
   "stems": true,
@@ -591,7 +627,7 @@
    "From 3447s, the DJ looped the vocals of 'Te Estoy Correteando' over the beat of 'Quiereme' to extend the section.",
    "The DJ looped the section from 'Caribou - Can't Do Without You' and extended it over 'DJ Mehdi - Signatune' starting at 5668.0s."
   ],
-  "count": 5,
+  "count": 7,
   "key_score_min": 0.0,
   "kind": "loop_extend",
   "live": false,
@@ -688,6 +724,42 @@
     "tempo_gap": 0.0441,
     "track_a": "Yo Yo Honey Singh - High Heels Te Nachche",
     "track_b": "USHER - OMG"
+   },
+   {
+    "at": 2400.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.7,
+      "drums": -18.7,
+      "other": -28.7,
+      "vocals": -28.5
+     },
+     "src_t": 110.34
+    },
+    "key_score": 0.0,
+    "kind": "loop_extend",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0242,
+    "track_a": "Johannes Brecht - Chords In The Shadows",
+    "track_b": "Stimming & Lazarusman - In You Go"
+   },
+   {
+    "at": 9639.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.1,
+      "drums": -16.5,
+      "other": -24.2,
+      "vocals": -33.9
+     },
+     "src_t": 249.27
+    },
+    "key_score": 0.0,
+    "kind": "loop_extend",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0475,
+    "track_a": "Rinzen & Ae:ther - Pangea [THIS NEVER HAPPENED]",
+    "track_b": "Mathias Kaden - Inner Signal"
    }
   ],
   "stems": false,
@@ -705,7 +777,7 @@
    "The DJ introduced the stems in the order vocals, other, drums, and bass for 'Daft Punk - Touch' over 'Serious Sounds (VIP)' starting at 2652.0s.",
    "The DJ introduced the stems in the order other, bass, vocals, and drums for 'Daft Punk - Giorgio by Moroder' over 'Daft Punk - Touch' starting at 2712.0s."
   ],
-  "count": 32,
+  "count": 37,
   "key_score_min": 0.0,
   "kind": "stem_intro",
   "live": true,
@@ -1462,6 +1534,116 @@
     "tempo_gap": 0.3245,
     "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
     "track_b": "Drake - Headlines"
+   },
+   {
+    "at": 2778.0,
+    "detail": {
+     "lead_s": 32.0,
+     "levels_db": {
+      "bass": -21.8,
+      "drums": -16.4,
+      "other": -34.4,
+      "vocals": -34.4
+     },
+     "order": [
+      "other",
+      "bass"
+     ]
+    },
+    "key_score": 0.85,
+    "kind": "stem_intro",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0157,
+    "track_a": "Stimming & Lazarusman - In You Go",
+    "track_b": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]"
+   },
+   {
+    "at": 3016.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -20.6,
+      "drums": -32.9,
+      "other": -35.6,
+      "vocals": -47.4
+     },
+     "order": [
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": "YOTTO - Aero [ODD ONE OUT]"
+   },
+   {
+    "at": 5771.0,
+    "detail": {
+     "lead_s": 56.0,
+     "levels_db": {
+      "bass": -21.8,
+      "drums": -16.8,
+      "other": -34.4,
+      "vocals": -39.5
+     },
+     "order": [
+      "drums",
+      "bass",
+      "other"
+     ]
+    },
+    "key_score": 0.0,
+    "kind": "stem_intro",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.056,
+    "track_a": "Sam Shure - Qualified [MAGNIFIK]",
+    "track_b": "Bonobo - Me And You [NINJA]"
+   },
+   {
+    "at": 8288.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -22.5,
+      "drums": -16.3,
+      "other": -32.2,
+      "vocals": -42.6
+     },
+     "order": [
+      "vocals",
+      "other"
+     ]
+    },
+    "key_score": 0.85,
+    "kind": "stem_intro",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0161,
+    "track_a": "Digitalism - Space Invaders",
+    "track_b": "Mat Zo - Frequency Flyer [ANJUNABEATS]"
+   },
+   {
+    "at": 10789.0,
+    "detail": {
+     "lead_s": 0.0,
+     "levels_db": {
+      "bass": -51.4,
+      "drums": -28.4,
+      "other": -21.3,
+      "vocals": -80.2
+     },
+     "order": [
+      "other",
+      "vocals"
+     ]
+    },
+    "key_score": 1.0,
+    "kind": "stem_intro",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": 0.0164,
+    "track_a": "Lane 8 & Cornelius SA & Alan Green - Sol [THIS NEVER HAPPENED]",
+    "track_b": "Giom - Light Years"
    }
   ],
   "stems": true,
@@ -1479,7 +1661,7 @@
    "From 2683 to 2685 seconds, the DJ chopped the phrases 'Y tú no puedes verlo así' and 'Todo el mundo está observando' from 'Piensas En Mi' and played them in a loop.",
    "From 2721 to 2723 seconds, the DJ chopped the phrase 'Todo el mundo está observando' from 'Piensas En Mi' and played it in a loop."
   ],
-  "count": 95,
+  "count": 116,
   "key_score_min": null,
   "kind": "vocal_chop",
   "live": false,
@@ -8634,6 +8816,1503 @@
     "tempo_gap": null,
     "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
     "track_b": ""
+   },
+   {
+    "at": 624.5,
+    "detail": {
+     "fragments": [
+      [
+       106.7,
+       107.93
+      ],
+      [
+       3.55,
+       5.06
+      ],
+      [
+       106.28,
+       107.53
+      ],
+      [
+       5.8,
+       7.59
+      ],
+      [
+       163.17,
+       164.68
+      ],
+      [
+       7.8,
+       9.31
+      ],
+      [
+       12.96,
+       14.21
+      ],
+      [
+       9.57,
+       11.33
+      ],
+      [
+       77.9,
+       79.16
+      ],
+      [
+       20.11,
+       21.36
+      ],
+      [
+       106.74,
+       107.97
+      ],
+      [
+       13.56,
+       15.3
+      ],
+      [
+       14.81,
+       16.56
+      ],
+      [
+       168.02,
+       169.28
+      ],
+      [
+       3.72,
+       4.95
+      ],
+      [
+       105.67,
+       107.18
+      ],
+      [
+       20.81,
+       22.06
+      ],
+      [
+       156.01,
+       157.27
+      ],
+      [
+       164.79,
+       166.3
+      ]
+     ],
+     "jumps": 6,
+     "levels_db": {
+      "bass": -22.9,
+      "drums": -25.3,
+      "other": -30.3,
+      "vocals": -32.6
+     },
+     "set_span": [
+      624.5,
+      649.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Wann & JUNO (DE) - Allo [CROSSTOWN REBELS]",
+    "track_b": ""
+   },
+   {
+    "at": 2817.25,
+    "detail": {
+     "fragments": [
+      [
+       33.18,
+       34.44
+      ],
+      [
+       40.45,
+       41.7
+      ],
+      [
+       51.06,
+       52.55
+      ],
+      [
+       5.97,
+       7.48
+      ],
+      [
+       7.96,
+       9.22
+      ],
+      [
+       15.73,
+       16.98
+      ],
+      [
+       31.16,
+       32.67
+      ],
+      [
+       154.81,
+       156.06
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -29.5,
+      "drums": -20.2,
+      "other": -35.4,
+      "vocals": -29.6
+     },
+     "set_span": [
+      2817.25,
+      2828.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": ""
+   },
+   {
+    "at": 2834.25,
+    "detail": {
+     "fragments": [
+      [
+       153.86,
+       155.11
+      ],
+      [
+       13.54,
+       14.79
+      ],
+      [
+       40.32,
+       41.57
+      ],
+      [
+       153.93,
+       155.18
+      ],
+      [
+       47.18,
+       48.93
+      ],
+      [
+       53.75,
+       55.24
+      ],
+      [
+       50.92,
+       52.66
+      ],
+      [
+       56.69,
+       57.95
+      ],
+      [
+       52.43,
+       53.66
+      ],
+      [
+       56.8,
+       58.05
+      ],
+      [
+       56.87,
+       58.38
+      ],
+      [
+       55.94,
+       57.45
+      ],
+      [
+       56.49,
+       58.24
+      ],
+      [
+       59.42,
+       60.68
+      ]
+     ],
+     "jumps": 5,
+     "levels_db": {
+      "bass": -19.2,
+      "drums": -16.7,
+      "other": -42.6,
+      "vocals": -28.2
+     },
+     "set_span": [
+      2834.25,
+      2856.25
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": ""
+   },
+   {
+    "at": 5855.0,
+    "detail": {
+     "fragments": [
+      [
+       44.09,
+       46.09
+      ],
+      [
+       39.92,
+       41.89
+      ],
+      [
+       99.57,
+       100.81
+      ],
+      [
+       159.39,
+       160.87
+      ],
+      [
+       160.58,
+       162.06
+      ],
+      [
+       54.33,
+       56.02
+      ],
+      [
+       200.97,
+       202.21
+      ],
+      [
+       209.18,
+       210.68
+      ],
+      [
+       57.88,
+       60.29
+      ],
+      [
+       67.29,
+       68.99
+      ],
+      [
+       62.12,
+       63.36
+      ],
+      [
+       69.89,
+       72.08
+      ],
+      [
+       64.05,
+       65.71
+      ],
+      [
+       111.23,
+       112.47
+      ],
+      [
+       68.07,
+       69.53
+      ],
+      [
+       61.75,
+       63.21
+      ],
+      [
+       62.68,
+       64.38
+      ],
+      [
+       70.89,
+       72.36
+      ],
+      [
+       71.84,
+       73.79
+      ],
+      [
+       73.25,
+       75.4
+      ],
+      [
+       77.51,
+       78.97
+      ],
+      [
+       79.42,
+       80.65
+      ]
+     ],
+     "jumps": 10,
+     "levels_db": {
+      "bass": -41.6,
+      "drums": -31.1,
+      "other": -30.3,
+      "vocals": -25.5
+     },
+     "set_span": [
+      5855.0,
+      5893.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Bonobo - Me And You [NINJA]",
+    "track_b": ""
+   },
+   {
+    "at": 5919.25,
+    "detail": {
+     "fragments": [
+      [
+       104.98,
+       106.19
+      ],
+      [
+       105.71,
+       106.93
+      ],
+      [
+       106.37,
+       107.63
+      ],
+      [
+       99.61,
+       101.78
+      ],
+      [
+       108.97,
+       110.48
+      ],
+      [
+       110.41,
+       112.84
+      ],
+      [
+       61.86,
+       63.12
+      ],
+      [
+       113.71,
+       116.17
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -15.7,
+      "drums": -18.5,
+      "other": -27.1,
+      "vocals": -28.1
+     },
+     "set_span": [
+      5919.25,
+      5931.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Bonobo - Me And You [NINJA]",
+    "track_b": ""
+   },
+   {
+    "at": 5934.25,
+    "detail": {
+     "fragments": [
+      [
+       119.2,
+       120.68
+      ],
+      [
+       61.95,
+       63.19
+      ],
+      [
+       208.38,
+       209.61
+      ],
+      [
+       122.27,
+       123.72
+      ],
+      [
+       123.18,
+       124.46
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -16.7,
+      "drums": -18.1,
+      "other": -25.4,
+      "vocals": -27.5
+     },
+     "set_span": [
+      5934.25,
+      5939.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Bonobo - Me And You [NINJA]",
+    "track_b": ""
+   },
+   {
+    "at": 7148.25,
+    "detail": {
+     "fragments": [
+      [
+       129.86,
+       131.09
+      ],
+      [
+       143.0,
+       144.72
+      ],
+      [
+       144.22,
+       145.96
+      ],
+      [
+       81.71,
+       83.22
+      ],
+      [
+       90.42,
+       91.88
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -19.2,
+      "drums": -15.3,
+      "other": -33.0,
+      "vocals": -32.5
+     },
+     "set_span": [
+      7148.25,
+      7155.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Lovin' Sun [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 7626.5,
+    "detail": {
+     "fragments": [
+      [
+       33.35,
+       34.83
+      ],
+      [
+       94.69,
+       95.92
+      ],
+      [
+       22.31,
+       24.31
+      ],
+      [
+       24.08,
+       26.08
+      ],
+      [
+       33.65,
+       35.13
+      ],
+      [
+       33.37,
+       34.62
+      ],
+      [
+       28.34,
+       29.82
+      ],
+      [
+       29.56,
+       32.09
+      ],
+      [
+       31.57,
+       33.82
+      ],
+      [
+       33.81,
+       35.32
+      ],
+      [
+       35.06,
+       37.06
+      ],
+      [
+       35.87,
+       37.13
+      ],
+      [
+       43.13,
+       44.63
+      ]
+     ],
+     "jumps": 6,
+     "levels_db": {
+      "bass": -21.1,
+      "drums": -16.2,
+      "other": -24.2,
+      "vocals": -24.4
+     },
+     "set_span": [
+      7626.5,
+      7650.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 7789.75,
+    "detail": {
+     "fragments": [
+      [
+       63.67,
+       64.92
+      ],
+      [
+       123.25,
+       124.76
+      ],
+      [
+       124.76,
+       126.25
+      ],
+      [
+       66.43,
+       68.18
+      ],
+      [
+       126.5,
+       127.99
+      ],
+      [
+       66.48,
+       67.99
+      ],
+      [
+       126.32,
+       127.8
+      ],
+      [
+       69.5,
+       70.73
+      ],
+      [
+       66.55,
+       68.29
+      ],
+      [
+       125.18,
+       127.43
+      ],
+      [
+       128.43,
+       129.68
+      ],
+      [
+       66.41,
+       68.15
+      ],
+      [
+       126.48,
+       127.73
+      ],
+      [
+       37.08,
+       38.32
+      ],
+      [
+       126.29,
+       128.04
+      ],
+      [
+       125.6,
+       127.11
+      ],
+      [
+       52.76,
+       54.01
+      ],
+      [
+       176.58,
+       177.84
+      ],
+      [
+       52.85,
+       54.08
+      ],
+      [
+       128.41,
+       129.66
+      ],
+      [
+       69.64,
+       71.15
+      ],
+      [
+       125.78,
+       127.27
+      ],
+      [
+       71.19,
+       72.7
+      ],
+      [
+       66.32,
+       68.06
+      ],
+      [
+       66.13,
+       67.39
+      ],
+      [
+       128.45,
+       129.94
+      ],
+      [
+       66.94,
+       68.18
+      ],
+      [
+       128.5,
+       129.75
+      ],
+      [
+       125.31,
+       126.81
+      ],
+      [
+       70.94,
+       72.42
+      ],
+      [
+       125.12,
+       126.88
+      ],
+      [
+       66.11,
+       68.11
+      ],
+      [
+       125.47,
+       127.46
+      ],
+      [
+       125.28,
+       127.04
+      ],
+      [
+       71.17,
+       72.66
+      ]
+     ],
+     "jumps": 10,
+     "levels_db": {
+      "bass": -20.3,
+      "drums": -16.2,
+      "other": -33.3,
+      "vocals": -24.0
+     },
+     "set_span": [
+      7789.75,
+      7861.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 8235.75,
+    "detail": {
+     "fragments": [
+      [
+       21.46,
+       22.97
+      ],
+      [
+       5.6,
+       7.08
+      ],
+      [
+       2.6,
+       3.86
+      ],
+      [
+       5.46,
+       7.2
+      ],
+      [
+       13.03,
+       14.28
+      ],
+      [
+       8.68,
+       9.94
+      ],
+      [
+       5.48,
+       6.71
+      ],
+      [
+       8.31,
+       10.06
+      ],
+      [
+       5.6,
+       6.85
+      ],
+      [
+       26.54,
+       28.05
+      ],
+      [
+       5.46,
+       6.71
+      ],
+      [
+       11.54,
+       12.77
+      ],
+      [
+       25.05,
+       26.31
+      ],
+      [
+       13.03,
+       14.28
+      ],
+      [
+       24.94,
+       26.17
+      ],
+      [
+       14.51,
+       16.51
+      ],
+      [
+       2.35,
+       3.86
+      ],
+      [
+       18.99,
+       20.23
+      ],
+      [
+       13.03,
+       14.28
+      ],
+      [
+       24.94,
+       26.17
+      ],
+      [
+       3.09,
+       4.83
+      ],
+      [
+       8.31,
+       9.54
+      ],
+      [
+       3.2,
+       4.46
+      ],
+      [
+       24.2,
+       25.45
+      ],
+      [
+       24.94,
+       26.19
+      ],
+      [
+       5.46,
+       6.71
+      ],
+      [
+       26.91,
+       28.65
+      ]
+     ],
+     "jumps": 7,
+     "levels_db": {
+      "bass": -19.5,
+      "drums": -17.6,
+      "other": -28.3,
+      "vocals": -30.1
+     },
+     "set_span": [
+      8235.75,
+      8265.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Digitalism - Space Invaders",
+    "track_b": ""
+   },
+   {
+    "at": 8337.0,
+    "detail": {
+     "fragments": [
+      [
+       97.73,
+       99.22
+      ],
+      [
+       99.47,
+       100.99
+      ],
+      [
+       103.82,
+       105.81
+      ],
+      [
+       106.93,
+       108.67
+      ],
+      [
+       107.04,
+       108.79
+      ],
+      [
+       108.76,
+       110.3
+      ],
+      [
+       57.68,
+       58.93
+      ],
+      [
+       110.27,
+       112.01
+      ],
+      [
+       122.21,
+       123.95
+      ],
+      [
+       115.73,
+       117.22
+      ],
+      [
+       117.98,
+       119.21
+      ],
+      [
+       119.19,
+       121.16
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -23.5,
+      "drums": -16.7,
+      "other": -34.3,
+      "vocals": -37.4
+     },
+     "set_span": [
+      8337.0,
+      8358.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Digitalism - Space Invaders",
+    "track_b": ""
+   },
+   {
+    "at": 8408.0,
+    "detail": {
+     "fragments": [
+      [
+       51.85,
+       54.34
+      ],
+      [
+       54.36,
+       55.61
+      ],
+      [
+       103.13,
+       104.84
+      ],
+      [
+       84.33,
+       85.59
+      ],
+      [
+       81.04,
+       82.29
+      ],
+      [
+       56.84,
+       58.1
+      ],
+      [
+       84.59,
+       85.84
+      ],
+      [
+       81.32,
+       83.32
+      ],
+      [
+       103.59,
+       104.84
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -18.6,
+      "drums": -16.9,
+      "other": -29.0,
+      "vocals": -30.2
+     },
+     "set_span": [
+      8408.0,
+      8421.25
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Mat Zo - Frequency Flyer [ANJUNABEATS]",
+    "track_b": ""
+   },
+   {
+    "at": 9124.75,
+    "detail": {
+     "fragments": [
+      [
+       204.38,
+       205.89
+      ],
+      [
+       205.89,
+       207.63
+      ],
+      [
+       208.4,
+       209.65
+      ],
+      [
+       231.48,
+       232.74
+      ],
+      [
+       135.67,
+       137.9
+      ],
+      [
+       215.95,
+       217.74
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -20.3,
+      "drums": -17.8,
+      "other": -25.5,
+      "vocals": -24.6
+     },
+     "set_span": [
+      9124.75,
+      9138.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Endless [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 9171.5,
+    "detail": {
+     "fragments": [
+      [
+       16.94,
+       18.41
+      ],
+      [
+       236.54,
+       238.3
+      ],
+      [
+       34.3,
+       36.04
+      ],
+      [
+       19.93,
+       21.19
+      ],
+      [
+       259.84,
+       261.06
+      ],
+      [
+       38.75,
+       40.5
+      ],
+      [
+       41.97,
+       43.47
+      ],
+      [
+       184.85,
+       186.11
+      ],
+      [
+       184.42,
+       185.92
+      ],
+      [
+       184.78,
+       186.54
+      ],
+      [
+       171.48,
+       172.73
+      ],
+      [
+       209.45,
+       210.7
+      ],
+      [
+       59.84,
+       61.08
+      ],
+      [
+       225.28,
+       226.51
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -22.9,
+      "drums": -26.5,
+      "other": -22.1,
+      "vocals": -25.3
+     },
+     "set_span": [
+      9171.5,
+      9202.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 9349.75,
+    "detail": {
+     "fragments": [
+      [
+       55.84,
+       57.1
+      ],
+      [
+       213.77,
+       215.02
+      ],
+      [
+       55.91,
+       57.4
+      ],
+      [
+       213.2,
+       214.45
+      ],
+      [
+       56.08,
+       57.33
+      ],
+      [
+       221.13,
+       222.36
+      ],
+      [
+       61.65,
+       63.16
+      ],
+      [
+       221.54,
+       222.8
+      ],
+      [
+       224.7,
+       226.7
+      ],
+      [
+       226.7,
+       227.94
+      ],
+      [
+       225.27,
+       226.52
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -21.7,
+      "drums": -28.3,
+      "other": -22.5,
+      "vocals": -25.3
+     },
+     "set_span": [
+      9349.75,
+      9368.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 9390.75,
+    "detail": {
+     "fragments": [
+      [
+       77.65,
+       79.39
+      ],
+      [
+       93.99,
+       95.23
+      ],
+      [
+       251.94,
+       253.68
+      ],
+      [
+       253.46,
+       255.44
+      ],
+      [
+       239.56,
+       240.82
+      ],
+      [
+       257.44,
+       258.7
+      ],
+      [
+       100.7,
+       102.22
+      ],
+      [
+       259.44,
+       261.44
+      ],
+      [
+       261.18,
+       262.69
+      ],
+      [
+       262.2,
+       263.69
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -19.7,
+      "drums": -15.5,
+      "other": -20.9,
+      "vocals": -22.0
+     },
+     "set_span": [
+      9390.75,
+      9404.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 10987.75,
+    "detail": {
+     "fragments": [
+      [
+       21.24,
+       22.51
+      ],
+      [
+       50.56,
+       51.83
+      ],
+      [
+       49.92,
+       51.46
+      ],
+      [
+       136.11,
+       137.36
+      ],
+      [
+       126.99,
+       128.24
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -21.5,
+      "drums": -17.3,
+      "other": -26.2,
+      "vocals": -33.1
+     },
+     "set_span": [
+      10987.75,
+      10996.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "The Beach Boys - God Only Knows (Lane 8 Remix) [CAPITOL]",
+    "track_b": ""
+   },
+   {
+    "at": 11118.5,
+    "detail": {
+     "fragments": [
+      [
+       99.27,
+       100.51
+      ],
+      [
+       125.52,
+       126.76
+      ],
+      [
+       121.93,
+       123.2
+      ],
+      [
+       29.57,
+       30.84
+      ],
+      [
+       34.18,
+       35.44
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -20.1,
+      "drums": -34.6,
+      "other": -22.0,
+      "vocals": -28.9
+     },
+     "set_span": [
+      11118.5,
+      11127.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "The Beach Boys - God Only Knows (Lane 8 Remix) [CAPITOL]",
+    "track_b": ""
+   },
+   {
+    "at": 11319.25,
+    "detail": {
+     "fragments": [
+      [
+       172.64,
+       173.87
+      ],
+      [
+       207.91,
+       209.14
+      ],
+      [
+       0.77,
+       2.0
+      ],
+      [
+       0.77,
+       2.03
+      ],
+      [
+       272.0,
+       273.23
+      ]
+     ],
+     "jumps": 3,
+     "levels_db": {
+      "bass": -91.9,
+      "drums": -86.1,
+      "other": -33.3,
+      "vocals": -27.4
+     },
+     "set_span": [
+      11319.25,
+      11329.5
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Boards Of Canada - Age Of Capricorn",
+    "track_b": ""
+   },
+   {
+    "at": 11340.75,
+    "detail": {
+     "fragments": [
+      [
+       206.47,
+       207.73
+      ],
+      [
+       280.34,
+       281.66
+      ],
+      [
+       373.89,
+       375.05
+      ],
+      [
+       37.29,
+       38.52
+      ],
+      [
+       44.54,
+       46.02
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -89.9,
+      "drums": -85.1,
+      "other": -27.1,
+      "vocals": -28.8
+     },
+     "set_span": [
+      11340.75,
+      11351.0
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Boards Of Canada - Age Of Capricorn",
+    "track_b": ""
+   },
+   {
+    "at": 11533.25,
+    "detail": {
+     "fragments": [
+      [
+       113.52,
+       114.75
+      ],
+      [
+       98.52,
+       99.78
+      ],
+      [
+       121.63,
+       122.86
+      ],
+      [
+       35.43,
+       36.94
+      ],
+      [
+       0.42,
+       1.93
+      ]
+     ],
+     "jumps": 4,
+     "levels_db": {
+      "bass": -18.7,
+      "drums": -26.1,
+      "other": -31.8,
+      "vocals": -37.8
+     },
+     "set_span": [
+      11533.25,
+      11544.75
+     ],
+     "words": []
+    },
+    "key_score": null,
+    "kind": "vocal_chop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Franky Rizardo - Shinjuku [LTF]",
+    "track_b": ""
    }
   ],
   "stems": true,
@@ -8651,7 +10330,7 @@
    "The DJ looped the vocal line 'Hold on, if love is the answer, you're home' from 'Daft Punk - Touch' by repeating it across sections 280.1 to 287.1, 324.6 to 329.6, 316.8 to 321.8, and so on, while the drums were low and the bass provided support.",
    "At 5673 seconds, the DJ repeated the phrase 'I can't do without you' four times across different source sections to create a vocal loop."
   ],
-  "count": 20,
+  "count": 28,
   "key_score_min": null,
   "kind": "vocal_loop",
   "live": false,
@@ -9561,6 +11240,366 @@
     "tempo_gap": null,
     "track_a": "Argy, Omiki, Son Of Son - RITMO",
     "track_b": ""
+   },
+   {
+    "at": 1015.0,
+    "detail": {
+     "levels_db": {
+      "bass": -26.4,
+      "drums": -24.7,
+      "other": -42.9,
+      "vocals": -24.6
+     },
+     "repeats": 1,
+     "set_span": [
+      1015.0,
+      1061.0
+     ],
+     "source_lines": [
+      [
+       86.4,
+       103.4
+      ],
+      [
+       93.5,
+       100.6
+      ],
+      [
+       90.7,
+       103.8
+      ],
+      [
+       93.9,
+       103.0
+      ],
+      [
+       93.2,
+       101.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Aphex Twin ft. Run Jeremy - Windowlicker [WARP]",
+    "track_b": ""
+   },
+   {
+    "at": 2770.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.8,
+      "drums": -16.6,
+      "other": -34.8,
+      "vocals": -36.8
+     },
+     "repeats": 2,
+     "set_span": [
+      2770.0,
+      2818.0
+     ],
+     "source_lines": [
+      [
+       32.0,
+       37.0
+      ],
+      [
+       25.8,
+       30.8
+      ],
+      [
+       17.3,
+       22.3
+      ],
+      [
+       17.5,
+       23.5
+      ],
+      [
+       50.5,
+       56.5
+      ],
+      [
+       50.7,
+       55.7
+      ],
+      [
+       43.2,
+       48.2
+      ],
+      [
+       51.0,
+       57.0
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": ""
+   },
+   {
+    "at": 7069.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.2,
+      "drums": -16.5,
+      "other": -33.1,
+      "vocals": -31.2
+     },
+     "repeats": 1,
+     "set_span": [
+      7069.0,
+      7100.0
+     ],
+     "source_lines": [
+      [
+       62.2,
+       70.1
+      ],
+      [
+       69.1,
+       79.0
+      ],
+      [
+       69.1,
+       74.1
+      ],
+      [
+       87.9,
+       92.9
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Lovin' Sun [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 7779.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.7,
+      "drums": -15.4,
+      "other": -37.9,
+      "vocals": -25.7
+     },
+     "repeats": 4,
+     "set_span": [
+      7779.0,
+      7826.0
+     ],
+     "source_lines": [
+      [
+       52.9,
+       60.9
+      ],
+      [
+       118.0,
+       130.0
+      ],
+      [
+       67.2,
+       72.2
+      ],
+      [
+       66.5,
+       72.5
+      ],
+      [
+       66.8,
+       71.8
+      ],
+      [
+       66.2,
+       71.2
+      ],
+      [
+       130.3,
+       135.2
+      ],
+      [
+       130.5,
+       135.5
+      ],
+      [
+       126.2,
+       133.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 7826.0,
+    "detail": {
+     "levels_db": {
+      "bass": -30.2,
+      "drums": -27.1,
+      "other": -25.1,
+      "vocals": -29.0
+     },
+     "repeats": 3,
+     "set_span": [
+      7826.0,
+      7868.0
+     ],
+     "source_lines": [
+      [
+       66.7,
+       73.7
+      ],
+      [
+       66.3,
+       73.3
+      ],
+      [
+       126.7,
+       133.7
+      ],
+      [
+       128.0,
+       134.0
+      ],
+      [
+       125.6,
+       131.6
+      ],
+      [
+       125.2,
+       135.2
+      ],
+      [
+       125.8,
+       130.8
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 9215.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.8,
+      "drums": -17.9,
+      "other": -23.6,
+      "vocals": -22.7
+     },
+     "repeats": 1,
+     "set_span": [
+      9215.0,
+      9247.0
+     ],
+     "source_lines": [
+      [
+       75.4,
+       91.3
+      ],
+      [
+       91.3,
+       96.3
+      ],
+      [
+       90.6,
+       95.6
+      ],
+      [
+       101.3,
+       107.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 11028.0,
+    "detail": {
+     "levels_db": {
+      "bass": -19.9,
+      "drums": -16.4,
+      "other": -24.2,
+      "vocals": -28.3
+     },
+     "repeats": 2,
+     "set_span": [
+      11028.0,
+      11041.0
+     ],
+     "source_lines": [
+      [
+       31.7,
+       36.9
+      ],
+      [
+       31.9,
+       37.0
+      ],
+      [
+       32.1,
+       37.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "The Beach Boys - God Only Knows (Lane 8 Remix) [CAPITOL]",
+    "track_b": ""
+   },
+   {
+    "at": 11490.0,
+    "detail": {
+     "levels_db": {
+      "bass": -22.0,
+      "drums": -41.3,
+      "other": -28.9,
+      "vocals": -33.3
+     },
+     "repeats": 1,
+     "set_span": [
+      11490.0,
+      11498.0
+     ],
+     "source_lines": [
+      [
+       122.9,
+       127.9
+      ],
+      [
+       123.0,
+       127.8
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_loop",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Franky Rizardo - Shinjuku [LTF]",
+    "track_b": ""
    }
   ],
   "stems": true,
@@ -9578,7 +11617,7 @@
    "At 1656s, the DJ played the chorus 'Todo lo que dice sé que va a doler, va a volver' from 'casino143 (Rue De La Fortuna Remix)' at 125.5s, then the line 'Resultó de nuevo que faltó creer / Suele ser mentira si dicen volver' from 112.1s, and looped the original chorus again from 43.8s.",
    "At 2198s, the DJ played the repeated line 'Podrías mirarme como tú quieras' from 'Film Scene Soundtrack' at 37.5s, then played the same line again from 52.8s."
   ],
-  "count": 106,
+  "count": 121,
   "key_score_min": null,
   "kind": "vocal_resequence",
   "live": false,
@@ -13887,6 +15926,643 @@
     "set_id": "aLWCv6MGyho",
     "tempo_gap": null,
     "track_a": "Cardi B, Bad Bunny & J Balvin - I Like It (Dillon Francis Remix)",
+    "track_b": ""
+   },
+   {
+    "at": 1015.0,
+    "detail": {
+     "levels_db": {
+      "bass": -26.4,
+      "drums": -24.7,
+      "other": -42.9,
+      "vocals": -24.6
+     },
+     "set_span": [
+      1015.0,
+      1061.0
+     ],
+     "source_lines": [
+      [
+       86.4,
+       103.4
+      ],
+      [
+       93.5,
+       100.6
+      ],
+      [
+       90.7,
+       103.8
+      ],
+      [
+       93.9,
+       103.0
+      ],
+      [
+       93.2,
+       101.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Aphex Twin ft. Run Jeremy - Windowlicker [WARP]",
+    "track_b": ""
+   },
+   {
+    "at": 2523.0,
+    "detail": {
+     "levels_db": {
+      "bass": -22.7,
+      "drums": -16.9,
+      "other": -43.9,
+      "vocals": -40.1
+     },
+     "set_span": [
+      2523.0,
+      2534.0
+     ],
+     "source_lines": [
+      [
+       156.0,
+       161.0
+      ],
+      [
+       146.5,
+       151.5
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Johannes Brecht - Chords In The Shadows",
+    "track_b": ""
+   },
+   {
+    "at": 2770.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.8,
+      "drums": -16.6,
+      "other": -34.8,
+      "vocals": -36.8
+     },
+     "set_span": [
+      2770.0,
+      2818.0
+     ],
+     "source_lines": [
+      [
+       32.0,
+       37.0
+      ],
+      [
+       25.8,
+       30.8
+      ],
+      [
+       17.3,
+       22.3
+      ],
+      [
+       17.5,
+       23.5
+      ],
+      [
+       50.5,
+       56.5
+      ],
+      [
+       50.7,
+       55.7
+      ],
+      [
+       43.2,
+       48.2
+      ],
+      [
+       51.0,
+       57.0
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": ""
+   },
+   {
+    "at": 2816.0,
+    "detail": {
+     "levels_db": {
+      "bass": -29.5,
+      "drums": -20.2,
+      "other": -35.4,
+      "vocals": -29.6
+     },
+     "set_span": [
+      2816.0,
+      2860.0
+     ],
+     "source_lines": [
+      [
+       20.4,
+       26.4
+      ],
+      [
+       25.4,
+       31.4
+      ],
+      [
+       30.4,
+       42.4
+      ],
+      [
+       21.4,
+       26.4
+      ],
+      [
+       51.3,
+       57.2
+      ],
+      [
+       17.9,
+       22.9
+      ],
+      [
+       55.4,
+       64.4
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Alex Metric & Oliver - Hope [OWSLA/BIG BEAT]",
+    "track_b": ""
+   },
+   {
+    "at": 6315.0,
+    "detail": {
+     "levels_db": {
+      "bass": -37.0,
+      "drums": -41.0,
+      "other": -25.1,
+      "vocals": -28.0
+     },
+     "set_span": [
+      6315.0,
+      6357.0
+     ],
+     "source_lines": [
+      [
+       117.0,
+       124.0
+      ],
+      [
+       168.0,
+       173.0
+      ],
+      [
+       154.0,
+       159.1
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Julia Linkogel - Souls",
+    "track_b": ""
+   },
+   {
+    "at": 7069.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.2,
+      "drums": -16.5,
+      "other": -33.1,
+      "vocals": -31.2
+     },
+     "set_span": [
+      7069.0,
+      7100.0
+     ],
+     "source_lines": [
+      [
+       62.2,
+       70.1
+      ],
+      [
+       69.1,
+       79.0
+      ],
+      [
+       69.1,
+       74.1
+      ],
+      [
+       87.9,
+       92.9
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Lovin' Sun [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 7625.0,
+    "detail": {
+     "levels_db": {
+      "bass": -21.1,
+      "drums": -16.2,
+      "other": -24.2,
+      "vocals": -24.4
+     },
+     "set_span": [
+      7625.0,
+      7647.0
+     ],
+     "source_lines": [
+      [
+       94.6,
+       99.6
+      ],
+      [
+       20.1,
+       26.1
+      ],
+      [
+       27.1,
+       39.1
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 7779.0,
+    "detail": {
+     "levels_db": {
+      "bass": -18.7,
+      "drums": -15.4,
+      "other": -37.9,
+      "vocals": -25.7
+     },
+     "set_span": [
+      7779.0,
+      7826.0
+     ],
+     "source_lines": [
+      [
+       52.9,
+       60.9
+      ],
+      [
+       118.0,
+       130.0
+      ],
+      [
+       67.2,
+       72.2
+      ],
+      [
+       66.5,
+       72.5
+      ],
+      [
+       66.8,
+       71.8
+      ],
+      [
+       66.2,
+       71.2
+      ],
+      [
+       130.3,
+       135.2
+      ],
+      [
+       130.5,
+       135.5
+      ],
+      [
+       126.2,
+       133.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 7826.0,
+    "detail": {
+     "levels_db": {
+      "bass": -30.2,
+      "drums": -27.1,
+      "other": -25.1,
+      "vocals": -29.0
+     },
+     "set_span": [
+      7826.0,
+      7868.0
+     ],
+     "source_lines": [
+      [
+       66.7,
+       73.7
+      ],
+      [
+       66.3,
+       73.3
+      ],
+      [
+       126.7,
+       133.7
+      ],
+      [
+       128.0,
+       134.0
+      ],
+      [
+       125.6,
+       131.6
+      ],
+      [
+       125.2,
+       135.2
+      ],
+      [
+       125.8,
+       130.8
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Vince Staples - Cotton [LOMA VISTA]",
+    "track_b": ""
+   },
+   {
+    "at": 8417.0,
+    "detail": {
+     "levels_db": {
+      "bass": -21.2,
+      "drums": -19.3,
+      "other": -28.9,
+      "vocals": -28.1
+     },
+     "set_span": [
+      8417.0,
+      8463.0
+     ],
+     "source_lines": [
+      [
+       60.9,
+       97.9
+      ],
+      [
+       80.8,
+       86.8
+      ],
+      [
+       99.9,
+       106.9
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Mat Zo - Frequency Flyer [ANJUNABEATS]",
+    "track_b": ""
+   },
+   {
+    "at": 8913.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.4,
+      "drums": -14.9,
+      "other": -27.4,
+      "vocals": -35.5
+     },
+     "set_span": [
+      8913.0,
+      8922.0
+     ],
+     "source_lines": [
+      [
+       235.4,
+       241.4
+      ],
+      [
+       225.8,
+       230.8
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Endless [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 9123.0,
+    "detail": {
+     "levels_db": {
+      "bass": -20.3,
+      "drums": -17.8,
+      "other": -25.5,
+      "vocals": -24.6
+     },
+     "set_span": [
+      9123.0,
+      9155.0
+     ],
+     "source_lines": [
+      [
+       202.6,
+       209.7
+      ],
+      [
+       162.9,
+       168.9
+      ],
+      [
+       213.7,
+       218.7
+      ],
+      [
+       155.3,
+       160.3
+      ],
+      [
+       220.8,
+       226.8
+      ],
+      [
+       225.8,
+       234.9
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Budakid - Endless [FLORES]",
+    "track_b": ""
+   },
+   {
+    "at": 9165.0,
+    "detail": {
+     "levels_db": {
+      "bass": -23.6,
+      "drums": -17.3,
+      "other": -22.9,
+      "vocals": -25.7
+     },
+     "set_span": [
+      9165.0,
+      9202.0
+     ],
+     "source_lines": [
+      [
+       25.9,
+       30.9
+      ],
+      [
+       14.5,
+       20.4
+      ],
+      [
+       36.7,
+       45.8
+      ],
+      [
+       181.0,
+       187.0
+      ],
+      [
+       183.1,
+       189.0
+      ],
+      [
+       55.6,
+       62.6
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 9351.0,
+    "detail": {
+     "levels_db": {
+      "bass": -21.7,
+      "drums": -28.3,
+      "other": -22.5,
+      "vocals": -25.3
+     },
+     "set_span": [
+      9351.0,
+      9389.0
+     ],
+     "source_lines": [
+      [
+       204.9,
+       210.9
+      ],
+      [
+       212.8,
+       217.8
+      ],
+      [
+       221.7,
+       231.7
+      ],
+      [
+       91.6,
+       100.6
+      ],
+      [
+       240.7,
+       248.7
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Sultan + Shepard & Prinze George - Centuries [THIS NEVER HAPPENED]",
+    "track_b": ""
+   },
+   {
+    "at": 13145.0,
+    "detail": {
+     "levels_db": {
+      "bass": -21.1,
+      "drums": -19.2,
+      "other": -28.4,
+      "vocals": -39.2
+     },
+     "set_span": [
+      13145.0,
+      13165.0
+     ],
+     "source_lines": [
+      [
+       58.0,
+       63.0
+      ],
+      [
+       38.1,
+       43.1
+      ],
+      [
+       42.1,
+       47.1
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "N_GfH09iP9c",
+    "tempo_gap": null,
+    "track_a": "Estiva - Mistika [COLORIZE (ENHANCED)]",
     "track_b": ""
    }
   ],

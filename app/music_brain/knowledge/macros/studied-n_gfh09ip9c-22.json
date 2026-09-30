@@ -1,0 +1,32 @@
+{
+ "created": 1790735039.134609,
+ "name": "studied-n_gfh09ip9c-22",
+ "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 22), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "ed1e9dda601b5529",
+   "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #21]",
+   "a_time": 207.447,
+   "b": "9046e5b644bd44db",
+   "b_name": "Chris M - Rhapsody (Quantum Light Music Remix)",
+   "b_time": 122.926,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Long Blend",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Lane 8 #22, atlas plan Long Blend",
+   "works": 82
+  }
+ ],
+ "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #22: ID (unreleased) - ID [set cut N_GfH09iP9c #21] →",
+ "tracks": [
+  "ed1e9dda601b5529",
+  "9046e5b644bd44db"
+ ],
+ "version": 1
+}

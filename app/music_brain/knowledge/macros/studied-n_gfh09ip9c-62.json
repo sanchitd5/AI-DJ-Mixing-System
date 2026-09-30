@@ -1,0 +1,32 @@
+{
+ "created": 1790735039.138518,
+ "name": "studied-n_gfh09ip9c-62",
+ "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 62), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "b7c10f86b7a4f711",
+   "a_name": "(Sultan + Shepard) - ID [set cut N_GfH09iP9c #61]",
+   "a_time": 200.249,
+   "b": "4ff4c49b754fbb42",
+   "b_name": "Jonathan Kaspar - Where Are You [THESE EYES]",
+   "b_time": 103.515,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Bass Swap",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Lane 8 #62, atlas plan Bass Swap",
+   "works": 80
+  }
+ ],
+ "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #62: (Sultan - ID [set cut N_GfH09iP9c #61] → Jonatha",
+ "tracks": [
+  "b7c10f86b7a4f711",
+  "4ff4c49b754fbb42"
+ ],
+ "version": 1
+}

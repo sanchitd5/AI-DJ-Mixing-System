@@ -1,0 +1,32 @@
+{
+ "created": 1790735039.133696,
+ "name": "studied-n_gfh09ip9c-5",
+ "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 5), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "5031dd62c7a091c7",
+   "a_name": "BLANCAh & NeoClassic - Travessia [MEANWHILE]",
+   "a_time": 171.479,
+   "b": "62c45fe060b8b46e",
+   "b_name": "Aphex Twin ft. Run Jeremy - Windowlicker [WARP]",
+   "b_time": 8.15,
+   "combo": "mashup",
+   "n": 1,
+   "recipe": "Mashup → Transition",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Lane 8 #5, atlas plan Mashup → Transition",
+   "works": 94
+  }
+ ],
+ "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #5: BLANCAh - Travessia [MEANWHILE] → Aphex Twin - Wi",
+ "tracks": [
+  "5031dd62c7a091c7",
+  "62c45fe060b8b46e"
+ ],
+ "version": 1
+}

@@ -1,0 +1,32 @@
+{
+ "created": 1790735039.133908,
+ "name": "studied-n_gfh09ip9c-12",
+ "note": "studied combo from Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (position 12), techniques none heard",
+ "parent": null,
+ "schema": 1,
+ "source": "atlas:studied",
+ "steps": [
+  {
+   "a": "a260537e26e1e84e",
+   "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #11]",
+   "a_time": 241.191,
+   "b": "6fd5ec1b959fb72a",
+   "b_name": "Johannes Brecht - Chords In The Shadows",
+   "b_time": 13.607,
+   "combo": "studied",
+   "n": 1,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "pitched"
+   },
+   "why": "studied combo: Lane 8 #12, atlas plan Echo Out",
+   "works": 76
+  }
+ ],
+ "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) #12: ID (unreleased) - ID [set cut N_GfH09iP9c #11] →",
+ "tracks": [
+  "a260537e26e1e84e",
+  "6fd5ec1b959fb72a"
+ ],
+ "version": 1
+}
