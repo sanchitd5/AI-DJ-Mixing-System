@@ -50,7 +50,8 @@ EDM (Big Room, Progressive House, Future Rave) is designed for massive acoustic 
 * **From House:** Gradually increase tempo from 124 to 128 BPM during an emotional breakdown, then launch the EDM riser.
 
 ### How DJs Transition OUT of EDM:
-* **Into Drum & Bass:** Execute a [[Fake Drop]] at 128 BPM, but on Beat 1, drop an explosive 174 BPM DnB roller!
+* **First:** another EDM track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: let the EDM drop finish; in the breakdown, echo out the last phrase and launch the DnB on Beat 1. No tempo ramp.
 * **Into Hip-Hop:** Let the EDM drop finish; hit a 1-beat Echo on the final kick; drop an 85 BPM rap classic dry on Beat 1.
 
 ---

@@ -49,8 +49,9 @@ Future Bass and Melodic Bass (Illenium, Flume, San Holo, The Chainsmokers, Marsh
 * **From Trap:** Drop Swap directly from a grimy trap drop into an uplifting melodic future bass drop on Beat 1!
 
 ### How DJs Transition OUT of Future Bass:
-* **Into Drum & Bass (174 BPM):** Gradually ramp the 150 BPM build-up to 160 BPM, then slam into an emotional Dancefloor DnB vocal anthem (e.g., Sub Focus).
-* **Into House (128 BPM):** Use an ambient breakdown to strip away the half-time beat, then introduce a four-on-the-floor House kick.
+* **First:** another future bass track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: in the ambient breakdown, echo out the last phrase and launch the DnB on Beat 1. No tempo ramp.
+* **Into House (128 BPM):** Breakdown first, [[Echo Out]] second: use the ambient breakdown to strip away the half-time beat, echo out its tail, then introduce a four-on-the-floor House kick.
 
 ---
 

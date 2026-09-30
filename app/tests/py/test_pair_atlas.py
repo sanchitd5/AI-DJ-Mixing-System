@@ -111,6 +111,49 @@ def test_console_rule_parity_on_fixed_vectors():
             i += 1
 
 
+def _recipe_job(p: dict, fa: float, fb: float) -> dict:
+    """The atlas's own recipe job for a stored row (pair_atlas.build, 'node: the console's recipe choice')."""
+    gap, rate = pa.fold_gap(fa, fb)
+    bl = p["blend"] if p.get("blend") and p["blend"].get("ok") else None
+    return {"kind": "recipe", "a": p["a"], "b": p["b"], "pick": None, "o": {
+        "recipe": "Long Blend", "blend": bl, "layer": False, "aStems": p["stems"][0], "bStems": p["stems"][1],
+        "aEff": fa, "bBpm": fb, "tempoStemsBpm": fb * rate if all(p["stems"]) and gap <= pa.KEYLOCK_CAP else None,
+        "keyScore": p["key"], "mashupFits": bool((p.get("mashup") or {}).get("ok"))}}
+
+
+def test_owner_liked_pairs_plan_as_before():
+    """Golden: three owner-liked pairs (rows copied read-only from the real atlas) plan exactly as they did."""
+    gold = json.loads((Path(__file__).parents[1] / "fixtures" / "owner_liked_pairs.json").read_text(encoding="utf-8"))
+    want = {"dd3f0c201c0c0f03>407c498ddd3a6dab": ("Long Blend", 0.75),
+            "407c498ddd3a6dab>c4a392ce13e82bc9": ("Stem Merge", 1),
+            "c4a392ce13e82bc9>3ef9ad4b3fd01c79": ("Echo Out", 0)}
+    jobs, keys = [], []
+    for k, (recipe, key) in want.items():
+        p = gold["pairs"][k]
+        assert p["key"] == key and pa.plan_of(p)["recipe"] == recipe, k
+        jobs.append(_recipe_job(p, gold["tracks"][p["a"]]["bpm"], gold["tracks"][p["b"]]["bpm"]))
+        keys.append(k)
+    assert gold["pairs"]["407c498ddd3a6dab>c4a392ce13e82bc9"]["merge"]["ok"] is True
+    assert gold["pairs"]["407c498ddd3a6dab>c4a392ce13e82bc9"]["moves"]["bass_swap"][0]
+    for k, r in zip(keys, pa.node_run({}, jobs)):
+        assert r["recipe"] == gold["pairs"][k]["recipe"], k
+
+
+def test_refusal_fallback_is_the_safe_blend_not_echo_out():
+    """CLAUDE.md s4: Echo Out only for a key clash or a tempo gap. A locked pair with no blend plan
+    and stems missing on a deck gets the Bass Swap the atlas's bass_swap move already allows."""
+    base = {"a": "x", "b": "y", "stems": [False, True], "blend": None, "mashup": {"ok": False}}
+    cases = [(dict(base, key=0.9), 128, 128, "Bass Swap"),      # stems missing: the blend
+             (dict(base, key=None), 128, 129, "Bass Swap"),     # unknown key: the blend
+             (dict(base, key=0.3), 128, 128, "Echo Out"),       # key clash: Echo Out
+             (dict(base, key=0), 128, 128, "Echo Out"),
+             (dict(base, key=1), 128, 174, "Echo Out")]         # big tempo gap: Echo Out
+    res = pa.node_run({}, [_recipe_job(p, fa, fb) for p, fa, fb, _ in cases])
+    for (p, fa, fb, want), r in zip(cases, res):
+        assert r["recipe"] == want, (p["key"], fa, fb, r)
+        assert r["keyRewrite"] is None
+
+
 def test_build_scores_every_ordered_pair_and_the_live_test_pair_is_a_merge_combo(cache):
     doc = _build(cache)
     assert doc["stats"]["pairs"] == 6 and doc["schema"] == pa.SCHEMA

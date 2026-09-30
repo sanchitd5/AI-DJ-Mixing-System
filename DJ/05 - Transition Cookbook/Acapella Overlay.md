@@ -28,8 +28,8 @@ Solves crowd boredom during repetitive instrumental club tracks by injecting ins
 * **Harmonic Match:** Strict Camelot match required (same key or relative major/minor).
 
 ### Step-by-step
-1. **Prepare the Vocal:** Cue Deck 2 at the start of the iconic vocal chorus or verse.
-2. **Phrase Lock:** On Bar 1 of Track A's instrumental phrase, hit **PLAY** on Deck 2.
+1. **Prepare the Vocal:** Pick a vocal line that ends before A's drop; cue Deck 2 at the start of that chorus or verse.
+2. **Phrase Lock:** Only while A has no vocal for the whole window, and the vocal ends before A's drop line. On Bar 1 of Track A's instrumental phrase, hit **PLAY** on Deck 2.
 3. **Mid-Range Adjustment:** Ensure Deck 2's Low EQ is killed to $- \infty$. Keep High EQ at 11 o'clock to avoid harsh sibilance. Mid EQ at 12 o'clock.
 4. **Volume Automation:** Ride Deck 2's upfader dynamically—bring it up when the singer sings, slightly pull it back during instrumental fills.
 5. **The Transition Exit:** 

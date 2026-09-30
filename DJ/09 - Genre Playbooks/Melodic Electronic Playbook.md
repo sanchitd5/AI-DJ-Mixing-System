@@ -47,8 +47,9 @@ Melodic Electronic (Fred again.., Bicep, Barry Can't Swim, Jamie xx, Four Tet, O
 * **From Pop:** Isolate the pop vocal and blend it smoothly over an atmospheric breakbeat.
 
 ### How DJs Transition OUT of Melodic Electronic:
-* **Into Drum & Bass (174 BPM):** The syncopated breakbeat DNA of UK Garage naturally bridges into Drum & Bass. Accelerate tempo during an atmospheric riser, or use an acapella bridge.
-* **Into Heavy Bass Music / Dubstep:** Use an ambient breakdown to create total silence, then slam cut into a heavy bass drop.
+* **First:** another melodic track, [[Bass Swap]] on the phrase.
+* **Into Drum & Bass (174 BPM):** Breakdown first, [[Echo Out]] second: the syncopated breakbeat DNA of UK Garage naturally bridges into Drum & Bass; in an atmospheric breakdown, echo out the last phrase and launch the DnB on Beat 1. No tempo ramp.
+* **Into Heavy Bass Music / Dubstep:** Breakdown first, [[Echo Out]] second: use an ambient breakdown, echo out its tail into total silence, then slam cut into a heavy bass drop.
 
 ---
 

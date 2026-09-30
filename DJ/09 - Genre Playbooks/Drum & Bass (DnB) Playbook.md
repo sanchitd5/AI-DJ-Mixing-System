@@ -50,8 +50,9 @@ Drum & Bass (DnB) is the highest-velocity mainstream electronic dance music genr
 * **From Pop / House (124–128 BPM):** Take an emotional vocal breakdown; bring in high-speed 174 BPM shakers; drop into a vocal Dancefloor DnB anthem.
 
 ### How DnB DJs Transition OUT of Drum & Bass:
-* **Into Pop / R&B:** Reverb wash the DnB track on the final drop downbeat, cut the fader, and let a 120 BPM pop vocal enter out of the ambient space.
-* **Into Dubstep (140 BPM):** Execute a dramatic tempo transition or echo out on the final snare.
+* **First:** another DnB track, [[Bass Swap]] on the phrase.
+* **Into Pop / R&B (120 BPM):** Breakdown first, [[Echo Out]] second: wait for the final breakdown, reverb-wash and echo out the last phrase, then let the pop vocal enter out of the ambient space. No tempo ramp.
+* **Into Dubstep (140 BPM):** Breakdown first, [[Echo Out]] second: echo out the last snare of the breakdown and start the dubstep on Beat 1 of its phrase. No tempo ramp.
 
 ---
 
