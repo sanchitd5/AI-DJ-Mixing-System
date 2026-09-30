@@ -207,7 +207,7 @@ def test_incremental_rebuild_and_rules_versioning(cache, monkeypatch):
 def _drop_db(cache):
     from app.music_brain import db
     db.close_all()
-    for p in cache.glob(db.DB_NAME + "*"):
+    for p in cache.glob(db.APP_DB + "*"):
         p.unlink()
 
 

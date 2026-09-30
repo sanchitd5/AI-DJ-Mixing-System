@@ -21,7 +21,7 @@ attached on every build, and so is STUDIED evidence (the transitions of the famo
 the set learner studied, studied_combos.py): a studied pair is a combo. Incremental: a pair is
 rescored only when either track's inputs or the rules change.
 
-Stored in SQLite, CACHE_DIR/null_set.db (app.music_brain.db; tables atlas_meta, atlas_tracks,
+Stored in SQLite, CACHE_DIR/app.db (app.music_brain.db; tables atlas_meta, atlas_tracks,
 atlas_pairs, see write_atlas). A build upserts only the rows whose JSON changed, in one transaction,
 under _atlas_lock. load() still returns the whole atlas as one dict; request paths use pairs_for /
 track / load_for / cached_index (indexed queries). The old segmented folder CACHE_DIR/pair_atlas/
@@ -235,8 +235,9 @@ class Library:
         return d if isinstance(d, dict) else {}
 
     def learned(self) -> dict:
-        d = self._json("learned_techniques.json", {})
-        return d if isinstance(d, dict) else {}
+        from app.music_brain.learning.set_learner import load_learned
+
+        return load_learned(self.dir / "learned_techniques.json")
 
     def analysis_path(self, tid: str) -> Optional[Path]:
         hits = sorted((self.dir / "analysis").glob(f"{tid}*.v5.json"))
@@ -777,10 +778,9 @@ def mine_history(cache_dir: Path, names: Dict[str, str]) -> Dict[str, dict]:
             e = slot(a, b)
             e["good"] += 1
             e["sources"]["liked"] += 1
-    try:
-        store = json.loads((Path(cache_dir) / "learned_techniques.json").read_text(encoding="utf-8"))
-    except (OSError, ValueError):
-        store = {}
+    from app.music_brain.learning.set_learner import load_learned
+
+    store = load_learned(Path(cache_dir) / "learned_techniques.json")
     for kind, entry in (store.items() if isinstance(store, dict) else []):
         for o in (entry or {}).get("observations") or []:
             a, b = idx.find(o.get("track_a", "")), idx.find(o.get("track_b", ""))
@@ -887,8 +887,8 @@ def _load_folder(root: Path) -> Optional[dict]:
 
 
 # ------------------------------------------------------------------ the SQLite store
-# Tables in CACHE_DIR/null_set.db (app.music_brain.db): the atlas of folder R lives in
-# R.parent / null_set.db, so a cache dir holds one atlas. atlas_meta: the atlas dict's own keys
+# Tables in CACHE_DIR/app.db (app.music_brain.db): the atlas of folder R lives in
+# R.parent / app.db, so a cache dir holds one atlas. atlas_meta: the atlas dict's own keys
 # (schema, rules, built_at, cache_dir, stats, ...) as JSON, plus _rev (bumped by every write that
 # changes something; cached_index keys on it). Each row's `features` / `data` is the exact JSON
 # the old shard held; the other columns are copies for indexed queries.
@@ -915,7 +915,7 @@ def _db(root: Path):
     """The connection to the database the atlas of folder `root` lives in (schema ensured)."""
     from app.music_brain import db
 
-    conn = db.connect(Path(root).parent / db.DB_NAME)
+    conn = db.connect(Path(root).parent / db.APP_DB)
     db.ensure(conn, "pair_atlas", ATLAS_STEPS)
     return conn
 
@@ -974,7 +974,7 @@ def migrate(root: Path, log=lambda m: None) -> bool:
         write_atlas(old, root)
         db.checkpoint(conn)                                  # the one big write: WAL back to 0 bytes
         dest = db.retire(src)
-        log(f"atlas migrated: {src.name} -> {db.DB_NAME} in {time.time() - t0:.1f} s "
+        log(f"atlas migrated: {src.name} -> {db.APP_DB} in {time.time() - t0:.1f} s "
             f"(old copy kept as {dest.name})")
     return True
 
