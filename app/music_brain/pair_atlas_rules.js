@@ -1,4 +1,4 @@
-// The console's own rules, run in node for the offline pair atlas (app/music_brain/pair_atlas.py).
+// The console's own rules, run in node for the offline pair atlas (app/music_brain/atlas/pair_atlas.py).
 // Nothing is re-implemented here: the browser modules are required unmodified, the way app/sim does.
 // stdin: {tracks: {id: {bar, anchor, bars: {drums: [], bass: [], vocals: [], other: []}}}, jobs: [...]}
 // stdout: {results: [...]} (one per job, same order). Job kinds:
