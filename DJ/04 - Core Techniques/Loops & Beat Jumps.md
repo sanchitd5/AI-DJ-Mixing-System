@@ -9,7 +9,7 @@ created: 2026-09-09
 
 # Loops & Beat Jumps: Time Travel on the Decks
 
-Loops and Beat Jumps are your ultimate time-manipulation mechanisms. Instead of being passive passengers on a track's pre-recorded timeline, mastering loops and beat jumps allows you to rewrite the arrangement, extend transitions indefinitely, correct phrase errors in real time, and engineer explosive tension builds.
+Loops and Beat Jumps are your ultimate time-manipulation mechanisms. Instead of being passive passengers on a track's pre-recorded timeline, mastering loops and beat jumps allows you to rewrite the arrangement, buy a short, controlled extension for a transition, correct phrase errors in real time, and engineer explosive tension builds.
 
 ```mermaid
 graph LR
@@ -22,7 +22,7 @@ graph LR
         BJBack["Jump Back (-4, -8, -16, -32 Beats)<br>(Phrase Correction / Vamp)"]
         BJForward["Jump Forward (+16, +32 Beats)<br>(Bypassing Boring Verses)"]
     end
-    Looping --> LiveArrangement["Dynamic Live Arrangement & Infinite Mix Windows"]
+    Looping --> LiveArrangement["Dynamic Live Arrangement & Extended Mix Windows"]
     Jumping --> LiveArrangement
 ```
 
@@ -30,9 +30,10 @@ graph LR
 
 ## 1. Loop Mechanics & Strategic Applications
 
-### 1. Extending the "Mix Window" (The Infinite Outro/Intro)
+### 1. Extending the "Mix Window" (The Short Outro/Intro)
 * **The Problem:** Many pop songs or vocal tracks have an outro that lasts only 4 bars before fading out cold. You do not have enough time to blend in your next track cleanly.
-* **The Solution:** Set an **8-bar or 16-bar Auto-Loop** on a percussive section before the song ends. This freezes time, giving you an infinite, steady groove over which to introduce Track B at your own pace.
+* **The Solution:** Loop at most one 8-bar phrase of real groove, then hand off; if the outro is too short, prefer Echo Out or a breakdown over holding.
+* **Why the cap:** a groove repeated past one phrase starts to sound stuck, and an open-ended hold is a mix that never happens. When the outro cannot give you 8 clean bars, leave with an [[Echo Out]] or a [[Breakdown Transition]] instead.
 
 ### 2. Building Pre-Drop Tension (Loop Halving / Build-Up Creation)
 * **The Technique:** Take an iconic 1-bar vocal hook (e.g., "Let's go!").
