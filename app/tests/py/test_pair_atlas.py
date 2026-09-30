@@ -11,7 +11,7 @@ import numpy as np
 import pytest
 
 from app.music_brain.analysis import energy
-from app.music_brain import macros as mc, pair_atlas as pa
+from app.music_brain.atlas import macros as mc, pair_atlas as pa
 from app.music_brain.matching import techniques
 
 NODE = shutil.which("node")

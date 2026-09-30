@@ -2,7 +2,7 @@
 console's energy ranking (autopilot.js rankAtlasBackups) and earlier_set for songs heard in an
 earlier set (hold-loop-preplan: a preplanned backup B so the deadline fallback never searches
 from zero)."""
-from app.music_brain import pair_atlas as pa
+from app.music_brain.atlas import pair_atlas as pa
 from app.tests.py.test_pair_atlas import IDS, NAMES, _build, cache  # noqa: F401  (pytest fixture)
 
 

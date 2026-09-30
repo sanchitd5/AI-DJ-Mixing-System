@@ -5,7 +5,7 @@ from pathlib import Path
 
 import pytest
 
-from app.music_brain import macros as mc, pair_atlas as pa, studied_combos as sc
+from app.music_brain.atlas import macros as mc, pair_atlas as pa, studied_combos as sc
 
 A, B, C, D, DUP = "aaaaaaaaaaaaaaaa", "bbbbbbbbbbbbbbbb", "cccccccccccccccc", "dddddddddddddddd", "eeeeeeeeeeeeeeee"
 NAMES = {A: "Anyma & Chris Avantgarde - Eternity (Official Audio)", B: "Cassian - SOS",

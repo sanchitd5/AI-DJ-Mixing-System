@@ -2,7 +2,7 @@
 the library copy of each song, never a removed duplicate or a set clip. tmp cache only."""
 import json
 
-from app.music_brain import macros as mc
+from app.music_brain.atlas import macros as mc
 
 LIB_A, LIB_B, DUP_B, C = "1111111111111111", "2222222222222222", "3333333333333333", "4444444444444444"
 

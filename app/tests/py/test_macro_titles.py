@@ -1,7 +1,7 @@
 """Macro titles: owner "macros should have proper names". The slug stays the id."""
 import json
 
-from app.music_brain import macros as mc
+from app.music_brain.atlas import macros as mc
 
 A, B, C = "a" * 16, "b" * 16, "c" * 16
 
