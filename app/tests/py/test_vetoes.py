@@ -23,10 +23,11 @@ def test_round_trip_atomic_and_idempotent(tmp_path, monkeypatch):
     p = tmp_path / "vetoes.json"
     monkeypatch.setattr(vt, "path", lambda cache_dir=None: p)
     e = vt.make("pair", "B - Song", "A - Song", note="bad")
+    before = vt.stamp()
     assert vt.add(e) is True and vt.add(e) is False
-    rows = json.loads(p.read_text())["vetoes"]
-    assert len(rows) == 1 and rows[0]["b_key"] == "b song"
-    assert not list(tmp_path.glob(".vetoes.*")), "no temp file left behind"
+    rows = vt.load(seed=None)
+    assert len(rows) == 1 and rows[0]["b_key"] == "b song" and vt.stamp() != before
+    assert not p.exists() and (tmp_path / "user.db").is_file(), "the private user DB, no JSON file"
     got = vt.load(seed=None)
     assert vt.blocked(got, "A - Song (Official Video)", "B - Song") and not vt.blocked(got, "C - x", "B - Song")
     s = vt.make("song", "D - Tune", scene="house")
@@ -34,12 +35,27 @@ def test_round_trip_atomic_and_idempotent(tmp_path, monkeypatch):
     got = vt.load(seed=None)
     assert vt.blocked(got, "Z - q", "D - Tune", a_genre="deep house")
     assert vt.blocked(got, "Z - q", "D - Tune", a_genre="punjabi") is None, "a song veto holds in its scene only"
-    p.write_text("not json")
-    assert vt.load(seed=None) == [], "a broken file never stops a set"
+    q = tmp_path / "other" / "vetoes.json"
+    q.parent.mkdir()
+    q.write_text("not json")
+    monkeypatch.setattr(vt, "path", lambda cache_dir=None: q)
+    assert vt.load(seed=None) == [] and q.exists(), "a broken old file never stops a set (and is left alone)"
     with pytest.raises(ValueError):
         vt.make("pair", "B - Song")
     with pytest.raises(ValueError):
         vt.make("pair", "A - Song", "A - Song")
+
+
+def test_old_vetoes_json_migrates_once(tmp_path, monkeypatch):
+    p = tmp_path / "vetoes.json"
+    monkeypatch.setattr(vt, "path", lambda cache_dir=None: p)
+    p.write_text(json.dumps({"version": 1, "vetoes": [{"kind": "pair", "a": "A - one", "b": "B - two"},
+                                                     {"kind": "song", "b": "C - three", "scene": "house"}]}))
+    got = vt.load(seed=None)
+    assert [e["b_key"] for e in got] == ["b two", "c three"]
+    assert not p.exists() and (tmp_path / "vetoes.json.migrated").is_file()
+    p.write_text(json.dumps({"version": 1, "vetoes": []}))       # old code writing again: ignored
+    assert len(vt.load(seed=None)) == 2
 
 
 def test_cli_adds(tmp_path, monkeypatch, capsys):

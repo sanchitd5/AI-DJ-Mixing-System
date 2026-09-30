@@ -1,10 +1,10 @@
 """OWNER VETO: pairs (or a song in a context) the owner marked as a vibe killer. Never booked again.
 
-    CACHE_DIR/vetoes.json   {"version": 1, "vetoes": [entry, ...]}   (console "bad pair", atomic writes)
-    app/music_brain/atlas/vetoes_seed.json                           (tracked seed, always loaded)
+    CACHE_DIR/user.db, marks of kind "veto" (app.music_brain.user_marks)   (console "bad pair")
+    app/music_brain/atlas/vetoes_seed.json                                 (tracked seed, always loaded)
 
 USER-side data (private, never written into the knowledge/ export). Everything goes through this one
-module (load / add / check), so the store can move into the user DB without touching its readers.
+module (load / add / check). The pre-DB CACHE_DIR/vetoes.json migrates once, kept as .migrated.
 
 entry: {"kind": "pair", "a": "<A name>", "b": "<B name>", "a_key", "b_key", "at", "source", "note"}
        {"kind": "song", "b": "<name>", "b_key", "scene": "<scene term>" | "", ...}
@@ -25,20 +25,17 @@ CLI (the seeding path besides the tracked seed file):
 from __future__ import annotations
 
 import json
-import os
-import tempfile
-import threading
 import time
 from pathlib import Path
 from typing import Iterable, List, Optional
 
-FILE = "vetoes.json"
+FILE = "vetoes.json"                 # the pre-DB file (migration source); its folder holds user.db
+MARK = "veto"
 VERSION = 1
 SEED = Path(__file__).resolve().parent / "vetoes_seed.json"   # tracked seed; never the knowledge/ export
 MAX_VETOES = 2000
 MAX_FIELD = 200
 KINDS = ("pair", "song")
-_lock = threading.Lock()
 
 
 def path(cache_dir: Optional[Path] = None) -> Path:
@@ -94,11 +91,12 @@ def _ident(e: dict) -> tuple:
     return (e.get("kind"), e.get("a_key", ""), e.get("b_key", ""), e.get("scene", ""))
 
 
-def _read(p: Path) -> List[dict]:
+def _parse(p: Path) -> Optional[List[dict]]:
+    """Rows of a vetoes JSON file (the tracked seed, or the pre-DB cache file); None: unreadable."""
     try:
         d = json.loads(Path(p).read_text(encoding="utf-8"))
     except (OSError, ValueError):
-        return []
+        return None
     rows = d.get("vetoes") if isinstance(d, dict) else None
     out = []
     for r in rows or []:
@@ -114,10 +112,34 @@ def _read(p: Path) -> List[dict]:
     return out
 
 
+def _read(p: Path) -> List[dict]:
+    return _parse(p) or []
+
+
+def _subject(e: dict) -> str:
+    return "|".join(str(x) for x in _ident(e))
+
+
+def _stored(cache_dir: Optional[Path] = None) -> List[dict]:
+    """The owner's vetoes in the user DB beside path(cache_dir); the old vetoes.json there
+    migrates once (kept as vetoes.json.migrated). [] when the DB cannot be read."""
+    import sqlite3
+
+    from app.music_brain import user_marks as um
+
+    p = path(cache_dir)
+    try:
+        um.migrate_json(MARK, p, lambda f: None if (rows := _parse(f)) is None else
+                        [(_subject(e), e) for e in rows[-MAX_VETOES:]])
+        return [e for _, e in um.rows(MARK, p.parent)]
+    except (sqlite3.Error, OSError):
+        return []
+
+
 def load(cache_dir: Optional[Path] = None, seed: Optional[Path] = SEED) -> List[dict]:
-    """Seed + the cache file, one row per (kind, a, b, scene); the cache file's row wins."""
+    """Seed + the owner's stored vetoes, one row per (kind, a, b, scene); the stored row wins."""
     seen, out = {}, []
-    for e in (_read(seed) if seed else []) + _read(path(cache_dir)):
+    for e in (_read(seed) if seed else []) + _stored(cache_dir):
         k = _ident(e)
         if k in seen:
             out[seen[k]] = e
@@ -127,33 +149,23 @@ def load(cache_dir: Optional[Path] = None, seed: Optional[Path] = SEED) -> List[
     return out
 
 
-def _write_atomic(p: Path, rows: List[dict]) -> None:
-    p.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(prefix=".vetoes.", suffix=".tmp", dir=str(p.parent))
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as f:
-            json.dump({"version": VERSION, "vetoes": rows}, f, indent=1, ensure_ascii=False)
-            f.flush()
-            os.fsync(f.fileno())
-        os.replace(tmp, p)
-    except BaseException:
-        try:
-            os.unlink(tmp)
-        except OSError:
-            pass
-        raise
+def stamp(cache_dir: Optional[Path] = None) -> tuple:
+    """Changes whenever a veto is stored (the server's memo key)."""
+    from app.music_brain import user_marks as um
+
+    p = path(cache_dir)
+    _stored(cache_dir)
+    return (str(p), um.stamp(MARK, p.parent))
 
 
 def add(entry: dict, cache_dir: Optional[Path] = None) -> bool:
-    """Append one veto to the cache file (atomic). False when it was already there."""
+    """Store one veto (one transaction; the newest MAX_VETOES are kept). False when it was
+    already there."""
+    from app.music_brain import user_marks as um
+
     p = path(cache_dir)
-    with _lock:
-        rows = _read(p)
-        if any(_ident(r) == _ident(entry) for r in rows):
-            return False
-        rows.append(entry)
-        _write_atomic(p, rows[-MAX_VETOES:])
-    return True
+    _stored(cache_dir)                                 # migrate an old vetoes.json first
+    return um.add_new(MARK, _subject(entry), entry, p.parent, keep=MAX_VETOES)
 
 
 def blocked(vetoes: Iterable[dict], a_name: str, b_name: str, a_genre: Optional[str] = None) -> Optional[str]:
