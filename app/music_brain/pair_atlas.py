@@ -70,7 +70,7 @@ STEM_NAMES = ("drums", "bass", "vocals", "other")
 
 # the files whose rules the atlas applies: any edit invalidates every pair
 RULE_FILES = (
-    HERE / "pair_atlas.py", RULES_JS, HERE / "blend.py", HERE / "analysis" / "energy.py", HERE / "techniques.py",
+    HERE / "pair_atlas.py", RULES_JS, HERE / "blend.py", HERE / "analysis" / "energy.py", HERE / "matching" / "techniques.py",
     STATIC / "autopilot.js", STATIC / "tempo-rule.js", STATIC / "stem-moves.js", STATIC / "dj-mind.js",
 )
 
@@ -296,7 +296,7 @@ def _bar_rms(ch: np.ndarray, sr: int, anchor: float, bar: float, n: int) -> List
 
 def track_features(t: dict) -> dict:
     """The expensive per-track part (audio reads), cached in the atlas by track_sig."""
-    from app.music_brain import techniques
+    from app.music_brain.matching import techniques
 
     a = json.loads(Path(t["analysis"]).read_text(encoding="utf-8"))
     bpm = float(a.get("bpm") or 0)
@@ -421,7 +421,8 @@ def _play_window(f: dict, level: Optional[int]) -> Tuple[float, float]:
 
 def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
     """All B partners of one A: the Python half of each record plus the node jobs it needs."""
-    from app.music_brain import blend, techniques
+    from app.music_brain import blend
+    from app.music_brain.matching import techniques
     from app.music_brain.analysis import energy
 
     feats, meta, levels, learned = _W["feats"], _W["meta"], _W["levels"], _W["learned"]

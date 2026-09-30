@@ -25,8 +25,8 @@ from collections import Counter
 from pathlib import Path
 from typing import Dict, Iterable, List, Optional, Tuple
 
-from app.music_brain.recipe_matcher import is_cut_recipe
-from app.music_brain.techniques import LEARNED_RECIPE, NEVER_PLAY
+from app.music_brain.matching.recipe_matcher import is_cut_recipe
+from app.music_brain.matching.techniques import LEARNED_RECIPE, NEVER_PLAY
 
 # learner technique -> the atlas move column that judges it offline. The recipe is the console's
 # own (techniques.LEARNED_RECIPE, the table the live learned pick uses); a loop extension is the

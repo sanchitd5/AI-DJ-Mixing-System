@@ -11,7 +11,8 @@ import numpy as np
 import pytest
 
 from app.music_brain.analysis import energy
-from app.music_brain import macros as mc, pair_atlas as pa, techniques
+from app.music_brain import macros as mc, pair_atlas as pa
+from app.music_brain.matching import techniques
 
 NODE = shutil.which("node")
 pytestmark = pytest.mark.skipif(NODE is None, reason="node not installed: the atlas runs the console's JS rules")
