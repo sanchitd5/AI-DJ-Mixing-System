@@ -1,6 +1,6 @@
 {
- "built_at": 1790746969.0986948,
- "rules": "3b8f7f6d61049eaa",
+ "built_at": 1790754572.4345448,
+ "rules": "e843b9478a3a0f14",
  "schema": 1,
  "shards": [
   "014821398ee71590",
@@ -52,6 +52,7 @@
   "1644d790484ee607",
   "1807cfe1129afbcb",
   "1859de2407f463d3",
+  "192722e30839ee70",
   "19a5e0535349f041",
   "1a0660b16359cd4e",
   "1a582126f6eda62d",
@@ -63,11 +64,13 @@
   "1cffc0daf3b67f01",
   "1d34ee58ede3a0bf",
   "1d43afa0647bccdc",
+  "1d497a2fcb7d4cb9",
   "1d5bc29adcc2381d",
   "1d8cbde68445ada1",
   "1dba9e6d744bd66a",
   "1e42defaef847317",
   "1e6fbc1ca2895d76",
+  "1ec803a76f708532",
   "1ede41facd56dfaf",
   "1fc80015fef8f496",
   "1fd5189051951e18",
@@ -98,6 +101,7 @@
   "2cf3c66375b972df",
   "2d54d3d9388e4838",
   "2e0fb4850508b13a",
+  "2e1a4c960c918c6a",
   "2e5ed7c2b8a5ab92",
   "2fadf1080565c151",
   "2fcaee2ca20cee1c",
@@ -166,6 +170,7 @@
   "4b04dc77aa774a85",
   "4b4b852df3d60ecf",
   "4bb23fa7fc71e8e6",
+  "4bcd3ad0a525395b",
   "4c13817061e1c273",
   "4c3ca323b79f1b9a",
   "4c728033d75bd9ae",
@@ -210,6 +215,7 @@
   "5f8874d6932d3d57",
   "5f8af4054ce9d33e",
   "5f8be84ae1fb132b",
+  "6011d4134ae994bb",
   "607287d46a581769",
   "60c6eecd8caa0311",
   "60c990efea79e377",
@@ -300,6 +306,8 @@
   "85d3d9372d2e9052",
   "867c15787f9ca399",
   "8706c5ba422223de",
+  "88080cb178de5fe4",
+  "89086fb958d9296d",
   "8a2e1912c97c54fc",
   "8a37904caf3129da",
   "8a6d0c824962f92f",
@@ -386,6 +394,7 @@
   "b0e342aea5d2fb10",
   "b11e35a70bbc221d",
   "b185d1ada689297e",
+  "b1935fafce309235",
   "b238138c72602d82",
   "b2df5f7d6179c964",
   "b2dfbc4e15d13108",
@@ -423,6 +432,7 @@
   "bf4992ffe7a9fa15",
   "bfb7f04fd3be5b8b",
   "c0309e3905fec60b",
+  "c03318dc041dd975",
   "c0e122fa3f6dcf6c",
   "c0ed725c25677d2a",
   "c17555982f44bf82",
@@ -434,6 +444,7 @@
   "c391fd6563b1fb42",
   "c3e7b2768ac21cbd",
   "c409c083a5edd25c",
+  "c421573c9d2055b2",
   "c4a392ce13e82bc9",
   "c6718159121006b4",
   "c763cc93bbe36fe8",
@@ -473,6 +484,7 @@
   "d6db231077bd31d9",
   "d70171c14d349b09",
   "d7eb2f0203fa0b8a",
+  "d8cc418d469c43fa",
   "d978c7e7c8e5136f",
   "da0098092dc05ae2",
   "da2a2d36d2861e49",
@@ -550,6 +562,7 @@
   "fb1d9d8777d41ddf",
   "fb335aaba990af67",
   "fb3b9a7a8be15ad5",
+  "fb799408c6e934da",
   "fc1c17c97f906671",
   "fc1f625f7770f6e3",
   "fc37d2cc2a73ff95",
@@ -563,10 +576,10 @@
   "per_move": 20
  },
  "stats": {
-  "pairs": 44134,
-  "source_pairs": 306362,
-  "source_tracks": 554,
-  "tracks": 554
+  "pairs": 45799,
+  "source_pairs": 320922,
+  "source_tracks": 567,
+  "tracks": 567
  },
  "tracks": {
   "014821398ee71590": {
@@ -691,7 +704,7 @@
    "bpm": 139.98,
    "duration": 150.38408163265305,
    "key": "7B",
-   "level": 5,
+   "level": 6,
    "name": "Bairan – Animated Love Story ｜ Banjaare (Official Video)",
    "stems": true
   },
@@ -720,7 +733,7 @@
    "key": "8B",
    "level": null,
    "name": "Circles",
-   "stems": false
+   "stems": true
   },
   "097dd2030ba26c8d": {
    "artist": "taylor swift",
@@ -1010,6 +1023,15 @@
    "name": "Black Coffee & David Guetta - Drive feat. Delilah Montagu (Official Video) [Ultra Music]",
    "stems": true
   },
+  "192722e30839ee70": {
+   "artist": "usher",
+   "bpm": 105.01,
+   "duration": 250.09056689342404,
+   "key": "9A",
+   "level": null,
+   "name": "Usher - Yeah!",
+   "stems": true
+  },
   "19a5e0535349f041": {
    "artist": "anyma",
    "bpm": 129.99,
@@ -1071,7 +1093,7 @@
    "key": "9B",
    "level": null,
    "name": "Spinal Scratch",
-   "stems": false
+   "stems": true
   },
   "1cf2704ed35730f5": {
    "artist": "daft punk",
@@ -1109,6 +1131,15 @@
    "name": "Akon - Chammak Challo",
    "stems": true
   },
+  "1d497a2fcb7d4cb9": {
+   "artist": "side effects",
+   "bpm": 119.99,
+   "duration": 197.1592290249433,
+   "key": "11B",
+   "level": null,
+   "name": "Side Effects",
+   "stems": true
+  },
   "1d5bc29adcc2381d": {
    "artist": "lover： diljit dosanjh (official audio) intense ｜ raj ranjodh ｜ moonchild era ｜ latest song 2021",
    "bpm": 120.0,
@@ -1134,7 +1165,7 @@
    "key": "12A",
    "level": null,
    "name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
-   "stems": false
+   "stems": true
   },
   "1e42defaef847317": {
    "artist": "jenia tarsol",
@@ -1152,6 +1183,15 @@
    "key": "11B",
    "level": null,
    "name": "Laura & The Comrats Live - Rise",
+   "stems": true
+  },
+  "1ec803a76f708532": {
+   "artist": "dj mehdi",
+   "bpm": 122.98,
+   "duration": 64.45333333333333,
+   "key": "8B",
+   "level": 3,
+   "name": "DJ Mehdi - Signatune",
    "stems": true
   },
   "1ede41facd56dfaf": {
@@ -1231,7 +1271,7 @@
    "bpm": 98.07,
    "duration": 204.70716553287983,
    "key": "2A",
-   "level": null,
+   "level": 4,
    "name": "Panjabi MC - Mundian To Bach Ke (original radio edit)",
    "stems": true
   },
@@ -1312,7 +1352,7 @@
    "bpm": 99.93,
    "duration": 415.6256235827664,
    "key": "5B",
-   "level": 2,
+   "level": 1,
    "name": "Diana Ross ANMHE track no vocals",
    "stems": true
   },
@@ -1321,9 +1361,9 @@
    "bpm": 174.0,
    "duration": 222.76068027210886,
    "key": "7A",
-   "level": null,
+   "level": 8,
    "name": "Fred again.. - leavemealone (Nia Archives Remix)",
-   "stems": false
+   "stems": true
   },
   "2864a2100b6fb57d": {
    "artist": "fred again..",
@@ -1424,6 +1464,15 @@
    "name": "Prospa - Don't Stop (SCRIPT Remix)",
    "stems": true
   },
+  "2e1a4c960c918c6a": {
+   "artist": "lloyd",
+   "bpm": 136.94,
+   "duration": 322.6645351473923,
+   "key": "8A",
+   "level": null,
+   "name": "Lloyd - Southside",
+   "stems": true
+  },
   "2e5ed7c2b8a5ab92": {
    "artist": "joshlane",
    "bpm": 129.19921875,
@@ -1494,7 +1543,7 @@
    "key": "9A",
    "level": null,
    "name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
-   "stems": false
+   "stems": true
   },
   "325530ff2307964a": {
    "artist": "stardust",
@@ -1530,7 +1579,7 @@
    "key": "5A",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #7]",
-   "stems": false
+   "stems": true
   },
   "33422baf42270134": {
    "artist": "diljit dosanjh",
@@ -1575,7 +1624,7 @@
    "key": "8A",
    "level": null,
    "name": "Nick Matthew, Valano - Celestial Pulse (unreleased) - ID [set cut sL16rh73r-M #7]",
-   "stems": false
+   "stems": true
   },
   "35a302716faa6e0e": {
    "artist": "argy",
@@ -1629,7 +1678,7 @@
    "key": "7B",
    "level": null,
    "name": "Daft Punk - Crescendolls (MPH edit)",
-   "stems": false
+   "stems": true
   },
   "37b12d6de2fa60ed": {
    "artist": "sg lewis",
@@ -1645,7 +1694,7 @@
    "bpm": 147.99,
    "duration": 172.51269841269843,
    "key": "1A",
-   "level": null,
+   "level": 3,
    "name": "Diljit Dosanjh Ft. Badshah - Proper Patola (Official Full Audio) HQ 2018",
    "stems": true
   },
@@ -1816,7 +1865,7 @@
    "bpm": 128.0,
    "duration": 259.7973696145125,
    "key": "7A",
-   "level": 6,
+   "level": 7,
    "name": "PACS & Ruiz (BR) - No Control",
    "stems": true
   },
@@ -1962,7 +2011,7 @@
    "key": "7A",
    "level": null,
    "name": "Joy Orbison - flight fm",
-   "stems": false
+   "stems": true
   },
   "49fe280597b8a19b": {
    "artist": "daft punk",
@@ -1971,7 +2020,7 @@
    "key": "9A",
    "level": null,
    "name": "Daft Punk - Giorgio by Moroder",
-   "stems": false
+   "stems": true
   },
   "4a297d5e76746e86": {
    "artist": "julia linkogel",
@@ -2036,6 +2085,15 @@
    "name": "Rage Against The Machine - Testify [EPIC (SONY BMG)]",
    "stems": true
   },
+  "4bcd3ad0a525395b": {
+   "artist": "nina kraviz",
+   "bpm": 117.01,
+   "duration": 421.7556916099773,
+   "key": "1B",
+   "level": null,
+   "name": "Nina Kraviz - Love Or Go",
+   "stems": true
+  },
   "4c13817061e1c273": {
    "artist": "guru randhawa： lahore audio song ｜ bhushan kumar ｜ vee ｜ directorgifty ｜ t-series",
    "bpm": 129.36,
@@ -2097,7 +2155,7 @@
    "key": "11A",
    "level": null,
    "name": "Hackney Pigeon (Sammy Virji VIP)",
-   "stems": false
+   "stems": true
   },
   "4eaf109a6e8f8068": {
    "artist": "dom dolla",
@@ -2149,7 +2207,7 @@
    "bpm": 124.0,
    "duration": 356.20267573696145,
    "key": "11A",
-   "level": null,
+   "level": 10,
    "name": "Martim Rola & David Mackay - Sunday Sunrise [ANJUNADEEP]",
    "stems": true
   },
@@ -2194,7 +2252,7 @@
    "bpm": 123.02,
    "duration": 459.68548752834465,
    "key": "8B",
-   "level": 8,
+   "level": 9,
    "name": "Ben Böhmer - After Earth",
    "stems": true
   },
@@ -2230,7 +2288,7 @@
    "bpm": 89.13,
    "duration": 162.66743764172335,
    "key": "6A",
-   "level": 6,
+   "level": 7,
    "name": "Four Tet - Two Thousand and Seventeen (Fred V Bootleg)",
    "stems": true
   },
@@ -2349,7 +2407,7 @@
    "key": "3B",
    "level": null,
    "name": "Daft Punk - Rollin' & Scratchin'",
-   "stems": false
+   "stems": true
   },
   "5d6cdea9d108e32c": {
    "artist": "enai",
@@ -2385,7 +2443,7 @@
    "key": "3A",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #56]",
-   "stems": false
+   "stems": true
   },
   "5ef32724cc89640e": {
    "artist": "nils frahm",
@@ -2430,6 +2488,15 @@
    "key": "8B",
    "level": null,
    "name": "Julien Baker - ＂Appointments＂ (Official Video)",
+   "stems": true
+  },
+  "6011d4134ae994bb": {
+   "artist": "salome",
+   "bpm": 142.3,
+   "duration": 235.57809523809524,
+   "key": "7B",
+   "level": null,
+   "name": "Salome",
    "stems": true
   },
   "607287d46a581769": {
@@ -2574,7 +2641,7 @@
    "key": "11A",
    "level": null,
    "name": "Daft Punk - Touch",
-   "stems": false
+   "stems": true
   },
   "66eed068a1ca6d82": {
    "artist": "hasan raheem",
@@ -2628,7 +2695,7 @@
    "key": "6A",
    "level": null,
    "name": "Daft Punk - Technologic",
-   "stems": false
+   "stems": true
   },
   "688efe5619bfdbe0": {
    "artist": "ruback",
@@ -2788,9 +2855,9 @@
    "bpm": 86.88,
    "duration": 423.59006802721086,
    "key": "9A",
-   "level": null,
+   "level": 6,
    "name": "Serious Sounds (VIP)",
-   "stems": false
+   "stems": true
   },
   "70f42ce6598733d8": {
    "artist": "odesza",
@@ -2844,7 +2911,7 @@
    "key": "4A",
    "level": null,
    "name": "Mabe",
-   "stems": false
+   "stems": true
   },
   "71d16e6e7144ae32": {
    "artist": "dusty kid",
@@ -2952,7 +3019,7 @@
    "key": "1A",
    "level": null,
    "name": "Argy, Cay - ID [set cut sL16rh73r-M #6]",
-   "stems": false
+   "stems": true
   },
   "790bf91727578b10": {
    "artist": "french montana",
@@ -3033,7 +3100,7 @@
    "key": "9B",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #36]",
-   "stems": false
+   "stems": true
   },
   "7c76fe9537ed1c87": {
    "artist": "the last ride",
@@ -3159,7 +3226,7 @@
    "key": "5A",
    "level": null,
    "name": "Frank Ocean - Chanel",
-   "stems": false
+   "stems": true
   },
   "8419b357cbb818d4": {
    "artist": "bittermind",
@@ -3242,6 +3309,24 @@
    "name": "Backstreet Boys - Everybody (Backstreet's Back) (Official HD Video)",
    "stems": true
   },
+  "88080cb178de5fe4": {
+   "artist": "martin garrix",
+   "bpm": 128.65,
+   "duration": 231.68875283446712,
+   "key": "11A",
+   "level": null,
+   "name": "Martin Garrix Feat. Bonn - High On Life (audio)",
+   "stems": true
+  },
+  "89086fb958d9296d": {
+   "artist": "1991",
+   "bpm": 123.0,
+   "duration": 210.48893424036282,
+   "key": "4A",
+   "level": null,
+   "name": "1991",
+   "stems": true
+  },
   "8a2e1912c97c54fc": {
    "artist": "lakk 28 kudi da diljit",
    "bpm": 125.0,
@@ -3258,7 +3343,7 @@
    "key": "8A",
    "level": null,
    "name": "Te Estoy Correteando",
-   "stems": false
+   "stems": true
   },
   "8a6d0c824962f92f": {
    "artist": "rick astley",
@@ -3346,7 +3431,7 @@
    "bpm": 130.0,
    "duration": 265.06743764172336,
    "key": "6A",
-   "level": null,
+   "level": 8,
    "name": "Lehmber Hussainpuri - Sadi Gali",
    "stems": true
   },
@@ -3445,9 +3530,9 @@
    "bpm": 125.0,
    "duration": 171.7348299319728,
    "key": "9B",
-   "level": null,
+   "level": 5,
    "name": "Femi",
-   "stems": false
+   "stems": true
   },
   "9548c6c4b808d9e8": {
    "artist": "fred again..",
@@ -3544,7 +3629,7 @@
    "bpm": 128.0,
    "duration": 236.04249433106577,
    "key": "8B",
-   "level": null,
+   "level": 2,
    "name": "CARIBOU - Can't Do Without You",
    "stems": true
   },
@@ -3717,7 +3802,7 @@
    "key": "10A",
    "level": null,
    "name": "Khåen - ID [set cut N_GfH09iP9c #30]",
-   "stems": false
+   "stems": true
   },
   "a100545d4e56f401": {
    "artist": "burial",
@@ -3744,7 +3829,7 @@
    "key": "6B",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #11]",
-   "stems": false
+   "stems": true
   },
   "a3d6c11341141e4b": {
    "artist": "boards of canada",
@@ -3807,7 +3892,7 @@
    "key": "6A",
    "level": null,
    "name": "Rob Dougan - Clubbed To Death",
-   "stems": false
+   "stems": true
   },
   "a5fcbc7987a0e252": {
    "artist": "tanchiky 「energy synergy matrix ｌｏｎｇ」",
@@ -3924,7 +4009,7 @@
    "key": "6A",
    "level": null,
    "name": "Fred again.. & Skrillex & Four Tet - Baby again..",
-   "stems": false
+   "stems": true
   },
   "ab1453c21e1da556": {
    "artist": "a walk",
@@ -3967,7 +4052,7 @@
    "bpm": 128.01,
    "duration": 184.7253514739229,
    "key": "3B",
-   "level": 7,
+   "level": 8,
    "name": "Cassian - SOS",
    "stems": true
   },
@@ -4016,6 +4101,15 @@
    "name": "Strangers",
    "stems": true
   },
+  "b1935fafce309235": {
+   "artist": "stop&watch",
+   "bpm": 153.5,
+   "duration": 304.0305215419501,
+   "key": "6A",
+   "level": null,
+   "name": "stop&watch",
+   "stems": true
+  },
   "b238138c72602d82": {
    "artist": "benny benassi",
    "bpm": 130.0,
@@ -4048,7 +4142,7 @@
    "bpm": 103.99,
    "duration": 265.7707029478458,
    "key": "2A",
-   "level": null,
+   "level": 6,
    "name": "Sunidhi Chauhan - Ainvayi Ainvayi",
    "stems": true
   },
@@ -4104,7 +4198,7 @@
    "key": "8B",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
-   "stems": false
+   "stems": true
   },
   "b55ff91738781e86": {
    "artist": "lane 8",
@@ -4140,7 +4234,7 @@
    "key": "3B",
    "level": null,
    "name": "(Sultan + Shepard) - ID [set cut N_GfH09iP9c #61]",
-   "stems": false
+   "stems": true
   },
   "b7f9741fda1d55c2": {
    "artist": "backstreet boys",
@@ -4284,7 +4378,7 @@
    "key": "5B",
    "level": null,
    "name": "ANMHE",
-   "stems": false
+   "stems": true
   },
   "bdaca2491f8c2451": {
    "artist": "four tet",
@@ -4347,6 +4441,15 @@
    "key": "1A",
    "level": 10,
    "name": "Lane 8 - Little By Little",
+   "stems": true
+  },
+  "c03318dc041dd975": {
+   "artist": "break my heart",
+   "bpm": 113.0,
+   "duration": 221.82022675736962,
+   "key": "9A",
+   "level": 4,
+   "name": "Break My Heart",
    "stems": true
   },
   "c0e122fa3f6dcf6c": {
@@ -4448,6 +4551,15 @@
    "name": "Java Lee - Breathe (Halley Seidel Overmix)",
    "stems": true
   },
+  "c421573c9d2055b2": {
+   "artist": "dylan brady",
+   "bpm": 112.0,
+   "duration": 179.81868480725623,
+   "key": "5B",
+   "level": null,
+   "name": "Dylan Brady - Needle Guy",
+   "stems": true
+  },
   "c4a392ce13e82bc9": {
    "artist": "anyma",
    "bpm": 128.0,
@@ -4498,7 +4610,7 @@
    "bpm": 124.0,
    "duration": 218.000589569161,
    "key": "11A",
-   "level": null,
+   "level": 7,
    "name": "Argy, Son of Son - Faust",
    "stems": true
   },
@@ -4608,7 +4720,7 @@
    "key": "1A",
    "level": null,
    "name": "Daft Punk - Doin' it Right",
-   "stems": false
+   "stems": true
   },
   "d073458c626990eb": {
    "artist": "50 cent",
@@ -4687,7 +4799,7 @@
    "bpm": 130.44,
    "duration": 300.0134693877551,
    "key": "11A",
-   "level": null,
+   "level": 5,
    "name": "DJ LaiKa - Sounds From Heaven",
    "stems": true
   },
@@ -4797,7 +4909,16 @@
    "key": "8B",
    "level": null,
    "name": "Animal Collective - My Girls",
-   "stems": false
+   "stems": true
+  },
+  "d8cc418d469c43fa": {
+   "artist": "daft punk",
+   "bpm": 111.2,
+   "duration": 328.6901133786848,
+   "key": "6A",
+   "level": null,
+   "name": "Daft Punk - Da Funk (Official Audio)",
+   "stems": true
   },
   "d978c7e7c8e5136f": {
    "artist": "promise you",
@@ -4896,7 +5017,7 @@
    "key": "7A",
    "level": null,
    "name": "Fred again.. - places to be",
-   "stems": false
+   "stems": true
   },
   "dd87304d3660c5d1": {
    "artist": "monolink",
@@ -5112,7 +5233,7 @@
    "key": "10A",
    "level": null,
    "name": "Omnya - Reflections (unreleased) - ID [set cut sL16rh73r-M #5]",
-   "stems": false
+   "stems": true
   },
   "ecf6f2e2935842f0": {
    "artist": "the celestial suite dark matter",
@@ -5130,7 +5251,7 @@
    "key": "8B",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #21]",
-   "stems": false
+   "stems": true
   },
   "ed5ad2c2a8470c5b": {
    "artist": "strip light hate",
@@ -5148,7 +5269,7 @@
    "key": "12A",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #47]",
-   "stems": false
+   "stems": true
   },
   "edd0eca809d1078c": {
    "artist": "orbital chime",
@@ -5184,7 +5305,7 @@
    "key": "6B",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #8]",
-   "stems": false
+   "stems": true
   },
   "ee4922440f021919": {
    "artist": "caroline polachek",
@@ -5317,7 +5438,7 @@
    "bpm": 111.01,
    "duration": 310.2999092970522,
    "key": "12A",
-   "level": null,
+   "level": 2,
    "name": "Roniit - Fade To Blue (Official Music Video)",
    "stems": true
   },
@@ -5391,7 +5512,7 @@
    "key": "8B",
    "level": null,
    "name": "Pulse Z",
-   "stems": false
+   "stems": true
   },
   "f90b4db6c63f8109": {
    "artist": "argy",
@@ -5427,7 +5548,7 @@
    "key": "10B",
    "level": null,
    "name": "808 State",
-   "stems": false
+   "stems": true
   },
   "f9cdc6e4109416a9": {
    "artist": "madeon",
@@ -5492,6 +5613,15 @@
    "name": "Kevin Lyttle - Turn Me On",
    "stems": true
   },
+  "fb799408c6e934da": {
+   "artist": "2009",
+   "bpm": 153.5,
+   "duration": 347.9866666666667,
+   "key": "11A",
+   "level": null,
+   "name": "2009",
+   "stems": true
+  },
   "fc1c17c97f906671": {
    "artist": "bts with my cellist- sophie nash",
    "bpm": 99.99,
@@ -5526,7 +5656,7 @@
    "key": "7A",
    "level": null,
    "name": "ID (unreleased) - ID [set cut N_GfH09iP9c #18]",
-   "stems": false
+   "stems": true
   },
   "ff7ac94a913b89af": {
    "artist": "argy",
@@ -5553,7 +5683,7 @@
    "key": "2B",
    "level": null,
    "name": "Daft Punk - Teachers",
-   "stems": false
+   "stems": true
   }
  }
 }

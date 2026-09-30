@@ -1,5 +1,5 @@
 {
- "created": 1790735039.1390028,
+ "created": 1790754337.5721211,
  "name": "studied-set-n_gfh09ip9c",
  "note": "studied set Lane 8 - Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) in set order: 44 of 62 songs; skipped 19: #2 Sultan + Shepard - Start Again [THIS NEVER HAPPENED] (not in the library); #6 Josh & Sam Who Are Twins - Jonquil (not in the library); #9 Yuvèe - Helios (not in the library); #10 Gai Barone - Glass Nations [BARRA UNO] (not in the library); #16 Chase Astate - Channel Clear (not in the library); #17 Peter Pizzutelli ft. Tushwoski - Yeah Huh (not in the library); #19 Boxer - E",
  "parent": null,
@@ -60,13 +60,14 @@
    "b": "32e128823c58b81e",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #7]",
    "b_time": 14.814,
+   "combo": "mashup",
    "n": 4,
-   "recipe": "Long Blend",
+   "recipe": "Mashup → Transition",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #7, atlas plan; gap: skipped Josh & Sam Who Are Twins - Jonquil",
-   "works": 84
+   "works": 86
   },
   {
    "a": "32e128823c58b81e",
@@ -74,45 +75,120 @@
    "a_time": 123.298,
    "b": "ee2838829ac1240c",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #8]",
-   "b_time": 66.107,
+   "b_time": 81.804,
    "n": 5,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #8, atlas plan",
-   "works": 72
+   "works": 74
   },
   {
    "a": "ee2838829ac1240c",
    "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #8]",
-   "a_time": 240.03,
+   "a_time": 174.707,
    "b": "a260537e26e1e84e",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #11]",
    "b_time": 5.062,
+   "combo": "merge",
+   "merge": {
+    "M": 32,
+    "aT": 174.707,
+    "bT": 5.062,
+    "hold_bars": 30,
+    "hold_phrases": 4,
+    "phases": {
+     "handover": {
+      "at_bar": 32,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0
+     },
+     "hold": {
+      "bars": 30,
+      "from_bar": 2,
+      "phrases": 4,
+      "seconds": 58.1,
+      "to_bar": 32
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "B drums + B bass + A vox + A synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "b",
+      "drums": "b",
+      "other": "a",
+      "vocals": "a"
+     },
+     "label": "B drums + B bass + A vox + A synth",
+     "score": 95.1
+    }
+   },
    "n": 6,
-   "recipe": "Echo Out",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #11, atlas plan; gap: skipped Yuvèe - Helios, Gai Barone - Glass Nations [BARRA UNO]",
-   "works": 75
+   "works": 91
   },
   {
    "a": "a260537e26e1e84e",
    "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #11]",
-   "a_time": 241.191,
+   "a_time": 190.868,
    "b": "6fd5ec1b959fb72a",
    "b_name": "Johannes Brecht - Chords In The Shadows",
-   "b_time": 13.607,
-   "combo": "studied",
+   "b_time": 44.582,
+   "combo": "merge",
+   "merge": {
+    "M": 32,
+    "aT": 190.868,
+    "bT": 44.582,
+    "hold_bars": 30,
+    "hold_phrases": 4,
+    "phases": {
+     "handover": {
+      "at_bar": 32,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0.1
+     },
+     "hold": {
+      "bars": 30,
+      "from_bar": 2,
+      "phrases": 4,
+      "seconds": 58.1,
+      "to_bar": 32
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + B vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "b"
+     },
+     "label": "A drums + A bass + B vox + B synth",
+     "score": 107.6
+    }
+   },
    "n": 7,
-   "recipe": "Echo Out",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Lane 8 #12, atlas plan Echo Out",
-   "works": 76
+   "why": "studied set: Lane 8 #12, atlas plan Stem Merge",
+   "works": 86
   },
   {
    "a": "6fd5ec1b959fb72a",
@@ -170,12 +246,12 @@
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #18]",
    "b_time": 8.243,
    "n": 11,
-   "recipe": "Echo Out",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #18, atlas plan; gap: skipped Chase Astate - Channel Clear, Peter Pizzutelli ft. Tushwoski - Yeah Huh",
-   "works": 80
+   "works": 85
   },
   {
    "a": "fc77f725ad4ff749",
@@ -183,30 +259,68 @@
    "a_time": 239.421,
    "b": "ed1e9dda601b5529",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #21]",
-   "b_time": 7.268,
+   "b_time": 68.731,
+   "combo": "drop_swap",
    "n": 12,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #21, atlas plan; gap: skipped Boxer - Ease Yourself Back Into Consciousness [HOUSTRIKE], Rules & Coldabank & Shya - Nothing Left",
-   "works": 72
+   "works": 78
   },
   {
    "a": "ed1e9dda601b5529",
    "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #21]",
-   "a_time": 207.447,
+   "a_time": 192.099,
    "b": "9046e5b644bd44db",
    "b_name": "Chris M - Rhapsody (Quantum Light Music Remix)",
-   "b_time": 122.926,
-   "combo": "studied",
+   "b_time": 184.366,
+   "combo": "merge",
+   "merge": {
+    "M": 8,
+    "aT": 192.099,
+    "bT": 184.366,
+    "hold_bars": 6,
+    "hold_phrases": 1,
+    "phases": {
+     "handover": {
+      "at_bar": 8,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0.07
+     },
+     "hold": {
+      "bars": 6,
+      "from_bar": 2,
+      "phrases": 1,
+      "seconds": 11.5,
+      "to_bar": 8
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + B vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "b"
+     },
+     "label": "A drums + A bass + B vox + B synth",
+     "score": 107.5
+    }
+   },
    "n": 13,
-   "recipe": "Long Blend",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Lane 8 #22, atlas plan Long Blend",
-   "works": 82
+   "why": "studied set: Lane 8 #22, atlas plan Stem Merge",
+   "works": 85
   },
   {
    "a": "9046e5b644bd44db",
@@ -214,30 +328,67 @@
    "a_time": 215.086,
    "b": "b534b3c878ca25de",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
-   "b_time": 18.785,
-   "combo": "studied",
+   "b_time": 34.157,
+   "combo": "merge",
+   "merge": {
+    "M": 48,
+    "aT": 215.086,
+    "bT": 34.157,
+    "hold_bars": 46,
+    "hold_phrases": 6,
+    "phases": {
+     "handover": {
+      "at_bar": 48,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0
+     },
+     "hold": {
+      "bars": 46,
+      "from_bar": 2,
+      "phrases": 6,
+      "seconds": 88.3,
+      "to_bar": 48
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + B vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "b"
+     },
+     "label": "A drums + A bass + B vox + B synth",
+     "score": 100.7
+    }
+   },
    "n": 14,
-   "recipe": "Long Blend",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Lane 8 #23, atlas plan Long Blend",
-   "works": 82
+   "why": "studied set: Lane 8 #23, atlas plan Stem Merge",
+   "works": 92
   },
   {
    "a": "b534b3c878ca25de",
    "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #23]",
-   "a_time": 203.593,
+   "a_time": 126.317,
    "b": "52f0768190ec31d5",
    "b_name": "Sam Shure - Qualified [MAGNIFIK]",
    "b_time": 30.906,
    "n": 15,
-   "recipe": "Bass Swap",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #25, atlas plan; gap: skipped Kj Cuts & Kevin Knapp - What Don't",
-   "works": 77
+   "works": 82
   },
   {
    "a": "52f0768190ec31d5",
@@ -276,14 +427,52 @@
    "a_time": 126.27,
    "b": "a0f7a299883a8ee1",
    "b_name": "Khåen - ID [set cut N_GfH09iP9c #30]",
-   "b_time": 30.372,
+   "b_time": 14.373,
+   "combo": "merge",
+   "merge": {
+    "M": 24,
+    "aT": 126.27,
+    "bT": 14.373,
+    "hold_bars": 22,
+    "hold_phrases": 3,
+    "phases": {
+     "handover": {
+      "at_bar": 24,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0.16
+     },
+     "hold": {
+      "bars": 22,
+      "from_bar": 2,
+      "phrases": 3,
+      "seconds": 42.6,
+      "to_bar": 24
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + B vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "b"
+     },
+     "label": "A drums + A bass + B vox + B synth",
+     "score": 106.6
+    }
+   },
    "n": 18,
-   "recipe": "Long Blend",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: Lane 8 #30, atlas plan; gap: skipped Amtrac vs. Pink Floyd - Love Always Had A Way / Welcome To The Machine (Lane 8 Mashup)",
-   "works": 72
+   "works": 83
   },
   {
    "a": "a0f7a299883a8ee1",
@@ -362,7 +551,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #36, atlas plan Long Blend",
-   "works": 70
+   "works": 74
   },
   {
    "a": "7c59bf5233a273d6",
@@ -372,12 +561,12 @@
    "b_name": "Digitalism - Space Invaders",
    "b_time": 15.139,
    "n": 24,
-   "recipe": "Echo Out",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Lane 8 #38, atlas plan; gap: skipped Kasbo - Falling Slow [THIS NEVER HAPPENED]",
-   "works": 77
+   "works": 82
   },
   {
    "a": "9c0c11a203d3b4ac",
@@ -584,17 +773,55 @@
   {
    "a": "ed92527d40adf09a",
    "a_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #47]",
-   "a_time": 192.54,
+   "a_time": 176.959,
    "b": "d4548fe3f860e41c",
    "b_name": "Lane 8 & Cornelius SA & Alan Green - Sol [THIS NEVER HAPPENED]",
-   "b_time": 97.593,
+   "b_time": 81.85,
+   "combo": "merge",
+   "merge": {
+    "M": 16,
+    "aT": 176.959,
+    "bT": 81.85,
+    "hold_bars": 14,
+    "hold_phrases": 2,
+    "phases": {
+     "handover": {
+      "at_bar": 16,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0
+     },
+     "hold": {
+      "bars": 14,
+      "from_bar": 2,
+      "phrases": 2,
+      "seconds": 26.9,
+      "to_bar": 16
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + A vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "a"
+     },
+     "label": "A drums + A bass + A vox + B synth",
+     "score": 96.5
+    }
+   },
    "n": 33,
-   "recipe": "Long Blend",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: Lane 8 #49, atlas plan; gap: skipped Lane 8 & Rae Morris - Something In The Air [THIS NEVER HAPPENED]",
-   "works": 79
+   "works": 90
   },
   {
    "a": "d4548fe3f860e41c",
@@ -666,14 +893,14 @@
    "a_time": 128.662,
    "b": "5e6daed10afc0999",
    "b_name": "ID (unreleased) - ID [set cut N_GfH09iP9c #56]",
-   "b_time": 73.63,
+   "b_time": 104.35,
    "n": 38,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: Lane 8 #56, atlas plan; gap: skipped Maz & Andot & Ginton feat. Layefa & Bhaskar vs. Mano Le Tough & DJ Koze - Jolie Fille vs. Real, You Know?! (Lane 8 Mashup), Juliann - All I Do [PARANORMAL]",
-   "works": 76
+   "works": 74
   },
   {
    "a": "5e6daed10afc0999",
@@ -769,28 +996,65 @@
    "b_time": 15.186,
    "combo": "studied",
    "n": 42,
-   "recipe": "Echo Out",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Lane 8 #61, atlas plan Echo Out",
-   "works": 72
+   "why": "studied set: Lane 8 #61, atlas plan Long Blend",
+   "works": 78
   },
   {
    "a": "b7c10f86b7a4f711",
    "a_name": "(Sultan + Shepard) - ID [set cut N_GfH09iP9c #61]",
-   "a_time": 200.249,
+   "a_time": 153.437,
    "b": "4ff4c49b754fbb42",
    "b_name": "Jonathan Kaspar - Where Are You [THESE EYES]",
-   "b_time": 103.515,
-   "combo": "studied",
+   "b_time": 54.706,
+   "combo": "merge",
+   "merge": {
+    "M": 16,
+    "aT": 153.437,
+    "bT": 54.706,
+    "hold_bars": 14,
+    "hold_phrases": 2,
+    "phases": {
+     "handover": {
+      "at_bar": 16,
+      "bars": 8,
+      "sub_overlap_bars": 0,
+      "vocal_overlap": 0.16
+     },
+     "hold": {
+      "bars": 14,
+      "from_bar": 2,
+      "phrases": 2,
+      "seconds": 26.9,
+      "to_bar": 16
+     },
+     "merge_start": {
+      "at_bar": 0,
+      "bars": 2,
+      "combo": "A drums + A bass + A vox + B synth"
+     }
+    },
+    "pick": {
+     "combo": {
+      "bass": "a",
+      "drums": "a",
+      "other": "b",
+      "vocals": "a"
+     },
+     "label": "A drums + A bass + A vox + B synth",
+     "score": 93.7
+    }
+   },
    "n": 43,
-   "recipe": "Bass Swap",
+   "recipe": "Stem Merge",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Lane 8 #62, atlas plan Bass Swap",
-   "works": 80
+   "why": "studied set: Lane 8 #62, atlas plan Stem Merge",
+   "works": 84
   }
  ],
  "title": "Lane 8 @ Summer 2026 Mixtape (Live from the Mishawaka, Bellvue CO) (studied set, 44 songs)",

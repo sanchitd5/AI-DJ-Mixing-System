@@ -1,5 +1,5 @@
 {
- "created": 1790729111.473207,
+ "created": 1790754337.584171,
  "name": "studied-gff8jzbvwvm-31",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 31), techniques none heard",
  "parent": null,
@@ -15,12 +15,12 @@
    "b_time": 2.694,
    "combo": "studied",
    "n": 1,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied combo: Fred again.. & Thomas Bangalter #31, atlas plan Echo Out",
-   "works": 28
+   "why": "studied combo: Fred again.. & Thomas Bangalter #31, atlas plan Stem Bridge",
+   "works": 38
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #31: Rob Dougan - Clubbed To Death → Gil Scott-H",

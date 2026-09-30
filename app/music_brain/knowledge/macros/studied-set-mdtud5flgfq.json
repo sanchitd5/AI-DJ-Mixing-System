@@ -1,5 +1,5 @@
 {
- "created": 1790729111.476587,
+ "created": 1790754337.588104,
  "name": "studied-set-mdtud5flgfq",
  "note": "studied set Latin house/pop open-format set (mDtud5fLgFQ) in set order: 11 of 14 songs; skipped 4: #1 Hey Hey (wrong download); #3 Bonita (wrong download); #13 Te Estoy Correteando (not in the library); #14 Te Estoy Correteando (not in the library)",
  "parent": null,
@@ -157,12 +157,12 @@
    "b_time": 14.466,
    "combo": "studied",
    "n": 10,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Latin house/pop open-format set #16, atlas plan Echo Out",
-   "works": 51
+   "why": "studied set: Latin house/pop open-format set #16, atlas plan Stem Bridge",
+   "works": 56
   }
  ],
  "title": "Latin house/pop open-format set (mDtud5fLgFQ) (studied set, 11 songs)",

@@ -1,5 +1,5 @@
 {
- "created": 1790729111.4743,
+ "created": 1790754337.585908,
  "name": "studied-gff8jzbvwvm-48",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 48), techniques none heard",
  "parent": null,
@@ -9,18 +9,18 @@
   {
    "a": "27e8a3e50da951b1",
    "a_name": "Fred again.. - leavemealone (Nia Archives Remix)",
-   "a_time": 204.761,
+   "a_time": 100.794,
    "b": "325530ff2307964a",
    "b_name": "Stardust - Music Sounds Better With You ｜Audio HQ]",
    "b_time": 0.534,
    "combo": "studied",
    "n": 1,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied combo: Fred again.. & Thomas Bangalter #48, atlas plan Echo Out",
-   "works": 33
+   "why": "studied combo: Fred again.. & Thomas Bangalter #48, atlas plan Stem Bridge",
+   "works": 42
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #48: Fred again.. - leavemealone (Nia Archives R",

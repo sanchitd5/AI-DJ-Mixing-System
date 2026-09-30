@@ -1,5 +1,5 @@
 {
- "created": 1790746465.957174,
+ "created": 1790754337.597518,
  "name": "studied-set-sl16rh73r-m",
  "note": "studied set Argy for Cercle at Jungfraujoch - Top of Europe, Switzerland in set order: 19 of 22 songs; skipped 3: #4 Argy, Weekend Heroes - No Ones Coming (not in the library); #19 Anyma, Argy, Magnus - Higher Power (not in the library); #22 Safri Duo - Played-A-Live (no atlas pair)",
  "parent": null,
@@ -9,7 +9,7 @@
   {
    "a": "c856810defd7dc3b",
    "a_name": "Argy, Son of Son - Faust",
-   "a_time": 131.889,
+   "a_time": 69.962,
    "b": "9f1819ca2e336a35",
    "b_name": "Son of Son - Du Ska Inte",
    "b_time": 11.912,
@@ -36,7 +36,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Argy for Cercle at Jungfraujoch #3, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "bbc20151d218e6dc",
@@ -56,7 +56,7 @@
   {
    "a": "ecccdb3484d54118",
    "a_name": "Omnya - Reflections (unreleased) - ID [set cut sL16rh73r-M #5]",
-   "a_time": 170.249,
+   "a_time": 200.597,
    "b": "78c52fe173fbadae",
    "b_name": "Argy, Cay - ID [set cut sL16rh73r-M #6]",
    "b_time": 10.008,
@@ -88,18 +88,18 @@
   {
    "a": "35966bcd8e4b4228",
    "a_name": "Nick Matthew, Valano - Celestial Pulse (unreleased) - ID [set cut sL16rh73r-M #7]",
-   "a_time": 165.86,
+   "a_time": 196.093,
    "b": "1e42defaef847317",
    "b_name": "Jenia Tarsol & Jinga - Takadoom (Argy Edit)",
    "b_time": 0.604,
    "combo": "studied",
    "n": 6,
-   "recipe": "Bass Swap",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Argy for Cercle at Jungfraujoch #8, atlas plan Bass Swap",
-   "works": 77
+   "why": "studied set: Argy for Cercle at Jungfraujoch #8, atlas plan Long Blend",
+   "works": 74
   },
   {
    "a": "1e42defaef847317",
@@ -304,7 +304,7 @@
    "a_time": 134.049,
    "b": "318837279de2a8fe",
    "b_name": "Son of Son - Succession (unreleased) - ID [set cut sL16rh73r-M #20]",
-   "b_time": 72.632,
+   "b_time": 12.167,
    "n": 17,
    "recipe": "Echo Out",
    "tempo": {
@@ -322,12 +322,12 @@
    "b_time": 7.221,
    "combo": "studied",
    "n": 18,
-   "recipe": "Echo Out",
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
-   "why": "studied set: Argy for Cercle at Jungfraujoch #21, atlas plan Echo Out",
-   "works": 80
+   "why": "studied set: Argy for Cercle at Jungfraujoch #21, atlas plan Long Blend",
+   "works": 85
   }
  ],
  "title": "Argy for Cercle at Jungfraujoch @ Top of Europe, Switzerland (studied set, 19 songs)",

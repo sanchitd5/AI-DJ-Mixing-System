@@ -1,7 +1,7 @@
 {
- "created": 1790729111.4748201,
+ "created": 1790754337.5865788,
  "name": "studied-set-gff8jzbvwvm",
- "note": "studied set Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) in set order: 34 of 59 songs; skipped 25: #1 Mythologies (not in the library); #2 L'Accouchement (not in the library); #3 My House (wrong download); #13 Wildchild - Renegade Master (not in the library); #14 LFO - LFO (not in the library); #17 stop&watch (no atlas pair); #19 Dylan Brady - Needle Guy (no atlas pair); #22 Dylan Brady - Needle Guy (no atlas pair); #23 Daft Punk - Technologic (wrong download); #25 Daf",
+ "note": "studied set Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) in set order: 40 of 59 songs; skipped 19: #1 Mythologies (not in the library); #2 L'Accouchement (not in the library); #3 My House (wrong download); #13 Wildchild - Renegade Master (not in the library); #14 LFO - LFO (not in the library); #23 Daft Punk - Technologic (wrong download); #25 Daft Punk - Contact (not in the library); #27 Daft Punk - Nightvision (wrong download); #36 Daft Punk - Digital Love (not in th",
  "parent": null,
  "schema": 1,
  "source": "atlas:studied",
@@ -31,12 +31,12 @@
    "b_time": 9.799,
    "combo": "studied",
    "n": 2,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #6, atlas plan Echo Out",
-   "works": 55
+   "why": "studied set: Fred again.. & Thomas Bangalter #6, atlas plan Stem Bridge",
+   "works": 60
   },
   {
    "a": "bd9cea003f62d8b6",
@@ -47,12 +47,12 @@
    "b_time": 14.141,
    "combo": "studied",
    "n": 3,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #7, atlas plan Echo Out",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #7, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "4e014903b03c2c9b",
@@ -63,12 +63,12 @@
    "b_time": 1.927,
    "combo": "studied",
    "n": 4,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #8, atlas plan Echo Out",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #8, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "5d3d150d24856231",
@@ -92,7 +92,7 @@
    "a_time": 216.921,
    "b": "f9ba4335abc7a87f",
    "b_name": "808 State",
-   "b_time": 64.11,
+   "b_time": 79.598,
    "combo": "studied",
    "n": 6,
    "recipe": "Long Blend",
@@ -100,15 +100,15 @@
     "lock": "keylock"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #10, atlas plan Long Blend",
-   "works": 71
+   "works": 81
   },
   {
    "a": "f9ba4335abc7a87f",
    "a_name": "808 State",
-   "a_time": 234.313,
+   "a_time": 141.526,
    "b": "aa5ea3829538128d",
    "b_name": "Fred again.. & Skrillex & Four Tet - Baby again..",
-   "b_time": 79.459,
+   "b_time": 94.575,
    "combo": "studied",
    "n": 7,
    "recipe": "Echo Out",
@@ -127,12 +127,12 @@
    "b_time": 6.966,
    "combo": "studied",
    "n": 8,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #12, atlas plan Echo Out",
-   "works": 33
+   "why": "studied set: Fred again.. & Thomas Bangalter #12, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "96481c9efddd078d",
@@ -142,12 +142,12 @@
    "b_name": "Daft Punk - Crescendolls (MPH edit)",
    "b_time": 7.941,
    "n": 9,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #15, atlas plan; gap: skipped Wildchild - Renegade Master, LFO - LFO",
-   "works": 33
+   "works": 38
   },
   {
    "a": "3712c2e4183b3662",
@@ -155,45 +155,79 @@
    "a_time": 178.19,
    "b": "687fde89b2508f2a",
    "b_name": "Daft Punk - Technologic",
-   "b_time": 8.22,
+   "b_time": 38.313,
    "combo": "studied",
    "n": 10,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #16, atlas plan Long Blend",
-   "works": 71
+   "why": "studied set: Fred again.. & Thomas Bangalter #16, studied stem_intro -> Long Blend",
+   "works": 73
   },
   {
    "a": "687fde89b2508f2a",
    "a_name": "Daft Punk - Technologic",
-   "a_time": 217.919,
+   "a_time": 240.687,
+   "b": "b1935fafce309235",
+   "b_name": "stop&watch",
+   "b_time": 1.811,
+   "combo": "studied",
+   "n": 11,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #17, atlas plan Stem Bridge",
+   "works": 68
+  },
+  {
+   "a": "b1935fafce309235",
+   "a_name": "stop&watch",
+   "a_time": 240.248,
    "b": "f8db1a94f8fda597",
    "b_name": "Pulse Z",
-   "b_time": 22.338,
-   "n": 11,
-   "recipe": "Echo Out",
+   "b_time": 8.406,
+   "combo": "studied",
+   "n": 12,
+   "recipe": "Stem Bridge",
    "tempo": {
-    "lock": "keylock"
+    "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #18, atlas plan; gap: skipped stop&watch",
+   "why": "studied set: Fred again.. & Thomas Bangalter #18, atlas plan Stem Bridge",
    "works": 45
   },
   {
    "a": "f8db1a94f8fda597",
    "a_name": "Pulse Z",
    "a_time": 137.52,
-   "b": "097b045c2d5f6465",
-   "b_name": "Circles",
-   "b_time": 16.556,
-   "n": 12,
-   "recipe": "Echo Out",
+   "b": "c421573c9d2055b2",
+   "b_name": "Dylan Brady - Needle Guy",
+   "b_time": 1.231,
+   "combo": "studied",
+   "n": 13,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #20, atlas plan; gap: skipped Dylan Brady - Needle Guy",
-   "works": 58
+   "why": "studied set: Fred again.. & Thomas Bangalter #19, atlas plan Stem Bridge",
+   "works": 38
+  },
+  {
+   "a": "c421573c9d2055b2",
+   "a_name": "Dylan Brady - Needle Guy",
+   "a_time": 137.392,
+   "b": "097b045c2d5f6465",
+   "b_name": "Circles",
+   "b_time": 16.556,
+   "combo": "studied",
+   "n": 14,
+   "recipe": "Echo Out",
+   "tempo": {
+    "lock": "keylock"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #20, atlas plan Echo Out",
+   "works": 44
   },
   {
    "a": "097b045c2d5f6465",
@@ -203,7 +237,7 @@
    "b_name": "Daft Punk - Technologic",
    "b_time": 8.22,
    "combo": "studied",
-   "n": 13,
+   "n": 15,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "keylock"
@@ -214,17 +248,34 @@
   {
    "a": "687fde89b2508f2a",
    "a_name": "Daft Punk - Technologic",
-   "a_time": 217.919,
+   "a_time": 240.687,
+   "b": "c421573c9d2055b2",
+   "b_name": "Dylan Brady - Needle Guy",
+   "b_time": 1.231,
+   "combo": "studied",
+   "n": 16,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #22, atlas plan Stem Bridge",
+   "works": 60
+  },
+  {
+   "a": "c421573c9d2055b2",
+   "a_name": "Dylan Brady - Needle Guy",
+   "a_time": 137.392,
    "b": "097b045c2d5f6465",
    "b_name": "Circles",
-   "b_time": 32.554,
-   "n": 14,
+   "b_time": 16.556,
+   "combo": "studied",
+   "n": 17,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #24, atlas plan; gap: skipped Dylan Brady - Needle Guy, Daft Punk - Technologic",
-   "works": 45
+   "why": "studied set: Fred again.. & Thomas Bangalter #24, atlas plan Echo Out; gap: skipped Daft Punk - Technologic",
+   "works": 44
   },
   {
    "a": "097b045c2d5f6465",
@@ -233,13 +284,13 @@
    "b": "d7eb2f0203fa0b8a",
    "b_name": "Animal Collective - My Girls",
    "b_time": 4.644,
-   "n": 15,
-   "recipe": "Echo Out",
+   "n": 18,
+   "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #26, atlas plan; gap: skipped Daft Punk - Contact",
-   "works": 75
+   "works": 85
   },
   {
    "a": "d7eb2f0203fa0b8a",
@@ -248,7 +299,7 @@
    "b": "d028d416b69c198d",
    "b_name": "Daft Punk - Doin' it Right",
    "b_time": 36.78,
-   "n": 16,
+   "n": 19,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "pitched"
@@ -264,13 +315,13 @@
    "b_name": "Fred again.. - places to be",
    "b_time": 5.248,
    "combo": "studied",
-   "n": 17,
-   "recipe": "Echo Out",
+   "n": 20,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #29, atlas plan Echo Out",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #29, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "dd7ac424d2a2cb37",
@@ -280,13 +331,13 @@
    "b_name": "Rob Dougan - Clubbed To Death",
    "b_time": 31.509,
    "combo": "studied",
-   "n": 18,
-   "recipe": "Echo Out",
+   "n": 21,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #30, atlas plan Echo Out",
-   "works": 55
+   "why": "studied set: Fred again.. & Thomas Bangalter #30, atlas plan Stem Bridge",
+   "works": 65
   },
   {
    "a": "a5208fd82446daf1",
@@ -296,28 +347,45 @@
    "b_name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
    "b_time": 2.694,
    "combo": "studied",
-   "n": 19,
-   "recipe": "Echo Out",
+   "n": 22,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #31, atlas plan Echo Out",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #31, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "1dba9e6d744bd66a",
    "a_name": "Gil Scott-Heron - The Revolution Will Not Be Televised",
    "a_time": 171.742,
-   "b": "708bb1c1011a7ce6",
-   "b_name": "Serious Sounds (VIP)",
-   "b_time": 0.604,
-   "n": 20,
-   "recipe": "Echo Out",
+   "b": "192722e30839ee70",
+   "b_name": "Usher - Yeah!",
+   "b_time": 17.601,
+   "combo": "studied",
+   "n": 23,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #33, atlas plan; gap: skipped Usher - Yeah!",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #32, atlas plan Stem Bridge",
+   "works": 38
+  },
+  {
+   "a": "192722e30839ee70",
+   "a_name": "Usher - Yeah!",
+   "a_time": 232.091,
+   "b": "708bb1c1011a7ce6",
+   "b_name": "Serious Sounds (VIP)",
+   "b_time": 0.604,
+   "combo": "studied",
+   "n": 24,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #33, atlas plan Stem Bridge",
+   "works": 68
   },
   {
    "a": "708bb1c1011a7ce6",
@@ -327,13 +395,13 @@
    "b_name": "Daft Punk - Touch",
    "b_time": 18.46,
    "combo": "studied",
-   "n": 21,
-   "recipe": "Echo Out",
+   "n": 25,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #34, atlas plan Echo Out",
-   "works": 52
+   "why": "studied set: Fred again.. & Thomas Bangalter #34, atlas plan Stem Bridge",
+   "works": 62
   },
   {
    "a": "64dbf9f30f1f3679",
@@ -343,13 +411,13 @@
    "b_name": "Daft Punk - Giorgio by Moroder",
    "b_time": 239.792,
    "combo": "studied",
-   "n": 22,
+   "n": 26,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #35, atlas plan Long Blend",
-   "works": 66
+   "why": "studied set: Fred again.. & Thomas Bangalter #35, studied stem_intro -> Long Blend",
+   "works": 76
   },
   {
    "a": "49fe280597b8a19b",
@@ -358,13 +426,13 @@
    "b": "ffb29e98845f5802",
    "b_name": "Daft Punk - Teachers",
    "b_time": 15.116,
-   "n": 23,
-   "recipe": "Echo Out",
+   "n": 27,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #38, atlas plan; gap: skipped Daft Punk - Digital Love, Prince - Raspberry Beret",
-   "works": 28
+   "works": 38
   },
   {
    "a": "ffb29e98845f5802",
@@ -374,28 +442,44 @@
    "b_name": "Joy Orbison - flight fm",
    "b_time": 27.562,
    "combo": "studied",
-   "n": 24,
-   "recipe": "Echo Out",
+   "n": 28,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #39, atlas plan Echo Out",
-   "works": 28
+   "why": "studied set: Fred again.. & Thomas Bangalter #39, atlas plan Stem Bridge",
+   "works": 38
   },
   {
    "a": "4912379704d75559",
    "a_name": "Joy Orbison - flight fm",
    "a_time": 229.803,
-   "b": "1cf2704ed35730f5",
-   "b_name": "Daft Punk - Aerodynamic (Official Audio)",
-   "b_time": 0.372,
-   "n": 25,
-   "recipe": "Echo Out",
+   "b": "2e1a4c960c918c6a",
+   "b_name": "Lloyd - Southside",
+   "b_time": 6.478,
+   "combo": "studied",
+   "n": 29,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #43, atlas plan; gap: skipped Lloyd - Southside, Fred again.. & Swedish House Mafia - Turn On The Lights again.., Daft Punk - Harder, Better, Faster, Stronger",
-   "works": 33
+   "why": "studied set: Fred again.. & Thomas Bangalter #40, atlas plan Stem Bridge",
+   "works": 65
+  },
+  {
+   "a": "2e1a4c960c918c6a",
+   "a_name": "Lloyd - Southside",
+   "a_time": 241.221,
+   "b": "1cf2704ed35730f5",
+   "b_name": "Daft Punk - Aerodynamic (Official Audio)",
+   "b_time": 0.372,
+   "n": 30,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #43, atlas plan; gap: skipped Fred again.. & Swedish House Mafia - Turn On The Lights again.., Daft Punk - Harder, Better, Faster, Stronger",
+   "works": 62
   },
   {
    "a": "1cf2704ed35730f5",
@@ -405,7 +489,7 @@
    "b_name": "Victory Lap Five",
    "b_time": 1.765,
    "combo": "studied",
-   "n": 26,
+   "n": 31,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
@@ -421,7 +505,7 @@
    "b_name": "The Weeknd - Starboy (Audio) ft. Daft Punk",
    "b_time": 15.766,
    "combo": "studied",
-   "n": 27,
+   "n": 32,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
@@ -436,29 +520,29 @@
    "b": "27e8a3e50da951b1",
    "b_name": "Fred again.. - leavemealone (Nia Archives Remix)",
    "b_time": 3.553,
-   "n": 28,
-   "recipe": "Echo Out",
+   "n": 33,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #47, atlas plan; gap: skipped Fred again.. & Baby Keem - leavemealone",
-   "works": 60
+   "works": 70
   },
   {
    "a": "27e8a3e50da951b1",
    "a_name": "Fred again.. - leavemealone (Nia Archives Remix)",
-   "a_time": 204.761,
+   "a_time": 100.794,
    "b": "325530ff2307964a",
    "b_name": "Stardust - Music Sounds Better With You ｜Audio HQ]",
    "b_time": 0.534,
    "combo": "studied",
-   "n": 29,
-   "recipe": "Echo Out",
+   "n": 34,
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #48, atlas plan Echo Out",
-   "works": 33
+   "why": "studied set: Fred again.. & Thomas Bangalter #48, atlas plan Stem Bridge",
+   "works": 42
   },
   {
    "a": "325530ff2307964a",
@@ -467,28 +551,45 @@
    "b": "98121caa5cb39b2c",
    "b_name": "CARIBOU - Can't Do Without You",
    "b_time": 76.858,
-   "n": 30,
+   "n": 35,
    "recipe": "Echo Out",
    "tempo": {
     "lock": "keylock"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #53, atlas plan; gap: skipped Daft Punk - Da Funk, 2009, ICEY.., Never the End",
-   "works": 45
+   "works": 44
   },
   {
    "a": "98121caa5cb39b2c",
    "a_name": "CARIBOU - Can't Do Without You",
    "a_time": 196.65,
-   "b": "718489ccc67ba2fc",
-   "b_name": "Fred again.. - Delilah (pull me out of this)",
-   "b_time": 35.898,
-   "n": 31,
+   "b": "1ec803a76f708532",
+   "b_name": "DJ Mehdi - Signatune",
+   "b_time": 5.805,
+   "combo": "studied",
+   "n": 36,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "keylock"
    },
-   "why": "studied set: Fred again.. & Thomas Bangalter #56, atlas plan; gap: skipped DJ Mehdi - Signatune, Daft Punk - Around the World",
-   "works": 66
+   "why": "studied set: Fred again.. & Thomas Bangalter #54, studied stem_intro -> Long Blend",
+   "works": 87
+  },
+  {
+   "a": "1ec803a76f708532",
+   "a_name": "DJ Mehdi - Signatune",
+   "a_time": 46.453,
+   "b": "718489ccc67ba2fc",
+   "b_name": "Fred again.. - Delilah (pull me out of this)",
+   "b_time": 7.221,
+   "combo": "studied",
+   "n": 37,
+   "recipe": "Stem Bridge",
+   "tempo": {
+    "lock": "none"
+   },
+   "why": "studied set: Fred again.. & Thomas Bangalter #56, atlas plan Stem Bridge; gap: skipped Daft Punk - Around the World",
+   "works": 60
   },
   {
    "a": "718489ccc67ba2fc",
@@ -498,7 +599,7 @@
    "b_name": "Daft Punk - One More Time (Official Video)",
    "b_time": 15.79,
    "combo": "studied",
-   "n": 32,
+   "n": 38,
    "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
@@ -513,16 +614,16 @@
    "b": "953b0a544b0b6ce6",
    "b_name": "Femi",
    "b_time": 44.118,
-   "n": 33,
+   "n": 39,
    "recipe": "Long Blend",
    "tempo": {
     "lock": "pitched"
    },
    "why": "studied set: Fred again.. & Thomas Bangalter #59, atlas plan; gap: skipped just stand there",
-   "works": 74
+   "works": 88
   }
  ],
- "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (studied set, 34 songs)",
+ "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (studied set, 40 songs)",
  "tracks": [
   "8bb6d55d3ba8226e",
   "7b7fd36abc9af3f0",
@@ -535,26 +636,32 @@
   "96481c9efddd078d",
   "3712c2e4183b3662",
   "687fde89b2508f2a",
+  "b1935fafce309235",
   "f8db1a94f8fda597",
+  "c421573c9d2055b2",
   "097b045c2d5f6465",
   "687fde89b2508f2a",
+  "c421573c9d2055b2",
   "097b045c2d5f6465",
   "d7eb2f0203fa0b8a",
   "d028d416b69c198d",
   "dd7ac424d2a2cb37",
   "a5208fd82446daf1",
   "1dba9e6d744bd66a",
+  "192722e30839ee70",
   "708bb1c1011a7ce6",
   "64dbf9f30f1f3679",
   "49fe280597b8a19b",
   "ffb29e98845f5802",
   "4912379704d75559",
+  "2e1a4c960c918c6a",
   "1cf2704ed35730f5",
   "f1a519a13f6d8955",
   "15132a271043f4d6",
   "27e8a3e50da951b1",
   "325530ff2307964a",
   "98121caa5cb39b2c",
+  "1ec803a76f708532",
   "718489ccc67ba2fc",
   "8bb6d55d3ba8226e",
   "953b0a544b0b6ce6"

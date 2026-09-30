@@ -1,5 +1,5 @@
 {
- "created": 1790729111.4722738,
+ "created": 1790754337.582266,
  "name": "studied-gff8jzbvwvm-12",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 12), techniques none heard",
  "parent": null,
@@ -15,12 +15,12 @@
    "b_time": 6.966,
    "combo": "studied",
    "n": 1,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied combo: Fred again.. & Thomas Bangalter #12, atlas plan Echo Out",
-   "works": 33
+   "why": "studied combo: Fred again.. & Thomas Bangalter #12, atlas plan Stem Bridge",
+   "works": 38
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #12: Fred again.. - Baby again.. → Skrillex - Ru",

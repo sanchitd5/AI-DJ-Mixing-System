@@ -1,5 +1,5 @@
 {
- "created": 1790702457.5742579,
+ "created": 1790754337.592576,
  "name": "studied-set-orb_81stwy8",
  "note": "studied set Anyma | Live from Atomium - Brussels, Belgium in set order: 35 of 43 songs; skipped 8: #1 Anyma & SCRIPT - In My Mind (not in the library); #3 Cherry - Puer (not in the library); #4 Son Of Son - Hide (not in the library); #12 Anyma & HILLS - Dreams (not in the library); #14 GENESI - Right Now (not in the library); #16 Mila Journée & Olivier Giacomotto - Smash It (not in the library); #22 Final Request - Cut The Line (not in the library); #35 Felix Da Housecat ft Miss Kittin - Silver ",
  "parent": null,
@@ -173,14 +173,14 @@
   {
    "a": "407c498ddd3a6dab",
    "a_name": "PACS & Ruiz (BR) - No Control",
-   "a_time": 182.184,
+   "a_time": 77.88,
    "b": "c4a392ce13e82bc9",
    "b_name": "Anyma & Baset - Neverland (From Japan) (HNTR Remix)",
    "b_time": 7.639,
    "combo": "merge",
    "merge": {
     "M": 24,
-    "aT": 182.184,
+    "aT": 77.88,
     "bT": 7.639,
     "hold_bars": 22,
     "hold_phrases": 3,
@@ -189,7 +189,7 @@
       "at_bar": 24,
       "bars": 8,
       "sub_overlap_bars": 0,
-      "vocal_overlap": 0.03
+      "vocal_overlap": 0.08
      },
      "hold": {
       "bars": 22,
@@ -212,7 +212,7 @@
       "vocals": "b"
      },
      "label": "A drums + A bass + B vox + B synth",
-     "score": 105.8
+     "score": 103.2
     }
    },
    "n": 9,
@@ -321,7 +321,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #20, atlas plan Stem Merge",
-   "works": 94
+   "works": 98
   },
   {
    "a": "e60f89ea9d0d0bf4",
@@ -400,7 +400,7 @@
     "lock": "pitched"
    },
    "why": "studied set: Anyma #26, atlas plan Echo Out",
-   "works": 45
+   "works": 49
   },
   {
    "a": "4eaf109a6e8f8068",
@@ -416,7 +416,7 @@
     "lock": "keylock"
    },
    "why": "studied set: Anyma #27, atlas plan Mashup → Transition",
-   "works": 93
+   "works": 97
   },
   {
    "a": "2c59975e97c24947",
@@ -676,7 +676,7 @@
     "lock": "keylock"
    },
    "why": "studied set: Anyma #34, atlas plan Echo Out",
-   "works": 53
+   "works": 57
   },
   {
    "a": "b9f496401006f299",

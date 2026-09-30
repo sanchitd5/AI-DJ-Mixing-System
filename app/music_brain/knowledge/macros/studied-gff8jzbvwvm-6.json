@@ -1,5 +1,5 @@
 {
- "created": 1790729111.47104,
+ "created": 1790754337.5808342,
  "name": "studied-gff8jzbvwvm-6",
  "note": "studied combo from Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) (position 6), techniques none heard",
  "parent": null,
@@ -15,12 +15,12 @@
    "b_time": 9.799,
    "combo": "studied",
    "n": 1,
-   "recipe": "Echo Out",
+   "recipe": "Stem Bridge",
    "tempo": {
     "lock": "none"
    },
-   "why": "studied combo: Fred again.. & Thomas Bangalter #6, atlas plan Echo Out",
-   "works": 55
+   "why": "studied combo: Fred again.. & Thomas Bangalter #6, atlas plan Stem Bridge",
+   "works": 60
   }
  ],
  "title": "Fred again.. & Thomas Bangalter (USB002, Alexandra Palace, 27 Feb 2026) #6: Fred again.. - Marea (We’ve Lost Dancing) →",
