@@ -235,13 +235,11 @@ class Library:
         return hits[0] if hits else None
 
     def stems(self, digest: str) -> Optional[Dict[str, str]]:
+        from app.music_brain.audio_io import read_manifest
+
         for model in ("htdemucs_ft", "htdemucs"):       # stem_service.cached_four_stems order
-            man = self.dir / "stems" / f"{digest}_{model}" / "manifest.json"
-            try:
-                m = json.loads(man.read_text(encoding="utf-8"))
-            except (OSError, ValueError):
-                continue
-            if all(Path(m.get(n, "")).exists() for n in STEM_NAMES):
+            m = read_manifest(self.dir / "stems" / f"{digest}_{model}")   # v1 or v2, FLAC or WAV
+            if m and all(m.get(n) for n in STEM_NAMES):
                 return {n: m[n] for n in STEM_NAMES}
         return None
 
