@@ -70,7 +70,7 @@ STEM_NAMES = ("drums", "bass", "vocals", "other")
 
 # the files whose rules the atlas applies: any edit invalidates every pair
 RULE_FILES = (
-    HERE / "pair_atlas.py", RULES_JS, HERE / "blend.py", HERE / "energy.py", HERE / "techniques.py",
+    HERE / "pair_atlas.py", RULES_JS, HERE / "blend.py", HERE / "analysis" / "energy.py", HERE / "techniques.py",
     STATIC / "autopilot.js", STATIC / "tempo-rule.js", STATIC / "stem-moves.js", STATIC / "dj-mind.js",
 )
 
@@ -310,7 +310,7 @@ def track_features(t: dict) -> dict:
     if t["energy"]:
         try:
             e = json.loads(Path(t["energy"]).read_text(encoding="utf-8"))
-            from app.music_brain import energy as en
+            from app.music_brain.analysis import energy as en
             if e.get("version") == en.VERSION:
                 f["raw"] = en._raw(e)
         except (OSError, ValueError, KeyError):
@@ -318,7 +318,7 @@ def track_features(t: dict) -> dict:
     if not t["stems"]:
         return f
     import soundfile as sf
-    from app.music_brain.analyzer import vocal_presence_map
+    from app.music_brain.analysis.analyzer import vocal_presence_map
 
     try:
         f["vox"] = [[round(s, 2), round(e, 2)] for s, e in vocal_presence_map(Path(t["stems"]["vocals"]))]
@@ -397,7 +397,7 @@ def _init_worker(state: dict) -> None:
 
 
 def _ta(tid: str):
-    from app.music_brain.analyzer import _from_dict
+    from app.music_brain.analysis.analyzer import _from_dict
 
     if tid not in _W["ta"]:
         d = json.loads(Path(_W["meta"][tid]["analysis"]).read_text(encoding="utf-8"))
@@ -421,7 +421,8 @@ def _play_window(f: dict, level: Optional[int]) -> Tuple[float, float]:
 
 def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
     """All B partners of one A: the Python half of each record plus the node jobs it needs."""
-    from app.music_brain import blend, energy, techniques
+    from app.music_brain import blend, techniques
+    from app.music_brain.analysis import energy
 
     feats, meta, levels, learned = _W["feats"], _W["meta"], _W["levels"], _W["learned"]
     todo_b = _W["todo"].get(a, [])
@@ -945,7 +946,7 @@ def write_atlas(doc: dict, root: Path) -> dict:
 
 def library_levels(feats: Dict[str, dict], cache_dir: Path) -> Dict[str, Optional[int]]:
     """Energy level 1-10 per track: energy.level_from_raw against the library's raw scores."""
-    from app.music_brain import energy
+    from app.music_brain.analysis import energy
 
     raws = []
     for p in (Path(cache_dir) / "analysis").glob("*.energy.json"):
@@ -1234,7 +1235,7 @@ def summary(atlas: dict, p: dict) -> dict:
 def _arc_ok(levels: List[Optional[int]], nxt: Optional[int]) -> bool:
     """Chain energy arc: the pair rule (energy.next_ok with the set position), and no second
     fall in a row while building. Unknown levels pass."""
-    from app.music_brain import energy
+    from app.music_brain.analysis import energy
 
     cur = levels[-1] if levels else None
     if cur is None or nxt is None:

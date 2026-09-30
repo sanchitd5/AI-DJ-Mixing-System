@@ -10,7 +10,8 @@ from pathlib import Path
 import numpy as np
 import pytest
 
-from app.music_brain import energy, macros as mc, pair_atlas as pa, techniques
+from app.music_brain.analysis import energy
+from app.music_brain import macros as mc, pair_atlas as pa, techniques
 
 NODE = shutil.which("node")
 pytestmark = pytest.mark.skipif(NODE is None, reason="node not installed: the atlas runs the console's JS rules")
