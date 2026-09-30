@@ -28,14 +28,14 @@ Solves the tension between underground credibility and commercial accessibility.
 * **Harmonic Match:** Mandatory identical Camelot key or direct relative major/minor.
 
 ### Step-by-step
-1. **The Instrumental Setup:** Deck 1 is driving the dancefloor through its build-up or verse.
-2. **The Vocal Drop (Phrase Lock):** On Bar 1, Beat 1 of Deck 1's phrase, drop the vocal on Deck 2.
+1. **The Instrumental Setup:** Only while Deck 1 has no vocal for the whole window. Deck 1 drives the floor through an instrumental build-up or groove.
+2. **The Vocal Drop (Phrase Lock):** The vocal must end before Deck 1's drop line. On Bar 1, Beat 1 of Deck 1's phrase, drop the vocal on Deck 2.
 3. **Acoustic Carving:** 
    * Deck 2 Low EQ: **Killed to $- \infty$**.
    * Deck 2 Mid EQ: 12 o'clock.
    * Deck 1 Mid EQ: Slightly dipped to 10 o'clock to give the singer room to breathe.
-4. **The Live Climax:** Both tracks build together. When Deck 1 drops its devastating bassline, the crowd sings the vocal hook at the top of their lungs while jumping to the heavy beat.
-5. **The Transition Out:** Apply an echo to the vocal as the drop concludes, and blend or cut into the next song.
+4. **The Live Climax:** Both tracks build together. Cut the vocal before Beat 1 of the drop, so Deck 1's bassline lands on its own and the crowd, still carrying the hook, jumps to the heavy beat.
+5. **The Transition Out:** Throw the vocal's last word into an echo before the drop, then blend or cut into the next song after Deck 1's drop phrase.
 
 ### When to use it
 * Peak-time festival slots, open-format club sets, closing party anthems.

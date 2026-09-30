@@ -30,10 +30,10 @@ Solves the limit of single-track impact. A masterfully executed double drop deli
   * Track B: Low EQ **KILLED to $- \infty$ (7 o'clock)**, Mid EQ at 12 o'clock, High EQ at 11 o'clock.
 
 ### Step-by-step
-1. **The Dual Launch:** Launch both tracks so their 16-bar build-ups start at the identical second.
+1. **The Dual Launch:** Only if one drop is instrumental, else [[Drop Swap]]. Launch both tracks so their 16-bar build-ups start at the identical second.
 2. **The Dual Riser:** Both tracks build tension together. Bring both upfaders to 100%. The crowd hears two snare rolls multiplying in density.
 3. **The Pre-Drop Check:** Verify that Track B's Low EQ is completely turned down. **Only Track A owns the sub-bass!**
-4. **The Drop Collision (Bar 17, Beat 1):** Both drops hit simultaneously!
+4. **The Drop Collision (Bar 17, Beat 1):** Both drops hit simultaneously, and at most one of them carries a vocal.
    * The crowd gets Track A's devastating 808 sub-bass kick.
    * Simultaneously, they get Track B's iconic vocal chop and screaming neurofunk reese lead.
 5. **The Dynamic Play:** After 16 bars of double-dropping, execute a [[Bass Swap]]—cut Track A's bass and snap Track B's bass in, or pull Track A down and let Track B ride solo.
