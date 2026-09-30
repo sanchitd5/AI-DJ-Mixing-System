@@ -98,6 +98,7 @@ MOVE_ALIASES = {"riff_over_rap": "riff", "rap": "riff", "hold": "merge", "super"
 WEIGHTS = {"key": 0.30, "tempo": 0.20, "energy": 0.15, "vocal": 0.15, "stems": 0.10, "move": 0.10}
 KEY_CLASH_CAP = 45          # a key clash (< KEY_SAFE_MIN) never "works" above this
 PLAYED_GOOD, PLAYED_BAD = 4, 10   # works points per good / bad played transition (capped)
+OWNER_VETO_BAD = 3                # bad transitions an owner veto counts as (3 x PLAYED_BAD = the -30 cap)
 
 
 # ---------------------------------------------------------------- small pure helpers
@@ -788,6 +789,20 @@ def mine_history(cache_dir: Path, names: Dict[str, str]) -> Dict[str, dict]:
             a, b = idx.find(o.get("track_a", "")), idx.find(o.get("track_b", ""))
             if a and b and a != b:
                 slot(a, b)["learned"].append({"kind": kind, "set_id": o.get("set_id"), "at": o.get("at")})
+    # OWNER VETO (atlas/vetoes.py, console "bad pair"): a vetoed pair is PLAYED_BAD evidence, heavy
+    # enough (OWNER_VETO_BAD) that bad outweighs any good the pair ever had
+    try:
+        from app.music_brain.atlas import vetoes as _vetoes
+        bad = _vetoes.bad_pairs(_vetoes.load(cache_dir))
+    except Exception as exc:  # noqa: BLE001 -- a bad veto file must not stop a build
+        print(f"[atlas] vetoes not read: {type(exc).__name__}: {exc}", flush=True)
+        bad = []
+    for an, bn in bad:
+        a, b = idx.find(an), idx.find(bn)
+        if a and b and a != b:
+            e = slot(a, b)
+            e["bad"] = max(e["bad"], e["good"]) + OWNER_VETO_BAD
+            e["sources"]["owner_veto"] += 1
     for e in ev.values():
         for k in ("_g", "_d"):
             e.pop(k, None)
