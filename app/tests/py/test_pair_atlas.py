@@ -203,7 +203,7 @@ def test_incremental_build_writes_only_changed_shards(cache):
 
 def test_build_takes_the_lock_and_nests(cache):
     import threading
-    from app.music_brain.set_import import _atlas_lock
+    from app.music_brain.learning.set_import import _atlas_lock
 
     with _atlas_lock(cache):
         _build(cache, only=IDS[:2])                      # re-entrant: a caller already holding it

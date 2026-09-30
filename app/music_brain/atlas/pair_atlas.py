@@ -832,7 +832,7 @@ def migrate(root: Path, log=lambda m: None) -> bool:
     root = Path(root)
     if root.is_file() or (root / META).exists() or not _legacy(root).is_file():
         return False
-    from app.music_brain.set_import import _atlas_lock
+    from app.music_brain.learning.set_import import _atlas_lock
 
     with _atlas_lock(root.parent):
         if (root / META).exists() or not _legacy(root).is_file():
@@ -964,7 +964,7 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
           log=print, only: Optional[Sequence[str]] = None, seed_macros_to: Optional[Path] = None) -> dict:
     """Score every ordered pair; only: restrict to these track ids (tests, trial runs). Runs under
     _atlas_lock (re-entrant in one process, so callers that already hold it are fine)."""
-    from app.music_brain.set_import import _atlas_lock
+    from app.music_brain.learning.set_import import _atlas_lock
 
     with _atlas_lock(Path(cache_dir)):
         return _build(cache_dir, out, full, workers, log, only, seed_macros_to)
@@ -1457,7 +1457,7 @@ def _studied_cli(cache_dir: Path, missing: bool, as_json: bool) -> int:
 
 def _import_set_cli(cache_dir: Path, args: Sequence[str], dry_run: bool, as_json: bool) -> int:
     """Register a studied set's downloaded songs as library tracks (set_import.py); offline."""
-    from app.music_brain import set_import as si
+    from app.music_brain.learning import set_import as si
 
     if len(args) != 1 or not (cache_dir / "sets" / args[0] / "study.json").is_file():
         print(json.dumps({"error": f"import-set needs one studied set id with CACHE_DIR/sets/<id>/study.json (got {list(args)})"}))

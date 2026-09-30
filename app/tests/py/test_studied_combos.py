@@ -151,7 +151,7 @@ def _import_cache(tmp_path):
                        ("Cassian_-_SOS.mp3", b"sos"), ("Some_Set_Live_at_Awakenings_2020.mp3", b"live"), ("x.mp3", b"wrong")):
         (songs / name).write_bytes(body)
         files[name] = str(songs / name)
-    from app.music_brain import set_import as si
+    from app.music_brain.learning import set_import as si
     sos_id = si.content_id(songs / "Cassian_-_SOS.mp3")
     (cache / "uploads" / f"{sos_id}.mp3").write_bytes(b"sos")                  # the same file is already a library track
     (cache / "uploads" / "1111111111111111.mp3").write_bytes(b"other upload")
@@ -168,7 +168,7 @@ def _import_cache(tmp_path):
 
 
 def test_import_set_plan_skips_and_reuses(tmp_path):
-    from app.music_brain import set_import as si
+    from app.music_brain.learning import set_import as si
 
     cache = _import_cache(tmp_path)
     rows = si.plan(cache, "S1")
@@ -183,7 +183,7 @@ def test_import_set_plan_skips_and_reuses(tmp_path):
 
 
 def test_import_set_apply_goes_through_the_upload_path(tmp_path, capsys):
-    from app.music_brain import set_import as si
+    from app.music_brain.learning import set_import as si
 
     cache = _import_cache(tmp_path)
     calls = []
@@ -208,7 +208,7 @@ def test_import_set_cuts_ids_out_of_the_set_and_they_resolve(tmp_path):
     import numpy as np
     import soundfile as sf
 
-    from app.music_brain import set_import as si
+    from app.music_brain.learning import set_import as si
 
     cache = _import_cache(tmp_path)
     sr = 22050
