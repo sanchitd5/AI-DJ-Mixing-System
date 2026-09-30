@@ -72,6 +72,7 @@ STEM_NAMES = ("drums", "bass", "vocals", "other")
 RULE_FILES = (
     HERE / "pair_atlas.py", RULES_JS, HERE.parent / "render" / "blend.py", HERE.parent / "analysis" / "energy.py", HERE.parent / "matching" / "techniques.py",
     STATIC / "autopilot.js", STATIC / "tempo-rule.js", STATIC / "stem-moves.js", STATIC / "dj-mind.js",
+    HERE.parent / "render" / "drop_line.py", STATIC / "drop-line.js",
 )
 
 KEY_SAFE_MIN = 0.6          # autopilot.js KEY_SAFE_MIN (parity-tested)
@@ -97,6 +98,7 @@ MOVE_ALIASES = {"riff_over_rap": "riff", "rap": "riff", "hold": "merge", "super"
 WEIGHTS = {"key": 0.30, "tempo": 0.20, "energy": 0.15, "vocal": 0.15, "stems": 0.10, "move": 0.10}
 KEY_CLASH_CAP = 45          # a key clash (< KEY_SAFE_MIN) never "works" above this
 PLAYED_GOOD, PLAYED_BAD = 4, 10   # works points per good / bad played transition (capped)
+OWNER_VETO_BAD = 3                # bad transitions an owner veto counts as (3 x PLAYED_BAD = the -30 cap)
 
 
 # ---------------------------------------------------------------- small pure helpers
@@ -173,6 +175,15 @@ def mashup_fit(stems_both: bool, a_bpm: float, b_bpm: float, key: Optional[float
     if not m:
         return {"ok": False, "M": 0, "gate": "B's vocal phrase too short or no room left in A"}
     return {"ok": True, "M": m, "gate": None}
+
+
+def mashup_bars(m: int, ve: Optional[dict], busy_at) -> dict:
+    """autopilot.js mashupBars: a 32-bar mashup whose vocal would sing over A's drop window keeps its
+    existing 16-bar variant when that one is clear, else the refusal stands. -> {M, busy}"""
+    busy = busy_at(m)
+    if busy and m == 32 and ve and (ve.get("vocal16") or 0) >= 0.5 and not busy_at(16):
+        return {"M": 16, "busy": None}
+    return {"M": m, "busy": busy}
 
 
 def works_score(key: Optional[float], gap: float, energy_ok: Optional[bool], vocal_clean: Optional[bool],
@@ -421,7 +432,7 @@ def _play_window(f: dict, level: Optional[int]) -> Tuple[float, float]:
 
 def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
     """All B partners of one A: the Python half of each record plus the node jobs it needs."""
-    from app.music_brain.render import blend
+    from app.music_brain.render import blend, drop_line
     from app.music_brain.matching import techniques
     from app.music_brain.analysis import energy
 
@@ -473,6 +484,12 @@ def _score_a(a: str) -> Tuple[str, Dict[str, dict], List[dict]]:
                                        if fa["key"] and fb["key"] else None)
         mash = mashup_fit(all(stems), fa["bpm"], fb["bpm"], key, fb["vocal_entry"],
                           (fa["duration"] - exit_t) if exit_t is not None else 0.0)
+        if mash["ok"] and exit_t is not None:   # autopilot.js mashupGate: B's vocal over A's drop window
+            ve_b = fb["vocal_entry"] or {}
+            sings = None if vb is None else drop_line.mapped_sings(vb, exit_t, ve_b.get("entry") or 0.0, fb["bar"] / fa["bar"])
+            mb = mashup_bars(mash["M"], ve_b, lambda m: drop_line.song_busy(
+                ta, exit_t, exit_t + m * 240.0 / fa["bpm"], sings=sings))
+            mash = {"ok": False, "M": 0, "gate": mb["busy"]["gate"]} if mb["busy"] else dict(mash, M=mb["M"])
         rec = {"a": a, "b": b, "key": key, "gap": round(gap, 4), "raw_gap": round(raw_gap, 4),
                "stems": list(stems),
                "energy": {"a": la, "b": lb, "ok": None if en is None else en["ok"],
@@ -772,6 +789,20 @@ def mine_history(cache_dir: Path, names: Dict[str, str]) -> Dict[str, dict]:
             a, b = idx.find(o.get("track_a", "")), idx.find(o.get("track_b", ""))
             if a and b and a != b:
                 slot(a, b)["learned"].append({"kind": kind, "set_id": o.get("set_id"), "at": o.get("at")})
+    # OWNER VETO (atlas/vetoes.py, console "bad pair"): a vetoed pair is PLAYED_BAD evidence, heavy
+    # enough (OWNER_VETO_BAD) that bad outweighs any good the pair ever had
+    try:
+        from app.music_brain.atlas import vetoes as _vetoes
+        bad = _vetoes.bad_pairs(_vetoes.load(cache_dir))
+    except Exception as exc:  # noqa: BLE001 -- a bad veto file must not stop a build
+        print(f"[atlas] vetoes not read: {type(exc).__name__}: {exc}", flush=True)
+        bad = []
+    for an, bn in bad:
+        a, b = idx.find(an), idx.find(bn)
+        if a and b and a != b:
+            e = slot(a, b)
+            e["bad"] = max(e["bad"], e["good"]) + OWNER_VETO_BAD
+            e["sources"]["owner_veto"] += 1
     for e in ev.values():
         for k in ("_g", "_d"):
             e.pop(k, None)
