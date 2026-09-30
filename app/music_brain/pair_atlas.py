@@ -235,7 +235,7 @@ class Library:
         return hits[0] if hits else None
 
     def stems(self, digest: str) -> Optional[Dict[str, str]]:
-        from app.music_brain.audio_io import read_manifest
+        from app.music_brain.audio.audio_io import read_manifest
 
         for model in ("htdemucs_ft", "htdemucs"):       # stem_service.cached_four_stems order
             m = read_manifest(self.dir / "stems" / f"{digest}_{model}")   # v1 or v2, FLAC or WAV
@@ -971,7 +971,7 @@ def build(cache_dir: Path, out: Optional[Path] = None, full: bool = False, worke
 
 def _build(cache_dir: Path, out: Optional[Path], full: bool, workers: Optional[int], log,
            only: Optional[Sequence[str]], seed_macros_to: Optional[Path]) -> dict:
-    from app.music_brain import keylock
+    from app.music_brain.audio import keylock
 
     t0 = time.time()
     cache_dir = Path(cache_dir)
