@@ -218,7 +218,10 @@ def test_import_set_cuts_ids_out_of_the_set_and_they_resolve(tmp_path):
         t["start"] = 60.0 * i
     (cache / "sets" / "S1" / "study.json").write_text(json.dumps(study))
     rows = si.plan(cache, "S1")
-    cuts = [r for r in rows if r["action"] == "cut"]
+    all_cuts = [r for r in rows if r["action"] == "cut"]
+    cuts = [r for r in all_cuts if "ID" in r["why"]]
+    named = [r for r in all_cuts if r not in cuts]
+    assert named and all("(" in r["why"] for r in named), "a named song with no usable download is cut from the set"
     assert [(r["position"], r["name"], r["t0"], r["t1"]) for r in cuts] == [
         (6, "ID ID - Higher [set cut S1 #6]", 300.0, 360.0), (7, "Adam Beyer - ID [set cut S1 #7]", 360.0, 420.0)]
     names = json.loads((cache / "uploads" / "_names.json").read_text())
