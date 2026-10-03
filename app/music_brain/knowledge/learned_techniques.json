@@ -12294,7 +12294,7 @@
    "In WIND, play the vocal phrase at 104.5s, step back to the 98.8s phrase, then jump to the 126s phrase with drums low (-37 dB) and bass out so the voice leads.",
    "In Lucky, play the phrase at 74s, continue into the 82s phrase, then jump back to the 18s phrase with the vocal at -28 dB over a thinned drum and bass bed."
   ],
-  "count": 85,
+  "count": 86,
   "key_score_min": null,
   "kind": "vocal_resequence",
   "live": false,
@@ -15912,6 +15912,37 @@
     "set_id": "sL16rh73r-M",
     "tempo_gap": null,
     "track_a": "Rabbit in the Moon - Deeper",
+    "track_b": ""
+   },
+   {
+    "at": 1800.0,
+    "detail": {
+     "levels_db": {
+      "bass": -25.5,
+      "drums": -18.3,
+      "other": -28.3,
+      "vocals": -30.4
+     },
+     "set_span": [
+      1800.0,
+      1811.0
+     ],
+     "source_lines": [
+      [
+       277.7,
+       282.7
+      ],
+      [
+       276.2,
+       281.2
+      ]
+     ]
+    },
+    "key_score": null,
+    "kind": "vocal_resequence",
+    "set_id": "NpL_bT5vgmU",
+    "tempo_gap": null,
+    "track_a": "Moby x Boris Brejcha - In This World (MixV)",
     "track_b": ""
    }
   ],

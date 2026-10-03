@@ -1,5 +1,5 @@
 {
- "built_at": 1790784027.204443,
+ "built_at": 1791007808.1163409,
  "rules": "85b1c5d2a1b143ce",
  "schema": 1,
  "shards": [
@@ -102,6 +102,7 @@
   "2c8e596071a3b5ff",
   "2cf3c66375b972df",
   "2d54d3d9388e4838",
+  "2d98c6de305efa22",
   "2e0fb4850508b13a",
   "2e1a4c960c918c6a",
   "2e5ed7c2b8a5ab92",
@@ -272,6 +273,7 @@
   "71d16e6e7144ae32",
   "721e2e5a7b72db42",
   "7318f7f28acf2471",
+  "7411f1bd02861b65",
   "7460a5d98cc3d8ce",
   "7520ba28c2d372b8",
   "75c03d1a048f75c5",
@@ -332,6 +334,7 @@
   "8e572e1980b77e26",
   "8effb826199f6966",
   "8f0af22fec6b66f8",
+  "9026c38e209cf12b",
   "9046e5b644bd44db",
   "9070c035a65eb11c",
   "9075692fe9d12259",
@@ -403,8 +406,10 @@
   "ad02c4d3a6a1725a",
   "ae9e8a18d5695254",
   "af7347cd1d668e15",
+  "b048f25e2e818fad",
   "b0e342aea5d2fb10",
   "b11e35a70bbc221d",
+  "b15a4960125365b6",
   "b185d1ada689297e",
   "b1935fafce309235",
   "b238138c72602d82",
@@ -423,6 +428,7 @@
   "b7c10f86b7a4f711",
   "b7f9741fda1d55c2",
   "b807b9111a0bd3ae",
+  "b809d5b674e369b3",
   "b84dbc59ef3f3bb3",
   "b8765c19beb75135",
   "b87f786055ae7543",
@@ -466,6 +472,7 @@
   "c856810defd7dc3b",
   "c9447fbde572a377",
   "c97fc9899bed6bf7",
+  "ca7f445bbfbd54d3",
   "cae059077ad17c08",
   "cb416d6386d7bc4d",
   "cc17c75b5cf9c6d1",
@@ -503,6 +510,7 @@
   "d978c7e7c8e5136f",
   "da0098092dc05ae2",
   "da2a2d36d2861e49",
+  "da923906ba0958dd",
   "db118c1e69207fda",
   "db9ba06444fe23df",
   "dbff0e5e1ddd5d7d",
@@ -528,6 +536,7 @@
   "e82971c4d2e7013d",
   "e90196ceaa158037",
   "e93c8d8976c9b066",
+  "e94252e762754f7c",
   "e9b4efe4f420c866",
   "ea13f66949b105df",
   "ea1ff2290eb9d61f",
@@ -586,6 +595,7 @@
   "fc77f725ad4ff749",
   "ff7ac94a913b89af",
   "ff7f92e0e897efd5",
+  "ffaec1afbefdbe58",
   "ffb29e98845f5802"
  ],
  "slim": {
@@ -593,10 +603,10 @@
   "per_move": 20
  },
  "stats": {
-  "pairs": 48900,
-  "source_pairs": 340472,
-  "source_tracks": 584,
-  "tracks": 584
+  "pairs": 50046,
+  "source_pairs": 352242,
+  "source_tracks": 594,
+  "tracks": 594
  },
  "tracks": {
   "014821398ee71590": {
@@ -1489,6 +1499,15 @@
    "level": 2,
    "name": "BICEP ｜ APRICOTS (Official Video)",
    "stems": true
+  },
+  "2d98c6de305efa22": {
+   "artist": "boris brejcha",
+   "bpm": 127.98,
+   "duration": 295.0,
+   "key": "3A",
+   "level": null,
+   "name": "Boris Brejcha - MAYA (Original) [set cut NpL_bT5vgmU #6]",
+   "stems": false
   },
   "2e0fb4850508b13a": {
    "artist": "prospa",
@@ -3020,6 +3039,15 @@
    "name": "Kero Kero Bonito - Flamingo",
    "stems": true
   },
+  "7411f1bd02861b65": {
+   "artist": "boris brejcha",
+   "bpm": 127.99,
+   "duration": 210.0,
+   "key": "10B",
+   "level": null,
+   "name": "Boris Brejcha - Dirty Beat (Original) [set cut NpL_bT5vgmU #9]",
+   "stems": false
+  },
   "7460a5d98cc3d8ce": {
    "artist": "shakira",
    "bpm": 130.02,
@@ -3558,6 +3586,15 @@
    "key": "4A",
    "level": null,
    "name": "Skrillex - First Of The Year (The Maze Runner)",
+   "stems": true
+  },
+  "9026c38e209cf12b": {
+   "artist": "boris brejcha",
+   "bpm": 128.01,
+   "duration": 302.60249433106577,
+   "key": "4A",
+   "level": null,
+   "name": "Boris Brejcha - Midnight Bells (Original)",
    "stems": true
   },
   "9046e5b644bd44db": {
@@ -4199,6 +4236,15 @@
    "name": "Dua Lipa - Dance The Night (From Barbie The Album) [Official Lyric Video]",
    "stems": true
   },
+  "b048f25e2e818fad": {
+   "artist": "boris brejcha",
+   "bpm": 128.0,
+   "duration": 330.0,
+   "key": "11A",
+   "level": null,
+   "name": "Boris Brejcha - Bad Girl (Original) [set cut NpL_bT5vgmU #8]",
+   "stems": false
+  },
   "b0e342aea5d2fb10": {
    "artist": "baby wants to ride",
    "bpm": 132.24,
@@ -4216,6 +4262,15 @@
    "level": null,
    "name": "The Beach Boys - God Only Knows (Lane 8 Remix) [CAPITOL]",
    "stems": true
+  },
+  "b15a4960125365b6": {
+   "artist": "boris brejcha",
+   "bpm": 128.0,
+   "duration": 295.0,
+   "key": "10B",
+   "level": null,
+   "name": "Boris Brejcha - Endor (Original) [set cut NpL_bT5vgmU #3]",
+   "stems": false
   },
   "b185d1ada689297e": {
    "artist": "strangers",
@@ -4378,6 +4433,15 @@
    "level": null,
    "name": "Somos amantes de la paz",
    "stems": true
+  },
+  "b809d5b674e369b3": {
+   "artist": "boris brejcha",
+   "bpm": 127.99,
+   "duration": 360.0,
+   "key": "4A",
+   "level": null,
+   "name": "Boris Brejcha feat. Chemutai Sage - Don't Stress Your Mind [set cut NpL_bT5vgmU #11]",
+   "stems": false
   },
   "b84dbc59ef3f3bb3": {
    "artist": "50 cent",
@@ -4766,6 +4830,15 @@
    "name": "Mathias Kaden - Inner Signal",
    "stems": true
   },
+  "ca7f445bbfbd54d3": {
+   "artist": "boris brejcha",
+   "bpm": 127.99,
+   "duration": 295.0,
+   "key": "6A",
+   "level": null,
+   "name": "Boris Brejcha - Concussion (Original) [set cut NpL_bT5vgmU #5]",
+   "stems": false
+  },
   "cae059077ad17c08": {
    "artist": "cassian",
    "bpm": 127.98,
@@ -5099,6 +5172,15 @@
    "name": "Maluma - Hawái (Audio)",
    "stems": true
   },
+  "da923906ba0958dd": {
+   "artist": "moby",
+   "bpm": 127.98,
+   "duration": 336.2560090702948,
+   "key": "1A",
+   "level": null,
+   "name": "Moby x Boris Brejcha - In This World (MixV)",
+   "stems": true
+  },
   "db118c1e69207fda": {
    "artist": "gta vi | sg lewis",
    "bpm": 116.0,
@@ -5323,6 +5405,15 @@
    "level": null,
    "name": "SocietePerrierGlobal - Bonobo Talks About His Collaboration with Erykah Badu",
    "stems": true
+  },
+  "e94252e762754f7c": {
+   "artist": "boris brejcha",
+   "bpm": 128.0,
+   "duration": 295.0,
+   "key": "3A",
+   "level": null,
+   "name": "Boris Brejcha - Last Call (Original) [set cut NpL_bT5vgmU #2]",
+   "stems": false
   },
   "e9b4efe4f420c866": {
    "artist": "a$ap ferg",
@@ -5844,6 +5935,15 @@
    "key": "12B",
    "level": null,
    "name": "Pale Waves - She's My Religion",
+   "stems": true
+  },
+  "ffaec1afbefdbe58": {
+   "artist": "boris brejcha",
+   "bpm": 123.66,
+   "duration": 365.0560090702948,
+   "key": "4A",
+   "level": null,
+   "name": "Boris Brejcha feat. Sascha Kid - Cello Tears (Intro Edit)",
    "stems": true
   },
   "ffb29e98845f5802": {
